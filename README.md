@@ -25,3 +25,4 @@
 2. PR template 양식에 맞게 잘 작성해주세요.
 3. PR label에 적절하게 라벨을 부착해주세요. 내 PR 진행 상황에 대한 소통은 라벨로 이루어집니다.
 4. 기본에 작업하던 branch에서 코드 수정을 다시 하게 된다면 add, commit, push로 PR을 업데이트 하시면 됩니다.
+5. Mission 3까지 완료하였다면 반드시 1차 Refactoring을 진행해주세요.
