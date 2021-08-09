@@ -20,8 +20,8 @@
 
 ### 1차 Refactoring 체크리스트
 Mission 3까지 완료한 후 리팩토링을 진행하시고 아래 체크리스트를 작성해주세요.
-- [ ] [Basic] 1. console.log 삭제
-- [ ] [Basic] 2. id ・ class명, 변수명, 함수명
+- [ ] [Basic] console.log 삭제
+- [ ] [Basic] id ・ class명, 변수명, 함수명
 - [ ] [Basic] 들여 쓰기
 - [ ] [HTML] Semantic Tag의 사용
 - [ ] [HTML] img tag alt 속성
@@ -33,8 +33,8 @@ Mission 3까지 완료한 후 리팩토링을 진행하시고 아래 체크리�
 
 ### 2차 Refactoring 체크리스트
 Mission 5까지 완료한 후 리팩토링을 진행하시고 아래 체크리스트를 작성해주세요.
-- [ ] [Basic] 1. console.log 삭제
-- [ ] [Basic] 2. id ・ class명, 변수명, 함수명
+- [ ] [Basic] console.log 삭제
+- [ ] [Basic] id ・ class명, 변수명, 함수명
 - [ ] [Basic] 들여 쓰기
 - [ ] [HTML] Semantic Tag의 사용
 - [ ] [HTML] img tag alt 속성
@@ -46,8 +46,8 @@ Mission 5까지 완료한 후 리팩토링을 진행하시고 아래 체크리�
 
 ### 3차 Refactoring 체크리스트
 Mission 6까지 완료한 후 리팩토링을 진행하시고 아래 체크리스트를 작성해주세요.
-- [ ] [Basic] 1. console.log 삭제
-- [ ] [Basic] 2. id ・ class명, 변수명, 함수명
+- [ ] [Basic] console.log 삭제
+- [ ] [Basic] id ・ class명, 변수명, 함수명
 - [ ] [Basic] 들여 쓰기
 - [ ] [HTML] Semantic Tag의 사용
 - [ ] [HTML] img tag alt 속성
