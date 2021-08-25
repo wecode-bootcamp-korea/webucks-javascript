@@ -3,10 +3,10 @@
   flex-direction: column;
   align-items: center;
 }
+
 .section {
   max-width: 1100px;
   height: 55px;
-  /* padding: 10px 20px; */
 }
 
 /* header */
@@ -29,13 +29,15 @@ header {
   display: flex;
   justify-content: space-around;
 }
+
 .menu-group.left li {
   padding: 5px;
 }
+
 .menu-group.left a {
-  text-decoration: none;
   color: rgb(146, 135, 120);
 }
+
 .menu-group.left a:hover {
   color: rgb(171, 89, 17);
 }
@@ -47,11 +49,13 @@ header {
   display: flex;
   flex-direction: column;
 }
+
 .description h1 {
   font-size: 34px;
   font-weight: bold;
   margin: 10px 10px 10px 0;
 }
+
 .description .menu-history {
   align-self: flex-end;
   margin: 5px 0 20px 0;
@@ -63,6 +67,7 @@ header {
   display: flex;
   justify-content: space-between;
 }
+
 .content-box__left img {
   width: 450px;
   height: 470px;
@@ -72,6 +77,7 @@ header {
   width: 600px;
   padding: 0 10px;
 }
+
 .content-box__right h1 {
   margin: 0 0 7px 0;
   font-weight: 600;
@@ -82,21 +88,20 @@ header {
 .content-box__description--header {
   display: flex;
   justify-content: space-between;
-  /* margin-bottom: 25px; */
   padding-bottom: 25px;
   border-bottom: 2px solid #333;
 }
+
 .header--title p {
   font-size: 15px;
 }
+
 .header--like {
   align-self: center;
   font-size: 20px;
   color: #ccc;
   cursor: pointer;
 }
-
-/* .content-box__description--content { */
 
 .product-description {
   padding: 20px 0;
@@ -125,21 +130,26 @@ header {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
 .product-nutrition--detail div:first-child.detail--part {
   border-right: 2px dotted #ccc;
   margin-right: 10px;
   padding-right: 10px;
 }
+
 .detail--part {
   width: 100%;
 }
+
 .detail--row {
   display: flex;
   justify-content: space-between;
 }
+
 .detail--row p {
   margin: 10px 0;
 }
+
 .product-allergy {
   padding: 15px;
   background-color: #efefef;
@@ -157,6 +167,7 @@ header {
 .content-box__review--wrap {
   margin: 20px 0;
 }
+
 .content-box__review--list {
   display: flex;
   justify-content: space-between;
@@ -172,6 +183,7 @@ header {
   font-weight: 700;
   margin-right: 10px;
 }
+
 .content-box__review--like {
   position: relative;
   top: -4px;
@@ -180,6 +192,7 @@ header {
   color: #ccc;
   cursor: pointer;
 }
+
 .contnet-box__review--delete {
   margin-left: 15px;
   cursor: pointer;
@@ -188,23 +201,28 @@ header {
 .content-box__review--inputBox {
   display: flex;
 }
+
 .content-box__review--inputBox input {
   border: 0;
   background-color: #efefef;
   height: 30px;
 }
+
 .content-box__review--id {
   flex: 1;
 }
+
 .content-box__review--content {
   flex: 5;
 }
+
 .content-box__review--inputBox button {
   flex: 1;
   border: 1px solid #888;
   border-radius: 5px;
   cursor: pointer;
 }
+
 .content-box__review--inputBox button:hover {
   background-color: #dadada;
 }

@@ -1,12 +1,12 @@
-.body__container {
+body {
   background-color: #eeefef;
 }
 
 .section--login {
   display: flex;
   justify-content: center;
-  height: 100vh;
 }
+
 .section--login .inner {
   display: flex;
   flex-direction: column;
