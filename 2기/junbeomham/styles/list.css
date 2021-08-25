@@ -90,12 +90,11 @@ nav ul li {
   font-size: 15px;
 }
 
-.items-wrap {
+dl {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-start;
-  /* justify-content: space-between; */
 }
 
 .item {
