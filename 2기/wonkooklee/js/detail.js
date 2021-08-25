@@ -16,7 +16,7 @@ const detailInteraction = (function() {
       return;
     };
   
-    let html = `<li class="review_thread"><span class="id">${userName}</span><span class="comment">${userComment}</span></li>`;
+    let html = `<li class="review_thread"><span class="id">${userName}</span><span class="comment">${userComment}</span><div id="closeBtn">X</div></li>`;
     document.getElementById('RvTarget').insertAdjacentHTML('afterbegin', html);
   
     reviewInputField.value = '';
@@ -24,6 +24,16 @@ const detailInteraction = (function() {
   
   reviewInputField.addEventListener('keypress', e => {
     e.key === 'Enter' && addComment(e, undefined, e.target.value);
+  })
+
+})();
+
+const deleteComment = (function() {
+  const reviewField = document.getElementById('RvTarget');
+
+  reviewField.addEventListener('click', e => {
+    if (e.target.id !== 'closeBtn') return;
+    e.target.closest('.review_thread').remove();
   })
 
 })();
