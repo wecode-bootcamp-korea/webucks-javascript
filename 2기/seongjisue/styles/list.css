@@ -1,0 +1,67 @@
+
+
+*{
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F6F5F0;
+    margin-bottom: 20px;
+    height: 60px;
+}
+
+.navbar .navbar-flex h1 {
+    margin-left: 15px;
+    font-size: 22px;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+.navbar-menu{
+    display: flex;
+}
+
+.navbar-menu li {
+    margin-right: 20px;
+    list-style: none;
+    font-size: 12px;
+    color: #C0C0BA;
+}
+
+
+
+
+.col-coffee .navbar-sub {
+    justify-content: flex-start;
+}
+
+.col-coffee .navbar-sub h3 {
+    font-size: 12px;
+}
+
+.navbar-img {
+    width: 40px;
+}
+
+.col-coffee .navbar-sub p {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.col-coffee .navbar-sub .navbar-sub-item:not(:last-child){
+    margin-left: 15px;
+}
+
+
+
+.drink-item .coffee-img{
+    width: 250px;
+}
+
+.drink-item p{
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
