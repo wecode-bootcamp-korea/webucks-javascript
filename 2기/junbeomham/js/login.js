@@ -6,7 +6,8 @@ let validUserId = false;
 let validUserPw = false;
 
 function checkValidId(input) {
-    validUserId = input.includes("@");
+    const emailRegExp = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[0-9a-zA-Z]{2,5}$/i;
+    validUserId = input.match(emailRegExp) != null ? true : false;
     validateLoginBtn();
 }
 
