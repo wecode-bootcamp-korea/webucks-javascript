@@ -690,7 +690,7 @@ div.product_list > dl > dd > ul li dt img:hover {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 10000;
+    z-index: 900;
   }
 
   #like_bev_container #like_bev {
