@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-self: space-around;
+    align-items: center;
+    background-color: rgb(244, 244, 242);
+}
+
+.logo{
+    flex: none;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    margin: 10px 350px 10px 30px;
+}
+
+ul {
+    margin-left: auto;
+    list-style: none;
+    display: flex;
+}
+
+li {    
+    flex-grow: 1;
+    margin-right: 10px;
+    padding: 5px 5px;
+    color: rgb(184, 184, 178);
+}
+
+.bar {
+    height: 70px;
+    width: 100vw;
+    background-color: rgb(244, 244, 242);
+    margin: 10px 0;
+    color: black;
+    padding: 20px 30px;
+    position: relative;
+    font-size: 30px;
+}
+
+.title {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.decaf {
+    position: absolute;
+    left: -72px;
+    top: -17px;
+}
+
+img.decaf {
+    height: 50px;
+}
+
+.decaf-text {
+    position: relative;
+    left: 40px;
+    margin-left: 50px;
+    font-size: 18px;
+  
+}
+
+.container {
+    display: grid;
+	align-items: stretch;
+    justify-items: stretch;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px 10px;
+}
+
+p.menu-description {
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.item {
+    overflow: hidden;
+}
+
+.item img {
+   
+    object-fit:cover;
+    transform:scale(1.0);
+    transition: transform .5s;
+    height: auto;
+    width: 100%;
+    vertical-align: top;
+    max-width: 100%;
+    
+}
+
+.item img:hover {
+    transform: scale(1.1, 1.1);
+    transition: transform 1s;
+}
