@@ -148,7 +148,7 @@ h2.facebook__login {
 }
 
 h2.facebook__login span {
-  background-image: url(/resources/img/logo.jpg);
+  background-image: url(./resources/img/logo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   display: inline-block;
@@ -234,10 +234,10 @@ div.applink .link__btn a {
 }
 
 div.applink .link__btn.appstore__btn {
-  background-image: url(/resources/img/appstore.png);
+  background-image: url(../resources/img/appstore.png);
   margin-right: 4px;
 }
 
 div.applink .link__btn.googleplay__btn {
-  background-image: url(/resources/img/googleplay.png);
+  background-image: url(../resources/img/googleplay.png);
 }
