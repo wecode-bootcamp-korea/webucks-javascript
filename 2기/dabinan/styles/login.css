@@ -1,0 +1,72 @@
+@import "reset.css";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eeefef;
+}
+
+.container {
+    position: absolute;
+    top:50%; left: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 500px;
+    margin-left: -200px;
+    margin-top: -250px;
+    background-color: white;
+    border:2px solid #dddddd;
+    border-radius: 5px;
+}
+
+.logo {
+    margin: 50px 0px 30px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+}
+.loginForm {
+    display: flex;
+    flex-direction: column;
+}
+.box {
+    width: 300px;
+    height: 37px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    color: #b7b7b7;
+    background-color: #f7f7f7;
+    border: 2px solid #dddddd;
+    border-radius: 5px;
+}
+
+.pwdBox {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: gray;
+    cursor: pointer;
+}
+
+.loginBtn {
+    padding-left: 2px;
+    color: white;
+    background-color: #add3ea;
+    border-style: none;
+    cursor: grab;
+}
+
+.forgetPwd {
+    margin-top: 100px;
+    color: #80a3bb;
+    text-align: center;
+    text-decoration: none;
+}

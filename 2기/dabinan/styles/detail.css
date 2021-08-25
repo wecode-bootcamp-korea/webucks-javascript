@@ -1,0 +1,247 @@
+@import "reset.css";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 440px;
+    padding-top: 90px;
+}
+
+/*menu*/
+header {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 90px;
+    padding-right: 11vw;
+    padding-left: 11vw;
+    background-color: #f6f5ef;
+}
+
+.logo {
+    font-size: 35px;
+    font-family: 'Dancing Script', cursive;
+}
+
+header ul li {
+    display: inline-block;
+    padding: 5px;
+}
+
+/*main*/
+main {
+    z-index: 1;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.container {
+    width: 80vw;
+    padding-top: 30px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.title h1 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.title ul {
+    align-self: flex-end;
+}
+
+.title ul li {
+    display: inline-block;
+}
+
+.coffeeInfo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Img {
+    width: 40%;
+    margin-right: 5%;
+}
+
+.Img img {
+    width: 100%
+}
+
+.nonImg {
+    width: 60%;
+}
+
+.coffeeName {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 2.5px solid black;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 80%;
+}
+.coffeeName h2 span {
+    font-size: small;
+}
+
+#like {
+    color: rgb(223, 223, 223);
+    cursor: grab;
+    transition: 0.2s;
+}
+
+#like:hover {
+    color: rgb(245, 169, 169);
+}
+
+.description {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 150%;
+}
+
+.Img2 {
+    display: none;
+}
+
+.nutrition h5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+
+.productNutritionInfo {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nutritionInfoDetails {
+    font-size: 18px;
+}
+
+.nutritionList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 10px;
+}
+.nutritionList table tr td {
+    padding: 10px;
+}
+
+.leftTable {
+    border-right: 1px dashed #dddddd;
+}
+
+.t_left {
+    text-align: right;
+}
+
+.alergy {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 3px;
+    background-color: #efefef;
+}
+
+.review {
+    margin-top: 35px;
+    margin-bottom: 130px;
+}
+
+.review h3 {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dddddd;
+    font-size: 20px;
+}
+
+.review input {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px 8px;
+    background-color: #efefef;
+    border-style: none;
+    border-radius: 3px;
+}
+
+footer {
+    position: relative;
+    bottom:0;
+    left:0;
+    right:0;
+    display:flex;
+    justify-content: space-around;
+    padding: 50px;
+    color: white;
+    background-color: #2c2a29;
+}
+
+.footerCategory {
+    padding: 10px;
+}
+
+.footerCategory h3 {
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.footerCategory ul {
+    font-size: smaller;
+    line-height: 140%;
+}
+
+@media (min-width: 641px) and (max-width:840px) {
+    .title ul{
+        display: none;
+    }
+    .nutrition h5 {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container * {
+        width: 100%;
+    }
+    header {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    .title ul{
+        display: none;
+    }
+    .Img {
+        display: none;
+    }
+    .Img2 {
+        display: inline-block;
+    }
+    .coffeeInfo {
+        flex-direction: column;
+    }
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+}
