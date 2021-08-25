@@ -1,0 +1,55 @@
+.typeOfCoffeeWrap {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  top: 4rem;
+  margin-bottom: 40px;
+}
+
+.coffeeTitleWrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  height: 3rem;
+  background-color: #f6f5f0;
+}
+
+.coffeeTitle {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.coffeeIcon {
+  width: 30px;
+  margin: 0 10px;
+}
+
+.coffeeSubTitle {
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.coffeeTable {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.coffeeDetailWrap {
+  width: 12rem;
+  margin: 10px;
+}
+
+.coffeeImg {
+  width: 100%;
+}
+
+.coffeeImg:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.coffeeTitle {
+  margin: 10px;
+  text-align: center;
+}
