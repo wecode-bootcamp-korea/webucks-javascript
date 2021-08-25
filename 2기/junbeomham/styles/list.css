@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-top: 75px;
+  margin: 0 10%;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 10%;
+  padding: 0px 20px;
+  width: 80%;
+  height: 75px;
+  background-color: #fafafa;
+}
+
+.logo-wrap {
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  text-align: center;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  width: 35%;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+.menu {
+  margin-top: 30px;
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+}
+
+.title-wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 75px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fafafa;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.title-wrap img {
+  margin-left: 20px;
+}
+
+.description {
+  margin-left: 20px;
+}

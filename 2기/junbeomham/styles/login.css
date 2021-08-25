@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fafafa;
+}
+
+.login-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 500px;
+  background-color: white;
+  box-shadow: 10px 10px 20px lightgray;
+  border-radius: 5px;
+}
+
+.logo-wrap,
+.loginForm-wrap,
+.findPw-wrap {
+  width: 80%;
+}
+
+.logo-wrap {
+  margin-top: 15%;
+  font-family: "Dancing Script", cursive;
+  height: 100px;
+  font-size: 60px;
+  text-align: center;
+}
+
+.loginForm-wrap {
+  height: 180px;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.input-wrap,
+.button-wrap,
+.input-wrap input,
+.button-wrap button {
+  width: 100%;
+  height: 45px;
+}
+
+.input-wrap input {
+  padding: 10px 10px 3px 10px;
+  background-color: #fafafa;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+}
+
+.button-wrap button {
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  color: white;
+  background-color: #b2dffd;
+}
+
+.findPw-wrap {
+  margin-top: 20%;
+  text-align: center;
+}
+
+.findPw {
+  font-size: 15px;
+  text-decoration: none;
+  color: #3795f6;
+}
+
+.input-wrap,
+.button-wrap {
+  position: relative;
+}
+
+.input-wrap label {
+  position: absolute;
+  left: 10px;
+  top: 13px;
+  font-size: 15px;
+  color: #999;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.input-wrap input:focus ~ label,
+.input-wrap input:valid ~ label {
+  top: 3px;
+  font-size: 12px;
+}
