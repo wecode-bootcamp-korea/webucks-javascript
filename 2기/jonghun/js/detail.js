@@ -3,43 +3,35 @@ const commentWriter = document.querySelector(".comment__writer");
 const commentDesc = document.querySelector(".comment__desc");
 const detailComments = document.querySelector(".detail__comments");
 const commentInput = document.querySelector(".detail__comment-input");
-const titleLike = document.querySelector(".title__like");
-const detailImg = document.querySelector(".detail__img");
-const titleTitle1 = document.querySelector(".title__title1");
-const emptyHeart = titleLike.querySelector(".heart-empty");
-const fullHeart = titleLike.querySelector(".heart-full");
 
 let getRawComment;
 
 window.addEventListener("DOMContentLoaded", function () {
-  getRawComment = JSON.parse(localStorage.getItem("comments"));
-  const { index, img, title, isGetHeart } = JSON.parse(
-    localStorage.getItem("detail")
-  );
-  titleTitle1.innerText = title;
-  detailImg.src = img;
-  paintHeart(isGetHeart);
-  titleLike.addEventListener("click", function () {
-    const data = JSON.parse(localStorage.getItem("coffees1"));
-    const curHeart = !data[index].isGetHeart;
-    data[index].isGetHeart = curHeart;
+  const commentRepository = new CommonData("comments");
+  const detailRepository = new CommonData("detail");
+  const painter = new Paint([
+    "detail__title",
+    "detail__img",
+    "detail__1-heart-0",
+    "detail__2-heart-0",
+    "comment__form",
+  ]);
 
-    localStorage.setItem("coffees1", JSON.stringify(data));
-    localStorage.setItem("detail", JSON.stringify({ ...data[index], index }));
-    paintHeart(curHeart);
-  });
+  getRawComment = commentRepository.initData;
+  const { index, img, title, isGetHeart } = detailRepository.initData[0];
+
+  painter.detailPainter(
+    { img, title, index },
+    "detail__title",
+    "detail__img",
+    "detail__1-heart-0",
+    "detail__2-heart-0",
+    isGetHeart,
+    "comment__form"
+  );
+
   paintComments();
 });
-
-function paintHeart(isGetHeart) {
-  if (isGetHeart) {
-    emptyHeart.classList.add("none");
-    fullHeart.classList.add("show");
-  } else {
-    emptyHeart.classList.remove("none");
-    fullHeart.classList.remove("show");
-  }
-}
 
 commentForm.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -93,10 +85,4 @@ function saveComment(writer, desc, isGetHeart = false) {
     beforeComment = [{ writer, desc, isGetHeart }];
   }
   localStorage.setItem("comments", JSON.stringify(beforeComment));
-}
-
-function getHeart(index) {
-  getRawComment[index].isGetHeart = !getRawComment[index].isGetHeart;
-  localStorage.setItem("comments", JSON.stringify(getRawComment));
-  paintComments();
 }
