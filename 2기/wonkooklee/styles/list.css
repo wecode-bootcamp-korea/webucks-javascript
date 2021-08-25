@@ -18,6 +18,10 @@ a {
     font-size: 13px;
     font-family: 'Noto Sans KR', sans-serif;
   }
+
+  div.tablet_gnb_wrap {
+    display: none;
+  }
   
   /* GNB */
 
@@ -262,12 +266,13 @@ a {
     top: -10px;
     left: -10px;
     width: 1120px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   div.product_list > dl > dd > ul li {
     position: relative;
     margin: 10px;
-    float: left;
     width: 260px;
   }
 
@@ -338,6 +343,10 @@ div.product_list > dl > dd > ul li dt img:hover {
 
 @media screen and (min-width: 961px) and (max-width: 1099px) {
 
+  div.tablet_gnb_wrap {
+    display: none;
+  }
+
   .sub_gnb_wrap_inner .logo {
     position: absolute;
     top: 37px;
@@ -379,7 +388,6 @@ div.product_list > dl > dd > ul li dt img:hover {
     height: 20px;
     right: 93px;
     top: 15px;
-    width: 464px;
   }
 
 
@@ -389,6 +397,10 @@ div.product_list > dl > dd > ul li dt img:hover {
     width: 96%;
     margin: 0 auto;
     padding-top: 0;
+  }
+
+  .sub_tit_wrap div.sub_tit_inner h2 {
+    padding-top: 20px;
   }
 
   .content {
@@ -402,6 +414,8 @@ div.product_list > dl > dd > ul li dt img:hover {
   div.product_list > dl > dd > ul {
     width: 100%;
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
     left: 0;
     top: 0;
   }
@@ -437,23 +451,167 @@ div.product_list > dl > dd > ul li dt img:hover {
 
 
 
-@media screen and (min-width: 641px) and (max-width: 960px) {
+
+
+
+@media screen and (min-width: 481px) and (max-width: 960px) {
+
+  body {
+    padding-top: 60px;
+  }
+
+  .sub_tit_inner {
+    width: 96%;
+    margin: 0 auto;
+    padding-top: 0;
+    height: 91px;
+  }
+
+  .sub_tit_inner h2 {
+    padding-top: 30px;
+  }
+
+  div.tablet_gnb_wrap {
+    background: #f6f5ef;
+    border-bottom: 1px solid #e5e5e5;
+    height: 69px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  div.tablet_gnb_wrap h1 {
+    height: 45px;
+    left: 12px;
+    position: absolute;
+    top: 22px;
+    font-family: 'Style Script', cursive;
+    font-size: 40px;
+  }
+
+  div.tablet_gnb_wrap h1 a {
+    display: block;
+  }
+
+  #gnb {
+    display: none;
+  }
+
+  nav.tablet_gnb_sep {
+    float: right;
+    height: 70px;
+    width: 235px;
+  }
+
+  nav.tablet_gnb_sep > ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  nav.tablet_gnb_sep > ul > li {
+    height: 60px;
+    margin: 10px 0 0 1px;
+    position: relative;
+    width: 60px;
+  }
+
+  nav.tablet_gnb_sep > ul > li > a {
+    display: block;
+    left: 18px;
+    overflow: hidden;
+    position: absolute;
+  }
+
+  nav.tablet_gnb_sep > ul > li:first-child > a {
+    top: 14px;
+    height: 30px;
+    width: 25px;
+    background: url(https://www.starbucks.co.kr/common/img/common/icon_user_m.png);
+    background-size: 100% auto;
+  }
+
+  nav.tablet_gnb_sep > ul > li:nth-child(2) > a {
+    top: 12px;
+    height: 32px;
+    width: 24px;
+    background: url(https://www.starbucks.co.kr/common/img/common/icon_spot_m.png);
+    background-size: 100% auto;
+  }
+
+  nav.tablet_gnb_sep > ul > li:last-child > a {
+    top: 15px;
+    height: 26px;
+    width: 28px;
+    background: url(https://www.starbucks.co.kr/common/img/common/btn_berger_m.png);
+    background-size: 100% auto;
+  }
+
+  .content {
+    width: 96%;
+    margin: 0 auto;
+  }
 
   div.product_view_tab_wrap {
     width: 100%;
   }
 
+  div.product_list > dl > dt {
+    padding: 20px;
+    background: #f4f4f2;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  div.product_list > dl > dt > a {
+    display: block;
+    float: left;
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+  }
+
+  div.product_list > dl > dt > i {
+    display: block;
+    float: left;
+    width: 45px;
+    height: 18px;
+    margin-left: 15px;
+  }
+
+  div.product_list > dl > dt > i > img {
+    position: relative;
+    top: -9px;
+    width: 100%;
+  }
+
+  div.product_list > dl > dt .summary {
+    display: block;
+    float: left;
+    line-height: 18px;
+    margin-left: 5px;
+    font-size: 14px;
+    color: #444444;
+    letter-spacing: -1px;
+  }
+
+  div.product_list > dl > dd {
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
   div.product_list > dl > dd > ul {
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     position: relative;
     width: 100%;
-    margin: 0 auto;
-  }
-  
-  div.product_list > dl > dd > ul > li {
-    display: inline-block;
-    margin: 0.65%;
-    width: 31%;
-    overflow: hidden;
+    left: 0;
+    top: 0;
   }
 
   div.product_list > dl > dd > ul > li > dl {
@@ -461,12 +619,63 @@ div.product_list > dl > dd > ul li dt img:hover {
   }
 
   div.product_list > dl > dd > ul > li > dl > dt {
+    position: relative;
     height: auto;
+    overflow: hidden;
     width: 100%;
   }
 
-  div.product_list > dl > dd > ul li dt img {
+  div.product_list > dl > dd > ul > li > dl > dt > a {
+    position: relative;
+    display: block;
+  }
+
+  div.product_list > dl > dd > ul > li > dl > dt > a > img {
     height: auto;
     width: 100%;
+    display: block;
+    margin: 0;
+    transition: transform 1s;
   }
+
+  div.product_list > dl > dd > ul > li > dl > dd {
+    font-size: 15px;
+    text-align: center;
+    height: 54px;
+    line-height: 54px;
+    color: #444;
+  }
+  
+}
+
+
+
+
+@media screen and (min-width: 641px) and (max-width: 960px) {
+
+  div.product_list > dl > dd > ul > li {
+    margin: 0.66%;
+    width: 32%;
+    overflow: hidden;
+  }
+
+}
+
+
+
+
+@media screen and (min-width: 481px) and (max-width: 660px) {
+
+  div.product_list > dl > dt .summary {
+    clear: both;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  div.product_list > dl > dd > ul > li {
+    margin: 0.5%;
+    width: 49%;
+    overflow: hidden;
+  }
+
 }

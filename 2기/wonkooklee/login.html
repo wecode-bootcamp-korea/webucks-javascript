@@ -14,7 +14,7 @@
 
   <link rel="shortcut icon" href="/resources/img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/resources/img/favicon.ico" type="image/x-icon">
-
+  <script src="https://kit.fontawesome.com/cb28e7c19e.js" crossorigin="anonymous"></script>
   <script defer src="/js/login.js"></script>
   <title>Westabucks</title>
 </head>
@@ -24,9 +24,12 @@
     <section class="login">
       <h1 class="logo"><a href="#">Westabucks</a></h1>
       <form action="/list.html" method="get" class="auth">
-          <input class="inputField id" type="text" placeholder="전화번호, 사용자 이름 또는 이메일">
-          <input class="inputField password" type="password" placeholder="비밀번호">
+          <input class="inputField id" type="text" placeholder="전화번호, 사용자 이름 또는 이메일" spellcheck="false">
+          <input class="inputField password" type="password" placeholder="비밀번호" spellcheck="false">
           <button class="btn__login" type="submit" form="submit" disabled>로그인</button>
+          <input id="icon" type="checkbox" checked="false">
+          <i class="far fa-eye"></i>
+          <i class="far fa-eye-slash"></i>
           <div class="divider">
             <hr><span>또는</span>
           </div>
@@ -48,5 +51,7 @@
     </div>
     
   </article>
+
+  <script src="https://kit.fontawesome.com/cb28e7c19e.js" crossorigin="anonymous"></script>
 </body>
 </html>

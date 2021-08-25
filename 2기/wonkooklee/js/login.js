@@ -1,13 +1,18 @@
-// User Authentication Level 1
-
-const loginValidation = (function() {
+const loginValidation = (function () {
 
   const btnLogin = document.querySelector('.btn__login');
   const form = document.querySelector('.auth');
+  const idField = document.querySelector('.id');
+  const pwField = document.querySelector('.password');
+  const eyeIcon = document.querySelector('.fa-eye');
+  const eyeSlashIcon = document.querySelector('.fa-eye-slash');
 
-  const isValid = {id:false, pw:false};
-  
-  const validUI = function(validObj) {
+  const isValid = {
+    id: false,
+    pw: false
+  };
+
+  const activeBtn = function (validObj) {
     if (validObj.id && validObj.pw) {
       btnLogin.removeAttribute('disabled');
     } else {
@@ -15,20 +20,42 @@ const loginValidation = (function() {
     }
   };
 
+  const eachFieldValidUI = (validObj) => {
+    idField.style.border = validObj.id ? '1px solid green' : '1px solid #DBDBDB';
+    pwField.style.border = validObj.pw ? '1px solid green' : '1px solid #DBDBDB';
+  }
+
+  const togglePassword = e => {
+    if (e.target.checked) {
+      pwField.type = 'password';
+      e.target.removeAttribute('checked');
+      eyeIcon.style.display = 'none';
+      eyeSlashIcon.style.display = 'block';
+    } else {
+      pwField.type = 'text';
+      e.target.setAttribute('checked', true);
+      eyeIcon.style.display = 'block';
+      eyeSlashIcon.style.display = 'none';
+    }
+  }
+
   const validation = e => {
     if (e.target.type === 'text') {
-      isValid.id = e.target.value.indexOf('@') !== -1 ? true : false;
+      const emailRegex = /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/g;
+      isValid.id = e.target.value.match(emailRegex) ? true : false;
     }
     if (e.target.type === 'password') {
-      isValid.pw = e.target.value.length >= 8 ? true : false;
+      const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/g;
+      isValid.pw = e.target.value.match(passwordRegex) ? true : false;
     }
-    validUI(isValid);
+    eachFieldValidUI(isValid);
+    activeBtn(isValid);
   };
 
   const relocation = () => {
     window.location.href = '/list.html';
   };
-  
+
   form.addEventListener('input', validation);
 
   form.addEventListener('keypress', e => {
@@ -39,12 +66,6 @@ const loginValidation = (function() {
     !e.target.disabled && relocation();
   });
 
-})();
-
-
-// Work In Progress
-// Authentication Level 2
-
-const authentication = (function() {
+  document.getElementById('icon').addEventListener('click', togglePassword)
 
 })();
