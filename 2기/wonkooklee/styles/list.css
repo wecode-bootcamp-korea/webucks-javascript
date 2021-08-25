@@ -30,7 +30,7 @@ a {
     top: 0;
     height: 120px;
     width: 100%;
-    z-index: 100;
+    z-index: 1000;
     background-color: #f6f5ef;
     border-bottom: 1px solid #e5e5e5;
     border-top: 2px solid #000;
@@ -110,7 +110,7 @@ a {
     z-index: 11;
     height: 66px;
     width: 100%;
-    z-index: 110;
+    z-index: 1100;
   }
 
   div.sub_gnb_nav_inner {
