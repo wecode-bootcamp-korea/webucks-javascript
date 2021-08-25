@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 850px;
+  margin: 0 auto;
+  padding: 0 15px;
+  background-color: #F6F5EF;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+nav ul li {
+  display: flex;
+  padding: 0 10px;
+}
+
+.subtitle {
+  display: flex;
+  width: 850px;
+  padding: 10px 15px;
+  margin: 15px auto;
+  background-color: #F6F5EF;
+}
+
+.coldbrew {
+  width: 850px;
+  margin: 0 auto;
+}
+
+.brewed {
+  width: 850px;
+  margin: 0 auto;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-inline-start: 0;
+}
+
+#brewed-itmes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-inline-start: 0;
+}
+
+.items li {
+  margin: 15px 15px;
+  width: 250px;
+  list-style: none;
+}
+
+.hover-img {
+  width: 250px;
+  height: 261px;
+  overflow:hidden;
+}
+
+.items li img {
+  width: 250px;
+  overflow: hidden;
+  margin: 0 auto;
+  transition: 0.6s all ease-in-out;
+}
+
+.items li img:hover {
+  transform: scale(1.1);
+}
+
+.items li span {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 15px;
+}
+

@@ -30,16 +30,3 @@ function clickedBtn(event) {
 
 loginBtn.addEventListener("click", clickedBtn)
 
-
-
-/*
-function loginClicked() {
-  if((username.includes("@")) && (userpw.length >= 8)) {
-    alert('clicked')
-  } else {
-    window.location = "#";
-  }
-}
-
-loginBtn.addEventListener("click", loginClicked)
-*/
