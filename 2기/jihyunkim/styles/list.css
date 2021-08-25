@@ -1,0 +1,68 @@
+@import "reset.css";
+
+* {
+    box-sizing: border-box;
+}
+
+.content {
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.nav, .cold-brew-menu, .brewed-coffee-menu  {
+    width: 1200px;
+    height: 60px;
+    margin:  30px 0;
+    padding: 0 20px;
+    background-color: #F6F5EF;
+    line-height: 60px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-left {
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+
+.nav-right span {
+    margin: 10px;
+}
+
+.cold-brew-list, .brewed-coffee-list {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 60px 60px;
+    width: 1200px;
+}
+
+.cold-brew-menu span, .brewed-coffee-menu span {
+    margin: 3px;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+}
+
+img:hover {
+   transform: scale(1.1);
+   transition-duration: 1s;
+}
+
+.cold-brew-image, .brewed-coffee-image {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+p {
+    text-align: center;
+}
