@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body > section {
+    width: 80%;
+}
+
+
+
+.menu-bar {
+    position: fixed;
+    height: 50px;
+    margin-bottom: 15px;
+    background-color: #F6F5EF;
+}
+
+.menu-bar .logo {
+    /* position: absolute; */
+    top: 9px;
+    left: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+}
+
+.menu-bar .btn {
+    /* position: absolute; */
+    top: 15px;
+    color: lightgray;
+    text-decoration: none;
+}
+
+.menu-bar .btn.new {
+    right: 30px;
+}
+
+.menu-bar .btn.store {
+    right: 140px;
+}
+
+.menu-bar .btn.menu {
+    right: 230px;
+}
+
+.menu-bar .btn.coffee {
+    right: 320px;
+}
+
+.nav-bar {
+    /* position: relative; */
+    height: 50px;
+    margin-bottom: 15px;
+    background-color: #F6F5EF;
+}
+
+.nav-bar.coffee {
+    display: flex;
+    align-items: center;
+}
+
+.coffee span {
+    margin-left: 20px;
+}
+
+.coffee img, .brewed img {
+    width: 30px;
+}
+
+.add-shot {
+    font-size: 12px;
+}
+
+.grid-coffee {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+}
+
+.grid-coffee img {
+    width: 100%;
+}
+
+.grid-coffee p {
+    font-size: 15px;
+}
