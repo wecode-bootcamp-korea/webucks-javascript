@@ -8,17 +8,17 @@ body > section {
     width: 80%;
 }
 
-
-
 .menu-bar {
     position: fixed;
+    top: 0;
+    z-index: 5;
     height: 50px;
     margin-bottom: 15px;
     background-color: #F6F5EF;
 }
 
 .menu-bar .logo {
-    /* position: absolute; */
+    position: absolute;
     top: 9px;
     left: 20px;
     font-family: 'Dancing Script', cursive;
@@ -28,7 +28,7 @@ body > section {
 }
 
 .menu-bar .btn {
-    /* position: absolute; */
+    position: absolute;
     top: 15px;
     color: lightgray;
     text-decoration: none;
@@ -50,23 +50,24 @@ body > section {
     right: 320px;
 }
 
+.contents {
+    position: absolute;
+    top: 60px;
+}
+
 .nav-bar {
-    /* position: relative; */
+    display: flex;
+    align-items: center;
     height: 50px;
     margin-bottom: 15px;
     background-color: #F6F5EF;
 }
 
-.nav-bar.coffee {
-    display: flex;
-    align-items: center;
-}
-
-.coffee span {
+.nav-bar span {
     margin-left: 20px;
 }
 
-.coffee img, .brewed img {
+.nav-bar img {
     width: 30px;
 }
 
