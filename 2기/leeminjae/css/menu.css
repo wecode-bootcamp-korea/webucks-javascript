@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #EEEFEF;
+}
+
+.body__container {
+    background-color: #FFFFFF;
+    margin: 35px 150px;
+}
+
+.bar1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F5F5D7;
+    padding: 15px 40px;
+    height: 70px;
+}
+
+.bar1-left {
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.bar1-right {
+    width: 35%;
+}
+
+.bar1-right ul {
+    display: flex;
+    justify-content: space-around;
+    opacity: 0.5;
+}
+
+.bar1 nav {
+    display: flex;
+    flex-direction: column;
+}
+
+
+main {
+    margin-top: 30px;
+}
+
+.bar2, .bar3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F5F5D7;
+    padding: 15px 40px;
+    margin-bottom: 30px;
+    height: 70px;
+}
+
+.bar2 h2, .bar3 h2 {
+    font-size: 18px;
+    font-weight: 900;
+    opacity: 0.75;
+}
+
+.bar2 span, .bar3 span {
+    display: flex;
+    width: 80%;
+    margin: 10px 17px;
+    opacity: 0.73;
+}
+
+.coldbrew__line1, .coldbrew__line2, .coldbrew__line3{
+    position: relative;
+    display:flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.coldbrew img, .brewed img {
+    width: 90%;
+    transition: transform 2s;
+}
+
+.coldbrew img:hover {
+    transform:scale(1.1, 1.1);
+}
+
+
+.brewed__line {
+    position: relative;
+    display: flex;
+    justify-content: flex-start
+    text-align: center;
+}
