@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.header {
+    position:fixed;
+    width: 100%;
+    /* min-width: 500px; */
+}
+
+.nav {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    min-width: 600px;
+    background-color: #f4f4f2;
+}
+
+.logo {
+    position: absolute;
+    left: 20px;
+    top: 37px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+
+.menu-wraper {
+    display: inline-flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 32px;
+    right: 0px;
+    width: 500px;
+    color: grey;
+    font-weight: 400;
+}
+
+.cold {
+    margin: 500px;
+}
+
+.coldTitle {
+    width: 500px;
+}
