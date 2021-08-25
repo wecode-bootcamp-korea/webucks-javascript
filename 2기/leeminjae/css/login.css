@@ -11,8 +11,8 @@ body {
 }
 
 .body_container {
-    background-color: #FFFFFF;
     position: fixed;
+    background-color: #FFFFFF;
     top: 10%;
     bottom: 10%;
     left: 20%;
@@ -20,8 +20,8 @@ body {
 
 
 .login-title {
-    background-color: #FFFFFF;
     margin: 60px 30px 50px;
+    background-color: #FFFFFF;
 }
 
 .login-title__name {
@@ -39,10 +39,10 @@ body {
 }
 
 .login-form input {
-    background-color: #FAFAFA;
     height: 55px;
     width: 500px;
     margin-bottom: 20px;
+    background-color: #FAFAFA;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.3);
 }
@@ -55,18 +55,17 @@ body {
 }
 
 .login-form button {
-    background-color: #B2DFFC;
     height: 55px;
-
+    background-color: #B2DFFC;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .login-form__btnspan {
+    margin-bottom: 500px;
     color: white;
     font-size: 15px;
     font-weight: 800;
-    margin-bottom: 500px;
 }
 
 

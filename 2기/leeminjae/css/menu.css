@@ -11,17 +11,17 @@ body {
 }
 
 .body__container {
-    background-color: #FFFFFF;
     margin: 35px 150px;
+    background-color: #FFFFFF;
 }
 
 .bar1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #F5F5D7;
-    padding: 15px 40px;
     height: 70px;
+    padding: 15px 40px;
+    background-color: #F5F5D7;
 }
 
 .bar1-left {
@@ -53,10 +53,10 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #F5F5D7;
     padding: 15px 40px;
     margin-bottom: 30px;
     height: 70px;
+    background-color: #F5F5D7;
 }
 
 .bar2 h2, .bar3 h2 {
@@ -93,6 +93,6 @@ main {
 .brewed__line {
     position: relative;
     display: flex;
-    justify-content: flex-start
+    justify-content: flex-start;
     text-align: center;
 }
