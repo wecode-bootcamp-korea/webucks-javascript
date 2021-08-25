@@ -1,0 +1,63 @@
+body {
+  position: relative;
+  background-color: #edefef;
+}
+
+.loginWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 8.5rem auto;
+  width: 30rem;
+  height: 35rem;
+  border: 3px solid #e4e4e4;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.loginTitle {
+  font-family: "Dancing Script", cursive;
+  font-size: 3.5rem;
+}
+
+.loginForm {
+  width: 70%;
+  margin-bottom: 8rem;
+}
+
+.inputWrap {
+  margin-top: 3rem;
+}
+
+#inputId,
+#inputPw {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.6rem;
+  border: 3px solid #e4e4e4;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+  font-size: 1rem;
+}
+
+#inputId::placeholder,
+#inputPw::placeholder {
+  color: #c0c0c0;
+}
+
+#loginBtn {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: #acd3ea;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.findPwd {
+  color: #7ba0b9;
+}

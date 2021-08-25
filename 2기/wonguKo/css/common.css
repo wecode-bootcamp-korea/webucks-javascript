@@ -1,0 +1,43 @@
+.container {
+  /* width: auto; */
+}
+
+.inner {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  width: 100vw;
+  height: 3rem;
+  background-color: #f6f5f0;
+  z-index: 9;
+}
+
+.logo {
+  margin: 7px;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.3rem;
+}
+
+.mainMenu {
+  position: absolute;
+  margin: 7px;
+  right: 0;
+  z-index: 1;
+}
+
+.storeMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.itemName {
+  padding: 0 20px;
+  color: #c8c9c4;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
