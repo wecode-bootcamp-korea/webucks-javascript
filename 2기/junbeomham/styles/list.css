@@ -1,3 +1,13 @@
+/*
+  *** Recommended Layout Order ***
+      (Refactoring Guide)
+  1. Layout Properties (position, float, clear, display)
+  2. Box Model Properties (width, height, margin, padding)
+  3. Visual Properties (color, background, border, box-shadow)
+  4. Typography Properties (font-size, font-family, text-align, text-transform)
+  5. Misc Properties (cursor, overflow, z-index)
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 
 * {
@@ -22,11 +32,11 @@ header {
   align-items: center;
   top: 0;
   left: 20%;
-  padding: 0px 20px;
   width: 60%;
   height: 75px;
-  box-shadow: 10px 10px 20px lightgray;
+  padding: 0px 20px;
   background-color: #f6f5ef;
+  box-shadow: 10px 10px 20px lightgray;
 }
 
 .logo-wrap {
@@ -36,8 +46,8 @@ header {
 }
 
 header a {
-  text-decoration: none;
   color: black;
+  text-decoration: none;
 }
 
 nav {
@@ -51,8 +61,8 @@ nav ul {
 }
 
 nav ul li {
-  list-style: none;
   padding: 5px;
+  list-style: none;
 }
 
 .menu {
@@ -72,8 +82,8 @@ nav ul li {
   height: auto;
   margin-bottom: 30px;
   padding: 10px;
-  box-shadow: 10px 10px 20px lightgray;
   background-color: #f6f5ef;
+  box-shadow: 10px 10px 20px lightgray;
 }
 
 .title {
@@ -99,9 +109,9 @@ dl {
 
 .item {
   width: 275px;
-  overflow: hidden;
   margin: 0px 5px 30px 5px;
   text-align: center;
+  overflow: hidden;
 }
 
 .item img {
@@ -116,8 +126,8 @@ dl {
   width: 275px;
   height: 275px;
   margin-bottom: 15px;
-  overflow: hidden;
   border-radius: 5px;
+  overflow: hidden;
 }
 
 /* .itme img { */
