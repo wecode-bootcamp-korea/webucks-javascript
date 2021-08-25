@@ -1,0 +1,214 @@
+/* MAIN */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #FAFAFA;
+}
+
+article {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+}
+
+section {
+  background-color: #fff;
+  border: 1px solid #DBDBDB;
+}
+
+section.login {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+div.applink {
+  height: 102px;
+}
+
+
+h1 {
+  position: relative;
+  font-family: 'Style Script', cursive;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-size: 42px;
+  margin: 37px 0 37px 0;
+}
+
+form.auth {
+  margin: 0 auto;
+  width: 250px;
+}
+
+section.login input,
+section.login button {
+  display: block;
+}
+
+section.login input {
+  width: 100%;
+  height: 38px;
+  border: 1px solid #DBDBDB;
+  background-color: #FAFAFA;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  padding-left: 10px;
+}
+
+section.login input::placeholder {
+  color: #8E8E8E;
+  font-size: 12px;
+}
+
+section.login input:focus {
+  outline: none;
+  border: 1px solid #8E8E8E;
+  background-color: #e8f0fe;
+}
+
+section.login button {
+  width: 100%;
+  height: 30px;
+  border: none;
+  margin-top: 15px;
+  background-color: #1997f3;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 3px;
+}
+
+section.login button:disabled {
+  background-color: #B9DFFC;
+  cursor: default;
+}
+
+.divider {
+  position: relative;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+.divider hr {
+  border:0;
+  border-top : 1px solid #DBDBDB;
+  margin:0;
+  height:1px;
+}
+
+.divider span {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  color: #8E8E8E;
+  width: 60px;
+}
+
+h2.facebook__login {
+  margin-top: 32px;
+  font-size: 14px;
+}
+
+h2.facebook__login span {
+  background-image: url(/resources/img/logo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  position: relative;
+  top: 3px;
+}
+
+h2.facebook__login {
+  font-weight: 600;
+}
+
+h2.facebook__login a {
+  color: #00376B;
+}
+
+p.forget {
+  font-size: 12px;
+  margin: 21px 0;
+}
+
+p.forget a {
+  color: #00376B;
+}
+
+
+/* 계정이 없으신가요? */
+
+section.signup {
+  height: 63px;
+  padding: 25px 0;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+section.signup p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+section.signup p a {
+  color: #0095F6;
+  font-weight: 600;
+}
+
+/* 앱을 다운로드하세요 */
+
+div.applink {
+  margin-top: 10p;
+  padding-top: 10px;
+  width: 100%;
+  height: 105px;
+}
+
+div.applink .app__mention {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+div.link__btns {
+  text-align: center;
+}
+
+div.applink .link__btn {
+  display: inline-block;
+  border-radius: 5px;
+  width: 134px;
+  height: 40px;
+  background-color: #000;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+div.applink .link__btn a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+div.applink .link__btn.appstore__btn {
+  background-image: url(/resources/img/appstore.png);
+  margin-right: 4px;
+}
+
+div.applink .link__btn.googleplay__btn {
+  background-image: url(/resources/img/googleplay.png);
+}
