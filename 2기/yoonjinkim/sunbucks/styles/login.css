@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  background-color: cornflowerblue;
+  height: 800px;
+  width: 500px;
+}
+
+.blocks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blocks__button {
+  width: 100%;
+}
