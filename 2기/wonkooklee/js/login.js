@@ -53,7 +53,7 @@ const loginValidation = (function () {
   };
 
   const relocation = () => {
-    window.location.href = '/list.html';
+    window.location.href = './list.html';
   };
 
   form.addEventListener('input', validation);
