@@ -11,6 +11,21 @@
     background-color: #F6F5F0;
     margin-bottom: 20px;
     height: 60px;
+    box-shadow: 0.5px 0.5px 15px 10px #EEEFEF;
+}
+
+.navbar-flex{
+    display: flex;
+}
+
+.navbar-img {
+    width: 35px;
+    height: 35px;
+}
+
+.navbar .navbar-flex .navbar-img{
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 .navbar .navbar-flex h1 {
@@ -20,11 +35,9 @@
 }
 
 
-.navbar-menu{
-    display: flex;
-}
 
-.navbar-menu li {
+
+#navbar-menu li {
     margin-right: 20px;
     list-style: none;
     font-size: 12px;
@@ -34,34 +47,53 @@
 
 
 
-.col-coffee .navbar-sub {
+ .navbar-sub {
+    display: flex;
     justify-content: flex-start;
+    box-shadow: 0.5px 0.5px 15px 10px #EEEFEF;
 }
 
-.col-coffee .navbar-sub h3 {
+.navbar-sub h3 {
     font-size: 12px;
 }
 
-.navbar-img {
-    width: 40px;
-}
 
-.col-coffee .navbar-sub p {
+
+.navbar-sub p {
     font-size: 10px;
     font-weight: bold;
 }
 
-.col-coffee .navbar-sub .navbar-sub-item:not(:last-child){
+.navbar-sub .navbar-sub-item:not(:last-child){
     margin-left: 15px;
 }
 
 
+.drink-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.drink-items .drink-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 350px;
+    margin: 15px;
+    box-shadow: 0.5px 0.5px 15px 10px #EEEFEF;
+}
+
 
 .drink-item .coffee-img{
-    width: 250px;
+    margin: 0;
+    width: 210px;
+    height: 300px;
 }
 
 .drink-item p{
+    margin: 5px 0 5px 0;
     font-family: 'Dancing Script', cursive;
     font-weight: bold;
 }
