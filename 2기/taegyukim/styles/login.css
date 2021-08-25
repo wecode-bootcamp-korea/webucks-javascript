@@ -1,0 +1,67 @@
+#grayBackground {
+  background-color: #eeefef;
+}
+
+.login-form {
+  width: 520px;
+  height: 650px;
+  margin: 50px auto;
+  background-color: white;
+  border: 2px solid #dedede;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.login-header {
+  padding: 80px 60px 60px 60px;
+  font-family: "Dancing Script", cursive;
+  font-size: 75px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.user,
+.password {
+  height: 50px;
+  margin: 0 65px 25px 65px;
+  padding-left: 12px;
+  border: 2px solid #dedede;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.user::placeholder,
+.password::placeholder {
+  color: #bababa;
+}
+
+.user:focus,
+.password:focus {
+  outline: none;
+}
+
+#login-btn {
+  height: 50px;
+  margin: 0 65px 25px 65px;
+  color: white;
+  background-color: #add3ea;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.forgetPws {
+  position: relative;
+  top: 120px;
+  color: #94b1c5;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
