@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EEEFEF;
+}
+
+section {
+  width: 420px;
+  height: 480px;
+  background-color: #FFFFFF;
+
+  padding: 40px 60px;
+  border: 2px solid lightgray;
+  border-radius: 4px;
+  margin: 40px auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+img#logo {
+  width: 240px;
+
+  margin: 0 auto;
+}
+
+form {
+  width: 300px;
+  height: 150px;
+
+  margin: 20px auto 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+form input, form button {
+  height: 40px;
+
+  padding-left: 10px;
+}
+
+form input {
+  font-size: 14px;
+  background-color: #FAFAFA;
+  opacity: 0.8;
+
+  border: 1px solid lightgray;
+  border-radius: 4px;
+}
+
+form button {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #0095F6;
+  opacity: 0.6;
+
+  border: 0;
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+div#login-lost {
+  color: #0095F6;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+
+  margin-top: 90px;
+}
