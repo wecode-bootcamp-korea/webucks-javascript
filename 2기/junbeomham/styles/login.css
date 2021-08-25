@@ -28,8 +28,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 400px;
-  height: 500px;
   background-color: white;
   border-radius: 5px;
   box-shadow: 10px 10px 20px lightgray;
@@ -39,6 +37,7 @@ body {
 .loginForm-wrap,
 .findPw-wrap {
   width: 80%;
+  margin: 0 40px;
 }
 
 .logo-wrap {
@@ -85,7 +84,7 @@ body {
 }
 
 .findPw-wrap {
-  margin-top: 20%;
+  margin: 20% auto;
   text-align: center;
 }
 
