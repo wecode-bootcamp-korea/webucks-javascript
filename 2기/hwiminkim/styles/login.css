@@ -1,0 +1,87 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/* reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 700;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #eeefef;
+}
+
+/* login-section */
+
+.login-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 540px;
+  margin: 50px auto;
+  padding: 70px;
+  border-radius: 5px;
+  border: solid 3px rgb(222, 222, 222);
+  background-color: white;
+}
+
+.webucks-logo {
+  width: 300px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  width: 400px;
+  margin-bottom: 150px;
+}
+
+.id-form {
+  height: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  border: solid 3px rgb(222, 222, 222);
+  font-size: 16px;
+}
+
+.id-form::placeholder {
+  color: rgb(167, 167, 167);
+}
+
+.password-form {
+  height: 50px;
+  padding: 10px;
+  border: solid 3px rgb(222, 222, 222);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.password-form::placeholder {
+  color: rgb(167, 167, 167);
+}
+
+.login-btn {
+  height: 50px;
+  padding: 10px;
+  background-color: #add3eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+.login-btn:hover {
+  cursor: pointer;
+}
+
+.find-password a:link {
+  color: #8eacc1;
+  font-size: 18px;
+  text-decoration: none;
+}

@@ -1,0 +1,126 @@
+/* reset css */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.coffee-list {
+  width: 1114px;
+  margin: 0 auto;
+}
+
+.icon-color__red {
+  color: red;
+}
+
+/* main-header */
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  margin-bottom: 30px;
+  background-color: #f6f5ef;
+}
+
+.main-header img {
+  width: 80px;
+  margin-left: 20px;
+}
+
+.nav-menu ul {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(153, 150, 150);
+  font-size: 12px;
+  list-style: none;
+}
+
+.nav-menu ul li {
+  margin-right: 30px;
+}
+
+/* sub-header */
+
+.sub-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50px;
+  margin-bottom: 30px;
+  background-color: #f6f5ef;
+}
+
+.sub-header h4 {
+  margin-left: 20px;
+}
+
+.sub-header .add-shot {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.sub-header .add-shot img {
+  width: 45px;
+  margin-right: 5px;
+}
+
+.sub-header .add-shot p {
+  font-size: 12px;
+}
+
+/* coldbrew-list */
+
+.coldbrew-list ul {
+  display: grid;
+  grid-template-columns: repeat(4, 260px);
+  row-gap: 55px;
+  column-gap: 25px;
+  margin-bottom: 40px;
+  list-style: none;
+}
+
+.coldbrew-list ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.heart {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.coldbrew-list ul li img {
+  width: 100%;
+}
+
+/* brewed-list */
+
+.brewed-list ul {
+  display: grid;
+  grid-template-columns: repeat(4, 260px);
+  row-gap: 55px;
+  column-gap: 25px;
+  margin-bottom: 40px;
+  list-style: none;
+}
+
+.brewed-list ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.brewed-list ul li img {
+  width: 100%;
+}

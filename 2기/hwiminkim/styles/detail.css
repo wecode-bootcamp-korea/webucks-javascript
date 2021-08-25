@@ -1,0 +1,254 @@
+/* ========= */
+/* reset CSS */
+/* ========= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ============= */
+/* General style */
+/* ============= */
+
+body {
+  font-family: sans-serif;
+  background-color: #ffffff;
+}
+
+.detail-info {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+/* =========== */
+/* main-header */
+/* =========== */
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  margin-bottom: 20px;
+  background-color: #f6f5ef;
+}
+
+.main-header img {
+  width: 80px;
+  margin-left: 20px;
+}
+
+.nav-menu ul {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(153, 150, 150);
+  font-size: 12px;
+  list-style: none;
+}
+
+.nav-menu ul li {
+  margin-right: 30px;
+}
+
+/* ========== */
+/* sub header */
+/* ========== */
+
+.sub-header {
+  margin-bottom: 20px;
+}
+
+.sub-header h1 {
+  font-size: 36px;
+}
+
+.sub-header ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  font-size: 14px;
+}
+
+.sub-header ul li a:link {
+  margin: 0 5px;
+  color: rgb(153, 150, 150);
+  text-decoration: none;
+}
+
+.sub-header ul li a:visited {
+  color: rgb(153, 150, 150);
+}
+
+.sub-header ul li a:hover {
+  color: rgb(153, 150, 150);
+}
+
+.sub-header ul li i {
+  color: rgb(153, 150, 150);
+}
+
+/* =========== */
+/* coffee info */
+/* =========== */
+
+.coffee-info__container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.coffee-info__image {
+  width: 500px;
+  height: 500px;
+}
+
+.info-container {
+  width: 575px;
+}
+
+.info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  border-bottom: solid 3px black;
+}
+
+.info-header i:hover {
+  cursor: pointer;
+}
+
+/* made two classes with a element to change icon's color  */
+
+/* ============= */
+.icon-color__red {
+  color: red;
+}
+
+section header i {
+  color: lightgray;
+}
+/* ============== */
+
+.coffee-descripton {
+  margin-bottom: 30px;
+}
+
+.nutrition-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 20px 0;
+  margin-bottom: 20px;
+  border-top: solid 2px lightgrey;
+  border-bottom: solid 2px lightgrey;
+}
+
+.nutrition-title h3 {
+  margin-left: 20px;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.nutrition-title p {
+  margin-right: 20px;
+  font-size: 22px;
+}
+
+.nutrition-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.nutrition-left {
+  border-right: dashed 1px lightgrey;
+  padding-right: 30px;
+}
+
+.nutrition-itembox {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.allergy-cause {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin-bottom: 40px;
+  border-radius: 3px;
+  background-color: #efefef;
+}
+
+.allergy-cause p {
+  margin-left: 15px;
+  font-weight: 700;
+}
+
+.review-container h3 {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: solid 1px lightgrey;
+  font-size: 22px;
+}
+
+.review-container ul {
+  list-style: none;
+}
+
+.review-container li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.review-container li p {
+  margin-left: 10px;
+}
+
+.review-container li button {
+  margin-right: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.review-input {
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #efefef;
+}
+
+/* ====== */
+/* footer */
+/* ====== */
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px 0 30px 0;
+  background-color: #333333;
+}
+
+footer ul {
+  color: rgb(215, 215, 215);
+  font-size: 14px;
+  list-style: none;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li:first-child {
+  margin-bottom: 20px;
+}
