@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  width: 75%;
+  background-color: white;
+}
+
+nav {
+  background-color: rgb(244, 244, 242);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  height: 70px;
+}
+
+#title{
+  font-size: 23px;
+  font-weight: bolder;
+  font-family: 'Dancing Script', cursive;
+}
+h3, h4 {
+  display: inline-block
+}
+#headerMenu{
+  display: flex;
+  justify-content: space-evenly;
+  flex-basis: 300px;
+  color: rgb(165, 165, 161);
+}
+
+#headerMenu li{ 
+  padding-left: 20px;
+  white-space: nowrap;
+}
+
+#loginLink {
+  text-decoration: none;
+  color:rgb(165, 165, 161); 
+}
+
+#headerMenu li:hover {
+  cursor:pointer;
+  color: #1B3C35;  
+}
+
+#header li:nth-child(5) #loginLink:hover{
+  color: #1B3C35;
+}
+.mainSection{
+  margin-bottom: 20px; 
+}
+
+section {
+  width: 100%;
+}
+
+.sectionHeader{
+  background-color: rgb(246, 240, 245);
+  padding: 15px;
+  height: 48px;
+}
+
+.sectionHeader span:nth-child(1){
+  font-weight: bolder;
+}
+.sectionHeader span:nth-child(2){
+  font-size: 13px;
+  padding-left: 20px;
+}
+.sectionMain{
+  text-align: center;
+  display: grid;
+  height: auto;
+  margin: 20px 0px; 
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 15px;
+}
+.imgWrapper{
+  margin-bottom: 15px; 
+  display:inline-block;
+  overflow: hidden; 
+  height:295px;
+  cursor: pointer;
+
+}
+.beverageImg{
+  display:block;
+} 
+.bvgImage{
+  display: block;
+  transition: ease-in-out .10s;   /* smoother zoom */
+}
+
+.magnifiedImg{
+  transform: scale(1.15);
+  transform-origin: center;
+  transition-duration: 1s, 3s;
+}
+

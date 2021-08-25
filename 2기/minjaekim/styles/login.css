@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eeefef;
+  margin: 50px auto;
+  width: 35%;
+  overflow: hidden; /* 스크롤 생김 방지 */
+}
+
+.container{
+  background-color: white;
+  border: 5px solid #e8e8e8;
+  border-radius: 10px;
+  margin: 80px auto;
+  width: 100%;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 80px
+}
+
+.item{
+  flex:1 1 0;
+}
+.item:nth-child(1){
+  flex: 0.75 1 0;
+  /* header 태그 영역의 사이즈를 줄여준다 */
+}
+.item:nth-child(2){
+  flex: 0.75 1 0;
+  /* form 태그 영역의 사이즈를 줄여준다 */
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 75px;
+  font-weight: bold;
+}
+
+#loginBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#loginBox input{
+  background-color: #f7f7f7;
+  border: 3px solid #eaeaea;
+  border-radius: 5px;
+  padding: 0 10px;
+  height: 50px;
+  color: rgb(122, 122, 122);
+  font-size: 16.5px;
+}
+
+#loginBox button{
+  height: 50px;
+  background-color: #add3eb;
+  border: 3px solid #add3eb;
+  border-radius: 10px;
+  font-size: 18px;
+  color: white;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(130, 164, 188);
+  font-weight:bolder;
+  align-self: center;
+  position: relative;
+  top: 200px;
+}
+

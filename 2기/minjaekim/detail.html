@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/detail.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> <!-- 구글 폰트 -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <script defer src="js/detail.js"></script>
+</head>
+
+<body>
+  <div id='container'>
+    <nav>
+      <h1 id="title">WeBucks</h1>
+      <ul id='headerMenu'>
+        <li>COFFEE</li>
+        <li>MENU</li>
+        <li>STORE</li>
+        <li>WHAT'S NEW</li>
+        <li><a href="#" href="login.html" id="loginLink">LOGIN</a></li>
+      </ul>
+    </nav>
+    <header id="coffeeCategory">
+      <h2 id="coffeeType">콜드 브루</h2>
+      <p id="categoryPath">홈 > MENU > 음료 > 에스프레스> 화이트 초콜릿 모카</p>
+    </header>
+    <main>
+      <img id="selectedCoffeeImg"
+        src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/03/[9200000003507]_20210322093414289.jpg"
+        alt="coffee-image">
+      <aside id="mainAsideInfo">
+        <section id="coffeeNameAndDetailsBox">
+          <header id="coffeeNameAndDetailHeader">
+            <h3 id="coffeeName">화이트 초콜릿 모카</h3>
+            <h4 id="coffeeEngName">White Chocolate Mocha</h4>
+            <i id="heartIcon" class="fas fa-heart" style="user-select: auto;"></i>
+          </header>
+          <p id="coffeeDetailsInfo">달콤하고 부드러운 화이트 초콜릿 시럽과 에스프레소를 스팀 밀크와 섞어 휘핑크림으로 마무리한 음료로 달콤한 강렬한 에스프레소가 부드럽게 어우러진 커피
+          </p>
+        </section>
+        <section id="coffeeNutritionBox">
+          <header id="coffeeNutritionHeader">
+            <h4 id="coffeeNutritionInfo">제품 영양 정보</h4>
+            <h4 id="coffeeNutritionUnit">Tall(톨) / 355ml(12 fl oz)</h4>
+          </header>
+          <article id="coffeeNutritionDetail">
+            <ul class="nutritionPartList">
+              <li class="nutritionContents">
+                <p>1회 제공량 (kcal)</p>
+                <p>345</p>
+              </li>
+              <li class="nutritionContents">
+                <p>포화지방 (g)</p>
+                <p>11</p>
+              </li>
+              <li class="nutritionContents">
+                <p>단백질 (g)</p>
+                <p>11</p>
+              </li>
+            </ul>
+            <ul class="nutritionPartList">
+              <li class="nutritionContents">
+                <p>나트륨 (kcal)</p>
+                <p>150</p>
+              </li>
+              <li class="nutritionContents">
+                <p>당류 (g)</p>
+                <p>35</p>
+              </li>
+              <li class="nutritionContents">
+                <p>카페인 (mg)</p>
+                <p>75</p>
+              </li>
+            </ul>
+          </article>
+          <div id="coffeeAllergyStatus">알레르기 유발 요인 : 우유</div>
+        </section>
+        <section id="coffeeReviewBox">
+          <header id="coffeeReviewHeader">
+            <h4 id="reviewTitle">리뷰</h4>
+          </header>
+          <ul id="reviewStatus">
+            <li>
+              <span>coffee_lover</span>
+              <span>너무 맛있어요!</span>
+            </li>
+            <li>
+              <span>CHOCO7</span>
+              <span>오늘도 하이트 초콜릿 모카를 마시러 갑니다.</span>
+            </li>
+            <li>
+              <span>legend_dev</span>
+              <span>진짜 화이트 초콜릿 모카는 전설이다. 진짜 화이트 초콜릿 모카는 전설이다. 진짜 화이트 초콜릿 모카는 전설이다</span>
+            </li>
+          </ul>
+          <form action="">
+            <input type="text" name="commentBox" id="commentChatBox" placeholder="리뷰를 입력하세요">
+          </form>
+        </section>
+      </aside>
+    </main>
+  </div>
+  <footer>
+    <ul id="companyMenu">
+      <h5>COMPANY</h5>
+      <li><a href="#">한눈에 보기</a></li>
+      <li><a href="#">스타벅스 소개</a></li>
+      <li><a href="#">스타벅스 사명</a></li>
+      <li><a href="#">국내 뉴스룸</a></li>
+      <li><a href="#">세계의 스타벅스</a></li>
+      <li><a href="#">글로벌 뉴스룸</a></li>
+    </ul>
+    <ul id="corporateSales">
+      <h5>CORPORATE SALES</h5>
+      <li><a href="#">단체 및 기업 구매 안내</a></li>
+    </ul>
+    <ul id="partnershipMenu">
+      <h5>PARTNERSHIP</h5>
+      <li><a href="#">신규 입점 제의</a></li>
+      <li><a href="#">협력 고객사 등록 신청</a></li>
+    </ul>
+    <ul id="onlineCommnityMenu">
+      <h5>ONLINE COMMUNITY</h5>
+      <li><a href="#">페이스북</a></li>
+      <li><a href="#">트위터</a></li>
+      <li><a href="#">유튜브</a></li>
+      <li><a href="#">블로그</a></li>
+      <li><a href="#">인스타그램</a></li>
+    </ul>
+    <ul id="recuitMenu">
+      <h5>RECUIT</h5>
+      <li><a href="#">채용 소개</a></li>
+      <li><a href="#">채용 지원하기</a></li>
+    </ul>
+    <ul id="webuckshomeMenu">
+      <h5>WEBUCKS</h5>
+    </ul>
+  </footer>
+</body>
+
+</html>
