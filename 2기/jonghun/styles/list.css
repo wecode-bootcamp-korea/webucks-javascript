@@ -1,0 +1,70 @@
+.coffees__coffee {
+  cursor: pointer;
+}
+
+.list__outer-container {
+  background-color: white;
+  padding: 0 20px;
+}
+
+.main__nav,
+.main__header {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: var(--headerBgColor);
+  font-size: 14px;
+}
+
+.main__nav {
+  justify-content: space-between;
+}
+
+.header__category {
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+.main__nav .nav__title {
+  font-family: "Dancing Script", cursive;
+}
+
+.nav__items {
+  display: flex;
+}
+
+.nav__item:not(:first-child) {
+  margin-left: 14px;
+}
+
+.main__coffees,
+.main__coffees2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 200px));
+  place-content: left;
+  grid-gap: 21px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.coffee__img {
+  width: 100%;
+  transition: all 0.5s ease-in;
+}
+
+.coffee__name {
+  overflow: hidden;
+  margin-top: 5px;
+  display: block;
+  text-align: center;
+}
+
+.coffee__img:hover {
+  transform: scale(1.2);
+}
+
+.img__container {
+  overflow: hidden;
+  height: 200px;
+}

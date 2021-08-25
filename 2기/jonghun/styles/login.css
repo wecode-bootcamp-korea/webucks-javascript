@@ -1,0 +1,107 @@
+.nav__title {
+  font-size: 17px;
+}
+
+.outer-container {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--bgColor);
+}
+
+.login__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 317px;
+  height: 398px;
+  padding: 49px 41px;
+  border: 1px solid var(--inputBorderColor);
+  border-radius: 5px;
+  background-color: var(--containerBgColor);
+}
+
+.title {
+  margin-bottom: 36px;
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login__id,
+.login__password,
+.login__button {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.password__conatiner,
+.login__id,
+.login__password {
+  width: 237px;
+  margin-bottom: 17px;
+  padding: 6px;
+  border: 1px solid var(--inputBorderColor);
+  background-color: var(--inputBgColor);
+  overflow: hidden;
+}
+
+.login__id::placeholder,
+.login__password::placeholder {
+  color: var(--inputTextColor);
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+.password__toggle {
+  margin: 5px;
+  cursor: pointer;
+}
+
+.password__toggle:active {
+  opacity: 0.5;
+}
+
+.password__conatiner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  background-color: var(--inputBgColor);
+  border-radius: 5px;
+}
+
+.password__conatiner input {
+  margin: 0;
+  border: none;
+}
+
+.login__button {
+  background-color: var(--buttonBgColor);
+  border-radius: 8px;
+  font-size: 14px;
+  color: white;
+  pointer-events: none;
+}
+
+.password-finder {
+  margin-top: 96px;
+  color: var(--messageColor);
+}
+
+.active {
+  background-color: var(--buttonActiveColor);
+  pointer-events: all;
+}
+
+.green-border {
+  border: 2px solid green;
+}

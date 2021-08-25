@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles//index.css" />
+  </head>
+  <body>
+    <div class="list__outer-container">
+      <nav class="main__nav">
+        <h1 class="nav__title"><a href="./list.html">WeBucks</a></h1>
+        <ul class="nav__items">
+          <li class="nav__item"><a href=""> COFFEE</a></li>
+          <li class="nav__item"><a href=""> MENU</a></li>
+          <li class="nav__item"><a href=""> STORE</a></li>
+          <li class="nav__item"><a href=""> WHAT'NEW</a></li>
+        </ul>
+      </nav>
+      <main class="main__main">
+        <header class="main__header">
+          <span class="header__category">콜드 브루 커피</span>
+          <span class="header__desc"
+            ><i class="fas fa-coffee"></i> 디카페인 에스프레소 샷 추가 기능
+            (일부 음료 제외)</span
+          >
+        </header>
+
+        <div class="main__coffees" id="coffees1"></div>
+        <header class="main__header">
+          <span class="header__category">브루드 브루 커피</span>
+          <span class="header__desc">
+            <i class="fas fa-coffee"></i>
+            디카페인 에스프레소 샷 추가 기능 (일부 음료 제외)</span
+          >
+        </header>
+        <div class="main__coffees2" id="coffees2"></div>
+      </main>
+    </div>
+    <script src="./js/coffeeList.js"></script>
+    <script defer src="./js/commonFunctions.js"></script>
+    <script defer src="js/list.js"></script>
+  </body>
+</html>
