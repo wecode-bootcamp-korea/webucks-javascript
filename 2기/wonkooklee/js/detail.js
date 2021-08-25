@@ -35,7 +35,7 @@ const signIn = (function() {
   const signIn = document.querySelector('.sign_in');
   
   function relocation() {
-    window.location.href = '/login.html';
+    window.location.href = './login.html';
   }
   
   signIn.addEventListener('click', e => {
