@@ -10,8 +10,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  align-items: center;
   padding-top: 75px;
-  margin: 0 10%;
 }
 
 header {
@@ -21,11 +21,12 @@ header {
   justify-content: space-between;
   align-items: center;
   top: 0;
-  left: 10%;
+  left: 20%;
   padding: 0px 20px;
-  width: 80%;
+  width: 60%;
   height: 75px;
-  background-color: #fafafa;
+  box-shadow: 10px 10px 20px lightgray;
+  background-color: #f6f5ef;
 }
 
 .logo-wrap {
@@ -40,49 +41,92 @@ header a {
 }
 
 nav {
-  width: 35%;
+  min-width: 50%;
 }
 
 nav ul {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
 }
 
 nav ul li {
   list-style: none;
+  padding: 5px;
 }
 
 .menu {
-  margin-top: 30px;
-}
-
-article {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  width: 100%;
+  flex-wrap: wrap;
+  width: 60%;
+  margin-top: 30px;
 }
 
 .title-wrap {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  height: 75px;
-  margin-bottom: 20px;
-  padding: 20px;
-  background-color: #fafafa;
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  padding: 10px;
+  box-shadow: 10px 10px 20px lightgray;
+  background-color: #f6f5ef;
 }
 
 .title {
+  min-width: 120px;
   font-size: 20px;
+  font-weight: 500;
 }
 
 .title-wrap img {
-  margin-left: 20px;
+  margin: auto 20px;
 }
 
 .description {
-  margin-left: 20px;
+  font-size: 15px;
+}
+
+.items-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  /* justify-content: space-between; */
+}
+
+.item {
+  width: 275px;
+  overflow: hidden;
+  margin: 0px 5px 30px 5px;
+  text-align: center;
+}
+
+.item img {
+  width: 100%;
+}
+
+.item p {
+  font-size: 15px;
+}
+
+.img-wrap {
+  width: 275px;
+  height: 275px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+/* .itme img { */
+/* transform: scale(1); */
+/* } */
+
+.item img:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+  transition: all 0.8s ease-in-out;
 }

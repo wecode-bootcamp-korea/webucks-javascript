@@ -11,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #fafafa;
+  background-color: #f6f5ef;
 }
 
 .login-section {
@@ -61,7 +61,7 @@ body {
 
 .input-wrap input {
   padding: 10px 10px 3px 10px;
-  background-color: #fafafa;
+  background-color: #f6f5ef;
   border: 2px solid lightgray;
   border-radius: 5px;
 }
