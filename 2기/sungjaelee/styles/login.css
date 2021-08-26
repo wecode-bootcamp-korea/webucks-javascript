@@ -1,34 +1,45 @@
 body {
-  /* border: 1px solid black; */
+  height: 100vh;
+  width: 100vw;
+  padding-top: 100px;
+  box-sizing: border-box;
   background-color: #eeefef;
   font-family: Arial, serif;
   font-size: 12px;
 }
 
+form {
+  padding-top: 30px;
+}
+
+form ::placeholder {
+  font-size: 12px;
+}
+
 .logo {
-  text-align: center;
   font-size: 40px;
+  text-align: center;
   cursor: default;
 }
 
 .loginBox {
+  position: relative;
   display: flex;
   flex-direction: column;
-  background-color: #fff;
-  width: 300px;
   height: 370px;
-  margin: 100px auto;
+  width: 300px;
+  margin: 0 auto;
   padding: 37px;
   box-sizing: border-box;
-  position: relative;
+  background-color: #fff;
 }
 
 .loginBox input {
-  background-color: #f7f7f7;
-  padding: 8px 6px;
   width: 100%;
-  box-sizing: border-box;
   margin-bottom: 13px;
+  padding: 8px 6px;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
 }
 
 .loginBox,
@@ -37,19 +48,10 @@ input {
   border-radius: 4px;
 }
 
-.loginFormContainer {
-  /* background-color: blue; */
-  padding-top: 30px;
-}
-
-.loginFormContainer ::placeholder {
-  font-size: 12px;
-}
-
 .forgotPw {
-  color: #8dadc2;
   position: absolute;
   bottom: 45px;
   align-self: center;
+  color: #8dadc2;
   cursor: pointer;
 }

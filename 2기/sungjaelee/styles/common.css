@@ -1,17 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"); */
 /* delete import above */
 
 button {
+  width: 100%;
+  padding: 7px 0;
   background-color: #aed3ea;
   color: #ecf5fa;
   border: none;
   border-radius: 7px;
-  padding: 7px 0;
-  width: 100%;
 }
 
 .logo {
-  font-family: "Dancing Script", cursive; /* delete later */
   /* background-color: red; */
+  font-family: "Dancing Script", cursive; /* delete later */
   cursor: pointer;
 }
