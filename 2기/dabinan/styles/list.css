@@ -12,7 +12,6 @@ body {
 /*menu*/
 header {
     position: fixed;
-    z-index: 2;
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -22,6 +21,7 @@ header {
     padding-right: 11vw;
     padding-left: 11vw;
     background-color: #f6f5ef;
+    z-index: 2;
 }
 
 .logo {
@@ -36,14 +36,14 @@ header ul li {
 
 /*main*/
 main {
-    z-index: 1;
     width: 80vw;
     margin: 0 auto;
+    z-index: 1;
 }
 
 .container {
-    padding-top: 30px;
     width: 80vw;
+    padding-top: 30px;
 }
 
 .category {
@@ -70,8 +70,6 @@ main {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-
-
 .coffee {
     margin: 10px;
 }
@@ -88,9 +86,9 @@ main {
     color: white;
     background-color: transparent;
     border-style: none;
+    font-size: 25px;
     cursor: pointer;
     z-index: 0;
-    font-size: 25px;
 }
 
 input[type='checkbox'] {

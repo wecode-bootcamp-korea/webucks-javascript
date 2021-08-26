@@ -2,7 +2,6 @@
 
 * {
     box-sizing: border-box;
-    outline:none;
 }
 
 body {
@@ -10,9 +9,9 @@ body {
 }
 
 .container {
-    position: absolute;
+    position: absolute; 
     top:50%; left: 50%;
-    display: flex;
+    display: flex; 
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
@@ -30,13 +29,12 @@ body {
     font-family: 'Dancing Script', cursive;
     font-size: 60px;
 }
+
 .loginForm {
     display: flex;
     flex-direction: column;
 }
-.loginForm:valid .button {
-    background: #72bd2c;
-}
+
 .box {
     width: 300px;
     height: 37px;

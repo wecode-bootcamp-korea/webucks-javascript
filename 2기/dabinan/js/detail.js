@@ -1,10 +1,10 @@
-//댓글기능
+//댓글 입력 + 삭제 기능
 const reviewText = document.querySelector('.reviewText');
 const pushBtn = document.querySelector('.push');
 const commentsBox = document.querySelector('.commentsBox');
 
 const posting = () => {
-    //입력된 댓글
+    //입력된 댓글 : string length가 0이면 delete버튼 안눌리게 만들어야 함!(미완)
     const text = reviewText.value;
     if (reviewText.value === '') {
         reviewText.focus();
@@ -24,7 +24,7 @@ const posting = () => {
     commentText.innerHTML = text;
     //스타일
     commentText.style.width = "80%";
-    commentText.style.padding = "10px"
+    commentText.style.padding = "10px";
     
     //삭제 버튼
     const deleteComment = document.createElement('button');
@@ -37,14 +37,11 @@ const posting = () => {
     deleteComment.style.borderStyle = "none";
     deleteComment.style.cursor = "pointer";
     deleteComment.style.borderRadius = "3px";
-    deleteComment.style.padding = "5px"
-    deleteComment.style.width = "20%"
+    deleteComment.style.padding = "5px";
+    deleteComment.style.width = "20%";
 
-    //+
-    //likeBox.appendChild(commentLike);
     commentsBox.appendChild(comment);
     comment.appendChild(commentText);
-    //comment.appendChild(likeBox);
     comment.appendChild(deleteComment);
     
     reviewText.value = " ";
@@ -64,8 +61,10 @@ reviewText.addEventListener('keypress', (event) => {
     return;
 });
 
+//좋아요 버튼 실패한 코드(진행중)
 /*
     좋아요 버튼
+
     const likeBox = document.createElement('span');
     likeBox.setAttribute('class', 'likeBox');
 
@@ -73,6 +72,7 @@ reviewText.addEventListener('keypress', (event) => {
     const commentLike = document.createElement('i');
     commentLike.setAttribute('class', 'far fa-heart smallHeart');
     commentLike.setAttribute('onclick', "pushlike(); return false")
+
     //스타일
     likeBox.style.width = "10%";
     likeBox.style.fontSize = "25px"
@@ -80,9 +80,10 @@ reviewText.addEventListener('keypress', (event) => {
     likeBox.style.alignItems = "center";
     likeBox.style.position = "relative";
     commentLike.style.right = '6px';
-    commentLike.style.color = "rgb(126, 125, 125)";*/
+    commentLike.style.color = "rgb(126, 125, 125)";
 
-  /*
+    2차 시도
+
     const likeBox = document.createElement('label');
     likeBox.setAttribute('class', 'likeBox');
     
@@ -108,4 +109,7 @@ reviewText.addEventListener('keypress', (event) => {
     }else {
         commentLike2.style.opacity = "0";
     }
-    */
+
+    likeBox.appendChild(commentLike);
+    comment.appendChild(likeBox);
+*/

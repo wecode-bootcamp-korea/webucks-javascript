@@ -12,7 +12,6 @@ body {
 /*menu*/
 header {
     position: fixed;
-    z-index: 2;
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -22,11 +21,12 @@ header {
     padding-right: 11vw;
     padding-left: 11vw;
     background-color: #f6f5ef;
+    z-index: 2;
 }
 
 .logo {
-    font-size: 35px;
     font-family: 'Dancing Script', cursive;
+    font-size: 35px;
 }
 
 header ul li {
@@ -36,9 +36,9 @@ header ul li {
 
 /*main*/
 main {
-    z-index: 1;
     width: 80vw;
     margin: 0 auto;
+    z-index: 1;
 }
 
 .container {
@@ -77,7 +77,7 @@ main {
 }
 
 .Img img {
-    width: 100%
+    width: 100%;
 }
 
 .nonImg {
@@ -94,11 +94,12 @@ main {
     font-weight: 600;
     line-height: 80%;
 }
+
 .coffeeName h2 span {
     font-size: small;
 }
 
-.checkbox-wrap {
+.checkboxWrap {
     color: rgb(126, 125, 125);
     cursor: pointer;
     font-size: 35px;
@@ -108,7 +109,7 @@ input[type='checkbox'] {
     display: none;
 }
 
-.heart_checked {
+.heartChecked {
     opacity: 0;
 }
 
@@ -117,7 +118,7 @@ label,.checkbox,.fa-heart {
     right: 0;
 }
 
-label>input[type="checkbox"]:checked~.heart_checked {
+label>input[type="checkbox"]:checked~.heartChecked {
     display: block;
     opacity: 1;
 }  
@@ -163,7 +164,7 @@ label>input[type="checkbox"]:checked~.heart_checked {
     border-right: 1px dashed #dddddd;
 }
 
-.t_left {
+.tLeft {
     text-align: right;
 }
 
