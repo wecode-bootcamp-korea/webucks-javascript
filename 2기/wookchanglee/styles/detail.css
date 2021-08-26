@@ -6,7 +6,6 @@
 
 .section {
   max-width: 1100px;
-  height: 55px;
 }
 
 /* header */
@@ -16,6 +15,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 55px;
   padding: 10px 20px;
   margin-bottom: 20px;
   background-color: #f4f4f2;
@@ -132,7 +132,7 @@ header {
 }
 
 .product-nutrition--detail div:first-child.detail--part {
-  border-right: 2px dotted #ccc;
+  border-right: 2px dashed #ccc;
   margin-right: 10px;
   padding-right: 10px;
 }
@@ -226,4 +226,34 @@ header {
 
 .content-box__review--inputBox button:hover {
   background-color: #dadada;
+}
+
+footer .inner {
+  margin-top: 100px;
+  background-color: #333;
+  width: 100vw;
+}
+
+.footer-list-wrap {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1050px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.footer-list-wrap a {
+  color: #fff;
+}
+
+.footer-list {
+  margin: 60px 0;
+}
+
+.footer-list__title {
+  margin: 20px 16px;
+}
+
+.footer-list__item {
+  margin: 16px;
 }
