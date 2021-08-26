@@ -29,6 +29,7 @@ body {
 
 .login-form {
   display: flex;
+  position: relative;
   flex-direction: column;
   flex: 2;
   width: 350px;
@@ -53,6 +54,14 @@ body {
 .login-form__verified {
   border: 2px solid #32a852;
   outline: 2px solid #32a852;
+}
+
+.login-form .fas {
+  position: absolute;
+  top: 83px;
+  right: 25px;
+  color: #666;
+  cursor: pointer;
 }
 
 .login-form__btn {

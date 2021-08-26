@@ -2,6 +2,7 @@ const $id = document.querySelector('.login-form__id');
 const $pw = document.querySelector('.login-form__pw');
 const $btn = document.querySelector('.login-form__btn');
 const $form = document.querySelector('.login-form');
+const $eye = document.querySelector('.fas');
 //1. 아이디에 @가 있을 시 로그인 버튼 활성화
 
 
@@ -36,22 +37,15 @@ let handleLoginVerify = () =>{
   }
 }
 
-// let handleInput = (verifying,ipt) => {
-//   return function(){
-//     verifying = (verifying === 'id') ? str.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/) : password.match(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,}/); 
-//     if(verifying){
-//       ipt
-//     }else {
-//       ipt.style.border = '2px solid #ccc';
-//     }
-//   }
-// }
+let handleVisible = () => {
 
+  $eye.classList.contains('fa-eye') ? $pw.type='text' : $pw.type='password';
 
+  $eye.classList.toggle('fa-eye');
+  $eye.classList.toggle('fa-eye-slash');
 
+}
 
 $id.addEventListener('keyup',handleLoginVerify);
 $pw.addEventListener('keyup',handleLoginVerify);
-
-// $id.addEventListener('keyup',handleInput('id',$id))
-// $pw.addEventListener('keyup',handleInput('pw',$pw))
+$eye.addEventListener('click',handleVisible);
