@@ -88,6 +88,8 @@
   margin-left: 5px;
   width: min-content;
   height: min-content;
+  pointer-events: none;
+  opacity: 0.2;
 }
 
 .detail__comment button {

@@ -1,4 +1,6 @@
 window.addEventListener("DOMContentLoaded", function () {
+  const loginUser = new CommonData("users").findMany();
+
   const detailRepository = new CommonData("detail");
   const painter = new Paint([
     "detail__title",
@@ -20,6 +22,7 @@ window.addEventListener("DOMContentLoaded", function () {
     "detail__2-heart-0",
     isGetHeart,
     "comment__form",
-    "detail__comment-input"
+    "detail__comment-input",
+    loginUser
   );
 });

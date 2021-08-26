@@ -97,11 +97,6 @@
   color: var(--messageColor);
 }
 
-.active {
-  background-color: var(--buttonActiveColor);
-  pointer-events: all;
-}
-
 .green-border {
   border: 2px solid green;
 }

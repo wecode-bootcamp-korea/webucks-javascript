@@ -15,6 +15,10 @@ class CommonData {
     }
   }
 
+  checkExist(data) {
+    return this.findByCondition([data]).length;
+  }
+
   addIsGetHeart(data) {
     this.initData = data.map((item) => {
       item.isGetHeart = false;
@@ -45,6 +49,20 @@ class CommonData {
     this.saveData(this.initData);
   }
 
+  findByCondition(conditions) {
+    let data = this.initData;
+    for (let item of conditions) {
+      for (let key in item) {
+        data = data.filter((jtem) => {
+          console.log(item);
+          console.log(jtem);
+          return jtem[key] === item[key];
+        });
+      }
+    }
+    return data;
+  }
+
   deleteByIndex(index) {
     this.saveData(this.initData.filter((_, idx) => idx !== index));
   }
@@ -57,7 +75,7 @@ class Paint {
     }
   }
 
-  paintComment(data) {
+  paintComment(data, loginUser) {
     data ||= [];
     const tags = data.map((item, index) => {
       const { writer, desc, isGetHeart } = item;
@@ -80,12 +98,19 @@ class Paint {
 
     this["detail__comments"].innerHTML = tags.join("");
 
-    data.forEach((_, index) => {
+    data.forEach((item, index) => {
       const emptyHeartId = `comments__heart1-${index}`;
       const fullHeartId = `comments__heart2-${index}`;
       const deleteId = `comments__delete-${index}`;
 
       const delBtn = document.getElementById(deleteId);
+
+      if (loginUser[0]["id"] === item.writer) {
+        delBtn.classList.add("active");
+      } else {
+        delBtn.classList.remove("active");
+      }
+
       delBtn.addEventListener("click", function () {
         this.parentElement.remove();
         const commentRepo = new CommonData("comments");
@@ -95,7 +120,17 @@ class Paint {
     });
   }
 
-  detailPainter(data, title, img, heart1, heart2, isLike, form, input) {
+  detailPainter(
+    data,
+    title,
+    img,
+    heart1,
+    heart2,
+    isLike,
+    form,
+    input,
+    loginUser
+  ) {
     this[title].innerText = data.title;
     this[img].src = data.img;
     this.paintOnlyHeart([heart1, heart2], isLike);
@@ -105,17 +140,16 @@ class Paint {
     this[form].addEventListener("submit", (e) => {
       e.preventDefault();
       commentRepo.createData({
-        writer: "일단익명",
+        writer: loginUser[0]["id"] || "익명의누군가",
         desc: this[input].value,
         isGetHeart: false,
       });
       this[input].value = "";
-
-      this.paintComment(commentRepo.initData);
+      this.paintComment(commentRepo.initData, loginUser);
     });
 
     if (confirmLogin()) {
-      this.paintComment(commentRepo.initData);
+      this.paintComment(commentRepo.initData, loginUser);
       this[input].readonly = false;
     } else {
       this[input].readonly = true;
@@ -204,15 +238,27 @@ class AddHeartListener {
   }
 
   heartToggle() {
+    if (!getLoginUser()) {
+      alert("로그인을 하셔야 좋아요를 할 수 있습니다.");
+      return (window.location.href = "./login.html");
+    }
+
     const index = this.id.split("-").pop();
     const saveName = this.id.slice(0, this.id.indexOf("_"));
     const repository = new CommonData(saveName);
     const isLike = repository.findByIndex(index)["isGetHeart"];
     repository.updateOne("isGetHeart", !isLike, index);
 
+    const likeRepo = new CommonData("likes");
+    const newData = { user: getLoginUser()[0]["id"], index };
+    if (!isLike && !likeRepo.checkExist(newData)) {
+      likeRepo.createData(newData);
+    } else if (isLike && likeRepo.checkExist(newData)) {
+    }
+
     if (saveName === "detail") {
       const newRepo = new CommonData(repository.initData[0].cate);
-      newRepo.updateOne("isGetHeart", !isLike, repository.initData[0].index);
+      newRepo.createData({ user: getLoginUser()[0]["id"], commentId: this.id });
     }
 
     const repoNames = [];
@@ -235,4 +281,8 @@ class AddHeartListener {
 
 function confirmLogin() {
   return !!localStorage.getItem("users");
+}
+
+function getLoginUser() {
+  return JSON.parse(localStorage.getItem("users"));
 }
