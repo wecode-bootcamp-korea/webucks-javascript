@@ -50,9 +50,10 @@ body {
   font-weight: 500;
 }
 
-/* .login-form__id:focus {
-  outline: 1px solid blue;
-} */
+.login-form__verified {
+  border: 2px solid #32a852;
+  outline: 2px solid #32a852;
+}
 
 .login-form__btn {
   height: 40px;
