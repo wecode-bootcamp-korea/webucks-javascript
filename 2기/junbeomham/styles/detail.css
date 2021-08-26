@@ -120,6 +120,7 @@ footer a {
 .detail-category {
   position: relative;
   height: 80px;
+  margin-bottom: 20px;
   padding: 10px;
 }
 
@@ -182,7 +183,7 @@ footer a {
   font-weight: 400;
 }
 
-.detail-text span {
+.product-name-en {
   color: #666;
   font-size: 16px;
 }
@@ -191,6 +192,17 @@ footer a {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.like-wrap {
+  color: #666;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#product-like {
+  font-size: 25px;
 }
 
 .detail-text p {
@@ -264,7 +276,12 @@ footer a {
   list-style: none;
 }
 
+.detail-review li {
+  padding-bottom: 12px;
+}
+
 .detail-review dl {
+  position: relative;
   display: flex;
   justify-content: flex-start;
 }
@@ -272,6 +289,25 @@ footer a {
 .detail-review dt {
   font-weight: 800;
   padding-right: 10px;
+}
+
+#review-like {
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+.del-btn {
+  position: absolute;
+  top: -2px;
+  right: 0;
+  padding: 2px 4px;
+  opacity: 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.detail-review dl:hover > .del-btn {
+  opacity: 1;
 }
 
 .review-input {
