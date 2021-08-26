@@ -153,13 +153,17 @@
 .detail-footer div {
   display: flex;
   flex-direction: column;
-  font-size: 12px;
+  font-size: 14px;
 }
 
-.detail-footer span {
-  margin: 6px 0 6px 0;
+.detail-footer ul {
+  list-style: none;
 }
 
-.detail-footer div span:first-child {
+.detail-footer li {
+  margin: 10px 0 10px 0;
+}
+
+.detail-footer h6 {
   margin-bottom: 12px;
 }
