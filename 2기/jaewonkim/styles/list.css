@@ -3,5 +3,159 @@
 }
 
 body {
-  background-color: #EEEFEF;
+  background-color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header {
+  width: 1050px;
+  height: 60px;
+  background-color: #f6f5ef;
+
+  padding: 6px 18px;
+
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 2;
+}
+
+#header {
+  margin: 2px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header h1 {
+  display: none;
+}
+
+#header img {
+  height: 42px;
+}
+
+#nav {
+  width: 420px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#nav a {
+  color: #333;
+  font-family: Avenir, Arial, georgia;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  letter-spacing: 2px;
+  opacity: 0.6;
+}
+
+section::before {
+  content: '';
+  margin-top: 56px;
+}
+
+section {
+  width: 1080px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#section1,
+#section3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.section-title {
+  width: 1050px;
+  height: 60px;
+  background-color: #f6f5ef;
+
+  padding-top: 8px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.section-title h2 {
+  color: #333;
+  font-family: Avenir, Arial, georgia;
+  font-size: 16px;
+
+  margin-left: 24px;
+}
+
+.section-title img {
+  height: 30px;
+
+  margin: 9px 9px 9px 15px;
+}
+
+.section-title p {
+  color: #333;
+  font-family: Avenir, Arial, georgia;
+  font-size: 14px;
+}
+
+#section2,
+#section4 {
+  width: 100%;
+
+  margin: 0;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  position: relative;
+  left: 15px;
+}
+
+.section-items {
+  width: 240px;
+
+  margin-top: 4px;
+  margin-inline-end: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.section-items img {
+  width: 100%;
+}
+
+.section-items h3 {
+  color: #333;
+  font-family: Avenir, Arial, georgia;
+  font-size: 16px;
+  font-weight: 450;
+  text-decoration: none;
+  text-align: center;
+
+  margin: 12px 0 20px 0;
+}
+
+.section-items i {
+  margin-left: 6px;
+
+  cursor: pointer;
 }

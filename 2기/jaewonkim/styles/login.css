@@ -3,13 +3,17 @@
 }
 
 body {
-  background-color: #EEEFEF;
+  background-color: #eeefef;
+}
+
+header {
+  display: none;
 }
 
 section {
   width: 420px;
   height: 480px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 
   padding: 40px 60px;
   border: 2px solid lightgray;
@@ -37,7 +41,8 @@ form {
   justify-content: space-between;
 }
 
-form input, form button {
+form input,
+form button {
   height: 40px;
 
   padding-left: 10px;
@@ -45,7 +50,7 @@ form input, form button {
 
 form input {
   font-size: 14px;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   opacity: 0.8;
 
   border: 1px solid lightgray;
@@ -56,7 +61,7 @@ form button {
   color: white;
   font-size: 16px;
   font-weight: bold;
-  background-color: #0095F6;
+  background-color: #0095f6;
   opacity: 0.6;
 
   border: 0;
@@ -65,11 +70,14 @@ form button {
   cursor: pointer;
 }
 
-div#login-lost {
-  color: #0095F6;
+a#lost {
+  color: #0095f6;
   font-size: 15px;
   font-weight: bold;
   text-align: center;
+  text-decoration: none;
 
   margin-top: 90px;
+
+  display: block;
 }
