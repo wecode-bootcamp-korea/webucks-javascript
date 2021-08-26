@@ -46,7 +46,7 @@
                         <h2>제주 비자림 콜드 브루<br>
                             <span>Jeju Forest Cold Brew</span>
                         </h2>
-                        <i id="like" class="far fa-heart fa-lg"></i>
+                        <button class="likeArea"><i id="like" class="far fa-heart fa-lg"></i></button>     
                     </div>
                     <p class="description">
                         [제주지역 한정음료] 제주 천년의 숲 비자림을 연상시키는<br>
@@ -95,8 +95,13 @@
                     </div>
                     <div class="review">
                         <h3>리뷰</h3>
-                        <div class="comments"></div>
-                        <input type="text" placeholder="리뷰를 입력해주세요">
+                        <div class="comments">
+                            <div class="commentsBox"></div>
+                        </div>
+                        <div class="pushBox"> 
+                            <input class="reviewText" type="text" placeholder="리뷰를 입력해주세요" required>
+                            <button class="push">POST</button>
+                        </div>
                     </div>
                 </div>
             </section>

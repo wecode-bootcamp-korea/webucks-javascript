@@ -97,14 +97,16 @@ main {
     font-size: small;
 }
 
-#like {
-    color: rgb(223, 223, 223);
-    cursor: grab;
-    transition: 0.2s;
+.likeArea {
+    border-style: none;
+    background-color: transparent;
+    font-size: 25px;
 }
 
-#like:hover {
-    color: rgb(245, 169, 169);
+.fa-heart {
+    color: rgb(126, 125, 125);
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 .description {
@@ -169,19 +171,38 @@ main {
 }
 
 .review h3 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding-bottom: 10px;
     border-bottom: 1px solid #dddddd;
     font-size: 20px;
 }
 
-.review input {
-    width: 100%;
+.comment {
+    text-decoration: none;
+}
+
+.pushBox {
+    display: flex;
+}
+
+.pushBox input {
+    width: 80%;
     margin-top: 10px;
     padding: 12px 8px;
     background-color: #efefef;
     border-style: none;
     border-radius: 3px;
+    outline: none;
+}
+
+.pushBox .push {
+    width: 20%;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-style: none;
+    border-radius: 3px;
+    background-color: rgba(170, 170, 170, 0.315);
+    cursor: pointer;
 }
 
 footer {
@@ -238,6 +259,9 @@ footer {
     }
     .coffeeInfo {
         flex-direction: column;
+    }
+    .likeArea {
+        width: 45px;
     }
     footer {
         display: flex;

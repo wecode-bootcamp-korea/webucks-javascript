@@ -70,23 +70,7 @@ main {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-@media (min-width: 800px) and (max-width:1000px) {
-    .coffeeList {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
 
-@media screen and (max-width: 800px) {
-    li {
-        font-size: smaller;
-    }
-    .category {
-        flex-wrap: wrap;
-    }
-    .coffeeList {
-        grid-template-columns: 1fr 1fr ;
-    }
-}
 
 .coffee {
     margin: 10px;
@@ -98,6 +82,36 @@ main {
     padding-bottom: 100%;
     overflow: hidden;
 }
+
+.checkbox-wrap {
+    position:absolute;
+    color: white;
+    background-color: transparent;
+    border-style: none;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 0;
+    font-size: 25px;
+}
+
+input[type='checkbox'] {
+    display: none;
+}
+
+.heart_checked {
+    opacity: 0;
+}
+ 
+label,input,.fa-heart {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+}
+  
+label>input[type="checkbox"]:checked~.heart_checked {
+    display: block;
+    opacity: 1;
+}  
 
 .coffee img {
     position: absolute;
@@ -119,4 +133,22 @@ main {
     margin-top: 20px;
     margin-bottom: 25px;
     text-align: center;
+}
+
+@media (min-width: 800px) and (max-width:1000px) {
+    .coffeeList {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    li {
+        font-size: smaller;
+    }
+    .category {
+        flex-wrap: wrap;
+    }
+    .coffeeList {
+        grid-template-columns: 1fr 1fr ;
+    }
 }

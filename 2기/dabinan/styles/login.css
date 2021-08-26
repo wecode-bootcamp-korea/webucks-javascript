@@ -2,6 +2,7 @@
 
 * {
     box-sizing: border-box;
+    outline:none;
 }
 
 body {
@@ -33,6 +34,9 @@ body {
     display: flex;
     flex-direction: column;
 }
+.loginForm:valid .button {
+    background: #72bd2c;
+}
 .box {
     width: 300px;
     height: 37px;
@@ -42,6 +46,7 @@ body {
     background-color: #f7f7f7;
     border: 2px solid #dddddd;
     border-radius: 5px;
+    outline: none;
 }
 
 .pwdBox {
@@ -52,7 +57,7 @@ body {
     position: absolute;
     right: 10px;
     top: 10px;
-    color: gray;
+    color: rgb(180, 179, 179);
     cursor: pointer;
 }
 

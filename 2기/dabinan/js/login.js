@@ -1,6 +1,8 @@
 const pwd = document.querySelector('#pwd');
-const user = cocument.querySelector('#user');
+const user = document.querySelector('#user');
 const btn = document.querySelector('.loginBtn');
+
+let isValid = [false, false];
 
 const validateEmail = (id) => {
     let letters = /^([a-z0-9_]){6,}$/;
@@ -20,51 +22,56 @@ const validatePassword = (password) => {
     }
 }
 
-const changeGreen = (input) => {
-    input.style.borderColor = "green";
-}
-
-const disableButton = () => {
-    btn.setAttribute("disabled")
+const enableButton = (arr) => {
+    if (arr[0] && arr[1]) {
+    btn.removeAttribute("disabled")
+    btn.style.backgroundColor = "#2F8BE9";
+  } else {
+    btn.setAttribute("disabled", true);
     btn.style.backgroundColor = "#add3ea";
   }
-
-const enableButton = () => {
-    btn.removeAttribute("disabled")
-    btn.style.backgroundColor = "#72bd2c";
-  }
-
-const move = () => {
-    location.href = "list.html"
+}
+//green
+const green = (x, y) => {
+    if (x) {
+        y.style.borderColor = "#2E865A";
+    } else {
+        y.style.borderColor = "##dddddd"
+    }
 }
 
 //email or password valid -> change green
 document.addEventListener('input', () => {
-    if(validateEmail(user.value)) {
-        changeGreen(user);
-    }else if(validatePassword(pwd.value)) {
-        changeGreen(pwd);
-    }else if(validateEmail(user.value) && validatePassword(pwd.value)) {
-        disableButton();
-    }
+    isValid[0] = validateEmail(user.value) ? true : false;
+    isValid[1] = validatePassword(pwd.value) ? true : false;
+    enableButton(isValid);
+    green(isValid[0], user);
+    green(isValid[1], pwd);
 })
 
-btn.addEventListener('click',()=>{
-    if(document.btn.disabled = false) {
-        move();
-    }
+//move to list page
+btn.addEventListener('click',(e)=>{
+    e.preventDefault();
+    window.location.href = "/list.html"
 })
-
 
 //password hide-show
-const eye = document.querySelector('#icon i');
-eye.addEventListener('click', () => {
+const icon = document.querySelector('.icon');
+let click = 0;
+
+icon.addEventListener('click', () => {
+
+    const eye = document.querySelector('#eye');
+
+    click += 1;
+
     if (pwd.type === "password") {
-      pwd.type = "text";
-      eye.className = "far fa-eye-slash";
+        pwd.setAttribute("type", "text");
+        eye.classList.remove('fa-eye');
+        eye.classList.add('fa-eye-slash');
     } else {
-      pwd.type = "password";
-      eye.className = "far fa-eye";
+        pwd.setAttribute("type", "password");
+        eye.classList.add('fa-eye');
+        eye.classList.remove('fa-eye-slash');
     }
 })
-
