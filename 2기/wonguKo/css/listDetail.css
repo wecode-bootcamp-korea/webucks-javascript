@@ -165,12 +165,22 @@
 }
 
 .fa-trash-alt {
-  margin-left: 0.3rem;
+  margin-left: 0.5rem;
   font-size: 0.9rem;
   color: red;
 }
 
-#removeBtn:hover {
+.fa-trash-alt:hover {
+  cursor: pointer;
+}
+
+.fa-thumbs-up {
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+  color: #c8c9c4;
+}
+
+.fa-thumbs-up {
   cursor: pointer;
 }
 
