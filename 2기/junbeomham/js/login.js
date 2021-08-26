@@ -1,6 +1,7 @@
 const userId = document.querySelector('#userId');
 const userPw = document.querySelector('#userPw');
 const loginBtn = document.querySelector('#loginBtn');
+const btnShowHidePw = document.querySelector('#pw-btn');
 
 let validUserId = false;
 let validUserPw = false;
@@ -11,6 +12,11 @@ let validUserPw = false;
 function checkValidId(input) {
     const emailRegExp = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[0-9a-zA-Z]{2,5}$/i;
     validUserId = input.match(emailRegExp) != null ? true : false;
+    if(validUserId) {
+        userId.style.borderColor = "green";
+    } else {
+        userId.style.borderColor = "";
+    }
     validateLoginBtn();
 }
 
@@ -18,7 +24,13 @@ function checkValidId(input) {
     비밀번호 유효성 체크 메소드 - 조건: 8글자 이상
 */
 function checkValidPw(input) {
-    validUserPw = input.length >= 8;
+    const pwRegExp = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
+    validUserPw = input.match(pwRegExp) != null ? true : false;
+    if(validUserPw) {
+        userPw.style.borderColor = "green";
+    } else {
+        userPw.style.borderColor = "";
+    }
     validateLoginBtn();
 }
 
@@ -44,4 +56,24 @@ userPw.addEventListener('keyup', () => { checkValidPw(userPw.value); });
 */
 loginBtn.addEventListener('click', function(e) {
     document.cookie = `userId=${userId.value};`;
+});
+
+/*
+    비밀번호 입력칸 show, hide 버튼에 따라 비밀번호 보이기, 안 보이기 기능
+*/
+
+btnShowHidePw.addEventListener('click', () => {
+    if(btnShowHidePw.innerHTML === "show") {
+        userPw.setAttribute('type', 'text');
+        btnShowHidePw.innerHTML = "hide";
+        btnShowHidePw.style.color = "#3795f6"
+        btnShowHidePw.style.backgroundColor = "white";
+        userPw.focus();
+    } else {
+        userPw.setAttribute('type', 'password');
+        btnShowHidePw.innerHTML = "show";
+        btnShowHidePw.style.color = ""
+        btnShowHidePw.style.backgroundColor = "";
+        userPw.focus();
+    }
 });
