@@ -3,22 +3,44 @@
 }
 
 
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+#total{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+#sub{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.flex{ /*태그에서 공통사용*/
+    display: flex;
+}
+
 
 /*상단 navbar*/
-.navbar { 
+#navbar { 
     display: flex;
+    align-self: center;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
-    height: 60px;
+    margin-top: 10px;
+    width: 1000px;
+    height: 70px;
     background-color: #F6F5F0;
     box-shadow: 0.5px 0.5px 15px 10px #EEEFEF;
-    overflow: hidden;
 }
 
-.navbar-flex{ /*태그에서 공통사용*/
-    display: flex;
-}
+
 
 .navbar-img {/*태그에서 공통사용*/
     width: 35px;
@@ -26,12 +48,12 @@
 }
 
 /*상단 navbar 로고*/
-.navbar .navbar-flex .navbar-img{ 
+#navbar .flex .navbar-img{ 
     margin-top: 10px;
     margin-left: 10px;
 }
 
-.navbar .navbar-flex h1 {
+#navbar .flex h1 {
     margin-left: 15px;
     font-size: 22px;
     font-family: 'Dancing Script', cursive;
@@ -46,3 +68,167 @@
     font-size: 12px;
     color: #C0C0BA;
 }
+
+
+/*경로표시 route*/
+#menu-route {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 10px;
+    color: #C0C0BA;
+}
+
+
+
+
+/*중단 상세설명*/
+
+#main{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    width: 1000px;
+    margin-top: 20px;
+}
+
+
+
+.item{
+    display: flex;
+    justify-content: center;
+}
+
+
+.item .item-img{
+    width: 450px;
+    height: 460px;
+    margin-right: 50px;
+}
+
+
+.item .item-content{
+    width: 500px;
+}
+
+/*item-content 부분중 top*/
+.item-nav{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+
+.item-nav .item-title h3 {
+    margin: 0;
+}
+.item-nav .item-title p {
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+
+.item-nav .heart-icon {
+    display: flex;
+    align-self: center;
+    margin-right: 20px;
+}
+
+#content-font-size {
+    font-size: 13px;
+}
+
+
+/*item-content 부분중 middle*/
+.table-header{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    width: 305px;
+}
+
+
+.list-style{
+    list-style: none;
+    padding: 5px;
+    margin-top: 7px;
+}
+
+.list-style li {
+    font-size: 12px;
+}
+
+.list-style li:not(:last-child){
+    margin-bottom: 11px;
+}
+
+.table-footer {
+    background-color: #F4F4F2;
+    padding: 12px;
+}
+
+.table-footer p {
+    font-size: 10px;
+    margin: 0;
+}
+
+
+/*item-content 부분중 botton*/
+.content-footer h5 {
+    border-bottom: 1px solid black;
+    margin: 25px 0 0 0;
+}
+
+.review-text{
+    font-size: 8px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+
+.content-footer .reveiw-box {
+    background-color: #F4F4F2;
+    padding: 5px;
+    font-size: 8px;
+    color: #C0C0BA;
+}
+
+
+
+#footer{
+    background-color: #333333;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+.footer-list .footer-menu{
+}
+
+#footer-title {
+    font-size: 15px;
+}
+
+
+
+.footer-list .footer-menu li {
+    list-style: none;
+    font-size: 5px;
+    color: white;
+}
+
+.footer-list .footer-menu li:not(:first-child){
+    margin-top: 8px;
+}
+
+
