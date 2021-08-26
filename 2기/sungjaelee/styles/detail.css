@@ -1,0 +1,173 @@
+.container {
+  width: 1120px;
+  margin: 0 auto 100px;
+  /* background-color: yellow; */
+  /* border: 1px solid black; */
+}
+
+nav {
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  padding: 0 17px;
+  background-color: #f6f5ef;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+nav,
+header {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+header h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.directory {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #959595;
+}
+
+.productInfoContainer {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.imageContainer {
+  /* width: 45%; */
+  margin-right: 20px;
+  /* border: 10px solid blue; */
+  overflow: hidden;
+}
+
+.imageContainer img {
+  display: block;
+  width: 100%;
+}
+
+.detailsContainer {
+  position: relative;
+  flex-grow: 1;
+  width: 55%;
+
+  /* background-color: red; */
+}
+
+.likeBtn {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  padding: 0 0 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+}
+
+.titleInEnglish {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.description {
+  padding: 20px 0;
+  border-bottom: 2px solid #efefef;
+}
+
+.nutritionInfoHead {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+  border-bottom: 2px solid #efefef;
+}
+
+.nutritionInfoContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 70px;
+  padding: 20px 0;
+}
+
+.nutritionLabel {
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  padding: 0 10px;
+  border-right: 0.5px dotted #efefef;
+}
+
+.allergyInfo {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #efefef;
+}
+
+.reviewHeader {
+  padding-bottom: 5px;
+  /* background-color: grey; */
+  border-bottom: 1px solid #efefef;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.reviews {
+  margin-top: 10px;
+}
+
+.review {
+  display: flex;
+  padding: 3px 0;
+}
+
+.review span {
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.review p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#newReview {
+  margin-top: 10px;
+  padding: 7px;
+  background-color: #efefef;
+  border: none;
+  font-size: 12px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0px;
+  background-color: #333333;
+  color: white;
+}
+
+.options {
+  margin-top: 10px;
+}
+
+.options p {
+  padding: 5px 0;
+}

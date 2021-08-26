@@ -1,5 +1,7 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"); */
-/* delete import above */
+body {
+  font-family: nbg, "맑은 고딕", HelveticaNeue, DroidSans, sans-serif, Helvetica;
+  font-size: 12px;
+}
 
 button {
   width: 100%;
@@ -10,8 +12,23 @@ button {
   border-radius: 7px;
 }
 
+.navItemsContainer {
+  display: flex;
+}
+
+.navItemsContainer li {
+  padding-left: 30px;
+  color: #b3b3ae;
+  font-family: Avenir, Arial, georgia;
+  font-size: 14px;
+}
+
 .logo {
-  /* background-color: red; */
-  font-family: "Dancing Script", cursive; /* delete later */
+  font-size: 20px;
   cursor: pointer;
+}
+
+::placeholder {
+  font-family: nbg, "맑은 고딕", HelveticaNeue, DroidSans, sans-serif, Helvetica;
+  font-size: 12px;
 }

@@ -4,16 +4,10 @@ body {
   padding-top: 100px;
   box-sizing: border-box;
   background-color: #eeefef;
-  font-family: Arial, serif;
-  font-size: 12px;
 }
 
 form {
   padding-top: 30px;
-}
-
-form ::placeholder {
-  font-size: 12px;
 }
 
 .logo {
@@ -34,7 +28,7 @@ form ::placeholder {
   background-color: #fff;
 }
 
-.loginBox input {
+input {
   width: 100%;
   margin-bottom: 13px;
   padding: 8px 6px;
