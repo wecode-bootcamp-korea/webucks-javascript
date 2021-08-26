@@ -4,26 +4,31 @@
     box-sizing: border-box;
 }
 
-.navbar {
+
+
+/*상단 navbar*/
+.navbar { 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #F6F5F0;
     margin-bottom: 20px;
     height: 60px;
+    background-color: #F6F5F0;
     box-shadow: 0.5px 0.5px 15px 10px #EEEFEF;
+    overflow: hidden;
 }
 
-.navbar-flex{
+.navbar-flex{ /*태그에서 공통사용*/
     display: flex;
 }
 
-.navbar-img {
+.navbar-img {/*태그에서 공통사용*/
     width: 35px;
     height: 35px;
 }
 
-.navbar .navbar-flex .navbar-img{
+/*상단 navbar 로고*/
+.navbar .navbar-flex .navbar-img{ 
     margin-top: 10px;
     margin-left: 10px;
 }
@@ -36,7 +41,7 @@
 
 
 
-
+/*상단 navbar 메뉴*/
 #navbar-menu li {
     margin-right: 20px;
     list-style: none;
@@ -45,11 +50,12 @@
 }
 
 
-
-
+/*메인 navbar*/
  .navbar-sub {
     display: flex;
     justify-content: flex-start;
+    margin-top: 50px;
+    width: 90%;
     box-shadow: 0.5px 0.5px 15px 10px #EEEFEF;
 }
 
@@ -57,25 +63,28 @@
     font-size: 12px;
 }
 
-
-
 .navbar-sub p {
     font-size: 10px;
     font-weight: bold;
 }
 
-.navbar-sub .navbar-sub-item:not(:last-child){
+.navbar-sub .navbar-sub-menu:not(:last-child){
     margin-left: 15px;
 }
 
 
-.drink-items {
+
+
+/*메인 메뉴 리스트*/
+.menu-list{
     display: flex;
     flex-wrap: wrap;
 }
 
 
-.drink-items .drink-item {
+
+/*메인 각 메뉴*/
+.menu-list .menu{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,16 +92,20 @@
     height: 350px;
     margin: 15px;
     box-shadow: 0.5px 0.5px 15px 10px #EEEFEF;
+    overflow:hidden;
 }
 
-
-.drink-item .coffee-img{
+.menu .menu-img{
     margin: 0;
     width: 210px;
     height: 300px;
 }
 
-.drink-item p{
+.menu .menu-img:hover{
+    width: 250px;
+}
+
+.menu p{
     margin: 5px 0 5px 0;
     font-family: 'Dancing Script', cursive;
     font-weight: bold;
