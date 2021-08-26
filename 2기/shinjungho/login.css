@@ -1,47 +1,71 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
-
 
 * {
     box-sizing: border-box;
     border-radius: 5px;
-    border-width: 1px;
-    border-color: #D5D5D5;
-    align-items: center;   
+}
+body{
+    background-color: gainsboro;
+}
+.header{
+    height: 20%;
+}
+.login-container{
+    height: 60%;
+}
+.footer{
+    height: 20%;
+}
+.WeBucks{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin: auto;
+    background-color: white;
+    border: 1px solid;
+    width: 500;
+    height: 700px;
 }
 
-.WeBucks{
+h1 {
     font-family: 'Dancing Script', cursive;
+    font-size: 70px;
+    font-weight: bolder;
     text-align: center;
-    font-size: 60px;
 }
 
 .login-container {
     width: 400px;
     margin: 20px auto;
   }
-  
+
+  .loginBox{
+    margin-top: 60px;
+
+  }
+
   .login-container input {
-    width: 100%;
-    height: 45px;
-    margin-bottom: 30px;
-    padding-left: 10px;
+    display: block;
+    width: 400px;
+    height: 50px;
+    padding: 10px;
+    margin: 20px 0px;
   }
 
 .login-btn {
     width: 400px;
-    height: 45px;
+    height: 50px;
     text-align: center;
     font-size: 14px;
     background-color: #B2EBF4;
     color: white;
 }
 
-.forgot{
-    font-size: small;
-    text-align: center;
-    text-align: flex-end;
-    color : #3DB7CC;
+.footer{
+    height: 20%;
+    color: #B2EBF4;
+    align-self: left;
+    align-items: center;
 }
 
 
@@ -51,3 +75,4 @@ cursor: pointer;
 opacity: 0.85;
 }
 */
+

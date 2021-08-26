@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,25 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeBucks clone</title>
     <link rel="stylesheet" href="login.css">
-    <script src="login.js"></script>
+    
 </head>
 <body>
-    <form name="login-box" action="#">
-        <section class="WeBucks">
+    <section class="WeBucks">
+        <div class='header'>    
             <h1>WeBucks</h1>
-        </section>
+        </div>
             <div class='login-container'>
-                
-                <input type="id" id="id" placeholder="전화번호, 사용자 이름 또는 이메일"/>
+                <form class='loginBox' name="login-box" action="#">
 
-                <input type="password" id="password" placeholder="비밀번호"/>   
+                    <input type="text" id="id" placeholder="전화번호, 사용자 이름 또는 이메일"/>
 
-                <button class="login-btn">로그인</button>
-            </div>       
-    </form>
+                    <input type="password" id="password" placeholder="비밀번호"/>   
 
-    <div class='forgot'>
-        <a>비밀번호를 잊으셨나요?</a>
-    </div>
+                    <button class="login-btn">로그인</button>
+                </form>
+            </div>    
+            <div class='footer'>
+                <p>비밀번호를 잊으셨나요?</p>
+            </div>   
+    </section>  
+    <script src="./login.js"></script> 
 </body>
 </html>
