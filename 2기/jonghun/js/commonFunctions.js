@@ -1,7 +1,7 @@
 class CommonData {
   constructor(dataName) {
     this.dataName = dataName;
-    this.initData = JSON.parse(localStorage.getItem(this.dataName));
+    this.initData = JSON.parse(localStorage.getItem(this.dataName)) || [];
   }
 
   loadData() {
@@ -20,6 +20,12 @@ class CommonData {
       item.isGetHeart = false;
       return item;
     });
+  }
+
+  createData(data) {
+    this.initData.push(data);
+    this.saveData(this.initData);
+    return this.initData;
   }
 
   saveData(data) {
@@ -41,7 +47,7 @@ class CommonData {
   }
 
   deleteByIndex(index) {
-    this.saveData(this.initData.filter((item) => item.index !== index));
+    this.saveData(this.initData.filter((_, idx) => idx !== index));
   }
 }
 
@@ -52,12 +58,63 @@ class Paint {
     }
   }
 
-  detailPainter(data, title, img, heart1, heart2, isLike) {
+  paintComment(data) {
+    data ||= [];
+    const tags = data.map((item, index) => {
+      const { writer, desc, isGetHeart } = item;
+      const emptyHeartId = `comments__heart1-${index}`;
+      const fullHeartId = `comments__heart2-${index}`;
+      const deleteId = `comments__delete-${index}`;
+      return `
+        <div class="detail__comment">
+          <span class="comment__writer">${writer}</span>
+          <span class="comment__desc">${desc}</span>
+          <div class="hearts">
+            <i class="far fa-heart heart-empty ${isGetHeart && "none"}"
+            id=${emptyHeartId}></i>
+            <i class="fas fa-heart red heart-full ${isGetHeart && "show"}"
+            id=${fullHeartId}></i>
+          </div>
+          <button class="del-btn" id=${deleteId}>❌</button>
+        </div>`;
+    });
+
+    this["detail__comments"].innerHTML = tags.join("");
+
+    data.forEach((_, index) => {
+      const emptyHeartId = `comments__heart1-${index}`;
+      const fullHeartId = `comments__heart2-${index}`;
+      const deleteId = `comments__delete-${index}`;
+
+      const delBtn = document.getElementById(deleteId);
+      delBtn.addEventListener("click", function () {
+        this.parentElement.remove();
+        const commentRepo = new CommonData("comments");
+        commentRepo.deleteByIndex(index);
+      });
+      new AddHeartListener(emptyHeartId, fullHeartId);
+    });
+  }
+
+  detailPainter(data, title, img, heart1, heart2, isLike, form, input) {
     this[title].innerText = data.title;
     this[img].src = data.img;
     this.paintOnlyHeart([heart1, heart2], isLike);
-
     new AddHeartListener(heart1, heart2);
+    const commentRepo = new CommonData("comments");
+    this[form].addEventListener("submit", (e) => {
+      e.preventDefault();
+      commentRepo.createData({
+        writer: "일단익명",
+        desc: this[input].value,
+        isGetHeart: false,
+      });
+      this[input].value = "";
+
+      this.paintComment(commentRepo.initData);
+    });
+
+    this.paintComment(commentRepo.initData);
   }
 
   coffeePainter(data, parentElementId) {
@@ -95,6 +152,7 @@ class Paint {
         const detailRepo = new CommonData("detail");
         const coffeeRepo = new CommonData(parentElementId);
         const detailData = coffeeRepo.findByIndex(index);
+
         detailData.cate = parentElementId;
         detailData.index = index;
         detailRepo.saveData([detailData]);
@@ -140,7 +198,6 @@ class AddHeartListener {
     const index = this.id.split("-").pop();
     const saveName = this.id.slice(0, this.id.indexOf("_"));
     const repository = new CommonData(saveName);
-
     const isLike = repository.findByIndex(index)["isGetHeart"];
     repository.updateOne("isGetHeart", !isLike, index);
 
@@ -149,12 +206,20 @@ class AddHeartListener {
       newRepo.updateOne("isGetHeart", !isLike, repository.initData[0].index);
     }
 
+    const repoNames = [];
+    if (saveName !== "comments") {
+      repoNames.push("coffees1");
+      repoNames.push("coffees2");
+    } else {
+      repoNames.push("comments");
+    }
+
     const childrenId = [];
     for (let item of this.parentElement.children) {
       childrenId.push(item.id);
     }
 
-    const painter = new Paint(["coffees1", "coffees2"]);
+    const painter = new Paint(repoNames);
     painter.paintOnlyHeart(childrenId, !isLike);
   }
 }
