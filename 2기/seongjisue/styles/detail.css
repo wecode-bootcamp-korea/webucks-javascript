@@ -122,6 +122,11 @@ body {
     margin-right: 20px;
 }
 
+.item-nav .heart-icon:hover {
+    cursor: pointer;
+    opacity: 0.8;
+} 
+
 #content-font-size {
     font-size: 13px;
 }
@@ -185,10 +190,12 @@ body {
 }
 
 .content-footer .reveiw-box {
-    padding: 5px;
+    padding: 7px;
     background-color: #F4F4F2;
     font-size: 8px;
     color: #C0C0BA;
+    border: none;
+    width: 100%;
 }
 
 
