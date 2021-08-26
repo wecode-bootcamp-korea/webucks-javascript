@@ -24,6 +24,9 @@ body {
   padding-top: 75px;
 }
 
+/*
+    HEADER STYLING
+*/
 header {
   position: fixed;
   display: flex;
@@ -65,12 +68,49 @@ nav ul li {
   list-style: none;
 }
 
+/*
+    FOOTER STYLING
+*/
+footer {
+  width: 100%;
+  background-color: #2c2a29;
+}
+
+.footer-menus {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px auto;
+  padding: 10px 50px;
+  color: white;
+}
+
+.footer-menus ul li {
+  list-style: none;
+}
+
+.footer-menu-title {
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.footer-menu-content {
+  margin-bottom: 6px;
+  font-size: 12px;
+}
+
+footer a {
+  color: #f6f5ef;
+  text-decoration: none;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   width: 60%;
-  margin-top: 30px;
+  margin: 30px auto;
 }
 
 .title-wrap {

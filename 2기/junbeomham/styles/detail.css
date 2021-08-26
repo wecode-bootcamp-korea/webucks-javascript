@@ -1,0 +1,106 @@
+/*
+  *** Recommended Layout Order ***
+      (Refactoring Guide)
+  1. Layout Properties (position, float, clear, display)
+  2. Box Model Properties (width, height, margin, padding)
+  3. Visual Properties (color, background, border, box-shadow)
+  4. Typography Properties (font-size, font-family, text-align, text-transform)
+  5. Misc Properties (cursor, overflow, z-index)
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 75px;
+}
+
+/*
+    HEADER STYLING
+*/
+header {
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 20%;
+  width: 60%;
+  height: 75px;
+  padding: 0px 20px;
+  background-color: #f6f5ef;
+  box-shadow: 10px 10px 20px lightgray;
+}
+
+.logo-wrap {
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  text-align: center;
+}
+
+header a {
+  color: black;
+  text-decoration: none;
+}
+
+nav {
+  min-width: 50%;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav ul li {
+  padding: 5px;
+  list-style: none;
+}
+
+/*
+    FOOTER STYLING
+*/
+footer {
+  width: 100%;
+  background-color: #2c2a29;
+}
+
+.footer-menus {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px auto;
+  padding: 10px 50px;
+  color: white;
+}
+
+.footer-menus ul li {
+  list-style: none;
+}
+
+.footer-menu-title {
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.footer-menu-content {
+  margin-bottom: 6px;
+  font-size: 12px;
+}
+
+footer a {
+  color: #f6f5ef;
+  text-decoration: none;
+}
