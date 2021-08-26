@@ -34,7 +34,12 @@ function validIdAndPassword() {
 
 function loginSubmit(e) {
   e.preventDefault();
+  userInfoSave(loginId.value);
   window.location.href = "./list.html";
+}
+
+function userInfoSave(id) {
+  new CommonData("users").createData({ id });
 }
 
 function idValidation(id) {

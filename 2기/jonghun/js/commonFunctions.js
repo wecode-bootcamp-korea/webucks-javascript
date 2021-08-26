@@ -25,7 +25,6 @@ class CommonData {
   createData(data) {
     this.initData.push(data);
     this.saveData(this.initData);
-    return this.initData;
   }
 
   saveData(data) {
@@ -102,6 +101,7 @@ class Paint {
     this.paintOnlyHeart([heart1, heart2], isLike);
     new AddHeartListener(heart1, heart2);
     const commentRepo = new CommonData("comments");
+
     this[form].addEventListener("submit", (e) => {
       e.preventDefault();
       commentRepo.createData({
@@ -114,7 +114,16 @@ class Paint {
       this.paintComment(commentRepo.initData);
     });
 
-    this.paintComment(commentRepo.initData);
+    if (confirmLogin()) {
+      this.paintComment(commentRepo.initData);
+      this[input].readonly = false;
+    } else {
+      this[input].readonly = true;
+      this[input].addEventListener("click", function () {
+        alert("로그인을 해야 이용할 수 있는 기능입니다.");
+        window.location.href = "./login.html";
+      });
+    }
   }
 
   coffeePainter(data, parentElementId) {
@@ -222,4 +231,8 @@ class AddHeartListener {
     const painter = new Paint(repoNames);
     painter.paintOnlyHeart(childrenId, !isLike);
   }
+}
+
+function confirmLogin() {
+  return !!localStorage.getItem("users");
 }
