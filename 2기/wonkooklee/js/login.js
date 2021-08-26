@@ -1,3 +1,7 @@
+'use strict';
+
+// Login Validation
+
 const loginValidation = (function () {
 
   const btnLogin = document.querySelector('.btn__login');

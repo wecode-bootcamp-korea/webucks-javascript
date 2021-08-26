@@ -1,4 +1,8 @@
-const detailInteraction = (function() {
+'use strict';
+
+// Comment Manipulation
+
+const manipulateComment = (function() {
   
   const validTag = document.getElementById('validTag');
   const reviewInputField = document.getElementById('review_field');
@@ -8,8 +12,8 @@ const detailInteraction = (function() {
     setTimeout(() => { validTag.style.animationName = '' }, 1500);
   }
   
-  const addComment = (e, userName='oneook', userComment) => {
-    e.preventDefault();
+  const addComment = (event, userName='oneook', userComment) => {
+    event.preventDefault();
     if (userComment.length < 10) {
       invalidAlert();
       return;
@@ -21,23 +25,27 @@ const detailInteraction = (function() {
     reviewInputField.value = '';
   }
   
-  reviewInputField.addEventListener('keypress', e => {
-    e.key === 'Enter' && addComment(e, undefined, e.target.value);
+  reviewInputField.addEventListener('keypress', (event) => {
+    event.key === 'Enter' && addComment(event, undefined, event.target.value);
   })
 
 })();
+
+
+// Delete Comment
 
 const deleteComment = (function() {
   const reviewField = document.getElementById('RvTarget');
 
-  reviewField.addEventListener('click', e => {
-    if (e.target.id !== 'closeBtn') return;
-    e.target.closest('.review_thread').remove();
+  reviewField.addEventListener('click', event => {
+    if (event.target.id !== 'closeBtn') return;
+    event.target.closest('.review_thread').remove();
   })
 
 })();
 
 
+// Relocate Page
 
 const signIn = (function() {
   
@@ -54,8 +62,6 @@ const signIn = (function() {
 })();
 
 
-
-
 // ZOOM INTERACTION
 
 const zoomImage = (function() {
@@ -64,13 +70,13 @@ const zoomImage = (function() {
   const zoomLens = document.querySelector('.zoomLens');
   const zoomWindow = document.querySelector('.zoomWindow');
 
-  function handleMouseMove(e) {
+  function handleMouseMove(event) {
 
     const {left, top} = zoomFrame.getBoundingClientRect();
     const {x:lensLeft, y:lensTop} = zoomLens.getBoundingClientRect();
 
-    const x = e.clientX - left;
-    const y = e.clientY - top;
+    const x = event.clientX - left;
+    const y = event.clientY - top;
 
     zoomLens.style.display = 'block';
     zoomWindow.style.display = 'block';
@@ -87,33 +93,51 @@ const zoomImage = (function() {
       y: y - 117 + 'px'
     }
 
-    if (x <= bor.xMin && y <= 117) {
-      zoomLens.style.left = '0';
-      zoomLens.style.top = '0';
-    } else if (x > bor.xMin && x < bor.xMax && y <= bor.yMin) {
-      zoomLens.style.left = coord.x;
-      zoomLens.style.top = '0';
-    } else if (x >= bor.xMax && y <= bor.yMin) {
-      zoomLens.style.left = '145px';
-      zoomLens.style.top = '0';
-    } else if (x <= bor.xMin && y > bor.yMin && y < bor.yMax) {
-      zoomLens.style.left = '0';
-      zoomLens.style.top = coord.y;
-    } else if (x <= bor.xMin && y >= bor.yMax) {
-      zoomLens.style.left = '0';
-      zoomLens.style.top = '236px';
-    } else if (x > bor.xMin && x < bor.xMax && y >= bor.yMax) {
-      zoomLens.style.left = coord.x;
-      zoomLens.style.top = '236px';
-    } else if (x >= bor.xMax && y >= bor.yMax) {
-      zoomLens.style.left = '145px';
-      zoomLens.style.top = '236px';
-    } else if (x >= bor.xMax && y > bor.yMin && y < bor.yMax) {
-      zoomLens.style.left = '145px';
-      zoomLens.style.top = coord.y;
-    } else {
-      zoomLens.style.left = coord.x;
-      zoomLens.style.top = coord.y;
+    switch (true) {
+
+      case (x <= bor.xMin && y <= 117) :
+        zoomLens.style.left = '0';
+        zoomLens.style.top = '0';
+        break;
+
+      case (x > bor.xMin && x < bor.xMax && y <= bor.yMin) :
+        zoomLens.style.left = coord.x;
+        zoomLens.style.top = '0';
+        break;
+
+      case (x >= bor.xMax && y <= bor.yMin) :
+        zoomLens.style.left = '145px';
+        zoomLens.style.top = '0';
+        break;
+
+      case (x <= bor.xMin && y > bor.yMin && y < bor.yMax) :
+        zoomLens.style.left = '0';
+        zoomLens.style.top = coord.y;
+        break;
+
+      case (x <= bor.xMin && y >= bor.yMax) :
+        zoomLens.style.left = '0';
+        zoomLens.style.top = '236px';
+        break;
+
+      case (x > bor.xMin && x < bor.xMax && y >= bor.yMax) :
+        zoomLens.style.left = coord.x;
+        zoomLens.style.top = '236px';
+        break;
+
+      case (x >= bor.xMax && y >= bor.yMax) :
+        zoomLens.style.left = '145px';
+        zoomLens.style.top = '236px';
+        break;
+
+      case (x >= bor.xMax && y > bor.yMin && y < bor.yMax) :
+        zoomLens.style.left = '145px';
+        zoomLens.style.top = coord.y;
+        break;
+
+      default :
+        zoomLens.style.left = coord.x;
+        zoomLens.style.top = coord.y;
     }
 
     zoomWindow.style.backgroundPosition = `${(lensLeft - left) * 100 / 145}% ${(lensTop - top) * 100 / 236}%`
@@ -121,10 +145,9 @@ const zoomImage = (function() {
 
   zoomFrame.addEventListener('mousemove', handleMouseMove);
 
-  zoomFrame.addEventListener('mouseleave', e => {
+  zoomFrame.addEventListener('mouseleave', () => {
     zoomLens.style.display = 'none';
     zoomWindow.style.display = 'none';
   });
-
 
 })();

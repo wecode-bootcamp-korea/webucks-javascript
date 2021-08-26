@@ -1,8 +1,6 @@
-/* MAIN */
 
-* {
-  box-sizing: border-box;
-}
+
+/* GLOBAL */
 
 body {
   width: 100vw;
@@ -28,10 +26,8 @@ section.login {
   text-align: center;
 }
 
-div.applink {
-  height: 102px;
-}
 
+/* HEADER */
 
 h1 {
   position: relative;
@@ -41,6 +37,9 @@ h1 {
   font-size: 42px;
   margin: 37px 0 37px 0;
 }
+
+
+/* USER AUTHENTICATION */
 
 form.auth {
   position: relative;
@@ -85,6 +84,9 @@ section.login button {
   border-radius: 3px;
 }
 
+
+/* TOGGLE PASSWORD VISIBILITY */
+
 #icon {
   position: absolute;
   opacity: 0;
@@ -118,6 +120,9 @@ section.login button:disabled {
   cursor: default;
 }
 
+
+/* DIVIDER */
+
 .divider {
   position: relative;
   font-size: 13px;
@@ -141,6 +146,9 @@ section.login button:disabled {
   color: #8E8E8E;
   width: 60px;
 }
+
+
+/* FACEBOOK LOGIN */
 
 h2.facebook__login {
   margin-top: 32px;
@@ -177,7 +185,7 @@ p.forget a {
 }
 
 
-/* 계정이 없으신가요? */
+/* SIGN UP */
 
 section.signup {
   height: 63px;
@@ -196,7 +204,8 @@ section.signup p a {
   font-weight: 600;
 }
 
-/* 앱을 다운로드하세요 */
+
+/* APP Download */
 
 div.applink {
   margin-top: 10p;

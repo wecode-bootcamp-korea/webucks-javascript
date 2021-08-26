@@ -1,3 +1,5 @@
+'use strict';
+
 const listModule = (function() {
   
   const signIn = document.querySelector('.sign_in');
