@@ -36,6 +36,7 @@ header {
   top: 0;
   left: 20%;
   width: 60%;
+  z-index: 1;
   height: 75px;
   padding: 0px 20px;
   background-color: #f6f5ef;
@@ -105,6 +106,10 @@ footer a {
   text-decoration: none;
 }
 
+/*
+  MAIN CONTENTS (SECTION)
+  STYLING
+*/
 .menu {
   display: flex;
   flex-direction: column;
@@ -169,10 +174,6 @@ dl {
   border-radius: 5px;
   overflow: hidden;
 }
-
-/* .itme img { */
-/* transform: scale(1); */
-/* } */
 
 .item img:hover {
   cursor: pointer;
