@@ -21,11 +21,9 @@ body {
     justify-content: space-between;
 }
 
-
 .flex{ /*태그에서 공통사용*/
     display: flex;
 }
-
 
 /*상단 navbar*/
 #navbar { 
@@ -39,8 +37,6 @@ body {
     background-color: #F6F5F0;
     box-shadow: 0.5px 0.5px 15px 10px #EEEFEF;
 }
-
-
 
 .navbar-img {/*태그에서 공통사용*/
     width: 35px;
@@ -58,8 +54,6 @@ body {
     font-size: 22px;
     font-family: 'Dancing Script', cursive;
 }
-
-
 
 /*상단 navbar 메뉴*/
 #navbar-menu li {
@@ -79,8 +73,6 @@ body {
 }
 
 
-
-
 /*중단 상세설명*/
 
 #main{
@@ -90,8 +82,6 @@ body {
     width: 1000px;
     margin-top: 20px;
 }
-
-
 
 .item{
     display: flex;
@@ -153,9 +143,9 @@ body {
 
 
 .list-style{
-    list-style: none;
     padding: 5px;
     margin-top: 7px;
+    list-style: none;
 }
 
 .list-style li {
@@ -167,8 +157,8 @@ body {
 }
 
 .table-footer {
-    background-color: #F4F4F2;
     padding: 12px;
+    background-color: #F4F4F2;
 }
 
 .table-footer p {
@@ -179,20 +169,24 @@ body {
 
 /*item-content 부분중 botton*/
 .content-footer h5 {
-    border-bottom: 1px solid black;
     margin: 25px 0 0 0;
+    border-bottom: 1px solid black;
 }
 
 .review-text{
-    font-size: 8px;
     margin-top: 8px;
     margin-bottom: 20px;
+    font-size: 8px;
 }
 
+.reveiw-id {
+    font-weight: bold;
+    font-size: 10px;
+}
 
 .content-footer .reveiw-box {
-    background-color: #F4F4F2;
     padding: 5px;
+    background-color: #F4F4F2;
     font-size: 8px;
     color: #C0C0BA;
 }
@@ -200,20 +194,16 @@ body {
 
 
 #footer{
-    background-color: #333333;
     padding-right: 200px;
     padding-left: 200px;
+    background-color: #333333;
 }
 
 .footer-list {
     display: flex;
     justify-content: space-around;
-    
 }
 
-
-.footer-list .footer-menu{
-}
 
 #footer-title {
     font-size: 15px;
