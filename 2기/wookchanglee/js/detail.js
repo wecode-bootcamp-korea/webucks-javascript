@@ -5,24 +5,18 @@ let $likes = document.querySelectorAll('.content-box__review--like');
 let $delete = document.querySelectorAll('.contnet-box__review--delete');
 
 let handleHeart = function (heart){
-  
   return function(){
   //far이 빈 하트! 만약 하트가 비어 있다면
-  if(heart.classList[0]==='far'){
-    heart.classList.replace('far','fas');
-    heart.style.color = "#f5425d"
-
-   //fas가 채워진 하트! 만약 하트가 채워져있다면
-  }else if(heart.classList[0]==='fas'){
-    heart.classList.replace('fas','far');
-    heart.style.color = "#ccc"
-  } 
-
+    if(heart.classList[0]==='far'){
+      heart.classList.replace('far','fas');
+      heart.style.color = "#f5425d"
+    //fas가 채워진 하트! 만약 하트가 채워져있다면
+    }else if(heart.classList[0]==='fas'){
+      heart.classList.replace('fas','far');
+      heart.style.color = "#ccc"
+    } 
   }
-
-
 }
-
 
 let handleDelete = function(del){
   return function(){
@@ -31,14 +25,6 @@ let handleDelete = function(del){
     parent.removeChild(son);
   }
 }
-
-
-
-//2. 내용에 키프레스-e.key===enter를 걸어준다
-//1. 아이디와 내용 모두 채워져 있어야 함
-//3. 프래그먼트를 이용해 새로운 리뷰리스트div와 그 안의 p태그 두개를 만들고,
-//   리뷰 뤱의 자식으로 준다.
-//4. 이벤트 끝나면 인풋창들을 다 지워준다
 
 let handleReview = function(e){
 
@@ -101,12 +87,8 @@ let handleReview = function(e){
     }else{
       alert('빈칸이면 리뷰를 쓸 수 없습니다🥰');
     }
-
   }
 }
-
-
-
 
 
 $heart.addEventListener('click',handleHeart($heart));

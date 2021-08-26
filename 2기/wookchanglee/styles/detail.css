@@ -206,6 +206,7 @@ header {
   border: 0;
   background-color: #efefef;
   height: 30px;
+  padding-left: 10px;
 }
 
 .content-box__review--id {
