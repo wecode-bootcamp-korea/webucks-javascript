@@ -37,16 +37,20 @@
 
 .coffeeDetailWrap {
   width: 12rem;
-  margin: 10px;
+  height: 12rem;
+  margin: 0.6rem;
+  overflow: hidden;
 }
 
 .coffeeImg {
   width: 100%;
+  height: 100%;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
 }
 
 .coffeeImg:hover {
   transform: scale(1.1);
-  transition: all 0.3s ease-in-out;
 }
 
 .coffeeTitle {

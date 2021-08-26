@@ -150,20 +150,63 @@
 .reviewDetailWrap {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  height: 1.3rem;
 }
 
 .reviewer {
   font-size: 0.9rem;
   font-weight: 900;
+  margin-right: 0.6rem;
 }
 
 .reviewDetail {
-  margin: 0 0.5rem 0.4rem 0;
-  margin-right: 0.5rem;
   font-size: 0.9rem;
 }
 
-.inputReview {
+.fa-trash-alt {
+  margin-left: 0.3rem;
+  font-size: 0.9rem;
+  color: red;
+}
+
+#removeBtn:hover {
+  cursor: pointer;
+}
+
+.commentWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inputReviewId {
+  width: 100%;
+  max-width: 8rem;
+  height: 1.4rem;
+  margin-right: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.6rem;
+  box-sizing: border-box;
+  border: none;
+  background-color: #f4f4f2;
+  margin-right: 0.5rem;
+}
+
+.inputReviewId::placeholder {
+  color: grey;
+  font-weight: 500;
+}
+
+.inputReviewId:focus {
+  outline: none;
+}
+
+.inputReviewId:focus::placeholder {
+  color: transparent;
+}
+
+.inputReviewText {
   width: 100%;
   height: 1.4rem;
   margin-top: 1rem;
@@ -171,19 +214,31 @@
   box-sizing: border-box;
   border: none;
   background-color: #f4f4f2;
+  margin-right: 0.5rem;
 }
 
-.inputReview::placeholder {
+.inputReviewText::placeholder {
   color: grey;
   font-weight: 500;
 }
 
-.inputReview:focus {
+.inputReviewText:focus {
   outline: none;
 }
 
-.inputReview:focus::placeholder {
+.inputReviewText:focus::placeholder {
   color: transparent;
+}
+
+.ReviewSubmit {
+  width: 4rem;
+  height: 1.5rem;
+  margin-top: 1rem;
+  font-weight: 600;
+  border: none;
+}
+.ReviewSubmit:hover {
+  cursor: pointer;
 }
 
 footer {

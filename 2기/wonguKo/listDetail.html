@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/listDetail.css" />
+    <script src="/listDetail.js" defer></script>
     <title>Document</title>
   </head>
   <body>
@@ -107,28 +108,41 @@
             <div class="reviewTitle">리뷰</div>
             <hr class="line" />
             <div class="reviewWrap">
-              <div class="reviewDetailWrap">
-                <p class="reviewer">coffee_lover</p>
-                <p class="reviewDetail">너무 맛있어요</p>
+              <div class="reviewBox">
+                <div class="reviewDetailWrap">
+                  <p class="reviewer">coffee_lover</p>
+                  <p class="reviewDetail">너무 맛있어요</p>
+                  <i class="fas fa-trash-alt"></i>
+                </div>
+                <div class="reviewDetailWrap">
+                  <p class="reviewer">CHOCOJ</p>
+                  <p class="reviewDetail">
+                    오늘도 화이트 초콜릿 모카를 마시러 갑니다.
+                  </p>
+                  <i class="fas fa-trash-alt"></i>
+                </div>
+                <div class="reviewDetailWrap">
+                  <p class="reviewer">legend_dev</p>
+                  <p class="reviewDetail">
+                    진짜 화이트 초콜릿 모카는 전설이다. 진짜 화이트 초콜릿
+                    모카는 전설이다.
+                  </p>
+                  <i class="fas fa-trash-alt"></i>
+                </div>
               </div>
-              <div class="reviewDetailWrap">
-                <p class="reviewer">CHOCOJ</p>
-                <p class="reviewDetail">
-                  오늘도 화이트 초콜릿 모카를 마시러 갑니다.
-                </p>
+              <div class="commentWrap">
+                <input
+                  type="text"
+                  placeholder="ID를 입력해주세요."
+                  class="inputReviewId"
+                />
+                <input
+                  type="text"
+                  placeholder="리뷰를 입력해주세요."
+                  class="inputReviewText"
+                />
+                <button class="ReviewSubmit">입력</button>
               </div>
-              <div class="reviewDetailWrap">
-                <p class="reviewer">legend_dev</p>
-                <p class="reviewDetail">
-                  진짜 화이트 초콜릿 모카는 전설이다. 진짜 화이트 초콜릿 모카는
-                  전설이다.
-                </p>
-              </div>
-              <input
-                type="text"
-                placeholder="리뷰를 입력해주세요."
-                class="inputReview"
-              />
             </div>
           </article>
         </section>
