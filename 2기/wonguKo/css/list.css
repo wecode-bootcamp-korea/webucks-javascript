@@ -36,16 +36,20 @@
 }
 
 .coffeeDetailWrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.coffeeImgWrap {
   width: 12rem;
   height: 12rem;
-  margin: 0.6rem;
+  margin: 0.6rem 0.6rem 0.3rem 0.6rem;
   overflow: hidden;
 }
 
 .coffeeImg {
   width: 100%;
   height: 100%;
-  margin: 0;
   transition: all 0.3s ease-in-out;
 }
 
@@ -53,7 +57,21 @@
   transform: scale(1.1);
 }
 
-.coffeeTitle {
-  margin: 10px;
+.coffeeNameWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coffeeName {
+  margin: 0.5rem 0.1rem 0.5rem 0;
   text-align: center;
+  color: black;
+  font-weight: 600;
+}
+
+.fa-heart {
+  position: relative;
+  top: -0.15rem;
+  color: #c8c9c4;
 }

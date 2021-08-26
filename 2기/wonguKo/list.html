@@ -11,9 +11,16 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/list.css" />
+    <script src="/list.js" defer></script>
     <title>list Page</title>
   </head>
   <body>
@@ -45,76 +52,121 @@
         </div>
         <div class="coffeeTable">
           <div class="coffeeDetailWrap">
-            <img
-              src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[9200000002487]_20210426091745467.jpg"
-              alt="나이트로 바닐라 크림"
-              class="coffeeImg"
-            />
-            <p class="coffeeTitle">나이트로 바닐라 크림</p>
+            <div class="coffeeImgWrap">
+              <img
+                src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[9200000002487]_20210426091745467.jpg"
+                alt="나이트로 바닐라 크림"
+                class="coffeeImg"
+              />
+            </div>
+            <div class="coffeeNameWrap">
+              <p class="coffeeName">나이트로 바닐라 크림</p>
+              <i class="far fa-heart" id="heartBtn1"></i>
+            </div>
           </div>
           <div class="coffeeDetailWrap">
-            <img
-              src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[9200000000479]_20210426091843897.jpg"
-              alt="나이트로 콜드 브루"
-              class="coffeeImg"
-            />
-            <p class="coffeeTitle">나이트로 콜드 브루</p>
+            <div class="coffeeImgWrap">
+              <img
+                src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[9200000000479]_20210426091843897.jpg"
+                alt="나이트로 콜드 브루"
+                class="coffeeImg"
+              />
+            </div>
+            <div class="coffeeNameWrap">
+              <p class="coffeeName">나이트로 콜드 브루</p>
+              <i class="far fa-heart" id="heartBtn2"></i>
+            </div>
           </div>
           <div class="coffeeDetailWrap">
-            <img
-              src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[9200000002081]_20210415133656839.jpg"
-              alt="돌체 콜드 브루"
-              class="coffeeImg"
-            />
-            <p class="coffeeTitle">돌체 콜드 브루</p>
+            <div class="coffeeImgWrap">
+              <img
+                src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[9200000002081]_20210415133656839.jpg"
+                alt="돌체 콜드 브루"
+                class="coffeeImg"
+              />
+            </div>
+            <div class="coffeeNameWrap">
+              <p class="coffeeName">돌체 콜드 브루</p>
+              <i class="far fa-heart" id="heartBtn3"></i>
+            </div>
           </div>
           <div class="coffeeDetailWrap">
-            <img
-              src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[9200000000487]_20210430112319040.jpg"
-              alt="벨벳 다크 모카 나이트로"
-              class="coffeeImg"
-            />
-            <p class="coffeeTitle">벨벳 다크 모카 나이트로</p>
+            <div class="coffeeImgWrap">
+              <img
+                src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[9200000000487]_20210430112319040.jpg"
+                alt="벨벳 다크 모카 나이트로"
+                class="coffeeImg"
+              />
+            </div>
+            <div class="coffeeNameWrap">
+              <p class="coffeeName">벨벳 다크 모카 나이트로</p>
+              <i class="far fa-heart" id="heartBtn4"></i>
+            </div>
           </div>
           <div class="coffeeDetailWrap">
-            <img
-              src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/03/[9200000003509]_20210322093452399.jpg"
-              alt="바닐라 크림 콜드 브루"
-              class="coffeeImg"
-            />
-            <p class="coffeeTitle">바닐라 크림 콜드 브루</p>
+            <div class="coffeeImgWrap">
+              <img
+                src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/03/[9200000003509]_20210322093452399.jpg"
+                alt="바닐라 크림 콜드 브루"
+                class="coffeeImg"
+              />
+            </div>
+            <div class="coffeeNameWrap">
+              <p class="coffeeName">바닐라 크림 콜드 브루</p>
+              <i class="far fa-heart" id="heartBtn5"></i>
+            </div>
           </div>
           <div class="coffeeDetailWrap">
-            <img
-              src="https://image.istarbucks.co.kr/upload/store/skuimg/2020/09/[9200000002672]_20200921171223898.jpg"
-              alt="제주 비자림 콜드 브루"
-              class="coffeeImg"
-            />
-            <p class="coffeeTitle">제주 비자림 콜드 브루</p>
+            <div class="coffeeImgWrap">
+              <img
+                src="https://image.istarbucks.co.kr/upload/store/skuimg/2020/09/[9200000002672]_20200921171223898.jpg"
+                alt="제주 비자림 콜드 브루"
+                class="coffeeImg"
+              />
+            </div>
+            <div class="coffeeNameWrap">
+              <p class="coffeeName">제주 비자림 콜드 브루</p>
+              <i class="far fa-heart" id="heartBtn6"></i>
+            </div>
           </div>
           <div class="coffeeDetailWrap">
-            <img
-              src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[9200000000038]_20210430113202458.jpg"
-              alt="콜드 브루"
-              class="coffeeImg"
-            />
-            <p class="coffeeTitle">콜드 브루</p>
+            <div class="coffeeImgWrap">
+              <img
+                src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[9200000000038]_20210430113202458.jpg"
+                alt="콜드 브루"
+                class="coffeeImg"
+              />
+            </div>
+            <div class="coffeeNameWrap">
+              <p class="coffeeName">콜드 브루</p>
+              <i class="far fa-heart" id="heartBtn7"></i>
+            </div>
           </div>
           <div class="coffeeDetailWrap">
-            <img
-              src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/02/[9200000001636]_20210225093600536.jpg"
-              alt="콜드 브루 몰트"
-              class="coffeeImg"
-            />
-            <p class="coffeeTitle">콜드 브루 몰트</p>
+            <div class="coffeeImgWrap">
+              <img
+                src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/02/[9200000001636]_20210225093600536.jpg"
+                alt="콜드 브루 몰트"
+                class="coffeeImg"
+              />
+            </div>
+            <div class="coffeeNameWrap">
+              <p class="coffeeName">콜드 브루 몰트</p>
+              <i class="far fa-heart" id="heartBtn8"></i>
+            </div>
           </div>
           <div class="coffeeDetailWrap">
-            <img
-              src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[9200000003285]_20210416154437069.jpg"
-              alt="콜드 브루 오트 라떼"
-              class="coffeeImg"
-            />
-            <p class="coffeeTitle">콜드 브루 오트 라떼</p>
+            <div class="coffeeImgWrap">
+              <img
+                src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[9200000003285]_20210416154437069.jpg"
+                alt="콜드 브루 오트 라떼"
+                class="coffeeImg"
+              />
+            </div>
+            <div class="coffeeNameWrap">
+              <p class="coffeeName">콜드 브루 오트 라떼</p>
+              <i class="far fa-heart" id="heartBtn9"></i>
+            </div>
           </div>
         </div>
       </section>
@@ -134,20 +186,30 @@
 
         <div class="coffeeTable">
           <div class="coffeeDetailWrap">
-            <img
-              src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/02/[9200000001635]_20210225092236748.jpg"
-              alt="콜드 브루 플로트"
-              class="coffeeImg"
-            />
-            <p class="coffeeTitle">콜드 브루 플로트</p>
+            <div class="coffeeImgWrap">
+              <img
+                src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/02/[9200000001635]_20210225092236748.jpg"
+                alt="콜드 브루 플로트"
+                class="coffeeImg"
+              />
+            </div>
+            <div class="coffeeNameWrap">
+              <p class="coffeeName">콜드 브루 플로트</p>
+              <i class="far fa-heart" id="heartBtn10"></i>
+            </div>
           </div>
           <div class="coffeeDetailWrap">
-            <img
-              src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/03/[9200000003507]_20210322093414289.jpg"
-              alt="프렌치 애플 타르트 나이트로"
-              class="coffeeImg"
-            />
-            <p class="coffeeTitle">프렌치 애플 타르트 나이트로</p>
+            <div class="coffeeImgWrap">
+              <img
+                src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/03/[9200000003507]_20210322093414289.jpg"
+                alt="프렌치 애플 타르트 나이트로"
+                class="coffeeImg"
+              />
+            </div>
+            <div class="coffeeNameWrap">
+              <p class="coffeeName">프렌치 애플 타르트 나이트로</p>
+              <i class="far fa-heart" id="heartBtn11"></i>
+            </div>
           </div>
         </div>
       </section>
