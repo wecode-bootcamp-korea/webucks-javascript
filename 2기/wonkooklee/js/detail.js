@@ -1,6 +1,5 @@
 const detailInteraction = (function() {
   
-  const commentDOM = document.querySelector('.comment');
   const validTag = document.getElementById('validTag');
   const reviewInputField = document.getElementById('review_field');
   
@@ -57,7 +56,7 @@ const signIn = (function() {
 
 
 
-// WORK IN PROGRESS
+// ZOOM INTERACTION
 
 const zoomImage = (function() {
 
@@ -68,6 +67,7 @@ const zoomImage = (function() {
   function handleMouseMove(e) {
 
     const {left, top} = zoomFrame.getBoundingClientRect();
+    const {x:lensLeft, y:lensTop} = zoomLens.getBoundingClientRect();
 
     const x = e.clientX - left;
     const y = e.clientY - top;
@@ -75,10 +75,48 @@ const zoomImage = (function() {
     zoomLens.style.display = 'block';
     zoomWindow.style.display = 'block';
 
-    zoomLens.style.left = x - 153 + 'px';
-    zoomLens.style.top = y - 117 + 'px';
+    const bor = {
+      xMin: 153,
+      xMax: 297,
+      yMin: 117,
+      yMax: 353
+    }
 
-    zoomWindow.style.backgroundPosition = `-${x}px -${y}px`
+    const coord = {
+      x: x - 153 + 'px',
+      y: y - 117 + 'px'
+    }
+
+    if (x <= bor.xMin && y <= 117) {
+      zoomLens.style.left = '0';
+      zoomLens.style.top = '0';
+    } else if (x > bor.xMin && x < bor.xMax && y <= bor.yMin) {
+      zoomLens.style.left = coord.x;
+      zoomLens.style.top = '0';
+    } else if (x >= bor.xMax && y <= bor.yMin) {
+      zoomLens.style.left = '145px';
+      zoomLens.style.top = '0';
+    } else if (x <= bor.xMin && y > bor.yMin && y < bor.yMax) {
+      zoomLens.style.left = '0';
+      zoomLens.style.top = coord.y;
+    } else if (x <= bor.xMin && y >= bor.yMax) {
+      zoomLens.style.left = '0';
+      zoomLens.style.top = '236px';
+    } else if (x > bor.xMin && x < bor.xMax && y >= bor.yMax) {
+      zoomLens.style.left = coord.x;
+      zoomLens.style.top = '236px';
+    } else if (x >= bor.xMax && y >= bor.yMax) {
+      zoomLens.style.left = '145px';
+      zoomLens.style.top = '236px';
+    } else if (x >= bor.xMax && y > bor.yMin && y < bor.yMax) {
+      zoomLens.style.left = '145px';
+      zoomLens.style.top = coord.y;
+    } else {
+      zoomLens.style.left = coord.x;
+      zoomLens.style.top = coord.y;
+    }
+
+    zoomWindow.style.backgroundPosition = `${(lensLeft - 82.5) * 100 / 145}% ${(lensTop - 248) * 100 / 236}%`
   }
 
   zoomFrame.addEventListener('mousemove', handleMouseMove);
