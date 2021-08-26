@@ -209,9 +209,11 @@ footer .inner {
     height: 100px;
     text-align: center;
   }
+
   .product-list__header img {
     display: none;
   }
+
   .product-list__header p {
     font-size: 15px;
     line-height: 15px;
@@ -224,9 +226,11 @@ footer .inner {
     display: block;
     cursor: pointer;
   }
+
   .on.toggle {
     display: block;
   }
+
   .on.toggle ul {
     position: relative;
     flex-direction: column;

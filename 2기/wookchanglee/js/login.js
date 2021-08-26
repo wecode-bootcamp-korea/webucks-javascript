@@ -5,14 +5,12 @@ const $form = document.querySelector('.login-form');
 const $eye = document.querySelector('.fas');
 //1. 아이디에 @가 있을 시 로그인 버튼 활성화
 
-
-
 let handleLoginVerify = () =>{
   
   let str = $id.value;
   let password = $pw.value;
   let verifyId = str.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/);
-  let verifyPw = password.match(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,}/);
+  let verifyPw = password.match(/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/);
 
   if(verifyId){
     $id.classList.add('login-form__verified');
@@ -40,7 +38,6 @@ let handleLoginVerify = () =>{
 let handleVisible = () => {
 
   $eye.classList.contains('fa-eye') ? $pw.type='text' : $pw.type='password';
-
   $eye.classList.toggle('fa-eye');
   $eye.classList.toggle('fa-eye-slash');
 

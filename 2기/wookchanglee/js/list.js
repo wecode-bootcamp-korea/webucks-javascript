@@ -15,19 +15,16 @@ let handleHeart = function (heart){
   
 }
 
+const $toggleBtn = document.getElementById('toggle-bar');
+const $toggle = document.querySelector('.toggle');
 const $heartsParents = document.querySelectorAll('.image-title');
 
 [...$heartsParents].forEach((el)=>{
   el.lastElementChild.addEventListener('click',handleHeart(el.lastElementChild));
 })
 
-
-const $toggleBtn = document.getElementById('toggle-bar');
-const $toggle = document.querySelector('.toggle');
-
 let handleToggle = function (){
   $toggle.classList.toggle('on');  
 }
-
 
 $toggleBtn.addEventListener('click',handleToggle);
