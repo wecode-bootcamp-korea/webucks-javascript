@@ -87,6 +87,7 @@ main {
 .coffeeName {
     display: flex;
     justify-content: space-between;
+    position: relative;
     padding-bottom: 10px;
     border-bottom: 2.5px solid black;
     font-size: 25px;
@@ -97,17 +98,29 @@ main {
     font-size: small;
 }
 
-.likeArea {
-    border-style: none;
-    background-color: transparent;
-    font-size: 25px;
-}
-
-.fa-heart {
+.checkbox-wrap {
     color: rgb(126, 125, 125);
     cursor: pointer;
-    transition: 0.2s;
+    font-size: 35px;
 }
+
+input[type='checkbox'] {
+    display: none;
+}
+
+.heart_checked {
+    opacity: 0;
+}
+
+label,.checkbox,.fa-heart {
+    position: absolute;
+    right: 0;
+}
+
+label>input[type="checkbox"]:checked~.heart_checked {
+    display: block;
+    opacity: 1;
+}  
 
 .description {
     padding-top: 20px;

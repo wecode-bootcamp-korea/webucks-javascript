@@ -1,20 +1,3 @@
-//like
-const likearea = document.querySelector('.likeArea') 
-let click = 0;
-
-likearea.addEventListener('click', () => {
-    click += 1;
-    const like = document.querySelector('#like');  
-    if(click % 2 === 1) {
-        like.classList.remove('far');
-        like.classList.add('fas');
-    } else {
-        like.classList.add('far');
-        like.classList.remove('fas');
-    }
-    return click
-});
-
 //댓글기능
 const reviewText = document.querySelector('.reviewText');
 const pushBtn = document.querySelector('.push');
@@ -40,32 +23,9 @@ const posting = () => {
     commentText.setAttribute('class', 'commentText');
     commentText.innerHTML = text;
     //스타일
-    commentText.style.width = "70%";
+    commentText.style.width = "80%";
     commentText.style.padding = "10px"
     
-    //좋아요 버튼
-    const likeBox = document.createElement('span');
-    likeBox.setAttribute('class', 'likeBox');
-    const commentLike = document.createElement('i');
-    commentLike.setAttribute('class', 'far fa-heart smallHeart');
-    likeBox.addEventListener('click', () => {
-        click += 1;
-        const smallHeart= document.querySelector('.smallHeart');  
-        if(click % 2 === 1) {
-            smallHeart.classList.remove('far');
-            smallHeart.classList.add('fas');
-        } else {
-            smallHeart.classList.add('far');
-            smallHeart.classList.remove('fas');
-        }
-        return click
-    });
-    //스타일
-    likeBox.style.width = "10%";
-    likeBox.style.fontSize = "25px"
-    likeBox.style.display = "flex";
-    likeBox.style.alignItems = "center";
-
     //삭제 버튼
     const deleteComment = document.createElement('button');
     deleteComment.setAttribute('class', 'deteleComment');
@@ -81,16 +41,11 @@ const posting = () => {
     deleteComment.style.width = "20%"
 
     //+
+    //likeBox.appendChild(commentLike);
     commentsBox.appendChild(comment);
     comment.appendChild(commentText);
-    comment.appendChild(likeBox);
+    //comment.appendChild(likeBox);
     comment.appendChild(deleteComment);
-    likeBox.appendChild(commentLike);
-    
-    
-     
-   
-    
     
     reviewText.value = " ";
     reviewText.focus();
@@ -110,17 +65,47 @@ reviewText.addEventListener('keypress', (event) => {
 });
 
 /*
-click += 1;
-    const like = document.querySelector('#like');  
-    if(click % 2 === 1) {
-        like.classList.remove('far');
-        like.classList.add('fas');
-        document.querySelector('#like').style.color = "rgb(245, 169, 169)";
-    } else {
+    좋아요 버튼
+    const likeBox = document.createElement('span');
+    likeBox.setAttribute('class', 'likeBox');
 
-        like.classList.add('far');
-        like.classList.remove('fas');
-        document.querySelector('#like').style.color = "rgb(233, 233, 233)";
+    
+    const commentLike = document.createElement('i');
+    commentLike.setAttribute('class', 'far fa-heart smallHeart');
+    commentLike.setAttribute('onclick', "pushlike(); return false")
+    //스타일
+    likeBox.style.width = "10%";
+    likeBox.style.fontSize = "25px"
+    likeBox.style.display = "flex";
+    likeBox.style.alignItems = "center";
+    likeBox.style.position = "relative";
+    commentLike.style.right = '6px';
+    commentLike.style.color = "rgb(126, 125, 125)";*/
+
+  /*
+    const likeBox = document.createElement('label');
+    likeBox.setAttribute('class', 'likeBox');
+    
+    const checkbox = document.createElement('input');
+    checkbox.setAttribute('type', 'checkbox');
+    console.log(1);
+    const commentLike1 = document.createElement('i');
+    commentLike1.setAttribute('class', 'far fa-heart');
+
+    const commentLike2 = document.createElement('i');
+    commentLike1.setAttribute('class', 'fas fa-heart heart_checked');
+
+    //스타일
+    likeBox.style.width = "10%";
+    likeBox.style.fontSize = "25px";
+    likeBox.style.color = "rgb(126, 125, 125)";
+    likeBox.style.position = "absolute";
+    checkbox.style.display = 'none';
+
+    if (checkbox.getAttribute('checked')){
+        commentLike2.style.display = "block";
+        commentLike2.style.opacity = "1";
+    }else {
+        commentLike2.style.opacity = "0";
     }
-    return click
     */
