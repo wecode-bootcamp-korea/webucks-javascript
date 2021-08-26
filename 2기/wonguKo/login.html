@@ -11,6 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/login.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/common.css" />
@@ -34,12 +40,15 @@
             maxlength="30"
             placeholder="전화번호, 사용자 이름 또는 이메일"
           />
-          <input
-            id="inputPw"
-            type="password"
-            maxlength="16"
-            placeholder="비밀번호"
-          />
+          <div class="pwFiled">
+            <input
+              id="inputPw"
+              type="password"
+              maxlength="16"
+              placeholder="비밀번호"
+            />
+            <i class="fas fa-eye" id="viewPasswordBtn"></i>
+          </div>
           <button
             onclick="location.href = `list.html`"
             id="loginBtn"

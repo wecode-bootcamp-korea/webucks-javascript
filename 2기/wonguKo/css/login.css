@@ -30,6 +30,11 @@ body {
   margin-top: 3rem;
 }
 
+.pwFiled {
+  position: relative;
+  display: flex;
+}
+
 #inputId,
 #inputPw {
   width: 100%;
@@ -40,6 +45,14 @@ body {
   box-sizing: border-box;
   background-color: #f7f7f7;
   font-size: 1rem;
+}
+
+#viewPasswordBtn {
+  position: absolute;
+  display: inline-block;
+  right: 1rem;
+  top: 0.9rem;
+  color: #dddddd;
 }
 
 #inputId::placeholder,
