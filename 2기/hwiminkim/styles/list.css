@@ -14,10 +14,6 @@ body {
   margin: 0 auto;
 }
 
-.icon-color__red {
-  color: red;
-}
-
 /* main-header */
 
 .main-header {
@@ -78,7 +74,7 @@ body {
 
 /* coldbrew-list */
 
-.coldbrew-list ul {
+.coldbrew-list__items {
   display: grid;
   grid-template-columns: repeat(4, 260px);
   row-gap: 55px;
@@ -87,7 +83,7 @@ body {
   list-style: none;
 }
 
-.coldbrew-list ul li {
+.coldbrew-list__items li {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -95,17 +91,29 @@ body {
 }
 
 .heart {
+  color: rgb(187, 185, 185);
   margin-left: 10px;
   cursor: pointer;
 }
 
-.coldbrew-list ul li img {
+.flowbox {
+  width: 270px;
+  height: 281.6px;
+  overflow: hidden;
+}
+
+.coldbrew-list__items img {
   width: 100%;
+  transition: all 1s;
+}
+
+.coldbrew-list__items img:hover {
+  transform: scale(1.2, 1.2);
 }
 
 /* brewed-list */
 
-.brewed-list ul {
+.brewed-list__items {
   display: grid;
   grid-template-columns: repeat(4, 260px);
   row-gap: 55px;
@@ -114,13 +122,30 @@ body {
   list-style: none;
 }
 
-.brewed-list ul li {
+.brewed-list__items li {
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 20px;
 }
 
-.brewed-list ul li img {
+.flowbox {
+  width: 260px;
+  height: 270px;
+  overflow: hidden;
+}
+
+.brewed-list__items img {
   width: 100%;
+  transition: all 1s;
+}
+
+.brewed-list__items img:hover {
+  transform: scale(1.2, 1.2);
+}
+
+/* class to insert icon */
+
+.icon-color__red {
+  color: red;
 }

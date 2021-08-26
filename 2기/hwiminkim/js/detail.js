@@ -12,15 +12,15 @@ changeHeartColor();
 
 // review
 
-const review = function () {
+const createAndDeleteReview = function () {
   const input = document.querySelector('.review-input');
-  const items = document.querySelector('.items');
+  const reviewItems = document.querySelector('.items');
 
   const onAdd = () => {
-    const text = input.value;
+    const userInput = input.value;
 
-    const item = document.createElement('li');
-    item.className = 'item';
+    const reviewItem = document.createElement('li');
+    reviewItem.className = 'item';
 
     const contentBox = document.createElement('div');
     contentBox.className = 'content-box';
@@ -30,34 +30,34 @@ const review = function () {
 
     const itemText = document.createElement('p');
     itemText.className = 'itemText';
-    itemText.innerHTML = `<b>작성자</b>  <span>${text}</span>`;
+    itemText.innerHTML = `<b>작성자</b>  <span>${userInput}</span>`;
 
     const itemDel = document.createElement('button');
     itemDel.className = 'itemDel';
-    itemDel.innerHTML = '<i class="fas fa-trash-alt">';
+    itemDel.innerHTML = '<i class="far fa-trash-alt">';
 
     itemDel.addEventListener('click', () => {
-      items.removeChild(item);
+      reviewItems.removeChild(reviewItem);
     });
 
     const likeBtn = document.createElement('button');
     likeBtn.className = 'like';
-    likeBtn.innerHTML = '<i class="far fa-heart fa-lg heart"></i>';
+    likeBtn.innerHTML = '<i class="fas fa-heart fa-lg heart"></i>';
 
-    likeBtn.addEventListener('click', (e) => {
+    likeBtn.addEventListener('click', e => {
       e.target.classList.toggle('icon-color__red');
     });
 
     contentBox.appendChild(itemText);
     btnBox.appendChild(itemDel);
     btnBox.appendChild(likeBtn);
-    item.appendChild(contentBox);
-    item.appendChild(btnBox);
-    items.appendChild(item);
+    reviewItem.appendChild(contentBox);
+    reviewItem.appendChild(btnBox);
+    reviewItems.appendChild(reviewItem);
     input.value = '';
   };
 
-  input.addEventListener('keypress', (e) => {
+  input.addEventListener('keypress', e => {
     if (e.key === 'Enter') {
       onAdd();
     }
@@ -65,4 +65,4 @@ const review = function () {
   });
 };
 
-review();
+createAndDeleteReview();

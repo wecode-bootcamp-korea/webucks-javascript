@@ -40,7 +40,7 @@ body {
   margin-left: 20px;
 }
 
-.nav-menu ul {
+.nav-menu__items {
   display: flex;
   justify-content: space-between;
   color: rgb(153, 150, 150);
@@ -48,7 +48,7 @@ body {
   list-style: none;
 }
 
-.nav-menu ul li {
+.nav-menu__items li {
   margin-right: 30px;
 }
 
@@ -64,28 +64,28 @@ body {
   font-size: 36px;
 }
 
-.sub-header ul {
+.sub-header__items {
   display: flex;
   justify-content: flex-end;
   list-style: none;
   font-size: 14px;
 }
 
-.sub-header ul li a:link {
+.sub-header__items li a:link {
   margin: 0 5px;
   color: rgb(153, 150, 150);
   text-decoration: none;
 }
 
-.sub-header ul li a:visited {
+.sub-header__items li a:visited {
   color: rgb(153, 150, 150);
 }
 
-.sub-header ul li a:hover {
+.sub-header__items li a:hover {
   color: rgb(153, 150, 150);
 }
 
-.sub-header ul li i {
+.sub-header__items li i {
   color: rgb(153, 150, 150);
 }
 
@@ -124,12 +124,12 @@ body {
 /* made two classes with a element to change icon's color  */
 
 /* ============= */
-.icon-color__red {
-  color: red;
+.header-heart {
+  color: lightgray;
 }
 
-section header i {
-  color: lightgray;
+.icon-color__red {
+  color: red;
 }
 /* ============== */
 
