@@ -116,7 +116,7 @@ const zoomImage = (function() {
       zoomLens.style.top = coord.y;
     }
 
-    zoomWindow.style.backgroundPosition = `${(lensLeft - 82.5) * 100 / 145}% ${(lensTop - 248) * 100 / 236}%`
+    zoomWindow.style.backgroundPosition = `${(lensLeft - left) * 100 / 145}% ${(lensTop - top) * 100 / 236}%`
   }
 
   zoomFrame.addEventListener('mousemove', handleMouseMove);
