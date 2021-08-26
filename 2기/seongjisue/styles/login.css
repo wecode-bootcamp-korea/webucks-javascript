@@ -3,10 +3,17 @@
 }
 
 
+
+form{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
 #flex-center {
     display: flex;
     justify-content: center;
-    /* align-items: center; */ /*body태그의 높이가 작아서 가운데정렬않됨*/
+    align-items: center; /*body태그의 높이가 작아서 가운데정렬않됨*/
 }
 
 .main-login {

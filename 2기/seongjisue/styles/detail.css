@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+/*상단 navbar*/
+.navbar { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 60px;
+    background-color: #F6F5F0;
+    box-shadow: 0.5px 0.5px 15px 10px #EEEFEF;
+    overflow: hidden;
+}
+
+.navbar-flex{ /*태그에서 공통사용*/
+    display: flex;
+}
+
+.navbar-img {/*태그에서 공통사용*/
+    width: 35px;
+    height: 35px;
+}
+
+/*상단 navbar 로고*/
+.navbar .navbar-flex .navbar-img{ 
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.navbar .navbar-flex h1 {
+    margin-left: 15px;
+    font-size: 22px;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+
+/*상단 navbar 메뉴*/
+#navbar-menu li {
+    margin-right: 20px;
+    list-style: none;
+    font-size: 12px;
+    color: #C0C0BA;
+}
