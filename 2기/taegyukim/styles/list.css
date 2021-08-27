@@ -1,4 +1,4 @@
-.list-header,
+.list-nav,
 .cold-brew-description,
 .brewed-description {
   display: flex;
@@ -8,7 +8,7 @@
   background-color: #eeefef;
 }
 
-.list-header {
+.list-nav {
   justify-content: space-between;
 }
 
@@ -18,7 +18,8 @@
   font-size: 20px;
 }
 
-.list-side-menu span {
+.list-side-menu li {
+  display: inline;
   margin: 0 15px;
   font-size: 13px;
   letter-spacing: 3px;

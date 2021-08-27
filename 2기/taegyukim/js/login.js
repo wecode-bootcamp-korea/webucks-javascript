@@ -3,16 +3,18 @@ const user = document.querySelector(".user");
 const password = document.querySelector(".password");
 const btn = document.querySelector("#login-btn");
 
-function moveList() {
-  location.href = "/list.html";
+const isValidInput = () => {
+  return user.value.includes('@') && password.value.length >= 8
 }
 
-function paintBtn() {
-  if(user.value.includes('@') && password.value.length >= 8) {
-    btn.style.backgroundColor = "#60ADED";
-    btn.setAttribute('onclick', 'moveList();');
+const paintBtn = () => {
+  const isValid = isValidInput();
+  if(isValid) {
+    btn.classList.add('active');
+    btn.disabled = false;
   } else {
-    btn.style.backgroundColor = '';
+    btn.classList.remove('active');
+    btn.disabled = true;
   }
 }
 

@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/login.css">
   <title>LogIn</title>
 </head>
 <body id="grayBackground">
@@ -12,8 +13,8 @@
     <header class="login-header">WeBucks</header>
     <form class="userinfo">
       <input class="user" type="text" placeholder="전화번호, 사용자 이름 또는 이메일">
-      <input class="password" type="password" placeholder="비밀번호" />
-      <button id="login-btn" type="button" onclick="return false">로그인</button>
+      <input class="password" type="password" placeholder="비밀번호" />      
+      <button id="login-btn" type="button" disabled onclick="location.href='list.html'">로그인</button>
     </form>
     <a class="forgetPws">비밀번호를 잊으셨나요?</a>
   </div>

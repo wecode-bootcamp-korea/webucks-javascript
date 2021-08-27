@@ -1,3 +1,26 @@
+.list-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  margin: 0 175px 25px 175px;
+  background-color: #eeefef;
+}
+
+.list-logo {
+  margin-left: 20px;
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+}
+
+.list-side-menu li {
+  display: inline;
+  margin: 0 15px;
+  font-size: 13px;
+  letter-spacing: 3px;
+  opacity: 0.3;
+}
+
 .detail-title {
   display: flex;
   justify-content: space-between;
@@ -44,12 +67,12 @@
   flex-direction: column;
 }
 
-.detail-info-title-name span:first-child {
+.detail-info-title-name h1 {
   font-size: 25px;
   padding-bottom: 10px;
 }
 
-.detail-info-title-name span:last-child {
+.detail-info-title-name span {
   font-size: 14px;
 }
 
@@ -67,8 +90,15 @@
 
 .fa-heart {
   margin: 15px 5px 0 0;
+  font-weight: normal;
   opacity: 0.3;
   animation: heartFliping 4s ease-in-out infinite;
+}
+
+.fa-heart.redHeart {
+  color: red;
+  opacity: 0.6;
+  font-weight: 900;
 }
 
 .detail-info-description {
@@ -125,12 +155,12 @@
   margin: 35px 0 20px 0;
   padding-bottom: 7px;
   font-size: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   font-weight: bold;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .detail-info-review-comment div {
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 }
 
 .detail-info-review-comment div > span:first-child {
@@ -149,9 +179,9 @@
   width: 100%;
   padding-left: 12px;
   margin: 30px 0 80px 0;
-  font-size: 15px;
   border: none;
   background-color: rgba(0, 0, 0, 0.05);
+  font-size: 15px;
 }
 
 #review-form input::placeholder {
@@ -163,7 +193,7 @@
 }
 
 #review-list li {
-  margin-bottom: 5px;
+  margin-bottom: 7px;
   font-size: 14px;
 }
 

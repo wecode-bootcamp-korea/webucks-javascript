@@ -1,17 +1,15 @@
 const heart = document.querySelector(".far");
+
 let isHeart = false;
 
 const turnRed = () => {
-    if(isHeart === false) {
-        heart.style.color = "red";
-        heart.style.opacity = 0.6;
-        heart.style.fontWeight = "900";
-        isHeart = true;
+    if(isHeart) {
+      heart.classList.remove('redHeart');
+      isHeart = false;
     }
     else {
-        heart.style.color = '';
-        heart.style.fontWeight='';
-        isHeart = false;
+      heart.classList.add('redHeart');
+      isHeart = true;
     }
 }
 
@@ -21,7 +19,7 @@ const reviewForm = document.getElementById("review-form");
 const reviewInput = document.querySelector("#review-form input");
 const reviewList = document.getElementById("review-list");
 
-function addReview(review) {
+const addReview = (review) => {
   const li = document.createElement("li");
   const span = document.createElement("span");
   li.appendChild(span);
@@ -29,7 +27,7 @@ function addReview(review) {
   reviewList.appendChild(li);
 }
 
-function handleReviewSubmit(event) {
+const handleReviewSubmit = (event) => {
   event.preventDefault();
   const newReview = reviewInput.value;
   reviewInput.value = '';

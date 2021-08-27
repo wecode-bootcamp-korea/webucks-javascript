@@ -3,10 +3,6 @@
 
 @import "reset.css";
 
-@import "login.css";
-@import "list.css";
-@import "detail.css";
-
 * {
   box-sizing: border-box;
 }

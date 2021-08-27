@@ -3,9 +3,7 @@
 }
 
 .login-form {
-  width: 520px;
-  height: 650px;
-  margin: 50px auto;
+  margin: 50px 450px;
   background-color: white;
   border: 2px solid #dedede;
   border-radius: 5px;
@@ -23,11 +21,13 @@
 .userinfo {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .user,
 .password {
   height: 50px;
+  width: 400px;
   margin: 0 65px 25px 65px;
   padding-left: 12px;
   border: 2px solid #dedede;
@@ -49,6 +49,7 @@
 
 #login-btn {
   height: 50px;
+  width: 400px;
   margin: 0 65px 25px 65px;
   color: white;
   background-color: #add3ea;
@@ -57,9 +58,13 @@
   font-size: 20px;
 }
 
+#login-btn.active {
+  background-color: #60aded;
+}
+
 .forgetPws {
-  position: relative;
-  top: 120px;
+  display: block;
+  margin: 130px 0 80px 0;
   color: #94b1c5;
   font-size: 18px;
   font-weight: 600;
