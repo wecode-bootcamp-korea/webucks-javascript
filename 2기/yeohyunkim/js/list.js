@@ -7,3 +7,6 @@ for (let i = 0; i < menu.length; i++) {
     menu[i].append(info);
     info.className = "menu-description";
 }
+
+document.querySelector('.icecream p').style="cursor:pointer";
+document.querySelector('.icecream p').setAttribute("onclick", "location.href='detail.html'")
