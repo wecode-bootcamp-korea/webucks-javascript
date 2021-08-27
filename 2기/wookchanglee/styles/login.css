@@ -72,6 +72,11 @@ body {
   background-color: #add3eb;
   font-size: 17px;
   font-weight: 600;
+  cursor: default;
+}
+.login-form__btn.active {
+  background-color: #61aded;
+  cursor: pointer;
 }
 
 .section--login__another-approch {

@@ -7,10 +7,8 @@ const $eye = document.querySelector('.fas');
 
 let handleLoginVerify = () =>{
   
-  let str = $id.value;
-  let password = $pw.value;
-  let verifyId = str.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/);
-  let verifyPw = password.match(/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/);
+  let verifyId = $id.value.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/);
+  let verifyPw = $pw.value.match(/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/);
 
   if(verifyId){
     $id.classList.add('login-form__verified');
@@ -25,12 +23,10 @@ let handleLoginVerify = () =>{
   }
 
   if( verifyId && verifyPw ){
-    $btn.style.backgroundColor='#61ADED';
-    $btn.style.cursor='pointer';
+    $btn.classList.add('active');
     $form.action='./list.html';
   }else{
-    $btn.style.backgroundColor='#add3eb';
-    $btn.style.cursor='default';
+    $btn.classList.remove('active');
     $form.action='#';
   }
 }
