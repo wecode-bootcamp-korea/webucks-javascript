@@ -154,6 +154,10 @@ section {
   margin: 12px 0 20px 0;
 }
 
+.section-items h3 span {
+  color: #a2bc2b;
+}
+
 .section-items i {
   margin-left: 6px;
 
