@@ -1,51 +1,28 @@
-* {
-    box-sizing: border-box;
-}
+// 리뷰 하트 색깔 변경
+function reviewLikeSwitchHandle(){
 
-body {
-    display: flex;
-    justify-content: center;
-    background-color: white;
-}
+    // console.dir(reviewLikeWraper.children.classList)
+        if(!reviewLikeSwitch){
+            reviewLikeWraper.innerHTML = '<i class="fas fa-heart reviewLike reviewLikeOn"></i>';
+            reviewLikeSwitch = true;
+        } else {
+            reviewLikeWraper.innerHTML = '<i class="far fa-heart reviewLike"></i>';
+            reviewLikeSwitch = false;
+        };
 
-.header {
-    position:fixed;
-    width: 100%;
-    /* min-width: 500px; */
-}
+};
 
-.nav {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    height: 100px;
-    min-width: 600px;
-    background-color: #f4f4f2;
-}
 
-.logo {
-    position: absolute;
-    left: 20px;
-    top: 37px;
-    font-family: 'Dancing Script', cursive;
-    font-size: 30px;
-}
 
-.menu-wraper {
-    display: inline-flex;
-    justify-content: space-evenly;
-    position: absolute;
-    top: 32px;
-    right: 0px;
-    width: 500px;
-    color: grey;
-    font-weight: 400;
-}
+r1 = [
+    { name : "id".
+      review : "~",
+      like : false,
+      id : 12341234},
+    { name : "id".
+      review : "~",
+      like : false,
+      id : 12341234},
 
-.cold {
-    margin: 500px;
-}
 
-.coldTitle {
-    width: 500px;
-}
+]

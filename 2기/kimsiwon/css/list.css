@@ -1,13 +1,13 @@
 * {
     box-sizing: border-box;
 }
-
+ 
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
+/* 헤터 파트  */
 .header {
     position: fixed;
     top: 0;
@@ -37,7 +37,7 @@ body {
     width:  400px;
     color: grey;
 }
-
+/* 리스트 카테고리 타이틀 파트 */
 .coldbrew {
     display: flex;
     flex-direction: column;
@@ -79,6 +79,7 @@ body {
     font-size: 15px;
 }
 
+/* 리스트 파트  */
 .coldbrewList {
     display: grid;
     grid-template-columns: 270px 270px 270px 270px;
@@ -97,7 +98,7 @@ body {
     display: inline-block;
     margin-right: 10px
 }
-
+/* 상품개체 파트  */
 .boxElements {
     display: block;
     transition-property: all;
