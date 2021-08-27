@@ -13,7 +13,7 @@ body > section {
     top: 0;
     z-index: 5;
     height: 50px;
-    /* margin-bottom: 15px; */
+    margin-bottom: 15px;
     background-color: #F6F5EF;
 }
 
@@ -50,46 +50,42 @@ body > section {
     right: 320px;
 }
 
-.contents {
+.sec-top {
     position: absolute;
     top: 60px;
+    /* margin-bottom: 15px; */
+    /* background-color: beige; */
 }
 
-.contents > section {
-    margin-bottom: 30px;
+.sec-top .coffee-name {
+    margin: 10px 0 0 5px;
+    font-size: 25px;
 }
 
-.nav-bar {
+.sec-top .menu-route {
+    font-size: 13px;
+    text-align: right;
+    color: lightgray;
+}
+
+.sec-mid {
+    position: absolute;
+    top: 145px;
+
     display: flex;
-    align-items: center;
-    height: 50px;
-    margin-bottom: 15px;
-    background-color: #F6F5EF;
+    justify-content: space-between;
+
+    /* background-color: burlywood; */
 }
 
-.nav-bar > span {
-    margin-left: 20px;
+.sec-left {
+    width: 45%;
 }
 
-.nav-bar img {
-    width: 30px;
+.sec-right {
+    width: 52%;
 }
 
-.add-shot {
-    font-size: 12px;
-}
-
-.grid-coffee {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
-    text-align: center;
-}
-
-.grid-coffee img {
+.sec-left img {
     width: 100%;
-}
-
-.grid-coffee p {
-    font-size: 15px;
 }

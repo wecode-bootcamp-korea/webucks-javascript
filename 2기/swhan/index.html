@@ -1,39 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- <meta charset="UTF-8"> -->
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <title>Welcome to WeBucks</title>
     <link rel="stylesheet" href="./styles/index.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-    <!-- <script src="script.js" type="text/javascript"></script> -->
+    <title>Welcome to WeBucks</title>
 </head>
 <body>
-    <section class="content-wrap">
-        <!-- logo -->
+    <div class="contents-wrap">
+
         <section class="logo">
             <span>WeBucks</span>
         </section>
 
-        <form action="">
-            <section class="login-box">
-                <!-- id -->
-                <input id="ipt-id" class="ipt-idpw" type="text" placeholder="전화번호, 사용자 이름 또는 이메일">
-                <!-- pw -->
-                <input id="ipt-pw" class="ipt-idpw" type="password" placeholder="비밀번호">
-                <!-- login button -->
-                <button id="btn-login" onclick="nextPage()" disabled>로그인</button>
-            </section>
+        <form id="user-info" action="./coffeeList.html">
+            <input id="ipt-id" type="text" placeholder="전화번호, 사용자 이름 또는 이메일">
+            <input id="ipt-pw" type="password" placeholder="비밀번호">
         </form>
 
-        <!-- find pwd -->
-        <section>
-            <a id="find-pw" href="">비밀번호를 잊으셨나요?</a>
-        </section>
-    </section>
+        <button id="btn-login" type="submit" form="user-info" disabled>로그인</button>
+
+        <a id="find-pw" href="">비밀번호를 잊으셨나요?</a>
+    </div>
+
     <script src="./js/index.js" type="text/javascript"></script>
 </body>
 </html>

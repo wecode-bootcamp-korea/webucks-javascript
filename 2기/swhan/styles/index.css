@@ -4,7 +4,7 @@ body {
     margin-top: 100px;
 }
 
-.content-wrap {
+.contents-wrap {
     position: relative;
     width: 400px;
     height: 550px;
@@ -15,18 +15,11 @@ body {
 .logo {
     margin-top: 50px;
     margin-bottom: 30px;
-    text-align: center;
     font-family: 'Dancing Script', cursive;
     font-size: 60px;
 }
 
-.login-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.ipt-idpw {
+form input {
     width: 290px;
     height: 35px;
     margin-bottom: 15px;

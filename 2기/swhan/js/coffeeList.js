@@ -1,12 +1,9 @@
+const coffeeImgdivList = document.querySelectorAll('.grid-coffee div');
+const coffeeImgList = document.querySelectorAll('.grid-coffee img');
 
-const divList = document.querySelectorAll('.grid-coffee div');
-const coffeeList = document.querySelectorAll('.grid-coffee img');
-console.log(divList);
-console.log(coffeeList);
-
-const len = coffeeList.length;
+const len = coffeeImgList.length;
 for (let idx=0; idx < len; idx++) {
     const pTag = document.createElement('p');
-    pTag.textContent = coffeeList[idx].alt;
-    divList[idx].appendChild(pTag);
+    pTag.textContent = coffeeImgList[idx].alt;
+    coffeeImgdivList[idx].appendChild(pTag);
 }
