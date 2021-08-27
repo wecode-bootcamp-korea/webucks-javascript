@@ -2,7 +2,6 @@ class CommonData {
   constructor(dataName) {
     this.dataName = dataName;
     this.initData = JSON.parse(localStorage.getItem(this.dataName)) || [];
-    this.loadData();
   }
 
   loadData() {
@@ -10,6 +9,7 @@ class CommonData {
     if (!this.initData.length) {
       if (this.dataName === "coffees1") data = data1;
       if (this.dataName === "coffees2") data = data2;
+      console.log(data);
       this.addIsGetHeart(data);
       console.log(data);
       localStorage.setItem(this.dataName, JSON.stringify(this.initData));
@@ -17,6 +17,7 @@ class CommonData {
   }
 
   addIsGetHeart(data) {
+    console.log(data);
     this.initData = data.map((item, index) => {
       item.id = `${this.dataName}__heart-${index}`;
       //하트 라이크 저장때마다 커피나 커멘트에 넣어줘야함.
