@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+  }
+
+/* 메뉴판 */
+
+body {
+    margin: 0px 100px;
+}   
+
+.head {
+    height: 50px;
+    margin-bottom: 30px;
+    background-color: rgb(255, 242, 223);
+}
+
+.logo {
+    display: inline-block;
+    font-family: 'Dancing Script', cursive;
+    font-size: 150%;
+    font-weight: bold;
+    margin: 10px 0px 0px 20px;
+} 
+
+.menu {
+    display: inline;
+    float: right;
+    margin-top: 16px;
+    margin-right: 30px;
+    color: rgb(172, 164, 153);
+    text-decoration: none;
+}
+
+.coldbrew {
+    display: flex;
+    height: 55px;
+    margin-bottom: 40px;
+    align-items: center;
+    background-color: rgb(255, 242, 223);
+}
+
+.cold {
+    display: inline;
+    margin-left: 20px;
+    font-size: 110%;
+    font-weight: bold;
+}
+
+.coffeeimg {
+    display: inline;
+    width: 30px;
+    margin-left: 5px;
+}
+
+.dcafe {
+    display: inline;
+    font-size: 14px;
+}
+
+/* 커피메뉴 */
+
+.menu1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu1 div {
+    margin-bottom: 20px;
+}
+
+.menu2 div {
+    margin-right: 15px;
+}
+
+.menu1 a {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.menu2 a {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.menu1 img {
+    width: 100%;
+}
+
+.menu2 img {
+    width: 100%;
+}
+
+.menu1 a img:hover {
+    transform: scale(1.1);
+    transition: .8s;
+}
+
+.menu2 img:hover {
+    transform: scale(1.1);
+    transition: .8s;
+}
+
+.menu1 p, .menu2 p {
+    display: flex;
+    justify-content: center;
+}
