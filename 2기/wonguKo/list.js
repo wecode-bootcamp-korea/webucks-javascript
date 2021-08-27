@@ -6,8 +6,6 @@ coffeeList.addEventListener("click", function (event) {
   const heartTargetId = event.target.id;
   const heartId = document.getElementById(heartTargetId);
 
-  console.log();
-
   if (heartTarget === "far fa-heart") {
     if (isHeart === false) {
       heartId.style.color = "tomato";
