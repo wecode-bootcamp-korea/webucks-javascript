@@ -65,6 +65,7 @@ reviewText.addEventListener("keyup", function (event) {
   if (event.key === "Enter") {
     if (userId !== "" && userReview !== "") {
       reviewList.appendChild(commentWrap);
+      reviewList.scrollIntoView({ block: "center" });
       reviewText.value = "";
       reviewId.value = "";
       reviewId.focus();
@@ -108,6 +109,7 @@ inputBtn.addEventListener("click", function (e) {
     commentWrap.appendChild(likeButton);
     commentWrap.appendChild(removeBtn);
     reviewList.appendChild(commentWrap);
+    reviewList.scrollIntoView({ block: "center" });
     reviewText.value = "";
     reviewId.value = "";
     reviewId.focus();
