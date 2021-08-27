@@ -1,77 +1,74 @@
 *{
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+#mainLogin{
+  display: flex;
+  justify-content: center;
+  align-items: center; /*body태그의 높이가 작아서 가운데정렬않됨*/
+  min-height: 100vh;
+}
+
+#mainForm {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 30px 150px 30px;
+  background-color: white;
+  box-shadow: 1px 1px 15px 0px gray;
 }
 
 
 
-form{
-    display: flex;
-    justify-content: center;
-    min-height: 100vh;
-}
-
-#flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center; /*body태그의 높이가 작아서 가운데정렬않됨*/
-}
-
-.main-login {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px 30px 150px 30px;
-    width: 350px;
-    background-color: white;
-    box-shadow: 1px 1px 15px 0px gray;
-}
 
 /*logo-Jibucks*/
-.logo h1 {
-    font-size: 60px;
-    font-family: 'Dancing Script', cursive;
+#mainForm h1 {
+  font-size: 60px;
+  font-family: 'Dancing Script', cursive;
 }
 
-.total-box{
-    display: flex;
-    flex-direction: column;
-}
 
 /*input-boxs*/
-.total-box .box {
-    margin-top: 20px;
-    width: 300px;
-    height: 40px;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: #F7F7F7;
-    font-size: 11px;
+#mainForm .boxTotalCSS {
+  margin-top: 20px;
+  width: 300px;
+  height: 40px;
+  font-size: 11px;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
 }
-.total-box .box:not(:last-child) {
-    padding-left: 15px;
+#mainForm .boxTotalCSS:not(:last-child) {
+  background-color: #F7F7F7;
+  padding-left: 15px;
 }
 
-.total-box .box:last-child {
-    margin-bottom: 50px;
-    background-color: #ADD3EB;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    opacity: 0.2;
+#mainForm #loginButton {
+  background-color: #ADD3EB;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+#mainForm #loginButton:hover {
+  border: 2px solid black;
 }
 
 /*pw-forget*/
-.folder-pw a {
-    position: relative;
-    top: 90px;
-    font-size: 12px;
-    font-weight: bold;
-    color: #BCCDDA;
-    text-decoration: none;
+#mainForm a {
+  position: relative;
+  top: 120px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #BCCDDA;
+  text-decoration: none;
+  opacity: 0.5;
 }
 
-.folder-pw a:hover{
-    opacity: 0.5;
+.mainForm a:hover{
+  opacity: 1;
 }
 
 

@@ -1,114 +1,114 @@
-
-
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 
 
 /*상단 navbar*/
-.navbar { 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    height: 60px;
-    background-color: #F6F5F0;
-    box-shadow: 0.5px 0.5px 15px 10px #EEEFEF;
-    overflow: hidden;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 60px;
+  background-color: #F6F5F0;
+  box-shadow: 0.5px 0.5px 15px 10px #EEEFEF;
+  overflow: hidden;
 }
 
-.navbar-flex{ /*태그에서 공통사용*/
-    display: flex;
+.navbarFlex {
+  /*태그에서 공통사용*/
+  display: flex;
 }
 
-.navbar-img {/*태그에서 공통사용*/
-    width: 35px;
-    height: 35px;
+.navbarImg {
+  /*태그에서 공통사용*/
+  width: 35px;
+  height: 35px;
 }
 
 /*상단 navbar 로고*/
-.navbar .navbar-flex .navbar-img{ 
-    margin-top: 10px;
-    margin-left: 10px;
+.navbar .navbarFlex .navbarImg {
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
-.navbar .navbar-flex h1 {
-    margin-left: 15px;
-    font-size: 22px;
-    font-family: 'Dancing Script', cursive;
+.navbar .navbarFlex h1 {
+  margin-left: 15px;
+  font-size: 22px;
+  font-family: 'Dancing Script', cursive;
 }
 
 
 
 /*상단 navbar 메뉴*/
-#navbar-menu li {
-    margin-right: 20px;
-    list-style: none;
-    font-size: 12px;
-    color: #C0C0BA;
+#navbarMenu li {
+  margin-right: 20px;
+  list-style: none;
+  font-size: 12px;
+  color: #C0C0BA;
 }
 
 
 /*메인 navbar*/
- .navbar-sub {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 50px;
-    width: 90%;
-    box-shadow: 0.5px 0.5px 15px 10px #EEEFEF;
+.navbarSub {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 50px;
+  width: 90%;
+  box-shadow: 0.5px 0.5px 15px 10px #EEEFEF;
 }
 
-.navbar-sub h3 {
-    font-size: 12px;
+.navbarSub h3 {
+  font-size: 12px;
 }
 
-.navbar-sub p {
-    font-size: 10px;
-    font-weight: bold;
+.navbarSub p {
+  font-size: 10px;
+  font-weight: bold;
 }
 
-.navbar-sub .navbar-sub-menu:not(:last-child){
-    margin-left: 15px;
+.navbarSub .navbarSubMenu:not(:last-child) {
+  margin-left: 15px;
 }
 
 
 
 
 /*메인 메뉴 리스트*/
-.menu-list{
-    display: flex;
-    flex-wrap: wrap;
+.menuList {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 
 
 /*메인 각 메뉴*/
-.menu-list .menu{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 250px;
-    height: 300px;
-    margin: 15px;
+.menuList .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  height: 300px;
+  margin: 15px;
 }
 
-.overflower{
-    overflow: hidden;
+.overflower {
+  overflow: hidden;
 }
 
-.menu .menu-img{
-    width: 230px;
-    height: 250px;
+.menu .menuImg {
+  width: 230px;
+  height: 250px;
 }
 
-.menu .overflower .menu-img:hover{
-    transition-duration: 1.5s;
-    transform: scale(1.2);
-    cursor: pointer;
+.menu .overflower .menuImg:hover {
+  transition-duration: 1.5s;
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
-.menu p{
-    margin: 10px 0 5px 0;
-    font-size: 15px;
+.menu p {
+  margin: 10px 0 5px 0;
+  font-size: 15px;
 }

@@ -1,29 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="js/login.js" type="text/javascript"></script>
-    <link href="styles/login.css" rel="stylesheet" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <title> login-pag </title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="js/login.js" type="text/javascript"></script>
+  <link href="styles/login.css" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <title> login-pag </title>
 </head>
 
 <body>
-    <form id="flex-center">
-        <div class="main-login">
-            <header class="logo"><h1>JiBucks</h1></header><!--로고-->
-            <main class="total-box"> <!--inputBox-->
-                <input class="box" type="text" placeholder="전화번호, 사용자 이름 또는 이메일">
-                <input class="box" type="password" name="pw" placeholder="비밀번호">
-                <button class="box" type="submit">로그인</button>
-            </main>
-            <footer class="folder-pw"><!--비밀번호 forget-->
-                <a href="#">비밀번호를 잊으셨나요?</a>
-            </footer>
-        </div>
+  <div id="mainLogin">
+    <form id="mainForm">
+      <h1>JiBucks</h1><!--로고-->
+      <input class="boxTotalCSS" type="text" placeholder="전화번호, 사용자 이름 또는 이메일">
+      <input class="boxTotalCSS" type="password" placeholder="비밀번호">
+      <button id="loginButton" class="boxTotalCSS">로그인</button>
+      <a href="#">비밀번호를 잊으셨나요?</a>
     </form>
+  </div>
+    
 </body>

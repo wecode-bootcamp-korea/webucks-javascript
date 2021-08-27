@@ -1,139 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="js/detail.js" type="text/javascript"></script>
-    <script defer src="https://kit.fontawesome.com/5b1bc9a19c.js" crossorigin="anonymous"></script>
-    <link href="styles/detail.css" rel="stylesheet" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><!--구글폰트-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <title>detail-page</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="js/detail.js" type="text/javascript"></script>
+  <script defer src="https://kit.fontawesome.com/5b1bc9a19c.js" crossorigin="anonymous"></script>
+  <link href="styles/detail.css" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><!--구글폰트-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <title>detail-page</title>
 </head>
 <body>
-    <div id="total">
-        <div id="sub">
-            <header id="navbar"><!--상단 navbar-->
-                <div class="flex">
-                    <h1>JiBucks</h1>
-                    <img class="navbar-img" src="img/icon/stabucksIcon.png">
-                </div>
-                <ul  class="flex" id="navbar-menu">
-                    <li>COFFEE</li>
-                    <li>MENU</li>
-                    <li>STORE</li>
-                    <li>WHAT'S NEW</li>
-                </ul>
+  <div id="total">
+    <div id="sub">
+      <header id="navbar"><!--상단 navbar-->
+        <div class="flex">
+          <h1>JiBucks</h1>
+          <img class="navbarImg" src="img/icon/stabucksIcon.png">
+        </div>
+        <ul  class="flex" id="navbarMenu">
+          <li>COFFEE</li>
+          <li>MENU</li>
+          <li>STORE</li>
+          <li>WHAT'S NEW</li>
+        </ul>
+      </header>
+
+      <main id="main"><!--중단 상세설명-->
+        <nav><!--카테고리+경로-->
+          <h1>콜드 브루</h1>
+          <p id="menuRoute">홈>MENU>음료>에스프레소>화이트 초콜릿 모카</p>
+        </nav>
+        <section class="item"><!--제품-->
+          <img class="itemImg" alt="sigblue" src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/08/[9200000003661]_20210819094346176.jpg">
+
+          <aside class="itemContent"><!--제품 상세설명-->
+            <header>
+              <div class="itemNav">
+                <span class="itemTitle">
+                  <h3>바닐라 크림 콜드 브루</h3>
+                  <p>Vanilla Cream Cold Brew</p>
+                </span>
+                <i class="heartIcon far fa-heart fa-lg header-heart"></i>
+              </div>
+              <p id="contentFontSize">콜드 브루에 더해진 바닐라 크림으로 깔끔하면서 달콤한 콜드 브루를 새롭게 즐길 수 있는 음료입니다.</p>
             </header>
 
-            <main id="main"><!--중단 상세설명-->
-                <nav><!--카테고리+경로-->
-                    <h1>콜드 브루</h1>
-                    <p id="menu-route">홈>MENU>음료>에스프레소>화이트 초콜릿 모카</p>
-                </nav>
-                <section class="item"><!--제품-->
-                    <img class="item-img" alt="sigblue" src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/08/[9200000003661]_20210819094346176.jpg">
+            <main>
+              <header class="tableHeader">
+                <p>제품 영양 정보</p>
+                <p>Tall(톨) / 355ml (12 fl oz)</p>
+              </header>
+              <main class="flex">
+                <div class="list">
+                  <ul class="listStyle">
+                    <li>1회 제공량 (kcal)</li>
+                    <li>포화지방 (g)</li>
+                    <li>단백질 (g)</li>
+                  </ul>
+                  <ul class="listStyle">
+                    <li>125</li>
+                    <li>6</li>
+                    <li>3</li>
+                  </ul>
+                </div>
+                <div class="list">
+                  <ul class="listStyle">
+                    <li>나트륨 (mg)</li>
+                    <li>당류 (g)</li>
+                    <li>카페인 (mg)</li>
+                  </ul>
+                  <ul class="listStyle">
+                    <li>58</li>
+                    <li>11</li>
+                    <li>150</li>
+                  </ul>
+                </div>
+                </main>
+                <footer class="tableFooter"><p>알레르기 유발요인 : 우유</p></footer>
+              </main>
 
-                    <aside class="item-content"><!--제품 상세설명-->
-                        <header>
-                            <div class="item-nav">
-                                <span class="item-title">
-                                    <h3>바닐라 크림 콜드 브루</h3>
-                                    <p>Vanilla Cream Cold Brew</p>
-                                </span>
-                                <i class="heart-icon far fa-heart fa-lg header-heart"></i>
-                            </div>
-                            <p id="content-font-size">콜드 브루에 더해진 바닐라 크림으로 깔끔하면서 달콤한 콜드 브루를 새롭게 즐길 수 있는 음료입니다.</p>
-                        </header>
-
-                        <main>
-                            <header class="table-header">
-                                <p>제품 영양 정보</p>
-                                <p>Tall(톨) / 355ml (12 fl oz)</p>
-                            </header>
-                            <main class="flex">
-                                <div class="list">
-                                    <ul class="list-style">
-                                        <li>1회 제공량 (kcal)</li>
-                                        <li>포화지방 (g)</li>
-                                        <li>단백질 (g)</li>
-                                    </ul>
-                                    <ul class="list-style">
-                                        <li>125</li>
-                                        <li>6</li>
-                                        <li>3</li>
-                                    </ol>
-                                </div>
-                                <div class="list">
-                                    <ul class="list-style">
-                                        <li>나트륨 (mg)</li>
-                                        <li>당류 (g)</li>
-                                        <li>카페인 (mg)</li>
-                                    </ul>
-                                    <ul class="list-style">
-                                        <li>58</li>
-                                        <li>11</li>
-                                        <li>150</li>
-                                    </ol>
-                                </div>
-                            </main>
-                            <footer class="table-footer"><p>알레르기 유발요인 : 우유</p></footer>
-                        </main>
-
-                        <footer class="content-footer">
-                            <h5>리뷰</h5>
-                            <div class="review-text">
-                                <p><span class="reveiw-id">coffee_lover</span> 너무 맛있어요!</p>
-                                <p><span class="reveiw-id">CHOCO7</span> 나는 화이트 초콜릿 모카를 마시러 갈랑다</p>
-                                <p><span class="reveiw-id">legend_dev</span> 진짜 콜드브루는 여기가 전설!</p>
-                            </div>
-                            <input class="reveiw-box" type="text" placeholder="리뷰를 입력해주세요">
-                        </footer>
-                    </aside>
-                </section>
-            </main>
-        </div>
-
-        <footer id="footer">
-            <div class="footer-list">
-                <ul class="footer-menu">
-                    <li id="footer-title">COMPANY</li>
-                    <li>한눈에 보기</li>
-                    <li>스타벅스 사명</li>
-                    <li>스타벅스 소개</li>
-                    <li>국내 뉴스룸</li>
-                    <li>세계 스타벅스</li>
-                    <li>글로벌 뉴스룸</li>
-                </ul>
-                <ul class="footer-menu">
-                    <li id="footer-title">CORPORATE SALES</li>
-                    <li>단체 및 기업 구매 안내</li>
-                    
-                </ul>
-                <ul class="footer-menu">
-                    <li id="footer-title">PARTNERSHIP</li>
-                    <li>신규 입점 제의</li>
-                    <li>협력 고객사 등록신청</li>
-                    
-                </ul>
-                <ul class="footer-menu">
-                    <li id="footer-title">ONLINE COMMUNITY</li>
-                    <li>페이스북</li>
-                    <li>트위터</li>
-                    <li>유튜브</li>
-                    <li>인스타크램</li>
-                </ul>
-                <ul class="footer-menu">
-                    <li id="footer-title">RECRUIT</li>
-                    <li>채용 소개</li>
-                    <li>채용 지원하기</li>
-                </ul>
-            </div>
-        </footer>
-
+            <footer class="contentFooter">
+              <h5>리뷰</h5>
+              <div class="reveiwResults">
+                <p><span class="reveiwContent">coffee_lover</span> 너무 맛있어요!</p>
+                <p><span class="reveiwContent">CHOCO7</span> 나는 화이트 초콜릿 모카를 마시러 갈랑다</p>
+                <p><span class="reveiwContent">legend_dev</span> 진짜 콜드브루는 여기가 전설!</p>
+              </div>
+              <div id="reveiwBox">
+                <input type="text" placeholder="아이디를 입력해주세요">
+                <input type="text" placeholder="리뷰를 입력해주세요(엔터를 눌러주세요.)">
+              </div>
+            </footer>
+          </aside>
+        </section>
+      </main>
     </div>
+
+    <footer id="footer">
+      <div class="footerList">
+        <ul class="footerMenu">
+          <li id="footerTitle">COMPANY</li>
+          <li>한눈에 보기</li>
+          <li>스타벅스 사명</li>
+          <li>스타벅스 소개</li>
+          <li>국내 뉴스룸</li>
+          <li>세계 스타벅스</li>
+          <li>글로벌 뉴스룸</li>
+        </ul>
+        <ul class="footerMenu">
+          <li id="footerTitle">CORPORATE SALES</li>
+          <li>단체 및 기업 구매 안내</li>
+        </ul>
+        <ul class="footerMenu">
+          <li id="footerTitle">PARTNERSHIP</li>
+          <li>신규 입점 제의</li>
+          <li>협력 고객사 등록신청</li>
+        </ul>
+        <ul class="footerMenu">
+          <li id="footerTitle">ONLINE COMMUNITY</li>
+          <li>페이스북</li>
+          <li>트위터</li>
+          <li>유튜브</li>
+          <li>인스타크램</li>
+        </ul>
+        <ul class="footerMenu">
+          <li id="footerTitle">RECRUIT</li>
+          <li>채용 소개</li>
+          <li>채용 지원하기</li>
+        </ul>
+      </div>
+    </footer>
+
+  </div>
 
 </body>
 </html>
