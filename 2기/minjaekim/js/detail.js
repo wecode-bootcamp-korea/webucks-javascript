@@ -8,18 +8,26 @@ const fillHeartIcon = () => {
   }
 }
 heartIcon.addEventListener("click", fillHeartIcon);
-///
-const commentBoxInput = document.getElementById('commentChatBox');
-const reviewStatus =  document.getElementById('reviewStatus');
 
-const sendComment= (event) => {
-  const userComment = commentBoxInput.value;
-  const list = document.createElement('li')
-  list.innerHTML = userComment;  
+const reviewInputBox = document.getElementById('reviewInputBox');
+const reviewStatus =  document.getElementById('reviewStatus');
+const reviewList = document.createElement('li')
+const userId = document.createElement('span');
+const reviewContents = document.createElement('span');
+reviewList.classList.add('reviewList');
+userId.classList.add('userId');
+reviewContents.classList.add('reviewContents');
+
+const sendReview = (event) => {
+  const userReviewContents = reviewInputBox.value;
   if (event.code==='Enter') {
     event.preventDefault();
-    return reviewStatus.appendChild(list)
+    reviewList.prepend(userId);
+    reviewList.appendChild(reviewContents);
+    reviewContents.innerText = userReviewContents;
+    return reviewStatus.appendChild(reviewList);
   }
 }
-commentBoxInput.addEventListener('keypress', sendComment)
+reviewInputBox.addEventListener('keypress', sendReview)
+
 

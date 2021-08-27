@@ -1,41 +1,44 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
+  width: 75vw;
   margin: auto;
-  width: 75%;
+  margin-top: 60px;
   background-color: white;
 }
 
 nav {
-  background-color: rgb(244, 244, 242);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  width: 75%;
   padding: 20px;
-  margin-bottom: 20px;
-  height: 70px;
+  background-color: rgb(244, 244, 242);
+  z-index: 1;
 }
 
-#title{
+#title {
   font-size: 23px;
   font-weight: bolder;
   font-family: 'Dancing Script', cursive;
 }
-h3, h4 {
-  display: inline-block
-}
-#headerMenu{
+
+#navMenus {
   display: flex;
   justify-content: space-evenly;
   flex-basis: 300px;
+  letter-spacing: 3px;
   color: rgb(165, 165, 161);
 }
 
-#headerMenu li{ 
+#navMenus li { 
   padding-left: 20px;
   white-space: nowrap;
+}
+
+#navMenus li:hover {
+  cursor:pointer;
+  color: #1B3C35;  
 }
 
 #loginLink {
@@ -43,60 +46,56 @@ h3, h4 {
   color:rgb(165, 165, 161); 
 }
 
-#headerMenu li:hover {
-  cursor:pointer;
-  color: #1B3C35;  
-}
-
-#header li:nth-child(5) #loginLink:hover{
+#loginLink:hover {
   color: #1B3C35;
 }
-.mainSection{
-  margin-bottom: 20px; 
+
+.mainCategoryWrapper {
+  margin-bottom: 35px; 
+}
+.coldBrewCoffeeSection {
+  padding-top: 15px;
 }
 
-section {
-  width: 100%;
-}
-
-.sectionHeader{
+.categoryHeader {
   background-color: rgb(246, 240, 245);
   padding: 15px;
-  height: 48px;
 }
 
-.sectionHeader span:nth-child(1){
-  font-weight: bolder;
+.coffeeTypeName, .coffeeDetailDescription {
+  display: inline-block
 }
-.sectionHeader span:nth-child(2){
-  font-size: 13px;
-  padding-left: 20px;
-}
-.sectionMain{
-  text-align: center;
+
+.sectionContents {
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
   height: auto;
   margin: 20px 0px; 
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 15px;
+  text-align: center;
 }
-.imgWrapper{
-  margin-bottom: 15px; 
+.wrapperAllDiv {
+  transition: ease-in-out .10s;   
+}
+
+.wrapperImg {  
   display:inline-block;
-  overflow: hidden; 
-  height:295px;
+  height:265px;
+  margin-bottom: 15px; 
   cursor: pointer;
-
+  margin:0;
+  overflow: hidden; 
 }
-.beverageImg{
-  display:block;
+.coffeeImg {
+  width: 255px;
 } 
-.bvgImage{
-  display: block;
-  transition: ease-in-out .10s;   /* smoother zoom */
+
+.coffeeName {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.magnifiedImg{
+.magnifiedImg {
   transform: scale(1.15);
   transform-origin: center;
   transition-duration: 1s, 3s;

@@ -1,1 +1,14 @@
 @import "reset.css";
+/* 공통된 css 넣기 */
+
+* {
+    box-sizing: border-box;
+}
+
+li {
+    text-decoration: none;
+}
+
+a {
+    list-style: none;
+}

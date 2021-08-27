@@ -5,22 +5,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=, initial-scale=1.0">
-  <title>Document</title>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> <!-- 구글 폰트 -->
+  <title>Starbucks Coffee Korea</title>
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/login.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
-  <section class="container">
-    <header class="item">WeBucks</header>
-    <form action="" id="loginBox" class="item">
-      <input id="loginId" type="text" placeholder="전화번호, 사용자 이름 또는 이메일" d>
-      <input id="loginPsw" type="password" placeholder="비밀번호">
-      <button id="loginBtn">로그인</button>
+  <div id="loginWindow">
+    <h1 class="loginWindowComponent title">WeBucks</h1>
+    <form action="" class="loginWindowComponent userInputBox">
+      <input id="userLoginId" class="us" type="text" placeholder="전화번호, 사용자 이름 또는 이메일"/>
+      <input id="userLoginPsw" type="password" placeholder="비밀번호"/>
+      <button id="userLoginBtn">로그인</button>
     </form>
-    <a href="" class="item">비밀번호를 잊으셨나요?</a>
-  </section>
+    <a href="#" class="loginWindowComponent findUserPsw">비밀번호를 잊으셨나요?</a>
+  </div>
   <script src="js/login.js"></script>
 </body>
 
