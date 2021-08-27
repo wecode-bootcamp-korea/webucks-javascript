@@ -1,227 +1,236 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/detail.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <title>Webucks: Detail Page</title>
-</head>
-<body>
-    <header>
-        <div class="logo-wrap">
-            <a href="list.html">WeBucks</a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">COFFEE</a></li>
-                <li><a href="#">MENU</a></li>
-                <li><a href="#">STORE</a></li>
-                <li><a href="#">WHAT'S NEW</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="detail">
-        <article>
-            <div class="detail-category">
-                <h2>콜드 브루</h2>
-                <ul>
-                    <li><a class="topMenu" href="#">홈</a></li>
-                    <li><img alt="arrow" src="https://image.istarbucks.co.kr/common/img/common/icon_arrow.png" /></li>
-                    <li><a class="topMenu" href="#">MENU</a></li>
-                    <li><img alt="arrow" src="https://image.istarbucks.co.kr/common/img/common/icon_arrow.png" /></li>
-                    <li><a class="topMenu" href="#">음료</a></li>
-                    <li><img alt="arrow" src="https://image.istarbucks.co.kr/common/img/common/icon_arrow.png" /></li>
-                    <li><a class="topMenu" href="#">콜드 브루</a></li>
-                    <li><img alt="arrow" src="https://image.istarbucks.co.kr/common/img/common/icon_arrow.png" /></li>
-                    <li><a class="currentMenu" href="#">시그니처 더 블랙 콜드 브루</a></li>
-                </ul>
-            </div>
-            <div class="detail-content">
-                <div class="detail-img-wrap">
-                    <img alt="signatue the black cold brew" src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/08/[9200000003661]_20210819094346334.jpg">
-                </div>
-                <div class="detail-text-wrap">
-                    <div class="detail-text">
-                        <h3>
-                            시그니처 더 블랙 콜드 브루
-                            <br>
-                            <span class="product-name-en">Signature The Black Cold Brew</span>
-                        </h3>
-                        <div class="like-btn-wrap">
-                                <button class="like-wrap" id="product-like"><i class="far fa-heart"></i></button>
-                        </div>        
-                        <p>콜드 브루 전용 원두를 차가운 물로 14시간 동안 추출하여 부드럽고 진한 풍미의 콜드브루를 딜리버리로 원하는 곳에서 편하게 즐겨보세요 (전용 리유저블 보틀 /500ml)</p>
-                    </div>
-                    <div class="product-info">
-                        <div class="product-info-head">
-                            <p>제품 영양 정보</p>
-                            <p>Bottle(보틀) / 500ml (17 fl oz)</p>
-                        </div>
-                        <div class="product-info-content">
-                            <ul>
-                                <li>
-                                    <dl>
-                                        <dt>1회 제공량 (kcal)</dt>
-                                        <dd>25</dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>포화지방 (g)</dt>
-                                        <dd>0</dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>단백질 (g)</dt>
-                                        <dd>0</dd>
-                                    </dl>
-                                </li>
-                            </ul>
-                            <div class="dotted-border"></div>
-                            <ul class="second-info">
-                                <li>
-                                    <dl>
-                                        <dt>나트륨 (mg)</dt>
-                                        <dd>50</dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>당류 (g)</dt>
-                                        <dd>0</dd>
-                                    </dl>
-                                </li>
-                                <li>
-                                    <dl>
-                                        <dt>카페인 (mg)</dt>
-                                        <dd>680</dd>
-                                    </dl>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="allergens-wrap">
-                            <p>알레르기 유발 요인 : 없음</p>
-                        </div>
-                    </div>
-                    <div class="detail-review">
-                        <h2>리뷰</h2>
-                        <ul class="review-list">
-                            <li>
-                                <dl>
-                                    <dt>coffee_lover</dt><dd>너무 맛있어요!</dd>
-                                    <button class="like-wrap" id="review-like"><i class="far fa-heart"></i></button>
-                                    <button class="del-btn">삭제</button>
-                                </dl>
-                            </li>
-                            <li>
-                                <dl>
-                                    <dt>coldBrewMan</dt><dd>콜드 브루는 커피 중의 커피다.</dd>
-                                    <button class="like-wrap" id="review-like"><i class="far fa-heart"></i></button>
-                                    <button class="del-btn">삭제</button>
-                                </dl>
-                            </li>
-                            <li>
-                                <dl>
-                                    <dt>if_dead</dt><dd>얼어 죽어도 콜드 브루!!</dd>
-                                    <button class="like-wrap" id="review-like"><i class="far fa-heart"></i></button>
-                                    <button class="del-btn">삭제</button>
-                                </dl>
-                            </li>
-                        </ul>
-                        <div class="review-input-wrap">
-                            <input class="review-input" placeholder="리뷰를 입력해주세요." type="text">
-                        </div>
-                    <div>
-                </div>
-            </div>
-        </article>  
-    </section>
-    <footer>
-        <div class="footer-menus">
-            <ul>
-                <li class="footer-menu-title">
-                    COMPANY
-                </li>
-                <li class="footer-menu-content">
-                    <a href="#">한눈에 보기</a>
-                </li>
-                <li class="footer-menu-content">
-                    <a href="#">위벅스 사명</a>
-                </li>
-                <li class="footer-menu-content">
-                    <a href="#">위벅스 소개</a>
-                </li>
-                <li class="footer-menu-content">
-                    <a href="#">국내 뉴스룸</a>
-                </li>
-                <li class="footer-menu-content">
-                    <a href="#">세계의 위벅스</a>
-                </li>
-                <li class="footer-menu-content">
-                    <a href="#">글로벌 뉴스룸</a>
-                </li>
-            </ul>
-            <ul>
-                <li class="footer-menu-title">
-                    CORPORATE SALES
-                </li>
-                <li class="footer-menu-content">
-                    <a href="#">단체 및 기업 구매 안내</a>
-                </li>
-            </ul>
-            <ul>
-                <li class="footer-menu-title">
-                    PARTNERSHIP
-                </li>
-                <li class="footer-menu-content">
-                    <a href="#">신규 입점 제의</a>
-                </li>
-                <li class="footer-menu-content">
-                    <a href="#">협력 고객사 등록 신청</a>
-                </li>
-            </ul>
-            <ul>
-                <li class="footer-menu-title">
-                    ONLINE COMMUNITY
-                </li>
-                <li class="footer-menu-content">
-                    <a href="#">페이스북</a>
-                </li>
-                <li class="footer-menu-content">
-                    <a href="#">트위터</a>
-                </li>
-                <li class="footer-menu-content">
-                    <a href="#">유튜브</a>
-                </li>
-                <li class="footer-menu-content">
-                    <a href="#">블로그</a>
-                </li>
-                <li class="footer-menu-content">
-                    <a href="#">인스타그램</a>
-                </li>
-            </ul>       
-            <ul>
-                <li class="footer-menu-title">
-                    RECRUIT
-                </li>
-                <li class="footer-menu-content">
-                    <a href="#">채용 소개</a>
-                </li>
-                <li class="footer-menu-content">
-                    <a href="#">채용 지원하기</a>
-                </li>
-            </ul>
-            <ul>
-                <li class="footer-menu-title">
-                    WEBUCKS
-                </li>
-            </ul>
-        </div>
-    </footer>
 
-    <script src="js/detail.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/detail.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <title>Webucks: Detail Page</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo-wrap">
+      <a href="list.html">WeBucks</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">COFFEE</a></li>
+        <li><a href="#">MENU</a></li>
+        <li><a href="#">STORE</a></li>
+        <li><a href="#">WHAT'S NEW</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="detail">
+    <article>
+      <div class="detail-category">
+        <h2>콜드 브루</h2>
+        <ul>
+          <li><a class="topMenu" href="#">홈</a></li>
+          <li><img alt="arrow" src="https://image.istarbucks.co.kr/common/img/common/icon_arrow.png" /></li>
+          <li><a class="topMenu" href="#">MENU</a></li>
+          <li><img alt="arrow" src="https://image.istarbucks.co.kr/common/img/common/icon_arrow.png" /></li>
+          <li><a class="topMenu" href="#">음료</a></li>
+          <li><img alt="arrow" src="https://image.istarbucks.co.kr/common/img/common/icon_arrow.png" /></li>
+          <li><a class="topMenu" href="#">콜드 브루</a></li>
+          <li><img alt="arrow" src="https://image.istarbucks.co.kr/common/img/common/icon_arrow.png" /></li>
+          <li><a class="currentMenu" href="#">시그니처 더 블랙 콜드 브루</a></li>
+        </ul>
+      </div>
+      <div class="detail-content">
+        <div class="detail-img-wrap">
+          <img alt="signatue the black cold brew"
+            src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/08/[9200000003661]_20210819094346334.jpg">
+        </div>
+        <div class="detail-text-wrap">
+          <div class="detail-text">
+            <h3>
+              시그니처 더 블랙 콜드 브루
+              <br>
+              <span class="product-name-en">Signature The Black Cold Brew</span>
+            </h3>
+            <div class="like-btn-wrap">
+              <button class="like-wrap" id="product-like"><i class="far fa-heart"></i></button>
+            </div>
+            <p>콜드 브루 전용 원두를 차가운 물로 14시간 동안 추출하여 부드럽고 진한 풍미의 콜드브루를 딜리버리로 원하는 곳에서 편하게 즐겨보세요 (전용 리유저블 보틀
+              /500ml)</p>
+          </div>
+          <div class="product-info">
+            <div class="product-info-head">
+              <p>제품 영양 정보</p>
+              <p>Bottle(보틀) / 500ml (17 fl oz)</p>
+            </div>
+            <div class="product-info-content">
+              <ul>
+                <li>
+                  <dl>
+                    <dt>1회 제공량 (kcal)</dt>
+                    <dd>25</dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>포화지방 (g)</dt>
+                    <dd>0</dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>단백질 (g)</dt>
+                    <dd>0</dd>
+                  </dl>
+                </li>
+              </ul>
+              <div class="dotted-border"></div>
+              <ul class="second-info">
+                <li>
+                  <dl>
+                    <dt>나트륨 (mg)</dt>
+                    <dd>50</dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>당류 (g)</dt>
+                    <dd>0</dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>카페인 (mg)</dt>
+                    <dd>680</dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+            <div class="allergens-wrap">
+              <p>알레르기 유발 요인 : 없음</p>
+            </div>
+          </div>
+          <div class="detail-review">
+            <h2>리뷰</h2>
+            <ul class="review-list">
+              <li>
+                <dl>
+                  <dt>coffee_lover</dt>
+                  <dd>너무 맛있어요!</dd>
+                  <button class="like-wrap" id="review-like"><i class="far fa-heart"></i></button>
+                  <button class="del-btn">삭제</button>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>coldBrewMan</dt>
+                  <dd>콜드 브루는 커피 중의 커피다.</dd>
+                  <button class="like-wrap" id="review-like"><i class="far fa-heart"></i></button>
+                  <button class="del-btn">삭제</button>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>if_dead</dt>
+                  <dd>얼어 죽어도 콜드 브루!!</dd>
+                  <button class="like-wrap" id="review-like"><i class="far fa-heart"></i></button>
+                  <button class="del-btn">삭제</button>
+                </dl>
+              </li>
+            </ul>
+            <div class="review-input-wrap">
+              <input class="review-input" placeholder="리뷰를 입력해주세요." type="text">
+            </div>
+            <div>
+            </div>
+          </div>
+    </article>
+  </section>
+  <footer>
+    <div class="footer-menus">
+      <ul>
+        <li class="footer-menu-title">
+          COMPANY
+        </li>
+        <li class="footer-menu-content">
+          <a href="#">한눈에 보기</a>
+        </li>
+        <li class="footer-menu-content">
+          <a href="#">위벅스 사명</a>
+        </li>
+        <li class="footer-menu-content">
+          <a href="#">위벅스 소개</a>
+        </li>
+        <li class="footer-menu-content">
+          <a href="#">국내 뉴스룸</a>
+        </li>
+        <li class="footer-menu-content">
+          <a href="#">세계의 위벅스</a>
+        </li>
+        <li class="footer-menu-content">
+          <a href="#">글로벌 뉴스룸</a>
+        </li>
+      </ul>
+      <ul>
+        <li class="footer-menu-title">
+          CORPORATE SALES
+        </li>
+        <li class="footer-menu-content">
+          <a href="#">단체 및 기업 구매 안내</a>
+        </li>
+      </ul>
+      <ul>
+        <li class="footer-menu-title">
+          PARTNERSHIP
+        </li>
+        <li class="footer-menu-content">
+          <a href="#">신규 입점 제의</a>
+        </li>
+        <li class="footer-menu-content">
+          <a href="#">협력 고객사 등록 신청</a>
+        </li>
+      </ul>
+      <ul>
+        <li class="footer-menu-title">
+          ONLINE COMMUNITY
+        </li>
+        <li class="footer-menu-content">
+          <a href="#">페이스북</a>
+        </li>
+        <li class="footer-menu-content">
+          <a href="#">트위터</a>
+        </li>
+        <li class="footer-menu-content">
+          <a href="#">유튜브</a>
+        </li>
+        <li class="footer-menu-content">
+          <a href="#">블로그</a>
+        </li>
+        <li class="footer-menu-content">
+          <a href="#">인스타그램</a>
+        </li>
+      </ul>
+      <ul>
+        <li class="footer-menu-title">
+          RECRUIT
+        </li>
+        <li class="footer-menu-content">
+          <a href="#">채용 소개</a>
+        </li>
+        <li class="footer-menu-content">
+          <a href="#">채용 지원하기</a>
+        </li>
+      </ul>
+      <ul>
+        <li class="footer-menu-title">
+          WEBUCKS
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/detail.js"></script>
 </body>
+
 </html>

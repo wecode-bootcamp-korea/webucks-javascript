@@ -75,12 +75,21 @@ body {
   border-radius: 5px;
 }
 
+.input-wrap input.active {
+  border: 2px solid green;
+}
+
 .button-wrap button {
   border: none;
   border-radius: 5px;
   color: white;
   background-color: #b2dffd;
   font-size: 15px;
+}
+
+.button-wrap button.able {
+  background-color: #3795f6;
+  cursor: pointer;
 }
 
 .findPw-wrap {
@@ -122,6 +131,11 @@ body {
   opacity: 0;
   transition: 0.5s;
   cursor: pointer;
+}
+
+.input-wrap button.hide {
+  color: #3795f6;
+  background-color: white;
 }
 
 .input-wrap input:focus ~ label,

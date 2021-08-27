@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/login.css" />
-    <title>WeBucks: Login Page</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/login.css" />
+  <title>WeBucks: Login Page</title>
 </head>
+
 <body>
-    <section class="login-section">
-        <div class="logo-wrap">
-            WeBucks
+  <section class="login-section">
+    <div class="logo-wrap">
+      WeBucks
+    </div>
+    <div class="loginForm-wrap">
+      <form action="list.html" class="loginForm">
+        <div class="input-wrap">
+          <input id="userId" type="text" required>
+          <label for="userId">전화번호, 사용자 이름 또는 이메일</label>
         </div>
-        <div class="loginForm-wrap">
-            <form action="list.html" class="loginForm">
-                <div class="input-wrap">
-                    <input id="userId" type="text" required>
-                    <label for="userId">전화번호, 사용자 이름 또는 이메일</label>
-                </div>
-                <div class="input-wrap">
-                    <input id="userPw" type="password" required>
-                    <label for="userPw">비밀번호</label>
-                    <button type="button" id="pw-btn" class="pw-btn">show</button>
-                </div>
-                <div class="button-wrap">
-                    <button type="submit" id="loginBtn" disabled>로그인</button>
-                </div>
-            </form>
+        <div class="input-wrap">
+          <input id="userPw" type="password" required>
+          <label for="userPw">비밀번호</label>
+          <button type="button" id="pw-btn" class="pw-btn">show</button>
         </div>
-        <div class="findPw-wrap">
-            <a class="findPw" href="#">비밀번호를 잊으셨나요?</a>
+        <div class="button-wrap">
+          <button type="submit" id="loginBtn" disabled>로그인</button>
         </div>
-    </section>
-    
-    <script src="./js/login.js"></script>
+      </form>
+    </div>
+    <div class="findPw-wrap">
+      <a class="findPw" href="#">비밀번호를 잊으셨나요?</a>
+    </div>
+  </section>
+
+  <script src="./js/login.js"></script>
 </body>
+
 </html>
