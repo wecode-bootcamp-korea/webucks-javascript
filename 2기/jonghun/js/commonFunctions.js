@@ -2,21 +2,23 @@ class CommonData {
   constructor(dataName) {
     this.dataName = dataName;
     this.initData = JSON.parse(localStorage.getItem(this.dataName)) || [];
+    this.loadData();
   }
 
   loadData() {
-    this.initData = JSON.parse(localStorage.getItem(this.dataName));
     let data;
-    if (!this.initData) {
+    if (!this.initData.length) {
       if (this.dataName === "coffees1") data = data1;
       if (this.dataName === "coffees2") data = data2;
       this.addIsGetHeart(data);
+      console.log(data);
       localStorage.setItem(this.dataName, JSON.stringify(this.initData));
     }
   }
 
   addIsGetHeart(data) {
-    this.initData = data.map((item) => {
+    this.initData = data.map((item, index) => {
+      item.id = `${this.dataName}__heart-${index}`;
       //하트 라이크 저장때마다 커피나 커멘트에 넣어줘야함.
       //true false 가 아니라 해당 인덱스를 넣어줘야함 인덱스의 라이크가 있으면 트루 없으면 펄스
       item.isGetHeart = false;
@@ -108,6 +110,7 @@ class Paint {
       const emptyHeartId = `comments__heart1-${index}`;
       const fullHeartId = `comments__heart2-${index}`;
       const deleteId = `comments__delete-${index}`;
+      const itemId = `comments-${index}`;
       return `
         <div class="detail__comment">
           <span class="comment__writer">${writer}</span>
@@ -315,4 +318,11 @@ function confirmLogin() {
 
 function getLoginUser() {
   return JSON.parse(localStorage.getItem("users"));
+}
+
+function isMyLikeExist(id) {
+  const likeRepo = new CommonData("likes");
+  const obj = { index: id, user: getLoginUser()["id"] };
+  const exist = likeRepo.findByCoxndition(obj);
+  return !!exist.length;
 }
