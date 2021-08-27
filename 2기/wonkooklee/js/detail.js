@@ -95,7 +95,7 @@ const zoomImage = (function() {
 
     switch (true) {
 
-      case (x <= bor.xMin && y <= 117) :
+      case (x <= bor.xMin && y <= bor.yMin) :
         zoomLens.style.left = '0';
         zoomLens.style.top = '0';
         break;
