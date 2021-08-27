@@ -1,91 +1,91 @@
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 body > section {
-    width: 80%;
+  width: 80%;
 }
 
 .menu-bar {
-    position: fixed;
-    top: 0;
-    z-index: 5;
-    height: 50px;
-    margin-bottom: 15px;
-    background-color: #F6F5EF;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  height: 50px;
+  margin-bottom: 15px;
+  background-color: #F6F5EF;
 }
 
 .menu-bar .logo {
-    position: absolute;
-    top: 9px;
-    left: 20px;
-    font-family: 'Dancing Script', cursive;
-    font-size: 25px;
-    color: black;
-    text-decoration: none;
+  position: absolute;
+  top: 9px;
+  left: 20px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
 }
 
 .menu-bar .btn {
-    position: absolute;
-    top: 15px;
-    color: lightgray;
-    text-decoration: none;
+  position: absolute;
+  top: 15px;
+  color: lightgray;
+  text-decoration: none;
 }
 
 .menu-bar .btn.new {
-    right: 30px;
+  right: 30px;
 }
 
 .menu-bar .btn.store {
-    right: 140px;
+  right: 140px;
 }
 
 .menu-bar .btn.menu {
-    right: 230px;
+  right: 230px;
 }
 
 .menu-bar .btn.coffee {
-    right: 320px;
+  right: 320px;
 }
 
 .sec-top {
-    position: absolute;
-    top: 60px;
-    /* margin-bottom: 15px; */
-    /* background-color: beige; */
+  position: absolute;
+  top: 60px;
+  /* margin-bottom: 15px; */
+  /* background-color: beige; */
 }
 
 .sec-top .coffee-name {
-    margin: 10px 0 0 5px;
-    font-size: 25px;
+  margin: 10px 0 0 5px;
+  font-size: 25px;
 }
 
 .sec-top .menu-route {
-    font-size: 13px;
-    text-align: right;
-    color: lightgray;
+  font-size: 13px;
+  text-align: right;
+  color: lightgray;
 }
 
 .sec-mid {
-    position: absolute;
-    top: 145px;
+  position: absolute;
+  top: 145px;
 
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-    /* background-color: burlywood; */
+  /* background-color: burlywood; */
 }
 
 .sec-left {
-    width: 45%;
+  width: 45%;
 }
 
 .sec-right {
-    width: 52%;
+  width: 52%;
 }
 
 .sec-left img {
-    width: 100%;
+  width: 100%;
 }
