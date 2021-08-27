@@ -32,6 +32,14 @@ reviewText.addEventListener("keyup", function (event) {
   const userId = reviewId.value;
   const userReview = reviewText.value;
 
+  console.log(userReview);
+
+  if (userId === "" && userReview === "" && event.key === "Enter") {
+    alert("리뷰가 제대로 입력되지 않았습니다. 알맞게 입력해주세요.");
+    reviewId.focus();
+    return;
+  }
+
   const userEl = document.createElement("p");
   userEl.classList.add("reviewer");
   userEl.innerHTML = userId;
@@ -55,16 +63,26 @@ reviewText.addEventListener("keyup", function (event) {
   commentWrap.appendChild(removeBtn);
 
   if (event.key === "Enter") {
-    reviewList.appendChild(commentWrap);
-    reviewText.value = "";
-    reviewId.value = "";
-    cnt++;
+    if (userId !== "" && userReview !== "") {
+      reviewList.appendChild(commentWrap);
+      reviewText.value = "";
+      reviewId.value = "";
+      reviewId.focus();
+      return;
+      cnt++;
+    }
   }
 });
 
 inputBtn.addEventListener("click", function (e) {
   const userId = reviewId.value;
   const userReview = reviewText.value;
+
+  if (userId === "" || userReview === "") {
+    alert("리뷰가 제대로 입력되지 않았습니다. 알맞게 입력해주세요.");
+    reviewId.focus();
+    return;
+  }
 
   const userEl = document.createElement("p");
   userEl.classList.add("reviewer");
@@ -82,21 +100,24 @@ inputBtn.addEventListener("click", function (e) {
   removeBtn.className = "fas fa-trash-alt";
 
   const commentWrap = document.createElement("div");
-  commentWrap.classList.add("reviewDetailWrap");
-  commentWrap.appendChild(userEl);
-  commentWrap.appendChild(commentEl);
-  commentWrap.appendChild(likeButton);
-  commentWrap.appendChild(removeBtn);
-  reviewList.appendChild(commentWrap);
-  reviewText.value = "";
-  reviewId.value = "";
-  cnt++;
+
+  if (userId !== "" && userReview !== "") {
+    commentWrap.classList.add("reviewDetailWrap");
+    commentWrap.appendChild(userEl);
+    commentWrap.appendChild(commentEl);
+    commentWrap.appendChild(likeButton);
+    commentWrap.appendChild(removeBtn);
+    reviewList.appendChild(commentWrap);
+    reviewText.value = "";
+    reviewId.value = "";
+    reviewId.focus();
+    cnt++;
+  }
 });
 
 reviewList.addEventListener("click", function (event) {
   const reviewTarget = event.target.classList.value;
   const reviewTargetId = event.target.id;
-
   const reviewId = document.getElementById(reviewTargetId);
 
   if (reviewTarget === "fas fa-trash-alt") {
