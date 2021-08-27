@@ -5,7 +5,6 @@
 }
 
 .content {
-    position: relative;
     display: grid;
     place-items: center;
 }
@@ -32,4 +31,186 @@
 
 .nav-right span {
     margin: 10px;
+    color: gray;
+}
+
+.class {
+    width: 1200px;
+    height: 60px;
+    display: column;
+}
+
+#cold-brew-class {
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#path {
+    text-align: right;
+    color: gray;
+}
+
+.menu-detail {
+    width: 1200px;
+    display: flex;
+}
+
+.menu-detail-left {
+    width: 500px;
+    display: flex;
+}
+
+img {
+    width: 450px;
+    height: 450px;
+    margin: 0;
+}
+
+.menu-detail-right {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 100%;
+    padding-left: 20px;
+}
+
+.menu-detail-right-title {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid #333333;
+    padding-right: 10px;
+}
+
+#heart path {
+    width: 30px;
+    height: 30px;
+}
+
+.menu-detail-right-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-nutrition-left {
+    display: flex;
+    flex-direction: column;
+}
+
+#menu-name {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+#menu-name-english {
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.menu-intro {
+    width: 100%;
+    height: 70px;
+    line-height: 130%;
+    padding: 20px 0 10px 0;
+}
+
+.menu-nutrition-title {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    border-top: solid silver 2px;
+    border-bottom: solid silver 2px;
+}
+
+.menu-nutrition-box {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+
+.nutrition-box-left {
+    width: 350px;
+    border-right: dashed 1px black;
+}
+
+.nutrition-box-right {
+    width: 350px;
+}
+
+.nutri1, .nutri2, .nutri3, .nutri4, .nutri5, .nutri6 {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 10px;
+}
+
+#alergy {
+    height: 50px;
+    background-color: #EFEFEF;
+    line-height: 50px;
+    padding: 0 10px;
+}
+
+.menu-detail-right-review {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0px;
+    margin: 15px 0;
+}
+
+#review-title {
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: solid silver 2px;
+}
+
+.review-main {
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.reviews {
+    width: 100%;
+    height: 200px;
+    border: blue 1px solid;
+}
+
+#review-input {
+    height: 50px;
+    width: 100%;
+    background-color:#EFEFEF;
+    line-height: 50px;
+    padding: 0 10px;
+    margin: 20px 0;
+    border: none;
+}
+
+#review-input::placeholder {
+    font-size: 15px;
+}
+
+.footer {
+    width: 100%;
+    height: 250px;
+    background-color: #333333;
+    display: flex;
+    color: #EFEFEF;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 30px;
+    line-height: 35px;
+}
+
+.company, .corporate-sales, .partnership, .online-community {
+    display: flex;
+    flex-direction: column;
+}
+
+.company-list, .corporate-sales-list, .partnership-list, .online-community-list {
+    line-height: 25px;
+    color: #EFEFEF;
 }
