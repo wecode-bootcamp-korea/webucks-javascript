@@ -162,6 +162,11 @@
   outline: none;
 }
 
+#review-list li {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
 .detail-footer {
   display: flex;
   justify-content: space-around;
