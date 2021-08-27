@@ -74,14 +74,9 @@ main {
     margin: 10px;
 }
 
-.coffeeImg {
-    position: relative;
-    width: 100%;
-    padding-bottom: 100%;
-    overflow: hidden;
-}
 
-.checkbox-wrap {
+
+.checkboxWrap {
     position:absolute;
     color: white;
     background-color: transparent;
@@ -95,7 +90,7 @@ input[type='checkbox'] {
     display: none;
 }
 
-.heart_checked {
+.heartChecked {
     opacity: 0;
 }
  
@@ -105,10 +100,17 @@ label,input,.fa-heart {
     left: 6px;
 }
   
-label>input[type="checkbox"]:checked~.heart_checked {
+label>input[type="checkbox"]:checked~.heartChecked {
     display: block;
     opacity: 1;
 }  
+
+.coffeeImg {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    overflow: hidden;
+}
 
 .coffee img {
     position: absolute;
@@ -132,7 +134,7 @@ label>input[type="checkbox"]:checked~.heart_checked {
     text-align: center;
 }
 
-@media (min-width: 800px) and (max-width:1000px) {
+@media screen and (max-width:1000px) {
     .coffeeList {
         grid-template-columns: 1fr 1fr 1fr;
     }

@@ -5,7 +5,7 @@ const btn = document.querySelector('.loginBtn');
 let isValid = [false, false];
 
 //정규표현식 아이디 체크
-const validateEmail = (id) => {
+const isValidId = (id) => {
     let letters = /^([a-z0-9_]){6,}$/;
     if (letters.test(id)) {
         return true;
@@ -15,7 +15,7 @@ const validateEmail = (id) => {
 };
 
 //정규표현식 패스워드 체크
-const validatePassword = (password) => {
+const isValidPassword = (password) => {
     let letters = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,}/;
     if (letters.test(password)) {
         return true;
@@ -36,21 +36,21 @@ const enableButton = (arr) => {
 };
 
 //id와 pwd 유효하면 border color를 초록색으로
-const green = (valid, box) => {
+const changeBorderGreen = (valid, box) => {
     if (valid) {
         box.style.borderColor = "#2E865A";
     } else {
-        box.style.borderColor = "##dddddd";
+        box.style.borderColor = "#dddddd";
     }
 };
 
 //아이디 비밀번호 입력되면 유효성 검증 후 로그인 버튼 활성화 + 테두리 초록색으로
 document.addEventListener('input', () => {
-    isValid[0] = validateEmail(user.value) ? true : false;
-    isValid[1] = validatePassword(pwd.value) ? true : false;
+    isValid[0] = isValidId(user.value) ? true : false;
+    isValid[1] = isValidPassword(pwd.value) ? true : false;
     enableButton(isValid);
-    green(isValid[0], user);
-    green(isValid[1], pwd);
+    changeBorderGreen(isValid[0], user);
+    changeBorderGreen(isValid[1], pwd);
 });
 
 //커피 리스트 페이지로 이동

@@ -245,7 +245,7 @@ footer {
     line-height: 140%;
 }
 
-@media (min-width: 641px) and (max-width:840px) {
+@media screen and (max-width:840px) {
     .title ul{
         display: none;
     }
