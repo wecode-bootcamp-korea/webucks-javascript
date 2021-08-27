@@ -15,12 +15,10 @@ class CommonData {
     }
   }
 
-  checkExist(data) {
-    return this.findByCondition([data]).length;
-  }
-
   addIsGetHeart(data) {
     this.initData = data.map((item) => {
+      //하트 라이크 저장때마다 커피나 커멘트에 넣어줘야함.
+      //true false 가 아니라 해당 인덱스를 넣어줘야함 인덱스의 라이크가 있으면 트루 없으면 펄스
       item.isGetHeart = false;
       return item;
     });
@@ -33,7 +31,7 @@ class CommonData {
 
   saveData(data) {
     localStorage.setItem(this.dataName, JSON.stringify(data));
-    this.loadData();
+    this.initData = data;
   }
 
   findMany() {
@@ -49,22 +47,50 @@ class CommonData {
     this.saveData(this.initData);
   }
 
-  findByCondition(conditions) {
-    let data = this.initData;
-    for (let item of conditions) {
-      for (let key in item) {
-        data = data.filter((jtem) => {
-          console.log(item);
-          console.log(jtem);
-          return jtem[key] === item[key];
-        });
+  findByCoxndition(conditions) {
+    const filter = [];
+    for (let condition of conditions) {
+      for (let key in condition) {
+        filter.push({ [key]: condition[key] });
       }
     }
-    return data;
+
+    let filteredData = this.initData;
+    for (let filt of filter) {
+      const key = Object.keys(filt)[0];
+
+      filteredData = filteredData.filter((item) => {
+        return filt[key] === item[key];
+      });
+    }
+
+    return filteredData;
   }
 
   deleteByIndex(index) {
     this.saveData(this.initData.filter((_, idx) => idx !== index));
+  }
+
+  deleteByCondition(conditions) {
+    const result = [];
+    for (let condition of conditions) {
+      for (let item of this.initData) {
+        const conditionIndex = condition["index"];
+        const dashIndex = conditionIndex.indexOf("2-");
+
+        if (dashIndex > -1) {
+          const istwoExist =
+            condition["index"].substring(0, dashIndex) +
+            "1" +
+            conditionIndex.substring(dashIndex + 1, conditionIndex.length);
+          condition["index"] = istwoExist;
+        }
+        const filter = Object.entries(condition).toString();
+        const originalData = Object.entries(item).toString();
+        if (filter !== originalData) result.push(item);
+      }
+    }
+    this.saveData(result);
   }
 }
 
@@ -87,9 +113,9 @@ class Paint {
           <span class="comment__writer">${writer}</span>
           <span class="comment__desc">${desc}</span>
           <div class="hearts">
-            <i class="far fa-heart heart-empty ${isGetHeart && "none"}"
+            <i class="far fa-heart heart-empty"
             id=${emptyHeartId}></i>
-            <i class="fas fa-heart red heart-full ${isGetHeart && "show"}"
+            <i class="fas fa-heart red heart-full"
             id=${fullHeartId}></i>
           </div>
           <button class="del-btn" id=${deleteId}>❌</button>
@@ -102,6 +128,8 @@ class Paint {
       const emptyHeartId = `comments__heart1-${index}`;
       const fullHeartId = `comments__heart2-${index}`;
       const deleteId = `comments__delete-${index}`;
+
+      this.paintOnlyHeart([emptyHeartId, fullHeartId], item.isGetHeart);
 
       const delBtn = document.getElementById(deleteId);
 
@@ -250,10 +278,12 @@ class AddHeartListener {
     repository.updateOne("isGetHeart", !isLike, index);
 
     const likeRepo = new CommonData("likes");
-    const newData = { user: getLoginUser()[0]["id"], index };
-    if (!isLike && !likeRepo.checkExist(newData)) {
-      likeRepo.createData(newData);
-    } else if (isLike && likeRepo.checkExist(newData)) {
+
+    const newData = [{ user: getLoginUser()[0]["id"], index: this.id }];
+    if (!isLike && !likeRepo.findByCoxndition(newData).length) {
+      likeRepo.createData(...newData);
+    } else if (isLike && !likeRepo.findByCoxndition(newData).length) {
+      likeRepo.deleteByCondition(newData);
     }
 
     if (saveName === "detail") {
