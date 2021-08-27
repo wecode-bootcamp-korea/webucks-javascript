@@ -15,8 +15,8 @@ a {
 
   body {
     padding-top: 120px;
-    font-size: 13px;
     font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
   }
 
   div.tablet_gnb_wrap {
@@ -30,10 +30,10 @@ a {
     top: 0;
     height: 120px;
     width: 100%;
-    z-index: 1000;
     background-color: #f6f5ef;
-    border-bottom: 1px solid #e5e5e5;
     border-top: 2px solid #000;
+    border-bottom: 1px solid #e5e5e5;
+    z-index: 1000;
   }
 
   .sub_gnb_wrap_inner {
@@ -49,15 +49,15 @@ a {
     left: 0;
     height: 75px;
     width: 75px;
-    z-index: 12;
     font-family: 'Style Script', cursive;
     font-size: 46px;
+    z-index: 12;
   }
 
   .logo a {
     display: inline-block;
-    width: 100%;
     height: 100%;
+    width: 100%;
   }
 
   /* Util */
@@ -71,16 +71,16 @@ a {
   }
 
   .clearfix:after {
-    content: '';
-    clear: both;
     display: table;
+    clear: both;
+    content: '';
   }
 
   .util_nav li {
-    margin-left: 30px;
-    height: 20px;
     float: left;
+    margin-left: 30px;
     text-align: center;
+    height: 20px;
   }
 
   .util_nav li a {
@@ -107,7 +107,6 @@ a {
     position: fixed;
     top: 54px;
     left: 0;
-    z-index: 11;
     height: 66px;
     width: 100%;
     z-index: 1100;
@@ -175,9 +174,9 @@ a {
   div.sub_tit_inner {
     position: relative;
     margin: 0 auto;
-    width: 1100px;
-    height: 91px;
     padding-top: 30px;
+    height: 91px;
+    width: 1100px;
   }
   
   div.sub_tit_inner h2{
@@ -214,17 +213,17 @@ a {
     position: relative;
     margin-bottom: 20px;
     padding: 20px;
+    background-color: #f4f4f2;
     border-radius: 3px;
     overflow: hidden;
-    background-color: #f4f4f2;
   }
 
   div.product_list > dl > dt > a {
     display: block;
     line-height: 18px;
+    color: #222;
     font-size: 18px;
     font-weight: 600;
-    color: #222;
   }
 
   div.product_list > dl > dt > i {
@@ -237,16 +236,16 @@ a {
   div.product_list > dl > dt > i img {
     display: inline-block;
     position: relative;
-    width: 100%;
     top: -9px;
+    width: 100%;
   }
 
   div.product_list > dl > dt .summary {
     display: block;
-    line-height: 18px;
     margin-left: 5px;
-    font-size: 13px;
+    line-height: 18px;
     color: #444444;
+    font-size: 13px;
     letter-spacing: -1px;
   }
 
@@ -260,12 +259,12 @@ a {
   }
 
   div.product_list > dl > dd > ul {
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
     top: -10px;
     left: -10px;
     width: 1120px;
-    display: flex;
-    flex-wrap: wrap;
   }
 
   div.product_list > dl > dd > ul li {
@@ -308,13 +307,13 @@ a {
   }
 
   div.product_list > dl > dd > ul li dd {
+    text-align: center;
+    line-height: 54px;
+    height: 54px;
     font-size: 14px;
     color: #444;
-    height: 54px;
-    line-height: 54px;
-    text-align: center;
-    text-overflow: ellipsis;
     overflow: hidden;
+    text-overflow: ellipsis;
     white-space: nowrap;
   }
 
@@ -351,9 +350,9 @@ div.product_list > dl > dd > ul li dt img:hover {
     left: 20px;
     height: 75px;
     width: 75px;
-    z-index: 12;
     font-family: 'Style Script', cursive;
     font-size: 46px;
+    z-index: 12;
   }
 
   /* SUB GNB */
@@ -384,17 +383,17 @@ div.product_list > dl > dd > ul li dt img:hover {
   .sub_gnb_wrap_inner nav.util_nav {
     position: absolute;
     height: 20px;
-    right: 93px;
     top: 15px;
+    right: 93px;
   }
 
 
   /* CONTENTS */
 
   .sub_tit_wrap div.sub_tit_inner {
-    width: 96%;
     margin: 0 auto;
     padding-top: 0;
+    width: 96%;
   }
 
   .sub_tit_wrap div.sub_tit_inner h2 {
@@ -410,17 +409,17 @@ div.product_list > dl > dd > ul li dt img:hover {
   }
 
   div.product_list > dl > dd > ul {
-    width: 100%;
-    position: relative;
     display: flex;
     flex-wrap: wrap;
-    left: 0;
+    position: relative;
     top: 0;
+    left: 0;
+    width: 100%;
   }
 
   div.product_list > dl > dd > ul > li {
-    width: 24%;
     margin: 0.5%;
+    width: 24%;
   }
 
   div.product_list > dl > dd > ul > li > dl {
@@ -434,8 +433,8 @@ div.product_list > dl > dd > ul li dt img:hover {
 
   li.menuDataSet > dl > dt > a {
     display: block;
-    width: 100%;
     height: 100%;
+    width: 100%;
   }
 
   div.product_list > dl > dd > ul > li > dl > dt > a > img {
@@ -459,10 +458,10 @@ div.product_list > dl > dd > ul li dt img:hover {
   }
 
   .sub_tit_inner {
-    width: 96%;
     margin: 0 auto;
     padding-top: 0;
     height: 91px;
+    width: 96%;
   }
 
   .sub_tit_inner h2 {
@@ -470,21 +469,21 @@ div.product_list > dl > dd > ul li dt img:hover {
   }
 
   div.tablet_gnb_wrap {
-    background: #f6f5ef;
-    border-bottom: 1px solid #e5e5e5;
-    height: 69px;
-    left: 0;
     position: fixed;
     top: 0;
+    left: 0;
+    height: 69px;
     width: 100%;
+    background: #f6f5ef;
+    border-bottom: 1px solid #e5e5e5;
     z-index: 1000;
   }
 
   div.tablet_gnb_wrap h1 {
-    height: 45px;
-    left: 12px;
     position: absolute;
     top: 22px;
+    left: 12px;
+    height: 45px;
     font-family: 'Style Script', cursive;
     font-size: 40px;
   }
@@ -509,17 +508,17 @@ div.product_list > dl > dd > ul li dt img:hover {
   }
 
   nav.tablet_gnb_sep > ul > li {
-    height: 60px;
-    margin: 10px 0 0 1px;
     position: relative;
+    margin: 10px 0 0 1px;
+    height: 60px;
     width: 60px;
   }
 
   nav.tablet_gnb_sep > ul > li > a {
     display: block;
+    position: absolute;
     left: 18px;
     overflow: hidden;
-    position: absolute;
   }
 
   nav.tablet_gnb_sep > ul > li:first-child > a {
@@ -547,8 +546,8 @@ div.product_list > dl > dd > ul li dt img:hover {
   }
 
   .content {
-    width: 96%;
     margin: 0 auto;
+    width: 96%;
   }
 
   div.product_view_tab_wrap {
@@ -556,9 +555,9 @@ div.product_list > dl > dd > ul li dt img:hover {
   }
 
   div.product_list > dl > dt {
+    margin-bottom: 20px;
     padding: 20px;
     background: #f4f4f2;
-    margin-bottom: 20px;
     border-radius: 3px;
     overflow: hidden;
   }
@@ -575,9 +574,9 @@ div.product_list > dl > dd > ul li dt img:hover {
   div.product_list > dl > dt > i {
     display: block;
     float: left;
-    width: 45px;
-    height: 18px;
     margin-left: 15px;
+    height: 18px;
+    width: 45px;
   }
 
   div.product_list > dl > dt > i > img {
@@ -589,10 +588,10 @@ div.product_list > dl > dd > ul li dt img:hover {
   div.product_list > dl > dt .summary {
     display: block;
     float: left;
-    line-height: 18px;
     margin-left: 5px;
-    font-size: 14px;
+    line-height: 18px;
     color: #444444;
+    font-size: 14px;
     letter-spacing: -1px;
   }
 
@@ -602,14 +601,14 @@ div.product_list > dl > dd > ul li dt img:hover {
   }
 
   div.product_list > dl > dd > ul {
-    margin: 0 auto;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     position: relative;
-    width: 100%;
-    left: 0;
+    margin: 0 auto;
     top: 0;
+    left: 0;
+    width: 100%;
   }
 
   div.product_list > dl > dd > ul > li > dl {
@@ -619,28 +618,28 @@ div.product_list > dl > dd > ul li dt img:hover {
   div.product_list > dl > dd > ul > li > dl > dt {
     position: relative;
     height: auto;
-    overflow: hidden;
     width: 100%;
+    overflow: hidden;
   }
 
   div.product_list > dl > dd > ul > li > dl > dt > a {
-    position: relative;
     display: block;
+    position: relative;
   }
 
   div.product_list > dl > dd > ul > li > dl > dt > a > img {
-    height: auto;
-    width: 100%;
     display: block;
     margin: 0;
+    height: auto;
+    width: 100%;
     transition: transform 1s;
   }
 
   div.product_list > dl > dd > ul > li > dl > dd {
     font-size: 15px;
-    text-align: center;
     height: 54px;
     line-height: 54px;
+    text-align: center;
     color: #444;
   }
   
@@ -665,9 +664,9 @@ div.product_list > dl > dd > ul li dt img:hover {
 @media screen and (min-width: 481px) and (max-width: 660px) {
 
   div.product_list > dl > dt .summary {
-    clear: both;
     margin-left: 0;
     margin-top: 10px;
+    clear: both;
   }
 
   div.product_list > dl > dd > ul > li {
@@ -695,18 +694,18 @@ div.product_list > dl > dd > ul li dt img:hover {
     position: absolute;
     top: 8px;
     left: 6px;
-    width: 25px;
     height: 25px;
+    width: 25px;
+    cursor: pointer;
     z-index: 10000;
     opacity: 0;
-    cursor: pointer;
   }
 
   #like_bev_container .fa-heart {
     position: absolute;
-    font-size: 20px;
     top: 13px;
     left: 13px;
+    font-size: 20px;
   }
 
   #like_bev_container .far {

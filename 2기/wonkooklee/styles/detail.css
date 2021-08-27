@@ -10,8 +10,8 @@ body {
 }
 
 .wrap {
-  height: 100vh;
   position: relative;
+  height: 100vh;
 }
 
   
@@ -22,10 +22,10 @@ body {
   top: 0;
   height: 120px;
   width: 100%;
-  z-index: 1000;
   background-color: #f6f5ef;
-  border-bottom: 1px solid #e5e5e5;
   border-top: 2px solid #000;
+  border-bottom: 1px solid #e5e5e5;
+  z-index: 1000;
 }
 
 .sub_gnb_wrap_inner {
@@ -41,15 +41,15 @@ body {
   left: 0;
   height: 75px;
   width: 75px;
-  z-index: 12;
   font-family: 'Style Script', cursive;
   font-size: 46px;
+  z-index: 12;
 }
 
 .logo a {
   display: inline-block;
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 
 .sub_gnb_wrap_inner .util_nav > ul > li a {
@@ -67,15 +67,15 @@ body {
 }
 
 .clearfix:after {
-  content: '';
-  clear: both;
   display: table;
+  clear: both;
+  content: '';
 }
 
 .util_nav li {
+  float: left;
   margin-left: 30px;
   height: 20px;
-  float: left;
   text-align: center;
 }
 
@@ -209,19 +209,19 @@ div.sub_tit_wrap .sub_tit_inner ul.smap li:first-child {
   height: 15px;
   background-image: url(https://image.istarbucks.co.kr/common/img/common/icon_home.png);
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 div.sub_tit_wrap .sub_tit_inner ul.smap li:nth-child(2n) {
-  width: 7px;
-  height: 12px;
   position: relative;
   top: 1px;
+  height: 12px;
+  width: 7px;
   background-image: url(https://image.istarbucks.co.kr/common/img/common/icon_arrow.png);
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* BREADCRUMB end */
@@ -245,8 +245,8 @@ div.product_view_wrap1 {
 /* PICTURE */
 
 .product_view_pic {
-  width: 450px;
   float: left;
+  width: 450px;
   overflow: hidden;
 }
 
@@ -271,22 +271,20 @@ div.product_view_wrap1 {
 
 .zoomLens {
   display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 234px;
+  width: 305px;
+  background-color: white;
   background-position: 0px 0px;
-  float: right;
+  background-repeat: no-repeat;
+  border: 1px solid rgb(0, 0, 0);
+  cursor: default;
+  opacity: 0.4;
   overflow: hidden;
   z-index: 9;
   transform: translateZ(0px);
-  opacity: 0.4;
-  zoom: 1;
-  width: 305px;
-  height: 234px;
-  background-color: white;
-  cursor: default;
-  border: 1px solid rgb(0, 0, 0);
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 0;
-  top: 0;
 }
 
 .zoomWindowContainer {
@@ -295,21 +293,20 @@ div.product_view_wrap1 {
 
 .zoomWindow {
   display: none;
-  overflow: hidden;
-  background-position: 0 0;
-  text-align: center;
-  background-color: rgb(255, 255, 255);
-  width: 610px;
-  height: 468px;
   float: left;
-  background-size: 900px 940px;
-  z-index: 100;
-  /* border: 4px solid rgb(136, 136, 136); */
-  background-repeat: no-repeat;
   position: absolute;
-  background-image: url(https://image.istarbucks.co.kr/upload/store/skuimg/2020/09/[9200000002672]_20200921171223958.jpg);
   top: 31px;
   left: 488px;
+  height: 468px;
+  width: 610px;
+  background-image: url(https://image.istarbucks.co.kr/upload/store/skuimg/2020/09/[9200000002672]_20200921171223958.jpg);
+  background-color: rgb(255, 255, 255);
+  background-position: 0 0;
+  background-size: 900px 940px;
+  background-repeat: no-repeat;
+  text-align: center;
+  overflow: hidden;
+  z-index: 100;
 }
 
 /* ZOOM animation end */
@@ -334,30 +331,30 @@ div.like__btn {
 }
 
 .btn-love {
+  margin: auto;
   position: absolute;
-  z-index: 10;
+  top: 0;
   left: 0;
   right: 0;
-  top: 0;
   bottom: 0;
-  margin: auto;
   height: 100%;
   width: 100%;
   cursor: pointer;
+  z-index: 10;
 }
 
 .btn-love:after {
-  content: '';
   position: absolute;
+  margin: 0 auto;
   top: 50%;
   left: 50%;
   right: 0;
-  transform: translate(-50%, -50%);
-  margin: 0 auto;
-  background: url(https://abs.twimg.com/a/1446862637/img/t1/web_heart_animation.png) 0 0 no-repeat;
-  background-size: 2900%;
   height: 100px;
   width: 100px;
+  background: url(https://abs.twimg.com/a/1446862637/img/t1/web_heart_animation.png) 0 0 no-repeat;
+  background-size: 2900%;
+  transform: translate(-50%, -50%);
+  content: '';
 }
 
 #like:checked + .btn-love:after {
@@ -369,39 +366,39 @@ div.like__btn {
 
 div.product_view_detail {
   position: relative;
-  width: 610px;
   float: right;
+  width: 610px;
 }
 
 div.product_view_detail h4 {
   margin-bottom: 20px;
   padding-bottom: 18px;
   border-bottom: 2px solid #333;
-  font-weight: bold;
   font-size: 24px;
+  font-weight: bold;
   color: #222;
 }
 
 div.product_view_detail h4 span {
-  font-size: 14px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: normal;
   color: #666;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
 }
 
 div.product_view_detail p.t1 {
-  font-size: 16px;
-  color: #444;
   margin-bottom: 20px;
-  line-height: 1.6;
   min-height: 40px;
+  line-height: 1.6;
+  color: #444;
+  font-size: 16px;
 }
 
 .hid {
   position: absolute;
-  font-size: 0;
-  width: 0;
   height: 0;
+  width: 0;
+  font-size: 0;
   text-indent: -9999px;
   overflow: hidden;
 }
@@ -432,8 +429,8 @@ div.product_view_detail p.t1 {
 }
 
 .selectTxt2 {
-  margin-right: 6px;
   margin-top: -5px;
+  margin-right: 6px;
 }
 
 
@@ -450,8 +447,8 @@ div.product_info_content ul {
 }
 
 div.product_info_content ul:last-child {
-  width: 50%;
   float: right;
+  width: 50%;
   border-left: 1px dotted #D6D6D6;
 }
 
@@ -462,8 +459,8 @@ div.product_info_content ul li {
 
 div.product_info_content ul li dl {
   width: 100%;
-  font-size: 14px;
   color: #444;
+  font-size: 14px;
 }
 
 div.product_info_content dl dt {
@@ -495,8 +492,8 @@ div.product_alergy p.alergy_warn {
 /* REVIEW */
 
 section.review_wrap {
-  margin-top: 30px;
   float: right;
+  margin-top: 30px;
   width: 610px;
 }
 
@@ -519,10 +516,10 @@ section.review_wrap > dl > dd.review_container {
 
 section.review_wrap > dl > dd.review_container ul {
   position: absolute;
-  overflow-y: scroll;
-  height: 100%;
   bottom: 0;
-  width: 100%
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
 }
 
 section.review_wrap > dl > dd.review_container ul .review_thread {
@@ -540,8 +537,8 @@ section.review_wrap > dl > dd.review_container ul .review_thread {
 
 section.review_wrap > dl > dd.review_container .review_thread .id {
   margin-right: 5px;
-  font-weight: bold;
   color: #333333;
+  font-weight: bold;
 }
 
 section.review_wrap > dl > dd.review_container .review_thread .comment {
@@ -549,11 +546,11 @@ section.review_wrap > dl > dd.review_container .review_thread .comment {
 }
 
 #review_field {
+  padding-left: 10px;
   height: 34px;
   width: 100%;
-  border: none;
   background-color: #efefef;
-  padding-left: 10px;
+  border: none;
 }
 
 #review_field:focus {
@@ -580,18 +577,18 @@ section.review_wrap > dl > dd.review_container .review_thread .comment {
   display: none;
   position: absolute;
   padding-left: 1px;
-  height: 20px;
-  width: 20px;
   top: 3px;
   right: 10px;
-  font-size: 14px;
-  line-height: 20px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  text-align: center;
-  font-weight: bold;
-  cursor: pointer;
+  height: 20px;
+  width: 20px;
   color: crimson;
+  background-color: #ffffff;
+  line-height: 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
   opacity: 0.9;
 }
 
@@ -602,16 +599,15 @@ section.review_wrap > dl > dd.review_container .review_thread .comment {
 #validTag {
   position: absolute;
   bottom: 35px;
-  text-align: center;
-  line-height: 24px;
-  color: #ffffff;
-  width: 180px;
   height: 26px;
+  width: 180px;
+  color: #ffffff;
   background-color: #333;
-  border-radius: 5px;
+  text-align: center;
   font-size: 12px;
+  line-height: 24px;
+  border-radius: 5px;
   opacity: 0;
-  /* transition: opacity 2s; */
   animation-duration: 1.5s;
   animation-iteration-count: 1;
 }

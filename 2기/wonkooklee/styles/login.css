@@ -3,8 +3,8 @@
 /* GLOBAL */
 
 body {
-  width: 100vw;
   height: 100vh;
+  width: 100vw;
   background-color: #FAFAFA;
 }
 
@@ -12,8 +12,8 @@ article {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   width: 350px;
+  transform: translate(-50%, -50%);
 }
 
 section {
@@ -31,11 +31,11 @@ section.login {
 
 h1 {
   position: relative;
+  margin: 37px 0 37px 0;
   font-family: 'Style Script', cursive;
+  font-size: 42px;
   font-weight: 800;
   letter-spacing: 1px;
-  font-size: 42px;
-  margin: 37px 0 37px 0;
 }
 
 
@@ -53,13 +53,13 @@ section.login button {
 }
 
 section.login input {
-  width: 100%;
-  height: 38px;
-  border: 1px solid #DBDBDB;
-  background-color: #FAFAFA;
-  border-radius: 3px;
   margin-bottom: 8px;
   padding-left: 10px;
+  height: 38px;
+  width: 100%;
+  background-color: #FAFAFA;
+  border: 1px solid #DBDBDB;
+  border-radius: 3px;
 }
 
 section.login input::placeholder {
@@ -68,20 +68,20 @@ section.login input::placeholder {
 }
 
 section.login input:focus {
-  outline: none;
-  border: 1px solid #8E8E8E;
   background-color: #e8f0fe;
+  border: 1px solid #8E8E8E;
+  outline: none;
 }
 
 section.login button {
-  width: 100%;
-  height: 30px;
-  border: none;
   margin-top: 15px;
-  background-color: #1997f3;
-  cursor: pointer;
+  height: 30px;
+  width: 100%;
   color: #fff;
+  background-color: #1997f3;
+  border: none;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 
@@ -89,13 +89,13 @@ section.login button {
 
 #icon {
   position: absolute;
-  opacity: 0;
   top: 52px;
   right: 6px;
   height: 20px;
   width: 20px;
-  z-index: 1000;
   cursor: pointer;
+  z-index: 1000;
+  opacity: 0;
 }
 
 #icon:hover + i,
@@ -107,8 +107,8 @@ i {
   position: absolute;
   top: 57px;
   right: 10px;
-  opacity: 0.2;
   transition: opacity 0.3s;
+  opacity: 0.2;
 }
 
 .hidden {
@@ -125,15 +125,15 @@ section.login button:disabled {
 
 .divider {
   position: relative;
-  font-size: 13px;
   margin-top: 20px;
+  font-size: 13px;
 }
 
 .divider hr {
-  border:0;
-  border-top : 1px solid #DBDBDB;
   margin:0;
   height:1px;
+  border:0;
+  border-top : 1px solid #DBDBDB;
 }
 
 .divider span {
@@ -141,10 +141,10 @@ section.login button:disabled {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  color: #8E8E8E;
   width: 60px;
+  transform: translate(-50%, -50%);
+  color: #8E8E8E;
+  background-color: #fff;
 }
 
 
@@ -156,15 +156,15 @@ h2.facebook__login {
 }
 
 h2.facebook__login span {
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+  top: 3px;
+  height: 15px;
+  width: 15px;
   background-image: url(../resources/img/logo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  margin-right: 10px;
-  position: relative;
-  top: 3px;
 }
 
 h2.facebook__login {
@@ -176,8 +176,8 @@ h2.facebook__login a {
 }
 
 p.forget {
-  font-size: 12px;
   margin: 21px 0;
+  font-size: 12px;
 }
 
 p.forget a {
@@ -188,10 +188,10 @@ p.forget a {
 /* SIGN UP */
 
 section.signup {
-  height: 63px;
-  padding: 25px 0;
-  text-align: center;
   margin-bottom: 10px;
+  padding: 25px 0;
+  height: 63px;
+  text-align: center;
 }
 
 section.signup p {
@@ -210,15 +210,15 @@ section.signup p a {
 div.applink {
   margin-top: 10p;
   padding-top: 10px;
-  width: 100%;
   height: 105px;
+  width: 100%;
 }
 
 div.applink .app__mention {
+  margin-bottom: 20px;
   text-align: center;
   font-size: 14px;
   font-weight: 400;
-  margin-bottom: 20px;
 }
 
 div.link__btns {
@@ -227,24 +227,24 @@ div.link__btns {
 
 div.applink .link__btn {
   display: inline-block;
-  border-radius: 5px;
-  width: 134px;
   height: 40px;
-  background-color: #000;
+  width: 134px;
   background-position: center;
   background-size: cover;
+  background-color: #000;
   background-repeat: no-repeat;
+  border-radius: 5px;
 }
 
 div.applink .link__btn a {
   display: inline-block;
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 
 div.applink .link__btn.appstore__btn {
-  background-image: url(../resources/img/appstore.png);
   margin-right: 4px;
+  background-image: url(../resources/img/appstore.png);
 }
 
 div.applink .link__btn.googleplay__btn {
