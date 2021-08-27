@@ -1,6 +1,6 @@
 .container {
   width: 1120px;
-  margin: 0 auto 100px;
+  margin: 0 auto;
   /* background-color: yellow; */
   /* border: 1px solid black; */
 }
@@ -67,11 +67,16 @@ header h2 {
 
 .likeBtn {
   position: absolute;
-  right: 0;
+  right: 10px;
   top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: red;
+}
+
+.likeBtn:hover {
+  cursor: pointer;
 }
 
 .title {
@@ -134,22 +139,36 @@ header h2 {
 
 .review {
   display: flex;
+  align-items: center;
   padding: 3px 0;
 }
 
-.review span {
+.review span:first-child {
   margin-right: 5px;
   font-weight: bold;
+  /* background-color: yellow; */
 }
 
-.review p {
+.review span:nth-child(2) {
+  display: block;
+  line-height: 1rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  /* background-color: orange; */
+}
+
+#addedReview {
+  /* background-color: green; */
+  padding: 3px 0;
+}
+
+#newReviewForm {
+  margin-top: 10px;
+  /* border: 1px solid black; */
 }
 
 #newReview {
-  margin-top: 10px;
   padding: 7px;
   background-color: #efefef;
   border: none;

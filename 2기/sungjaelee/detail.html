@@ -19,6 +19,10 @@
         font-family: "Dancing Script", cursive;
       }
     </style>
+    <script
+      src="https://kit.fontawesome.com/f4fddf9de0.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -47,7 +51,7 @@
             />
           </div>
           <div class="detailsContainer">
-            <span class="likeBtn">heart</span>
+            <i class="likeBtn far fa-heart"></i>
             <h3 class="title">
               나이트로 바닐라 크림
               <br />
@@ -93,78 +97,85 @@
             <div class="reviews">
               <div class="review">
                 <span>coffee_lover</span>
-                <p>너무 맛있어요!</p>
+                <span>너무 맛있어요!</span>
               </div>
               <div class="review">
-                <span>CHOCO7</span>
-                <p>오늘도 화이팅</p>
+                <span>CHOCO7 ggg</span>
+                <span>오늘도 화이팅 gggg</span>
               </div>
               <div class="review">
                 <span>legend_dev</span>
-                <p>
+                <span>
                   진짜 화이트 초콜릿 모카는 전설이다. 진짜 화이트 초콜릿 모카는
                   전설이다. 진짜 화이트 초콜릿 모카는 전설이다. 진짜 화이트
                   초콜릿 모카는 전설이다.
-                </p>
+                </span>
+              </div>
+              <div id="addedReview" class="review">
+                <span></span>
+                <span></span>
               </div>
             </div>
-            <input
-              id="newReview"
-              type="text"
-              placeholder="리뷰를 입력해주세요."
-            />
+            <form id="newReviewForm" action="#">
+              <input
+                id="newReview"
+                type="text"
+                placeholder="리뷰를 입력해주세요."
+              />
+            </form>
           </div>
         </div>
       </section>
-      <footer>
-        <div class="footerHeader">
-          <p>COMPANY</p>
-          <div class="options">
-            <p>한눈에 보기</p>
-            <p>스타벅스 사명</p>
-            <p>스타벅스 소개</p>
-            <p>국내 뉴스룸</p>
-            <p>세계의 스타벅스</p>
-            <p>글로벌 뉴스룸</p>
-          </div>
-        </div>
-        <div class="footerHeader">
-          <p>CORPORATE SALES</p>
-          <div class="options">
-            <p>단체 및 기업 구매 안내</p>
-          </div>
-        </div>
-        <div class="footerHeader">
-          <p>PARTNERSHIP</p>
-          <div class="options">
-            <p>신규 입점 제의</p>
-            <p>협력 고객사 등록 신청</p>
-          </div>
-        </div>
-        <div class="footerHeader">
-          <p>ONLINE COMMUNITY</p>
-          <div class="options">
-            <p>페이스북</p>
-            <p>트위터</p>
-            <p>유튜브</p>
-            <p>블로그</p>
-            <p>인스타그램</p>
-          </div>
-        </div>
-        <div class="footerHeader">
-          <p>RECRUIT</p>
-          <div class="options">
-            <p>채용 소개</p>
-            <p>채용 지원하기</p>
-          </div>
-        </div>
-        <div class="footerHeader">
-          <p>WEBUCKS</p>
-          <div class="options">
-            <p></p>
-          </div>
-        </div>
-      </footer>
     </div>
+    <footer>
+      <div class="footerHeader">
+        <p>COMPANY</p>
+        <div class="options">
+          <p>한눈에 보기</p>
+          <p>스타벅스 사명</p>
+          <p>스타벅스 소개</p>
+          <p>국내 뉴스룸</p>
+          <p>세계의 스타벅스</p>
+          <p>글로벌 뉴스룸</p>
+        </div>
+      </div>
+      <div class="footerHeader">
+        <p>CORPORATE SALES</p>
+        <div class="options">
+          <p>단체 및 기업 구매 안내</p>
+        </div>
+      </div>
+      <div class="footerHeader">
+        <p>PARTNERSHIP</p>
+        <div class="options">
+          <p>신규 입점 제의</p>
+          <p>협력 고객사 등록 신청</p>
+        </div>
+      </div>
+      <div class="footerHeader">
+        <p>ONLINE COMMUNITY</p>
+        <div class="options">
+          <p>페이스북</p>
+          <p>트위터</p>
+          <p>유튜브</p>
+          <p>블로그</p>
+          <p>인스타그램</p>
+        </div>
+      </div>
+      <div class="footerHeader">
+        <p>RECRUIT</p>
+        <div class="options">
+          <p>채용 소개</p>
+          <p>채용 지원하기</p>
+        </div>
+      </div>
+      <div class="footerHeader">
+        <p>WEBUCKS</p>
+        <div class="options">
+          <p></p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/detail.js"></script>
   </body>
 </html>
