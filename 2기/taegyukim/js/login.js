@@ -11,6 +11,8 @@ function paintBtn() {
     if(user.value.includes('@') && password.value.length >= 8) {
         btn.style.backgroundColor = "#60ADED";
         btn.setAttribute('onclick', 'moveList();');
+    } else {
+        btn.style.backgroundColor = '';
     }
 }
 
