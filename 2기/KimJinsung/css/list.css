@@ -1,0 +1,88 @@
+*{
+  box-sizing: border-box;
+}
+
+main{
+  margin: auto;
+  width: 90%;
+}
+
+input{
+  border: none;
+  background-color: hsl(60deg 8% 95%);
+}
+
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 27px;
+}
+
+li{
+  list-style: none;
+}
+
+img{
+  width: 280px;
+}
+
+span{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+.topBar{
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  background-color: hsl(60deg 8% 95%);
+}
+
+.webucksLogo{
+  width: 100px;
+  background-color: hsl(60deg 8% 95%);
+}
+
+.topMenu{
+  display: flex;
+  justify-content: right;
+  margin: 15px 15px 15px 15px;
+}
+
+.coffeeTap{
+  color: #bbb;
+  text-decoration: none;
+}
+
+.menuTap{
+  margin-left: 20px;
+  color: #bbb;
+  text-decoration: none;
+}
+
+.storeTap{
+  margin-left: 20px;
+  color: #bbb;
+  text-decoration: none;
+}
+
+.whatsNewTap{
+  margin-left: 20px;
+  color: #bbb;
+  text-decoration: none;
+}
+
+.coffeeMenuAlign{
+  margin: 10px 10px 10px 10px;
+}
+
+.coldbrewListBar{
+  margin-top: 15px;
+  background-color: hsl(60deg 8% 95%);
+}
+
+.brewedListBar{
+  background-color: hsl(60deg 8% 95%);
+}

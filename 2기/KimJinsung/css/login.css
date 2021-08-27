@@ -1,8 +1,8 @@
 c
 .outLine{
   display: flex;
-  background-color: #eeefef;
   justify-content: center;
+  background-color: #eeefef;
 }
 
 .outBox{
@@ -15,59 +15,59 @@ c
 }
 
 .logo{
-  margin: 0 auto;
-  margin-top: 40px;
   display: block;
+  margin: auto;
+  margin-top: 40px;
   width: 200px;
   height: 100px;
 }
 
 .innerBox{
-  width: 300px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin: auto;
+  width: 300px;
 }
 
 .idBox{
-  padding-left: 10px;
-  height: 30px;
-  margin-top: 20px;
   border: 2px solid #dddddd;
   border-radius: 5px;
+  padding-left: 10px;
+  margin-top: 20px;
+  height: 30px;
 }
 
 .pwBox{
-  padding-left: 10px;
-  height: 30px;
-  margin-top: 15px;
   border: 2px solid #dddddd;
   border-radius: 5px;
+  padding-left: 10px;
+  margin-top: 15px;
+  height: 30px;
 }
 
 .logButton{
-  color: white;
-  height: 40px;
-  margin-top: 15px;
   border: none;
   border-radius: 10px;
+  margin-top: 15px;
+  height: 40px;
+  color: white;
   background-color: #add3eb;
 }
 
 .buttonActive{
-  color: white;
-  height: 40px;
-  margin-top: 15px;
   border: none;
   border-radius: 10px;
-background-color: #61aded;
+  margin-top: 15px;
+  height: 40px;
+  color: white;
+  background-color: #61aded;
 }
 
 .findPw{
-  margin-top: 120px;
-  color: #6993af;
-  text-decoration : none;
   display: flex;
   justify-content: center;
+  margin-top: 120px;
+  text-decoration : none;
+  color: #6993af;
 }
