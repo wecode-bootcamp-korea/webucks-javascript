@@ -3,7 +3,8 @@
 let heartIcon = document.querySelector(".heart-icon");
 
 heartIcon.addEventListener('click', () => {
-        heartIcon.style.color = 'red';
+    heartIcon.classList.toggle("hearbutton-js")
+
 })
 
 

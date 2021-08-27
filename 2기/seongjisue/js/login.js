@@ -1,6 +1,6 @@
 const totalBox = document.getElementsByClassName("box");
 
-totalBox[1].addEventListener('keydown', ()=>{
+const inputBoxStyleColor = () => {
     let firstBox = totalBox[0].value.includes('@');
     let secondBox = totalBox[1].value.length > 8;
     if(firstBox && secondBox){
@@ -9,8 +9,12 @@ totalBox[1].addEventListener('keydown', ()=>{
         totalBox[2].addEventListener('click', () => {
             window.open('list.html')
         })
+    }else {
+        totalBox[2].style.opacity = '0.2';
     }
-})
+}
+totalBox[0].addEventListener('keydown', inputBoxStyleColor);
+totalBox[1].addEventListener('keydown', inputBoxStyleColor);
 
 
 

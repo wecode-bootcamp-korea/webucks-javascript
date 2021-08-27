@@ -21,6 +21,10 @@ body {
     justify-content: space-between;
 }
 
+.hearbutton-js {
+    color: red;
+}
+
 .flex{ /*태그에서 공통사용*/
     display: flex;
 }
@@ -123,6 +127,8 @@ body {
 }
 
 .item-nav .heart-icon:hover {
+    transition-duration: 1s;
+    transform: scale(1.6);
     cursor: pointer;
     opacity: 0.8;
 } 
