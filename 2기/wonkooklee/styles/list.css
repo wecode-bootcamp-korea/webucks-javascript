@@ -206,11 +206,11 @@ a {
     width: 1100px;
   }
 
-  /* div.product_list {} */
 
   /* PRODUCT LIST HEADER */
 
   div.product_list > dl > dt {
+    display: flex;
     position: relative;
     margin-bottom: 20px;
     padding: 20px;
@@ -221,7 +221,6 @@ a {
 
   div.product_list > dl > dt > a {
     display: block;
-    float: left;
     line-height: 18px;
     font-size: 18px;
     font-weight: 600;
@@ -231,7 +230,6 @@ a {
   div.product_list > dl > dt > i {
     display: block;
     margin-left: 15px;
-    float: left;
     height: 18px;
     width: 45px;
   }
@@ -245,7 +243,6 @@ a {
 
   div.product_list > dl > dt .summary {
     display: block;
-    float: left;
     line-height: 18px;
     margin-left: 5px;
     font-size: 13px;
