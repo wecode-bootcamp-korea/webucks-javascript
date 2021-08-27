@@ -78,10 +78,10 @@ const zoomImage = (function() {
     const x = event.clientX - left;
     const y = event.clientY - top;
 
-    zoomLens.style.display = 'block';
-    zoomWindow.style.display = 'block';
+    zoomLens.classList.add('visible');
+    zoomWindow.classList.add('visible');
 
-    const bor = {
+    const boundary = {
       xMin: 153,
       xMax: 297,
       yMin: 117,
@@ -95,42 +95,42 @@ const zoomImage = (function() {
 
     switch (true) {
 
-      case (x <= bor.xMin && y <= bor.yMin) :
+      case (x <= boundary.xMin && y <= boundary.yMin) :
         zoomLens.style.left = '0';
         zoomLens.style.top = '0';
         break;
 
-      case (x > bor.xMin && x < bor.xMax && y <= bor.yMin) :
+      case (x > boundary.xMin && x < boundary.xMax && y <= boundary.yMin) :
         zoomLens.style.left = coord.x;
         zoomLens.style.top = '0';
         break;
 
-      case (x >= bor.xMax && y <= bor.yMin) :
+      case (x >= boundary.xMax && y <= boundary.yMin) :
         zoomLens.style.left = '145px';
         zoomLens.style.top = '0';
         break;
 
-      case (x <= bor.xMin && y > bor.yMin && y < bor.yMax) :
+      case (x <= boundary.xMin && y > boundary.yMin && y < boundary.yMax) :
         zoomLens.style.left = '0';
         zoomLens.style.top = coord.y;
         break;
 
-      case (x <= bor.xMin && y >= bor.yMax) :
+      case (x <= boundary.xMin && y >= boundary.yMax) :
         zoomLens.style.left = '0';
         zoomLens.style.top = '236px';
         break;
 
-      case (x > bor.xMin && x < bor.xMax && y >= bor.yMax) :
+      case (x > boundary.xMin && x < boundary.xMax && y >= boundary.yMax) :
         zoomLens.style.left = coord.x;
         zoomLens.style.top = '236px';
         break;
 
-      case (x >= bor.xMax && y >= bor.yMax) :
+      case (x >= boundary.xMax && y >= boundary.yMax) :
         zoomLens.style.left = '145px';
         zoomLens.style.top = '236px';
         break;
 
-      case (x >= bor.xMax && y > bor.yMin && y < bor.yMax) :
+      case (x >= boundary.xMax && y > boundary.yMin && y < boundary.yMax) :
         zoomLens.style.left = '145px';
         zoomLens.style.top = coord.y;
         break;
@@ -146,8 +146,8 @@ const zoomImage = (function() {
   zoomFrame.addEventListener('mousemove', handleMouseMove);
 
   zoomFrame.addEventListener('mouseleave', () => {
-    zoomLens.style.display = 'none';
-    zoomWindow.style.display = 'none';
+    zoomLens.classList.remove('visible');
+    zoomWindow.classList.remove('visible');
   });
 
 })();

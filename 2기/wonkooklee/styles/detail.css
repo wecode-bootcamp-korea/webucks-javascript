@@ -270,6 +270,7 @@ div.product_view_wrap1 {
 }
 
 .zoomLens {
+  display: none;
   background-position: 0px 0px;
   float: right;
   overflow: hidden;
@@ -286,7 +287,6 @@ div.product_view_wrap1 {
   position: absolute;
   left: 0;
   top: 0;
-  display: none;
 }
 
 .zoomWindowContainer {
@@ -294,6 +294,7 @@ div.product_view_wrap1 {
 }
 
 .zoomWindow {
+  display: none;
   overflow: hidden;
   background-position: 0 0;
   text-align: center;
@@ -309,7 +310,6 @@ div.product_view_wrap1 {
   background-image: url(https://image.istarbucks.co.kr/upload/store/skuimg/2020/09/[9200000002672]_20200921171223958.jpg);
   top: 31px;
   left: 488px;
-  display: none;
 }
 
 /* ZOOM animation end */
@@ -616,6 +616,12 @@ section.review_wrap > dl > dd.review_container .review_thread .comment {
   animation-iteration-count: 1;
 }
 
+
+/* INTERACTION */
+
+.visible {
+  display: block;
+}
 
 
 

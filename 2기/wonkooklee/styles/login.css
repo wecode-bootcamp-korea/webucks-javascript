@@ -250,3 +250,10 @@ div.applink .link__btn.appstore__btn {
 div.applink .link__btn.googleplay__btn {
   background-image: url(../resources/img/googleplay.png);
 }
+
+
+/* VALID ACTION */
+
+.valid {
+  border: '1px solid green';
+}
