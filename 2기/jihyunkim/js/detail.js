@@ -1,16 +1,23 @@
-const likeButton = document.querySelector(".like svg");
-likeButton.addEventListener("click", fillRed)
-function fillRed() {
-    likeButton.style.fill = "red";
+const likeButton = document.querySelector("#heart");
+likeButton.addEventListener("click", fillHeart)
+function fillHeart() {
+  likeButton.classList.toggle("fas");
 }
 
-let reviewInput = document.querySelector("#review-input");
-reviewInput.addEventListener("keypress", addReview);
+const reviewInput = document.querySelector("#review-input");
+reviewInput.addEventListener("keydown", addReview);
 let reviews = document.querySelector(".reviews");
 
 function addReview(event) {
-    if(event.keycode === 13){
-        event.preventDefault();
-        reviews.innerText += reviewInput.value;
-    }
+  if(window.event.keyCode === 13){
+    event.preventDefault();
+    addReviewList();
+    reviewInput.value = "";
+  }
+}
+
+function addReviewList(){
+  const newReview = document.createElement("li");
+  newReview.innerText = reviewInput.value;
+  reviews.appendChild(newReview);
 }

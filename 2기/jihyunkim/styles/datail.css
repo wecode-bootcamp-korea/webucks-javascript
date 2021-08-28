@@ -5,212 +5,215 @@
 }
 
 .content {
-    display: grid;
-    place-items: center;
+  display: grid;
+  place-items: center;
 }
 
 .nav, .cold-brew-menu, .brewed-coffee-menu  {
-    width: 1200px;
-    height: 60px;
-    margin:  30px 0;
-    padding: 0 20px;
-    background-color: #F6F5EF;
-    line-height: 60px;
+  width: 1200px;
+  height: 60px;
+  margin:  30px 0;
+  padding: 0 20px;
+  background-color: #F6F5EF;
+  line-height: 60px;
 }
 
 .nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .nav-left {
-    font-family: 'Dancing Script', cursive;
-    font-size: 30px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
 }
 
 .nav-right span {
-    margin: 10px;
-    color: gray;
-}
-
-.class {
-    width: 1200px;
-    height: 60px;
-    display: column;
-}
-
-#cold-brew-class {
-    text-align: left;
-    font-size: 25px;
-    font-weight: bold;
+  margin: 10px;
+  color: gray;
 }
 
 #path {
-    text-align: right;
-    color: gray;
+  color: gray;
+  text-align: right;
+}
+
+.class {
+  display: column;
+  width: 1200px;
+  height: 60px;
+}
+
+#cold-brew-class {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: left;
 }
 
 .menu-detail {
-    width: 1200px;
-    display: flex;
+  display: flex;
+  width: 1200px;
 }
 
 .menu-detail-left {
-    width: 500px;
-    display: flex;
+  display: flex;
+  width: 500px;
 }
 
 img {
-    width: 450px;
-    height: 450px;
-    margin: 0;
+  width: 450px;
+  height: 450px;
 }
 
 .menu-detail-right {
-    display: flex;
-    flex-direction: column;
-    width: 700px;
-    height: 100%;
-    padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  height: 100%;
+  padding-left: 20px;
 }
 
 .menu-detail-right-title {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 3px solid #333333;
-    padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+  border-bottom: 3px solid #333333;
 }
 
-#heart path {
-    width: 30px;
-    height: 30px;
+i {
+  font-size: 40px;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+i.fas {
+  color: red;
 }
 
 .menu-detail-right-main {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu-nutrition-left {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 #menu-name {
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 3px;
+  margin-bottom: 3px;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 #menu-name-english {
-    font-size: 20px;
-    padding-bottom: 5px;
+  padding-bottom: 5px;
+  font-size: 20px;
 }
 
 .menu-intro {
-    width: 100%;
-    height: 70px;
-    line-height: 130%;
-    padding: 20px 0 10px 0;
+  width: 100%;
+  height: 70px;
+  line-height: 130%;
+  padding: 20px 0 10px 0;
 }
 
 .menu-nutrition-title {
-    display: flex;
-    justify-content: space-between;
-    height: 50px;
-    line-height: 50px;
-    padding: 0 20px;
-    border-top: solid silver 2px;
-    border-bottom: solid silver 2px;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  border-top: solid silver 2px;
+  border-bottom: solid silver 2px;
 }
 
 .menu-nutrition-box {
-    display: flex;
-    flex-direction: row;
-    margin: 5px;
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
 }
 
 .nutrition-box-left {
-    width: 350px;
-    border-right: dashed 1px black;
+  width: 350px;
+  border-right: dashed 1px black;
 }
 
 .nutrition-box-right {
-    width: 350px;
+  width: 350px;
 }
 
 .nutri1, .nutri2, .nutri3, .nutri4, .nutri5, .nutri6 {
-    display: flex;
-    justify-content: space-between;
-    margin: 15px 10px;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 10px;
 }
 
 #alergy {
-    height: 50px;
-    background-color: #EFEFEF;
-    line-height: 50px;
-    padding: 0 10px;
+  height: 50px;
+  background-color: #EFEFEF;
+  line-height: 50px;
+  padding: 0 10px;
 }
 
 .menu-detail-right-review {
-    display: flex;
-    flex-direction: column;
-    padding-top: 0px;
-    margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0px;
+  margin: 15px 0;
 }
 
 #review-title {
-    height: 50px;
-    line-height: 50px;
-    font-size: 20px;
-    font-weight: bold;
-    border-bottom: solid silver 2px;
-}
-
-.review-main {
-    display: inline-block;
-    margin: 20px 0;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: solid silver 2px;
 }
 
 .reviews {
-    width: 100%;
-    height: 200px;
-    border: blue 1px solid;
+  width: 100%;
+  padding: 10px;
+  line-height: 20px;
+  font-size: 15px;
+  list-style-type:square;
 }
 
 #review-input {
-    height: 50px;
-    width: 100%;
-    background-color:#EFEFEF;
-    line-height: 50px;
-    padding: 0 10px;
-    margin: 20px 0;
-    border: none;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 10px;
+  margin: 20px 0;
+  background-color:#EFEFEF;
+  border: none;
 }
 
 #review-input::placeholder {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .footer {
-    width: 100%;
-    height: 250px;
-    background-color: #333333;
-    display: flex;
-    color: #EFEFEF;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding-top: 30px;
-    line-height: 35px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  height: 250px;
+  padding-top: 30px;
+  line-height: 35px;
+  color: #EFEFEF;
+  background-color: #333333;
 }
 
 .company, .corporate-sales, .partnership, .online-community {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .company-list, .corporate-sales-list, .partnership-list, .online-community-list {
-    line-height: 25px;
-    color: #EFEFEF;
+  line-height: 25px;
+  color: #EFEFEF;
 }
