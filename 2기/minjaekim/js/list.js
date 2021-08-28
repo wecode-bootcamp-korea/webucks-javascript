@@ -1,4 +1,4 @@
-const coldBrewCoffeeImgAndName = [ // 콜드 브루 음료 커피 이름과 이미지들을 모은 객체
+const coldBrewCoffeeImgAndNameData = [ // 콜드 브루 음료 커피 이름과 이미지들을 모은 객체
   {
     img: "https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[9200000002487]_20210426091745467.jpg",
     name: "나이트로 바닐라 크림",
@@ -45,47 +45,55 @@ const coldBrewCoffeeImgAndName = [ // 콜드 브루 음료 커피 이름과 이�
   },
 ];
 
-const coldBrewSectionMain = document.querySelector(".coldBrewCoffeeCollections"); // 그리드가 들어가는 첫번재 메인 섹션
+const mainInColdBrewSection = document.querySelector(".coldBrewCoffeeCollections"); // 그리드가 들어가는 첫번재 메인 섹션
 
-for(let i = 0; i<coldBrewCoffeeImgAndName.length; i++){ // 반복문을 돌며 이미지와 이름을 HTML에 태그로 추가한다.
-  // grid에 들어갈 태그들 생성 후 클래스 부여
-  const wrapperAllDiv = document.createElement("div");
-  const wrapperImgDiv = document.createElement("div");
+for(let i = 0; i < coldBrewCoffeeImgAndNameData.length; i++){ // 반복문을 돌며 이미지와 이름을 HTML에 태그에 추가한다.
+  // grid를 적용한 section 내에 들어갈 음료 이미지와 이름 태그들 생성
+  const divWrapperAllImgAndName = document.createElement("div"); // 음료 이미지와 이름을 감싸줄 Div 태그
+  const divWrapperCoffeeImg = document.createElement("div"); // 이미지를 감싸줄 Div 태그
+  // 커피 이미지와 이름 태그
   const coffeeImg = document.createElement("img");
   const coffeeName = document.createElement("p");
-  wrapperAllDiv.setAttribute("class","wrapperAllDiv");
-  wrapperImgDiv.setAttribute("class","wrapperImg");
+  
+  // 생성한 태그 각각의 클래스 부여
+  divWrapperAllImgAndName.setAttribute("class","divWrapperAllImgAndName");
+  divWrapperCoffeeImg.setAttribute("class","divWrapperCoffeeImg");
   coffeeImg.setAttribute("class","coffeeImg");
   coffeeName.setAttribute("class","coffeeName");
-  // coldBrewCoffeeImgAndName에 있는 이미지와 이름 태그에 매칭시키기
-  coffeeImg.src = coldBrewCoffeeImgAndName[i].img;
-  coffeeImg.alt = coldBrewCoffeeImgAndName[i].name;
-  coffeeName.innerHTML = coldBrewCoffeeImgAndName[i].name;
-  // 이미지 태그와 이름 태그를 요소 내부에 넣기
-  wrapperImgDiv.appendChild(coffeeImg)
-  wrapperAllDiv.appendChild(wrapperImgDiv);
-  wrapperAllDiv.appendChild(coffeeName);
-  coldBrewSectionMain.appendChild(wrapperAllDiv);
-  if(wrapperAllDiv){
-    wrapperAllDiv.onmouseover = () => {
+  
+  // coldBrewCoffeeImgAndNameData에 있는 이미지와 이름 프로퍼티를 생성한 태그에 할당
+  coffeeImg.src = coldBrewCoffeeImgAndNameData[i].img;
+  coffeeImg.alt = coldBrewCoffeeImgAndNameData[i].name;
+  coffeeName.innerHTML = coldBrewCoffeeImgAndNameData[i].name;
+  
+  // 할당을 마친 이미지 태그와 이름 태그를 section 내부에 넣기
+  divWrapperCoffeeImg.appendChild(coffeeImg)
+  divWrapperAllImgAndName.appendChild(divWrapperCoffeeImg);
+  divWrapperAllImgAndName.appendChild(coffeeName);
+  mainInColdBrewSection.appendChild(divWrapperAllImgAndName);
+  
+  // 생성이 잘 되었다면 마우스 오버시 확대, 마우스 아웃시 확대 취소,
+  if(divWrapperAllImgAndName !== (null && undefined)){
+    divWrapperAllImgAndName.onmouseover = () => {
       setTimeout(function(){
         coffeeImg.classList.add("magnifiedImg")
       },100)
     }
-    wrapperAllDiv.onmouseout = () => {
+    divWrapperAllImgAndName.onmouseout = () => {
       setTimeout(function(){
         coffeeImg.classList.remove("magnifiedImg")
       },100)
     }
-    wrapperAllDiv.onclick = () =>{
+    // 이미지 클릭시 detail 페이지로 이동
+    divWrapperAllImgAndName.onclick = () =>{
       return window.location.href="../detail.html"
     }
   }
 }
 
-const brewedSectionMain = document.querySelector(".brewedCoffeeCollections");
+const mainInBrewedSection = document.querySelector(".brewedCoffeeCollections");
 
-const brewedCoffeeNameAndImg = [
+const brewedCoffeeNameAndImgData = [
   {
     img: "https://image.istarbucks.co.kr/upload/store/skuimg/2021/02/[9200000001635]_20210225092236748.jpg",
     name: "콜드 브루 플로트",
@@ -96,41 +104,42 @@ const brewedCoffeeNameAndImg = [
   },
 ]
 
-for(let i = 0; i<brewedCoffeeNameAndImg.length; i++){
-  const wrapperAllDiv = document.createElement("div");
-  wrapperAllDiv.setAttribute("class","wrapperAllDiv");
-  const wrapperImgDiv = document.createElement("div");
-  wrapperImgDiv.setAttribute("class","wrapperImg");
+for(let i = 0; i<brewedCoffeeNameAndImgData.length; i++){
+  const divWrapperAllImgAndName = document.createElement("div");
+  const divWrapperCoffeeImg = document.createElement("div");
   const coffeeImg = document.createElement("img");
-  coffeeImg.setAttribute("class","coffeeImg");
   const coffeeName = document.createElement("p");
+
+  divWrapperAllImgAndName.setAttribute("class","divWrapperAllImgAndName");
+  divWrapperCoffeeImg.setAttribute("class","divWrapperImg");
+  coffeeImg.setAttribute("class","coffeeImg");
   coffeeName.setAttribute("class","coffeeName");
 
-  coffeeImg.src = brewedCoffeeNameAndImg[i].img;
-  coffeeName.alt = brewedCoffeeNameAndImg[i].name;
-  coffeeName.innerHTML = brewedCoffeeNameAndImg[i].name;
+  coffeeImg.src = brewedCoffeeNameAndImgData[i].img;
+  coffeeName.alt = brewedCoffeeNameAndImgData[i].name;
+  coffeeName.innerHTML = brewedCoffeeNameAndImgData[i].name;
 
-  wrapperImgDiv.appendChild(coffeeImg)
-  wrapperAllDiv.appendChild(wrapperImgDiv);
-  wrapperAllDiv.appendChild(coffeeName);
-  brewedSectionMain.appendChild(wrapperAllDiv)
-  if(wrapperAllDiv){
-    wrapperAllDiv.onmouseover = () => {
+  divWrapperCoffeeImg.appendChild(coffeeImg)
+  divWrapperAllImgAndName.appendChild(divWrapperCoffeeImg);
+  divWrapperAllImgAndName.appendChild(coffeeName);
+  mainInBrewedSection.appendChild(divWrapperAllImgAndName)
+
+  if(divWrapperAllImgAndName !== (null && undefined)){
+    divWrapperAllImgAndName.onmouseover = () => {
       setTimeout(function(){
         coffeeImg.classList.toggle("magnifiedImg")
       },100)
     }
-    wrapperAllDiv.onmouseout = () => {
+    divWrapperAllImgAndName.onmouseout = () => {
       setTimeout(function(){
         coffeeImg.classList.remove("magnifiedImg")
       },100)
     }
-    wrapperAllDiv.onclick = () =>{
+
+    divWrapperAllImgAndName.onclick = () =>{
       return window.location.href="../detail.html"
     }
   }
-
-  
 }
 
 

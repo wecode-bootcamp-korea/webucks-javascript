@@ -138,12 +138,11 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 20px;
   padding: 10px 15px;
   border-top: 1px solid rgb(207, 207, 207);
   border-bottom: 1px solid rgb(207, 207, 207);
+  font-size: 20px;
   font-weight: 300;
-  height: 38px;
 }
 
 #coffeeNutritionInfo, #coffeeNutritionUnit {
@@ -209,29 +208,30 @@ main {
 }
 
 #reviewStatusAndInputBox {
+  width: 610px;
   padding: 8px 0;
 }
 
 #reviewStatus {
   padding: 15px 0;;
-
 }
 
-#reviewList {
-  white-space: nowrap;
-  list-style: none;
-  overflow: hidden;
+.reviewList {
+  display: flex;
 }
 
-.userId{
+.userId {
+  padding-right: 10px;
   font-weight: 800;
 }
 
-#reviewContents {
-  text-overflow:clip;
-  white-space: nowrap;
+span.reviewContents {
+  display: inline-block;
+  width: 610px;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-
 
 #reviewInputBox {
   width: 100%;
@@ -252,8 +252,6 @@ footer {
 }
 
 footer ul {
-  display: inline-flex;  
-  flex-flow: column nowrap; 
   padding: 0;
   list-style: none;
   color: white;

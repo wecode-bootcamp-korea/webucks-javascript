@@ -3,7 +3,7 @@ body {
 }
 
 #coffeeListPageContainer {
-  width: 75%;
+  width: 75vw;
   height: auto;
   margin: 0 auto;
 }
@@ -75,12 +75,11 @@ nav {
   margin: 20px 0px; 
   text-align: center;
 }
-.wrapperAllDiv {
+.divWrapperAllImgAndName {
   transition: ease-in-out .10s;   
 }
 
-.wrapperImg {  
-  display:inline-block;
+.divWrapperCoffeeImg {  
   height:265px;
   margin-bottom: 15px; 
   cursor: pointer;
