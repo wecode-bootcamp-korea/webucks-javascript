@@ -196,3 +196,7 @@ dl {
   font-size: 20px;
   cursor: pointer;
 }
+
+.item button.clicked {
+  color: tomato;
+}

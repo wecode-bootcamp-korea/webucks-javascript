@@ -316,3 +316,8 @@ footer a {
   background-color: #ddd;
   border: none;
 }
+
+.like-btn-wrap button.clicked,
+.review-like-btn-wrap button.clicked {
+  color: tomato;
+}

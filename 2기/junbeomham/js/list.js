@@ -4,7 +4,11 @@
 const likeBtnList = document.querySelectorAll(".like-wrap");
 
 likeBtnList.forEach((el) =>
-  el.addEventListener("click", function (e) {
-    el.style.color = this.style.color === "tomato" ? "" : "tomato";
+  el.addEventListener("click", function () {
+    if (!el.classList.contains("clicked")) {
+      el.classList.add("clicked");
+    } else {
+      el.classList.remove("clicked");
+    }
   })
 );
