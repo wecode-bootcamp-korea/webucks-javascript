@@ -12,10 +12,10 @@ body {
 
 .body_container {
     position: fixed;
-    background-color: #FFFFFF;
     top: 10%;
     bottom: 10%;
     left: 20%;
+    background-color: #FFFFFF;
 }
 
 
@@ -42,9 +42,9 @@ body {
     height: 55px;
     width: 500px;
     margin-bottom: 20px;
-    background-color: #FAFAFA;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: #FAFAFA;
 }
 
 .login-form input::placeholder {
@@ -56,9 +56,9 @@ body {
 
 .login-form button {
     height: 55px;
-    background-color: #B2DFFC;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #B2DFFC;
 }
 
 .login-form__btnspan {

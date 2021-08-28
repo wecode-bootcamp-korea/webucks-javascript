@@ -72,6 +72,10 @@ main {
     opacity: 0.73;
 }
 
+.bar2 img, .bar3 img {
+    height: 25px;
+}
+
 .coldbrew__line1, .coldbrew__line2, .coldbrew__line3{
     position: relative;
     display:flex;
@@ -80,19 +84,23 @@ main {
     padding-bottom: 20px;
 }
 
-.coldbrew img, .brewed img {
+.coldbrew img, .brewed img{
     width: 90%;
-    transition: transform 2s;
+    transition: transform 0.5s;
 }
 
-.coldbrew img:hover {
-    transform:scale(1.1, 1.1);
+
+.coldbrew img:hover, .brewed img:hover {
+    transform: scale(1.1);
 }
 
 
 .brewed__line {
     position: relative;
+    left: 10px;
     display: flex;
     justify-content: flex-start;
     text-align: center;
+
 }
+
