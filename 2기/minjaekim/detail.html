@@ -8,81 +8,83 @@
   <title>커피 상세 페이지 | Webucks Coffee Korea</title>
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/detail.css">
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <script defer src="js/detail.js"></script>
 </head>
+
 <body>
-  <div id='detailCoffeeContainer'>
-    <nav>
-      <h1 id="title">WeBucks</h1>
-      <ul id='navMenus'>
-        <li>COFFEE</li>
-        <li>MENU</li>
-        <li>STORE</li>
-        <li>WHAT'S NEW</li>
-        <li>
-          <a href="#" href="login.html" id="loginLink">LOGIN</a>
-        </li>
-      </ul>
-    </nav>
-    <header>
-      <h2 id="coffeeTypeName">콜드 브루</h2>
-      <p id="detailCoffeePagePath">홈 > MENU > 음료 > 에스프레스> 화이트 초콜릿 모카</p>
-    </header>
-    <main>
-      <img id="selectedCoffeeImg"
-        src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/03/[9200000003507]_20210322093414289.jpg"
-        alt="coffee-image"/>
-      <aside id="mainAsideInfo">
-        <section id="coffeeNameAndDetailsInfoWrapper">
-          <header id="coffeeNameAndDetailHeader">
-            <h3 id="coffeeName">화이트 초콜릿 모카</h3>
-            <h4 id="coffeeEngName">White Chocolate Mocha</h4>
-            <i id="heartIcon" class="fas fa-heart"></i>
-          </header>
-          <p id="coffeeDetailsIntroduction">달콤하고 부드러운 화이트 초콜릿 시럽과 에스프레소를 스팀 밀크와 섞어 휘핑크림으로 마무리한 음료로 달콤한 강렬한 에스프레소가 부드럽게 어우러진 커피
-          </p>
-        </section>
-        <section id="coffeeNutritionInfoWrapper">
-          <header id="coffeeNutritionHeader">
-            <h4 id="coffeeNutritionInfo">제품 영양 정보</h4>
-            <h4 id="coffeeNutritionUnit">Tall(톨) / 355ml(12 fl oz)</h4>
-          </header>
-          <article id="coffeeNutritionDetail">
-            <ul class="nutritionList">
-              <li class="nutritionContents">
-                <p class="nutrient">1회 제공량 (kcal)</p>
-                <p class="nutrientLevel">345</p>
-              </li>
-              <li class="nutritionContents">
-                <p class="nutrient">포화지방 (g)</p>
-                <p class="nutrientLevel">11</p>
-              </li>
-              <li class="nutritionContents">
-                <p class="nutrient">단백질 (g)</p>
-                <p class="nutrientLevel">11</p>
-              </li>
-            </ul>
-            <ul class="nutritionList">
-              <li class="nutritionContents">
-                <p class="nutrient">나트륨 (kcal)</p>
-                <p class="nutrientLevel">150</p>
-              </li>
-              <li class="nutritionContents">
-                <p class="nutrient">당류 (g)</p>
-                <p class="nutrientLevel">35</p>
-              </li>
-              <li class="nutritionContents">
-                <p class="nutrient">카페인 (mg)</p>
-                <p class="nutrient">75</p>
-              </li>
-            </ul>
-          </article>
-          <div id="coffeeAllergyStatus">알레르기 유발 요인 : 우유</div>
-        </section>
-        <form action="">
+  <div class="detailCoffeeContainer">
+  <nav>
+    <h1 id="title">WeBucks</h1>
+    <ul id='navMenus'>
+      <li>COFFEE</li>
+      <li>MENU</li>
+      <li>STORE</li>
+      <li>WHAT'S NEW</li> 
+      <li>
+        <a href="#" href="login.html" id="loginLink">LOGIN</a>
+      </li>
+    </ul>
+  </nav>
+  <header>
+    <h2 id="coffeeTypeName">콜드 브루</h2>
+    <p id="detailCoffeePagePath">홈 > MENU > 음료 > 에스프레스> 화이트 초콜릿 모카</p>
+  </header>
+  <main>
+    <img id="selectedCoffeeImg"
+      src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/03/[9200000003507]_20210322093414289.jpg"
+      alt="coffee-image" />
+    <aside id="mainAsideInfo">
+      <section id="coffeeNameAndDetailsInfoWrapper">
+        <header id="coffeeNameAndDetailHeader">
+          <h3 id="coffeeName">화이트 초콜릿 모카</h3>
+          <h4 id="coffeeEngName">White Chocolate Mocha</h4>
+          <i id="heartIcon" class="fas fa-heart"></i>
+        </header>
+        <p id="coffeeDetailsIntroduction">달콤하고 부드러운 화이트 초콜릿 시럽과 에스프레소를 스팀 밀크와 섞어 휘핑크림으로 마무리한 음료로 달콤한 강렬한 에스프레소가 부드럽게
+          어우러진 커피
+        </p>
+      </section>
+      <section id="coffeeNutritionInfoWrapper">
+        <header id="coffeeNutritionHeader">
+          <h4 id="coffeeNutritionInfo">제품 영양 정보</h4>
+          <h4 id="coffeeNutritionUnit">Tall(톨) / 355ml(12 fl oz)</h4>
+        </header>
+        <article id="coffeeNutritionDetail">
+          <ul class="nutritionList">
+            <li class="nutritionContents">
+              <p class="nutrient">1회 제공량 (kcal)</p>
+              <p class="nutrientLevel">345</p>
+            </li>
+            <li class="nutritionContents">
+              <p class="nutrient">포화지방 (g)</p>
+              <p class="nutrientLevel">11</p>
+            </li>
+            <li class="nutritionContents">
+              <p class="nutrient">단백질 (g)</p>
+              <p class="nutrientLevel">11</p>
+            </li>
+          </ul>
+          <ul class="nutritionList">
+            <li class="nutritionContents">
+              <p class="nutrient">나트륨 (kcal)</p>
+              <p class="nutrientLevel">150</p>
+            </li>
+            <li class="nutritionContents">
+              <p class="nutrient">당류 (g)</p>
+              <p class="nutrientLevel">35</p>
+            </li>
+            <li class="nutritionContents">
+              <p class="nutrient">카페인 (mg)</p>
+              <p class="nutrient">75</p>
+            </li>
+          </ul>
+        </article>
+        <div id="coffeeAllergyStatus">알레르기 유발 요인 : 우유</div>
+      </section>
+      <form action="">
         <section id="coffeeReviewWrapper">
           <header id="coffeeReviewHeader">
             <h4 id="reviewTitle">리뷰</h4>
@@ -92,7 +94,7 @@
               <span class="userId">coffee_lover</span>
               <span class="reviewContents">너무 맛있어요!</span>
             </li>
-            <li class="reviewList"> 
+            <li class="reviewList">
               <span class="userId">CHOCO7</span>
               <span class="reviewContents">오늘도 화이트 초콜릿 모카를 마시러 갑니다.</span>
             </li>
@@ -101,12 +103,12 @@
               <span class="reviewContents">진짜 화이트 초콜릿 모카는 전설이다. 진짜 화이트 초콜릿 모카는 전설이다. 진짜 화이트 초콜릿 모카는 전설이다</span>
             </li>
           </ul>
-            <input type="text" name="reviewWindow" id="reviewInputBox" placeholder="리뷰를 입력하세요">
-          </form>
-        </section>
-      </aside>
-    </main>
-  </div>
+          <input type="text" name="reviewWindow" id="reviewInputBox" placeholder="리뷰를 입력하세요">
+      </form>
+      </section>
+    </aside>
+  </main>
+  </div>>
   <footer>
     <ul id="companyMenu">
       <h5 class="footerMenuTitle">COMPANY</h5>

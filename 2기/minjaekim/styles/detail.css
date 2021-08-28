@@ -1,8 +1,3 @@
-body {
-  padding: 0;
-  margin: 0;
-}
-
 #detailCoffeeContainer {
   width: 75vw;
   margin: auto;
@@ -16,7 +11,7 @@ nav {
   align-items: center;
   position: fixed;
   top: 0;
-  width: 72.5%;
+  width: 74.5%;
   padding: 20px;
   background-color: rgb(244, 244, 242);
   z-index: 1;
