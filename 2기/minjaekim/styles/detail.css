@@ -1,21 +1,22 @@
-#detailCoffeeContainer {
-  width: 75vw;
-  margin: auto;
-  margin-top: 60px;
+body {
   background-color: white;
+}
+
+#coffeeDetailPageContainer {
+  width: 75vw;
+  height: auto;
+  margin: 0 auto;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
+  position: sticky;
   top: 0;
-  width: 74.5%;
   padding: 20px;
   background-color: rgb(244, 244, 242);
   z-index: 1;
-  
 }
 
 #title {
@@ -27,7 +28,6 @@ nav {
 #navMenus {
   display: flex;
   justify-content: space-evenly;
-  flex-basis: 300px;
   letter-spacing: 3px;
   color: rgb(165, 165, 161);
 }
@@ -51,34 +51,42 @@ nav {
   color: #1B3C35;
 }
 
-header {
-  position: relative;
-  height: 49px;
-  padding-top: 40px;
+#coffeeDetailHeader {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 25px 0;
 }
 
 #coffeeTypeName {
-  position: absolute;
-  top: 15px;
   margin: 0;
   font-size:28px;
   font-weight: 600;  
 }
 
 #detailCoffeePagePath {
-  position: absolute;
-  right:0;
+  align-self: flex-end;  
   bottom: 15px;
   font-size:12px;
   color:rgb(165, 165, 161);
 }
 
+#coffeeNameAndDetailsInfoWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#coffeeNameAndDetailHeader {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 22px;
+}
+
 main {
   margin-bottom: 100px;
+  display: flex;
 }
 
 #selectedCoffeeImg {
-  float: left;
   width: 448px;
   height: 447px;
 }
@@ -89,37 +97,34 @@ main {
   padding-left: 40px;
 }
 
-#coffeeNameAndDetailHeader{
-  position:relative;
-  height: 15px;
+#coffeeNameAndDetailHeader {
   border-bottom: 2.5px solid black;
 }
 
 #coffeeName {
-  position: absolute;
-  top: 0;
   margin:0;
   font-size: 23px;
 }
 
 #coffeeEngName {
-  position: absolute;
   margin: 0;
   top: 25px;
   font-weight: 500;
   font-size: 14px;
 }
 
+#heartImgDiv{
+  display: flex;
+  align-items: center;
+}
+
 #heartIcon {
-  position: absolute;
-  right: 0;
-  top:10px;
   font-size: 18px;
   color:  rgb(165, 165, 161);
   cursor: pointer;
 }
 
-.fillHeartIconColor {
+#heartIcon.fillHeartIconColor {
   color: tomato;
 }
 
@@ -154,7 +159,7 @@ main {
 
 .nutritionList {
   flex: 1 1 0;  
-  padding: 0 10px 20px 0;
+  padding: 0 10px 10px 0;
   font-weight: 600;
 }
 .nutritionList:nth-child(1) {
@@ -180,16 +185,16 @@ main {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 48px;
-  padding: 0 15px;
+  padding: 15px 10px;
   background-color: rgb(239,239,239);  
   font-size: 15px;
   font-weight: 600;
 }
 
 #coffeeReviewWrapper {
-  height: 170px;
-  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 45px;
 }
 
 #coffeeReviewHeader {
@@ -199,9 +204,12 @@ main {
 }
 
 #reviewTitle {
-  position: absolute; 
-  bottom: 10px;
+  padding-bottom: 7px;
   font-size: 18px;
+}
+
+#reviewStatusAndInputBox {
+  padding: 8px 0;
 }
 
 #reviewStatus {
@@ -231,10 +239,6 @@ main {
   background-color: rgb(239,239,239);  
   border: none;
   outline: none; 
-}
-
-#coffeeTypeName, #coffeeName, #coffeeEngName, .footerMenuTitle  {
-  display: inline-block;
 }
 
 footer {

@@ -1,17 +1,19 @@
 body {
-  width: 75vw;
-  margin: auto;
-  margin-top: 60px;
   background-color: white;
+}
+
+#coffeeListPageContainer {
+  width: 75%;
+  height: auto;
+  margin: 0 auto;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
+  position: sticky;
   top: 0;
-  width: 75%;
   padding: 20px;
   background-color: rgb(244, 244, 242);
   z-index: 1;
@@ -26,7 +28,6 @@ nav {
 #navMenus {
   display: flex;
   justify-content: space-evenly;
-  flex-basis: 300px;
   letter-spacing: 3px;
   color: rgb(165, 165, 161);
 }
