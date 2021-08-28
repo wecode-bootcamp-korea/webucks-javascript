@@ -3,9 +3,8 @@ body {
 }
 
 #coffeeListPageContainer {
-  width: 75vw;
-  height: auto;
   margin: 0 auto;
+  padding: 0 180px;
 }
 
 nav {
@@ -71,10 +70,10 @@ nav {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 15px;
-  height: auto;
   margin: 20px 0px; 
   text-align: center;
 }
+
 .divWrapperAllImgAndName {
   transition: ease-in-out .10s;   
 }
@@ -86,6 +85,7 @@ nav {
   margin:0;
   overflow: hidden; 
 }
+
 .coffeeImg {
   width: 255px;
 } 
@@ -100,4 +100,3 @@ nav {
   transform-origin: center;
   transition-duration: 1s, 3s;
 }
-

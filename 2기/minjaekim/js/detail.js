@@ -15,6 +15,7 @@ const sendReview = (event) => {
   const reviewList = document.createElement('li')
   const userId = document.createElement('span');
   const reviewContents = document.createElement('span');
+  reviewContents.classList.add('reviewContents')
 
   if (event.key==='Enter') {
     event.preventDefault();

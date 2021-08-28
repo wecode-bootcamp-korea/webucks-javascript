@@ -36,8 +36,7 @@ body{
 }
 
 .userInputBox #userLoginId, #userLoginPsw {
-  height: 55px;
-  padding: 0 10px;
+  padding: 12px 10px;
   background-color: #f7f7f7;
   border: 3px solid #eaeaea;
   border-radius: 5px;
@@ -55,9 +54,9 @@ body{
   color:#918888;
 }
 
-.userInputBox #userLoginBtn {
-  height: 50px;
+#userLoginBtn {
   background-color: #add3eb;
+  padding: 10px 12px;
   border: 3px solid #add3eb;
   border-radius: 10px;
   font-size: 18px;
@@ -68,7 +67,6 @@ body{
   background-color:#1ca5ea;
   border: 3px solid #1ca5ea;
 }
-
 
 .findUserPsw {
   flex: 0.3 1 0;

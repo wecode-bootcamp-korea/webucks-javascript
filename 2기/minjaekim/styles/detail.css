@@ -3,9 +3,8 @@ body {
 }
 
 #coffeeDetailPageContainer {
-  width: 75vw;
-  height: auto;
   margin: 0 auto;
+  padding: 0 180px;
 }
 
 nav {
@@ -78,7 +77,6 @@ nav {
 #coffeeNameAndDetailHeader {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 22px;
 }
 
 main {
@@ -87,8 +85,8 @@ main {
 }
 
 #selectedCoffeeImg {
-  width: 448px;
-  height: 447px;
+  width: 430px;
+  height: 429px;
 }
 
 #mainAsideInfo {
@@ -138,7 +136,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 15px;
+  padding: 22px 15px;
   border-top: 1px solid rgb(207, 207, 207);
   border-bottom: 1px solid rgb(207, 207, 207);
   font-size: 20px;
@@ -161,6 +159,7 @@ main {
   padding: 0 10px 10px 0;
   font-weight: 600;
 }
+
 .nutritionList:nth-child(1) {
   border-right: 1.5px dashed rgb(207, 207, 207);
 }
@@ -245,7 +244,6 @@ footer {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  height: auto;
   padding: 50px 0;
   background-color:rgb(51, 51, 51);
   font-size: 16px;
@@ -260,6 +258,7 @@ footer ul {
 .footerMenuTitle {
   padding-bottom: 15px;
 }
+
 footer ul li {
   padding: 7px 0;
 }
@@ -268,3 +267,4 @@ footer ul li a {
   text-decoration: none;
   color: white;
 }
+
