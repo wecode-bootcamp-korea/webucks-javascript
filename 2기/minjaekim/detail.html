@@ -92,22 +92,30 @@
           <header id="coffeeReviewHeader">
             <h4 id="reviewTitle">리뷰</h4>
           </header>
-          <form action="" id="reviewStatusAndInputBox">
-            <ul id="reviewStatus">
-              <li class="reviewList">
-                <span class="userId">coffee_lover</span>
-                <span class="reviewContents">너무 맛있어요!</span>
-              </li>
-              <li class="reviewList">
-                <span class="userId">CHOCO7</span>
-                <span class="reviewContents">오늘도 화이트 초콜릿 모카를 마시러 갑니다.</span>
-              </li>
-              <li class="reviewList">
-                <span class="userId">legend_dev</span>
-                <span class="reviewContents">진짜 화이트 초콜릿 모카는 전설이다. 진짜 화이트 초콜릿 모카는 전설이다. 진짜 화이트 초콜릿 모카는 전설이다</span>
-              </li>
-            </ul>
-            <input type="text" id="reviewInputBox" placeholder="리뷰를 입력하세요">
+          <ul id="reviewStatus">
+            <li class="reviewList">
+              <span class="userId">coffee_lover</span>
+              <span class="reviewContents">너무 맛있어요!</span>
+              <i class="fas fa-thumbs-up" onclick="changeFirstThumbsUpIconColor()"></i>
+              <i class="fas fa-backspace"></i>
+            </li>
+            <li class="reviewList">
+              <span class="userId">CHOCO7</span>
+              <span class="reviewContents">오늘도 화이트 초콜릿 모카를 마시러 갑니다.</span>
+              <i class="fas fa-thumbs-up" onclick="changeSecondThumbsUpIconColor()"></i>
+              <i class="fas fa-backspace"></i>
+
+            </li>
+            <li class="reviewList">
+              <span class="userId">legend_dev</span>
+              <span class="reviewContents">진짜 화이트 초콜릿 모카는 전설이다. 진짜 화이트 초콜릿 모카는 전설이다. 진짜 화이트 초콜릿 모카는 전설이다</span>
+              <i class="fas fa-thumbs-up" onclick="changeThirdThumbsUpIconColor()"></i>
+              <i class="fas fa-backspace"></i>
+            </li>
+          </ul>
+          <form id="reviewInputBox">
+            <input type="text" id="userInputIdBox" placeholder="작성자 명" required>
+            <input type="text" id="contentsInputBox" placeholder="리뷰를 입력하세요">
           </form>
         </section>
       </aside>

@@ -192,12 +192,12 @@ main {
 #coffeeReviewWrapper {
   display: flex;
   flex-direction: column;
+  width: 608px;
   padding-top: 45px;
 }
 
 #coffeeReviewHeader {
-  position: relative; 
-  padding: 0;
+  width: 610px;
   border-bottom: 2px solid rgb(207, 207, 207);
 }
 
@@ -207,16 +207,16 @@ main {
 }
 
 #reviewStatusAndInputBox {
-  width: 610px;
   padding: 8px 0;
 }
 
 #reviewStatus {
-  padding: 15px 0;;
+  padding: 20px 0;
 }
 
 .reviewList {
   display: flex;
+  position: relative;
 }
 
 .userId {
@@ -228,17 +228,51 @@ span.reviewContents {
   display: inline-block;
   width: 610px;
   white-space: nowrap; 
-  overflow: hidden;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
 
-#reviewInputBox {
+#reviewInputBox{
+  display: flex;
   width: 100%;
+}
+
+#userInputIdBox {
+  flex: 0.15 1 0;
+  margin-right: 10px; 
   padding: 10px 0 5px 5px;
-  background-color: rgb(239,239,239);  
   border: none;
+  background-color: rgb(239,239,239);  
+  outline: none;
+}
+
+#contentsInputBox {
+  flex: 0.85 1 0;
+  padding: 10px 0 5px 5px;
+  border: none;
+  background-color: rgb(239,239,239);  
   outline: none; 
 }
+
+.fas{
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.fas.fillThumbsUpIcon {
+  color: tomato;
+}
+
+.reviewList span:nth-child(3){
+  position: absolute;
+  right: 0;
+}
+
+.reviewList span:nth-child(4){
+  position: absolute;
+  right: 30px;
+}
+
 
 footer {
   display: flex;
