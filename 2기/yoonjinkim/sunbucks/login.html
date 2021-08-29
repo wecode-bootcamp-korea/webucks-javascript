@@ -4,19 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunbucks Coffee Korea</title>
+    <link href="styles/login.css" rel="stylesheet">
+    <title>Webucks Coffee Korea</title>
 </head>
 <body>
-    <div class="blocks">
-        <div class="blocks__useraccount">
-            <input type="text" placeholder="전화번호, 사용자 이름 또는 이메일">
-        </div>
-        <div class="blocks__password" placeholder="비밀번호">
-            <input type="password"> 
-        </div>    
-        <div class="blocks__button">
-            <input type="button" name="로그인" value="로그인">
-        </div> 
-    </div>
+    <article class="login-wrap">
+        <section class="login-wrap-inner">
+            <header class="logo-wrap"> 
+                <img alt="logo" src=".svg">
+            </header>
+            <form class="form-wrap">
+                <div class="useraccount-wrap">
+                    <input type="text" placeholder="전화번호, 사용자 이름 또는 이메일">
+                </div>
+                <div class="password-wrap">
+                    <input type="password" placeholder="비밀번호"> 
+                </div>    
+                <div class="button-wrap">
+                    <input type="button" name="로그인" value="로그인">
+                </div>
+            </form>
+            <div class="find-wrap">
+                <a href="/accounts/login/?source=auth_switcher">비밀번호를 잊으셨나요?</a>
+            </div>
+        
+        </section>
+    </article>
+    <script></script>
 </body>
 </html>
