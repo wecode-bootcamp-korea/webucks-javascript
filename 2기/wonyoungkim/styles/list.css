@@ -11,10 +11,8 @@ body {
 .navbar {
   width : 1100px;
   height: 60px;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-left :auto;
-  margin-right: auto;
+  padding : 0 30px;
+  margin : 0 auto;
   background-color: rgb(241, 238, 238);
 }
 
@@ -26,45 +24,40 @@ body {
   vertical-align: middle;
 }
 
-.navbar #nav_menu {
+.navbar #navMenu {
   float: right;
-  list-style: none;
   margin : 0;
+  list-style: none;
 }
 
-.navbar #nav_menu li {
+.navbar #navMenu li {
   float: left;
   margin-left: 40px;
   line-height: 60px;
 }
 
-.navbar #nav_menu li a{
+.navbar #navMenu li a{
   color : darkgray;
   font-size: 15px;
   text-decoration: none;
 }
 
-
-
-/****************************첫번째 메뉴**********************************/
-
 .menubar1  {
-  background-color : rgb(241, 238, 238);
   width : 1100px;
   height: 60px;
   margin : 20px auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding : 0 30px;
+  background-color : rgb(241, 238, 238);
 }
 
-.submenu {
+.subMenu {
   margin : 0;
   font-weight: bold;
   font-size: 14px;
   color: #545454;
 }
 
-.subtitle{
+.subTitle{
   line-height: 60px;
   font-size: 18px;
   font-weight: bold;
@@ -72,10 +65,7 @@ body {
   color: #545454;
 }
 
-
-/****************************메뉴목록**********************************/
-
-.menu_list {
+.menuList {
   width: 1120px;
   margin-left : auto;
   margin-right: auto;
@@ -103,7 +93,7 @@ body {
   transition: .4s; 
 }
 
-.menu_name {
+.menuName {
   margin-top : 10px;
   margin-bottom: 4px;
   text-align: center;
@@ -116,7 +106,7 @@ body {
   transform: scale(1.1);
   transition: all 0.4s linear;
 }
-/****************************두번째 메뉴**********************************/
+
 .menubar2  {
   background-color : rgb(241, 238, 238);
   width : 1100px;
@@ -126,55 +116,3 @@ body {
   padding-right: 30px;
   clear: left;
 }
-
-
-
-
-
-
-/*
-@media (min-width: 768px) {
-  .navbar {
-    width: 100%;
-    background-color: green;
-  }
-  div {
-    float: left;
-  }
-
-  #div3 {
-    height: 1384px;
-    width: 100%;
-  }
-
-  #div5 {
-    height: 276px;
-    width: 100%;
-  }
-}
-@media (min-width: 992px) {
-  div {
-    float: left;
-  }
-  .navbar {
-    width: 100%;
-    background-color: red;
-  }
-  #menubar1 {
-    height: 60px;
-    width: 100%;
-  }
-  #div3 {
-    height: 1300px;
-    width: 100%;
-  }
-  #div4 {
-    height: 60px;
-    width : 100%;
-  }
-  #div5 {
-    height: 340px;
-    width: 100%;
-  }
-}
-

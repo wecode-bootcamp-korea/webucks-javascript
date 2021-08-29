@@ -10,10 +10,8 @@ body {
 .navbar {
   width : 1100px;
   height: 60px;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-left :auto;
-  margin-right: auto;
+  padding: 0 30px;
+  margin: 0 auto;
   background-color: rgb(241, 238, 238);
 }
 
@@ -43,48 +41,48 @@ body {
   text-decoration: none;
 }
 
-
 /****************************상단**********************************/
 
-.menubar1  {
+.menubar  {
   width : 1100px;
   height: 60px;
   margin : 30px auto;
 }
 
-.menubar1 h1 {
+.menubar h1 {
   font-size: 25px;
   font-weight: bold;
 }
 
-.menubar1 p {
+.menubar p {
   text-align: right;
   font-size: 13px;
   color : rgb(139, 136, 136);
 }
 
-
 /****************************디테일**********************************/
+
 .menu {
   width: 1100px;
-  margin-left : auto;
-  margin-right: auto;
-  padding-top : 20px;
   height: 680px;
+  margin : 0 auto;
+  padding-top : 20px;
 }
 
-.main_pic {
+.mainPic {
   margin-right: 50px;
+  width : 450px;
 }
 
-.menu_detail {
+.menuDetail {
   float: right;
   clear: left;
   width: 600px;
 }
 
 /****************************디테일(R)**********************************/
-.a {
+
+.menuDetailTitle {
   height: 70px;
   border-bottom: 2px solid #454545;
 }
@@ -106,47 +104,46 @@ body {
   margin-right: 5px;
 }
 
-.b {
+.menuDetailText {
   height: 70px;
   border-bottom: 1px solid lightgray;
 }
 
-.b p {
+.menuDetailText p {
   color : #454545;
   font-size: 15px;
   line-height: 25px;
 }
 
-.c {
+.menuDetailInfo {
   height: 70px;
-  font-size: 16px;
   padding : 23px 10px;
   border-bottom: 1px solid lightgray;
+  font-size: 16px;
 }
 
-.cf_info_a {
+.InfoDetail {
  float : right;
 }
 
 
-.d {
+.menuDetailIngre {
   height: 100px;
 }
 
-.d ul {
+.menuDetailIngre ul {
   float: left;
+  padding : 0 10px;
   list-style-type: none;
   line-height: 30px;
   font-size: 13px;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
-.detail_L {
+.menuDetailIngre .detail_L {
   width: 200px;
 }
 
-.detail_R {
+.menuDetailIngre .detail_R {
   width: 100px;
   text-align: right;
 }
@@ -155,51 +152,53 @@ body {
   border-right: 1px dashed lightgray;
 }
 
-.e {
-  background-color: rgb(241, 238, 238);
+.menuDetailAllergy {
   height: 50px;
   border-radius: 5px;
+  background-color: rgb(241, 238, 238);
 }
 
-.e p {
-  line-height: 50px;
+.menuDetailAllergy p {
   padding-left: 10px;
   font-size: 14px;
+  line-height: 50px;
 }
 
-.f {
+.review {
   height: 120px;
   margin-top : 30px;
 }
 
-.review {
-  font-weight: bold;
+.reviewTitle {
   border-bottom: 1px solid lightgray;
   padding-bottom: 8px;
-}
-.review_id {
   font-weight: bold;
 }
 
-.f span {
+.reviewId {
+  font-weight: bold;
+}
+
+.review span {
   font-size: 13px;
 }
 
-.g {
+.reviewEnter {
   background-color: rgb(241, 238, 238);
   height: 30px;
   border-radius: 5px;
 }
 
-.g p {
+.reviewEnter p {
+  padding-left : 10px;
   color : gray;
   font-size: 12px;
   font-weight: bold;
   line-height: 30px;
-  padding-left : 10px
 }
 
 /****************************FOOTER**********************************/
+
 footer {
   background-color: #454545;
 }
@@ -207,21 +206,19 @@ footer {
 .footer_in {
   width: 1200px;
   height: 250px;
-  margin-left : auto;
-  margin-right: auto;
+  margin : 0 auto;
   padding: 0;
 }
 
 .footer_in ul {
   float: left;
+  margin-left: 20px;
+  margin-right: 30px;
   list-style-type: none;
   font-weight: bold;
   font-size: 13px;
   line-height: 25px;
-  margin-left: 20px;
-  margin-right: 30px;
 }
-
 
 .f_title {
   padding-top: 20px;
@@ -232,9 +229,3 @@ footer {
 .footer_in li {
   color : white;
 }
-
-
-
-
-
-
