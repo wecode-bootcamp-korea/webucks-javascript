@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  }
+
+body {
+  margin : 0px 100px;
+}
+
+header {
+  height: 70px;
+  margin-bottom: 40px;
+  background-color: #f6f5ef;
+}
+
+#logo {
+  display: inline-block;
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0px 0px 30px;
+}
+
+.cate {
+  display: inline;
+  float: right;
+  color: #555555;
+  margin: 25px 30px 0px 0px;
+  text-decoration: none;
+}
+
+.introEach {
+
+  display: block;
+  background-color: #f4f4f2;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.eachTitle {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.decaf {
+  width: 40px;
+  margin-bottom: -8px;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 20px; 
+  list-style: none;
+  width: 100%;
+  padding: 0px;
+}
+
+li {
+  margin-bottom: 20px;
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  margin: 0px;
+}
+
+.everyimg {
+  margin: 0;
+  overflow: hidden;
+}
+
+.everyimg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.everyimg img:hover {
+  transform: scale(1.1,1.1);
+}
+
+dd {
+  text-align: center;
+  margin: 0;
+}
