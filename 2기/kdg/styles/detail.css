@@ -1,0 +1,181 @@
+@import "./reset.css";
+
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+}
+
+.menuBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  background-color: #f6f5ef;
+}
+
+#menuBarLogo {
+  margin-left: 10px;
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.menuBarName {
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.menuBarName li {
+  margin: 0 20px;
+  color: lightgrey;
+}
+
+section {
+  width: 90%;
+  height: 700px;
+  margin: 2% 5%;
+  display: flex;
+}
+
+.sectionLeftBody {
+  width: 50%;
+}
+
+.menu h2 {
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.menuImgWrapper {
+  width: 100%;
+}
+
+.menuImgWrapper img {
+  width: 90%;
+}
+
+.sectionRightBody {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.menuLinkAndName {
+  border-bottom: 2px solid black;
+}
+
+.menuLink {
+  font-size: small;
+  color: lightgrey;
+  text-align: right;
+}
+
+.menuName {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px 0 2px 0;
+}
+
+.menuEngName {
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+
+.menuTastyInfo {
+  font-size: 17px;
+  padding: 20px 0;
+  border-bottom: 1.5px solid lightgrey;
+}
+.menuNutritionalInfoBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  border-bottom: 1.5px solid lightgrey;
+  font-weight: bold;
+}
+
+.menuNutritionalInfoNameWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menuNutritionalInfoName {
+  padding: 20px 10px;
+  width: 100%;
+}
+
+.menuNutritionalInfoName .info {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.menuNutritionalInfoAllergy {
+  background-color: #efefef;
+  padding: 15px 10px;
+  border-radius: 2px;
+}
+.reviewName {
+  padding: 20px 0 10px 0;
+  border-bottom: 1.5px solid lightgrey;
+}
+
+.reviewName p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.reviewComent {
+  padding: 20px 0;
+}
+
+.reviewComentInfo {
+  display: flex;
+}
+
+.reviewComentInfo h6 {
+  font-size: 17px;
+  font-weight: bold;
+  height: 25px;
+  padding-right: 10px;
+}
+
+.reviewComentInfo p {
+  height: 25px;
+}
+
+.reveiwInput input {
+  width: 100%;
+  height: 35px;
+  background-color: #efefef;
+  border: none;
+  border-radius: 2px;
+}
+
+footer {
+  height: 230px;
+  background-color: #333333;
+  color: white;
+  font-size: 13px;
+  overflow: hidden;
+}
+
+.page {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+}
+
+h4 {
+  padding: 6px 0;
+}
+
+.page p {
+  padding: 2px 0;
+}

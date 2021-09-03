@@ -1,9 +1,11 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   background-color: #eeefef;
 }
+
 .loginPage {
   display: flex;
   flex-direction: column;
@@ -40,7 +42,7 @@ body {
   border-radius: 5px;
   background-color: #f7f7f7;
 }
-#loginPageBtn {
+.loginBtn {
   width: 300px;
   height: 40px;
   padding: 5px;
@@ -49,6 +51,9 @@ body {
   background-color: #add3ea;
   color: white;
   font-size: medium;
+}
+.loginBtn.active {
+  background-color: #60aded;
 }
 .footer {
   height: 20%;
