@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/login.css" rel="stylesheet">
     <title>Webucks Coffee Korea</title>
+    <script defer src="js/login.js"></script>
 </head>
 <body>
     <article class="login-wrap">
@@ -16,13 +17,13 @@
             
             <form class="form-wrap">
                 <div class="useraccount-wrap">
-                    <input type="text" placeholder="전화번호, 사용자 이름 또는 이메일">
+                    <input class="login-useraccount" type="text" placeholder="전화번호, 사용자 이름 또는 이메일">
                 </div>
                 <div class="password-wrap">
-                    <input type="password" placeholder="비밀번호"> 
+                    <input class="login-password" type="password" placeholder="비밀번호"> 
                 </div>    
                 <div class="button-wrap">
-                    <input class="loginbutton" type="button" name="로그인" value="로그인">
+                    <input class="login-button" type="button" name="로그인" value="로그인">
                 </div>
             </form>
             <div class="find-wrap">
@@ -31,6 +32,5 @@
         
         </section>
     </article>
-    <script></script>
 </body>
 </html>

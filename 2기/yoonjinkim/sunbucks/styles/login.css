@@ -55,8 +55,12 @@ input {
 }
 
 .button-wrap input {
-  background-color: #4080a8;
+  background-color: #88b3cd;
   color: white;
+}
+
+.button-wrap-qualified input {
+  background-color: #4080a8;
 }
 
 .find-wrap {
