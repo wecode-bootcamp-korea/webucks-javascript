@@ -54,12 +54,12 @@ input {
   border: 1px solid #dbdbdb;
 }
 
-.button-wrap input {
+.login-button {
   background-color: #88b3cd;
   color: white;
 }
 
-.button-wrap-qualified input {
+.login-button-qualified {
   background-color: #4080a8;
 }
 

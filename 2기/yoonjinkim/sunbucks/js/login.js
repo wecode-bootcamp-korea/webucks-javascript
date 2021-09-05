@@ -1,20 +1,30 @@
-const userAccount = document.querySelector('.login-useraccount');
-const password = document.querySelector('.login-password');
-const button = document.querySelector('.login-button');
+const emailInput = document.getElementsByClassName('login-useraccount')[0];
+const passwordInput = document.getElementsByClassName('login-password')[0];
+const loginButton = document.getElementsByClassName('login-button')[0];
 
-console.log(userAccount.type, '유저어카운트!!!');
-console.log(userAccount.value, '유저어카운트!!!');
-console.log(userAccount.value.includes('@'));
+const isEmailInputValid = (event) => {
+  console.log(event.target.value.includes('@'));
+  event.target.value.includes('@');
 
+  if (isEmailInputValid && isPasswordInputValid) {
+    loginButton.style.backgroundColor = 'blue';
+  } else {
+    loginButton.style.backgroundColor = 'black';
+  }
+}
 
+const isPasswordInputValid = (event) => {
+  console.log(event.target.value.length);
+  event.target.value.length>=8;
 
-const clickHandler = () => {
-  if((userAccount.value.includes('@')) && (password.value.length>7)){
-    console.log('isvalid....clickhandlerisfine');
-    button.classList.remove('button-wrap');
-    button.classList.add('button-wrap-qualified');
+  if (isEmailInputValid && isPasswordInputValid) {
+    loginButton.style.backgroundColor = 'blue';
+  } else {
+    loginButton.style.backgroundColor = 'black';
   }
 }
 
 
-userAccount.addEventListener('click', clickHandler);
+
+emailInput.addEventListener('input', isEmailInputValid);
+passwordInput.addEventListener('input', isPasswordInputValid);
