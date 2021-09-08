@@ -2,29 +2,28 @@ const emailInput = document.getElementsByClassName('login-useraccount')[0];
 const passwordInput = document.getElementsByClassName('login-password')[0];
 const loginButton = document.getElementsByClassName('login-button')[0];
 
-const isEmailInputValid = (event) => {
-  console.log(event.target.value.includes('@'));
-  event.target.value.includes('@');
+console.log(emailInput);
+console.log(loginButton);
+console.log(emailInput.value);
+console.log(loginButton.value);
+//
+const isEmailAndPasswordInputValid = () => {
+  return emailInput.value.includes('@') && passwordInput.value.length>=8;
+}
 
-  if (isEmailInputValid && isPasswordInputValid) {
-    loginButton.style.backgroundColor = 'blue';
+console.log(isEmailAndPasswordInputValid());
+//
+const changeLoginButtonColor = () => {
+  let isValid = isEmailAndPasswordInputValid();
+  if (isValid) {
+    loginButton.classList.remove('login-button')
+    loginButton.classList.add('login-button-active');
   } else {
-    loginButton.style.backgroundColor = 'black';
+    loginButton.classList.remove('login-button-active');
+    loginButton.classList.add('login-button');
   }
 }
 
-const isPasswordInputValid = (event) => {
-  console.log(event.target.value.length);
-  event.target.value.length>=8;
-
-  if (isEmailInputValid && isPasswordInputValid) {
-    loginButton.style.backgroundColor = 'blue';
-  } else {
-    loginButton.style.backgroundColor = 'black';
-  }
-}
-
-
-
-emailInput.addEventListener('input', isEmailInputValid);
-passwordInput.addEventListener('input', isPasswordInputValid);
+//
+emailInput.addEventListener('input', changeLoginButtonColor);
+passwordInput.addEventListener('input', changeLoginButtonColor);

@@ -59,8 +59,9 @@ input {
   color: white;
 }
 
-.login-button-qualified {
+.login-button-active {
   background-color: #4080a8;
+  color: white;
 }
 
 .find-wrap {
