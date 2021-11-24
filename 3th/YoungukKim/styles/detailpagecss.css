@@ -1,0 +1,235 @@
+body{
+    margin:0;
+}
+*{
+    box-sizing: border-box;
+}
+li{
+    margin:0;
+    padding:0;
+}
+ul{
+    margin:0;
+    padding:0;
+    display:flex;
+    list-style:none;
+}
+
+.container{
+    width :900px;
+    margin : 10px auto;
+}
+
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height :50px;
+    width :900px;
+    margin : 10px auto;
+    background-color: #F4F4F2;
+}
+
+.logo{
+    font-family: 'Dancing Script', cursive;
+    font-size : 35px;
+    text-decoration: none;
+    color :black;
+    margin-left:3%;
+    font-weight: bold;
+    
+}
+
+
+li .li{
+    margin-right:10px;
+    padding:10px;
+    color: black;
+    text-decoration:none;
+    color : gray;
+
+}
+
+.first{
+    width:50%;
+    margin-right:5px;
+}
+
+
+.second{
+    width:50%;
+}
+
+.left{
+    font-size:20px;
+    font-weight: bold;
+}
+
+
+.coldbrew{
+    font-size:23px;
+    font-weight:bold;
+    
+}
+
+#one {
+    display :flex;
+
+}
+
+#one img{
+    width:95%;
+}
+
+.gray{
+    text-align: right;
+    color :gray;
+    font-size:12px;
+    font-style:bold;
+}
+
+
+
+.coffeename{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom:0;
+}
+
+.coffeename2{
+    font-size:13px;
+    margin-top:3px;
+    padding-bottom:5px;
+
+}
+
+.seconddetail{
+    padding-top :17px;
+    border-top:3px solid black;
+    font-size :13px;
+    font-weight:bold;
+    padding-bottom:30px;
+    border-bottom: 1px solid lightgray;
+    margin:0;
+}
+
+.productdetail{
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin:0;
+}
+
+.productdetail span{
+    margin-left : 12px;
+    margin-right : 12px;
+    font-size:17px;
+    font-weight:bold;
+    margin-bottom:0;
+}
+.productdetail2{
+    display:flex;
+    justify-content: space-between;
+    
+    padding-top:20px;
+    padding-bottom:20px;
+    margin:0;
+}
+.boxone{
+    width:50%;
+    border-right: 2px dotted gray;
+}
+.boxtwo{
+    width:50%;
+    
+}
+
+
+.productdetail2 ul{
+    display:flex;
+    flex-direction:column;
+    padding:10px 5px 10px 3px;
+    margin : 0 15px 0 15px;
+
+}
+.productdetail2 li{
+    display:flex;
+    justify-content: space-between;
+    font-weight:bold;
+    margin-bottom :5px;
+}
+
+.allegy{
+    display: flex;
+    background-color:rgb(243, 240, 240);
+    height:45px;
+    align-items:center;
+    padding-left:10px;
+    border-radius:3px;
+    font-weight: bold;
+}
+.reviewnav{
+    font-size:20px;
+    font-weight: bold;
+    border-bottom: 1px solid lightgray;
+    padding-top:10px;
+    padding-bottom:15px;
+}
+
+.id{
+    font-weight:bold;
+    font-size:13px;
+}
+
+.ment{
+    font-size :13px;
+}
+
+.reviewcomment{
+    font-size:13px;
+    font-weight: bold;
+    color:rgb(151, 143, 143);
+    background-color: rgb(243, 240, 240);
+    margin-top:20px;
+    padding :7px;
+    width :100%;
+    border : 1px solid rgb(243, 240, 240); }
+
+.bottomzone{
+    display:flex;
+    background-color :rgb(44, 40, 40);
+    padding:30px;
+    justify-content: space-around;
+    color :white;
+    font-size :13px;
+    padding-top:40px;
+}
+
+ .bottomzone ul{
+     display:flex;
+     flex-direction:column;
+     margin-top :0;
+     padding:0;
+ }
+ 
+ .bottomzone li{
+     padding-bottom:8px;
+ }
+
+ #fifth {
+     display:flex;
+     justify-content: space-between;
+ }
+
+ 
+ 
+ #heart3{
+    font-size:40px;
+    color:red;
+    
+    margin-top:20px;
+ }
