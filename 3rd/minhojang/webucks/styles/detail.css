@@ -1,0 +1,66 @@
+/* Basic Settings */
+body {
+  --color-nav: #f6f5ef;
+  --color-section: #f4f4f2;
+  --color-contents: #aaaaa5;
+
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+  font-family: "Nanum Gothic", sans-serif;
+  background: #ffffff;
+}
+
+/* Basick container Setting */
+
+.container {
+  width: 1100px;
+  padding: 0 3rem;
+  background: #ffffff;
+}
+
+/* Naviation Bar */
+
+nav {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.menu {
+  padding: 1rem;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 50px;
+  padding: 0 1.2rem;
+  background-color: var(--color-nav);
+  font-size: 0.8rem;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-family: "Dancing Script", cursive;
+  margin-top: 0.7rem;
+}
+
+.contents {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-contents);
+  margin: 0;
+  padding: 0;
+}
+
+#content-new {
+  padding-right: 0;
+}
+
+/* Coffee Menu */
