@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/detail.css" />
+    <script
+      src="https://kit.fontawesome.com/939e59ba9c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Detail page</title>
+  </head>
+  <body>
+    <nav id="navbar" class="container">
+      <a href="#" class="navbar__logo">WeBucks</a>
+      <ul class="navbar__menu">
+        <li><a href="#">COFFEE</a></li>
+        <li><a href="#">MENU</a></li>
+        <li><a href="#">STORE</a></li>
+        <li><a href="#">WHAT'S NEW</a></li>
+      </ul>
+    </nav>
+
+    <section id="detail">
+      <div class="container">
+        <h1 class="detail-title">콜드브루</h1>
+        <div class="detail__route">
+          홈 > MENU > 음료 > 에스프레소 > 화이트 초콜릿 모카
+        </div>
+        <div class="detail-page">
+          <div class="detail-page__img">
+            <img src="/img/coffee2.jpg" alt="커피 사진" width="400px" />
+          </div>
+          <div class="detail-page__content">
+            <div class="detail-page__content-title">
+              <h2>화이트 초콜릿 모카</h2>
+              <small>White Chocolate Moca</small>
+              <a href="#">
+                <i class="far fa-heart" id="detail-page__content-heart"></i>
+              </a>
+            </div>
+            <div class="detail-page__content-desc">
+              달콤하고 부드러운 화이트 초콜릿 시럽과 에스프레소를 스팀 밀크와
+              섞어 휘핑크림으로 마무리한 음료로 달콤함과 강렬한 에스프레소가
+              부드럽게 어우러진 커피
+            </div>
+            <div class="nutrition-info">
+              <h1>제품 영양 정보</h1>
+              <div class="nutrition-info__list">
+                <div class="nutrition-info__list-1">
+                  <ul>
+                    <li>
+                      <div>1회 제공량 (kcal)</div>
+                      <div>345</div>
+                    </li>
+                    <li>
+                      <div>포화지방 (g)</div>
+                      <div>11</div>
+                    </li>
+                    <li>
+                      <div>단백질 (g)</div>
+                      <div>11</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="nutrition-info__list-2">
+                  <ul>
+                    <li>
+                      <div>나트륨 (g)</div>
+                      <div>150</div>
+                    </li>
+                    <li>
+                      <div>당류 (g)</div>
+                      <div>35</div>
+                    </li>
+                    <li>
+                      <div>카페인 (mg)</div>
+                      <div>75</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="nutrition-info__allergy">
+                알레르기 유발 요인 : 우유
+              </div>
+              <div class="nutrition-info__review">
+                <h3>리뷰</h3>
+                <div class="nutrition-info__review-comment">
+                  <div class="nutrition-info__review-comment__inner">
+                    <p><span>coffee_lover</span>너무 맛있어요!</p>
+                    <i class="far fa-heart" onclick="clickHeart();"></i>
+                    <i class="fas fa-times" onclick="clickDelete();"></i>
+                  </div>
+                  <div class="nutrition-info__review-comment__inner">
+                    <p>
+                      <span>CHOCO7</span>오늘도 화이트 초콜릿 모카를 마시러
+                      갑니다.
+                    </p>
+                    <i class="far fa-heart" onclick="clickHeart();"></i>
+                    <i class="fas fa-times" onclick="clickDelete();"></i>
+                  </div>
+                  <div class="nutrition-info__review-comment__inner">
+                    <p>
+                      <span>legend_dev</span>진짜 화이트 초콜릿 모카는 전설이다.
+                      진짜 화이트 초콜릿 모카는 전설이다. 진짜 화이트 초콜릿
+                      모카는 전설이다.
+                    </p>
+                    <i class="far fa-heart" onclick="clickHeart();"></i>
+                    <i class="fas fa-times" onclick="clickDelete();"></i>
+                  </div>
+                </div>
+                <input
+                  type="text"
+                  id="input-review"
+                  placeholder="리뷰를 입력해주세요."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="footer__company">
+          <div class="footer-title">COMPANY</div>
+          <div class="footer-list">
+            <ul>
+              <li>한눈에 보기</li>
+              <li>스타벅스 사명</li>
+              <li>스타벅스 소개</li>
+              <li>국내 뉴스룸</li>
+              <li>세계의 스타벅스</li>
+              <li>글로벌 뉴스룸</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__corpoarte">
+          <div class="footer-title">CORPORATE SALES</div>
+          <div class="footer-list">
+            <ul>
+              <li>단체 및 기업 구매 안내</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__partnership">
+          <div class="footer-title">PARTNERSHIP</div>
+          <div class="footer-list">
+            <ul>
+              <li>신규 입점 제의</li>
+              <li>협력 고객사 등록 신청</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__community">
+          <div class="footer-title">ONLINE COMMUNITY</div>
+          <div class="footer-list">
+            <ul>
+              <li>페이스북</li>
+              <li>트위터</li>
+              <li>유튜브</li>
+              <li>블로그</li>
+              <li>인스타그램</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__recurit">
+          <div class="footer-title">RECRUIT</div>
+          <div class="footer-list">
+            <ul>
+              <li>채용 소개</li>
+              <li>채용 지원하기</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__webucks">
+          <div class="footer-title">WEBUCKS</div>
+          <div class="footer-list"></div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/detail.js"></script>
+  </body>
+</html>

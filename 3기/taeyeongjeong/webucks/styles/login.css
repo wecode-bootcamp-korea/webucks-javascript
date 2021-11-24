@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+#login {
+  width: 420px;
+  height: 550px;
+  border: 2px solid #e3e3e3;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  margin: 100px auto 100px;
+}
+
+.login-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 60px;
+}
+
+.login-input {
+  width: 320px;
+  margin-bottom: 17px;
+}
+
+#user-id,
+#user-pw {
+  width: 100%;
+  height: 40px;
+  border: 2px solid #e3e3e3;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  color: #a1a1a1;
+  padding-left: 10px;
+  outline: none;
+}
+
+::placeholder {
+  color: #afafaf;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.login-button {
+  width: 320px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: #add3eb;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 140px;
+}
+
+.login-button:enabled {
+  background-color: #61aded;
+}
+
+.find-pw {
+  text-decoration: none;
+  color: #7da4c0;
+  font-size: 15px;
+}

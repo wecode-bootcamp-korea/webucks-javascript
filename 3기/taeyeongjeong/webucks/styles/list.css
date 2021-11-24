@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+}
+
+#navbar {
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f4f2;
+  margin-bottom: 16px;
+}
+
+.navbar__logo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.navbar__menu {
+  display: flex;
+}
+
+.navbar__menu li {
+  margin-right: 20px;
+}
+
+.navbar__menu a {
+  color: #b9b9b2;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.notice {
+  background-color: #f4f4f2;
+  height: 45px;
+  line-height: 45px;
+  margin-bottom: 16px;
+  padding-left: 20px;
+}
+
+.notice p span {
+  font-size: 13px;
+}
+
+.notice p img {
+  position: relative;
+  bottom: -2px;
+  margin: 0 5px 0 10px;
+}
+
+.coffee-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.coffee-list li {
+  width: 25%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.coffee-list__box {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.coffee-list li img:hover {
+  transform: scale(1.15);
+}
+
+.coffee-list li img {
+  transition: transform 0.3s;
+}
+
+.coffee-list li:nth-child(9) img {
+  transition: transform 3s, opacity 5s;
+}
+
+.coffee-list li:nth-child(9) img:hover {
+  transform: rotate(360deg);
+  opacity: 0;
+}
