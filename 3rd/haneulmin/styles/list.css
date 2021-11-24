@@ -43,9 +43,6 @@ header li {
   display: flex;
   align-items: center;
   list-style: none;
-}
-
-header li p {
   color: #83704b;
 }
 

@@ -6,10 +6,21 @@
   padding: auto;
 }
 
-.topmenu {
+html {
+  position: relative;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100%;
+}
+
+/* header start */
+.header {
   background-color: #f6f5ef;
   padding-top: 15px;
-  width: 870px;
+  width: 1250px;
   height: 70px;
   margin: 0 auto;
 }
@@ -43,15 +54,302 @@ header li {
   display: flex;
   align-items: center;
   list-style: none;
-}
-
-header li p {
   color: #83704b;
+}
+/* header end */
+
+/* main start */
+section {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
 }
 
 .category {
-  margin-left: 290px;
-  padding: 20px 0;
+  width: 1250px;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+.category li {
+  padding-top: 30px;
+  list-style: none;
+  font-size: 15px;
+  color: #929292;
+}
+
+.main {
+  width: 1250px;
+}
+
+img {
+  width: 600px;
+  height: 600px;
+  margin: 30px 20px 200px 0;
+}
+
+.detail1 {
+  padding-top: 30px;
+}
+
+.name {
+  list-style: none;
+  float: left;
+}
+
+.ko {
+  margin-top: 0;
   font-size: 25px;
   font-weight: bold;
 }
+
+.en {
+  margin: 3px 0 20px 40px;
+}
+
+.heart {
+  float: right;
+  margin: 20px 10px 0 0;
+  color: #929292;
+}
+
+.detail1 hr {
+  margin: 20px 0 0 40px;
+  width: 590px;
+  border: 0;
+  height: 2px;
+  background-color: black;
+}
+
+p {
+  margin: 20px 0 0 40px;
+  padding-bottom: 10px;
+}
+
+.infoTitle p {
+  font-size: 23px;
+  margin-left: 60px;
+  padding: 5px 0;
+}
+
+.infoTitle hr {
+  background-color: #dfdfdf;
+  height: 1px;
+}
+
+.tall p {
+  font-size: 23px;
+  float: right;
+  margin: -50px 20px 0 0;
+}
+
+.tall hr {
+  background-color: #dfdfdf;
+  height: 1px;
+}
+
+.one {
+  margin: 20px 0 0 60px;
+}
+
+.fat {
+  margin: 5px 0 0 60px;
+}
+
+.protein {
+  margin: 5px 0 30px 60px;
+}
+
+.amount1 {
+  text-align: center;
+  margin: -125px 70px 0 0;
+}
+
+.main .between {
+  background-color: #a0a0a0;
+  border: 0;
+  border-left: 1px dashed #ffffff;
+  width: 1px;
+  height: 100px;
+  margin: -135px 0 0 335px;
+}
+
+.info2 {
+  text-align: center;
+  padding-left: 100px;
+  margin-top: -113px;
+}
+
+.sweet1 {
+  margin: 5px 45px 0 60px;
+}
+
+.sweet2 {
+  margin: 5px 0 0 60px;
+}
+
+.caffeine {
+  margin: 5px 0 30px 40px;
+}
+
+.amount2 {
+  text-align: right;
+  margin: -130px 20px 0 0;
+}
+
+.alergy {
+  background-color: #efefef;
+  border-radius: 4px;
+  margin-left: 40px;
+  height: 50px;
+}
+
+.alergy p {
+  padding-top: 13px;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.reviewTitle {
+  font-size: 22px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.review hr {
+  border: 0;
+  background-color: #dfdfdf;
+  height: 1px;
+  margin-top: -5px;
+  margin-bottom: 20px;
+}
+
+.review .id {
+  margin-left: 40px;
+  padding: 2px;
+  font-size: 14px;
+}
+
+.id span {
+  font-weight: bold;
+}
+
+.review .comment {
+  background-color: #efefef;
+  height: 30px;
+  margin-left: 40px;
+}
+
+.comment p {
+  padding-top: 7px;
+  margin-left: 10px;
+  color: #929292;
+  font-size: 13px;
+}
+/* main end */
+
+/* footer start */
+.footer {
+  background-color: #333333;
+  padding-top: 12px;
+  width: 100%;
+  height: 330px;
+  margin: 0 auto;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer nav {
+  width: 1200px;
+  padding: 20px 0 0 27px;
+  display: flex;
+}
+
+footer ul {
+  width: 100%;
+  display: flex;
+}
+
+footer li {
+  margin: 3px;
+}
+
+.footerMenuTitle {
+  margin-bottom: 10px;
+}
+
+.firstMenu {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  color: #ffffff;
+}
+
+.secondMenu {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  color: #ffffff;
+}
+
+.thirdMenu {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  color: #ffffff;
+}
+
+.fourthMenu {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  color: #ffffff;
+}
+
+.fifthMenu {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  color: #ffffff;
+}
+
+.sixthMenu {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  color: #ffffff;
+}
+
+aside li {
+  display: flex;
+  justify-content: center;
+  padding-top: 250px;
+  list-style: none;
+  font-size: 12px;
+  color: #929292;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+/* footer end */
