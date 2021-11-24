@@ -9,7 +9,8 @@ body {
 
 p,
 h1,
-a {
+a,
+input {
   all: unset;
 }
 
@@ -51,7 +52,6 @@ nav {
 }
 
 #mainHeader {
-  border: 1px solid red;
   display: flex;
   align-items: center;
   margin: 5px 40px 0 40px;
@@ -182,9 +182,37 @@ nav {
   border-radius: 5px;
 }
 
-#review {
-  border: 1px solid red;
+#reviewContainer {
   display: flex;
   flex-direction: column;
   margin-top: 25px;
+}
+
+#reviewTitle {
+  padding: 0 0 10px 0;
+  font-size: 25px;
+  font-weight: 700;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+#reviewDetail {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.reviewDetailPart {
+  display: flex;
+}
+
+.reviewID {
+  font-weight: 700;
+  margin: 0 10px 5px 0;
+}
+
+#reviewMessage {
+  padding: 10px 15px;
+  background-color: #efefef;
+  border-radius: 5px;
 }
