@@ -2,7 +2,6 @@ let $username = document.querySelector('#username');
 let $password = document.querySelector('#password');
 let $loginButton = document.getElementById('login-button');
 
-
 const isValidLogin = [false, false]
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -25,15 +24,6 @@ window.addEventListener('DOMContentLoaded', () => {
   })
 
 });
-
-
-// function validateUsername(username) {
-//   return (username.includes('@'))? true : false
-// }
-
-// function validatePassword(password) {
-//   return (password.length > 7)? true : false
-// }
 
 function validateLogin() {
   if (isValidLogin[0] && isValidLogin[1]){
