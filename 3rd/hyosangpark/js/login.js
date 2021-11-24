@@ -45,4 +45,4 @@ loginBtn.addEventListener('click', function(e) {
     else {
         alert("아이디 또는 패스워드가 틀렸습니다.");
     }
-}); 
+});  
