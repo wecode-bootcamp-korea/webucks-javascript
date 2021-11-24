@@ -1,0 +1,49 @@
+* {
+    box-sizing:border-box;
+    margin: auto;
+    @media all and (min-width:768px) and (max-width:1080px) {}
+} 
+
+.wrapper{
+    display: flex;
+    justify-content: space-evenly; 
+    align-items:center;
+    flex-direction: row;
+    border: 1px solid black;
+    width: 86.5%;
+    height: 75px;
+    background-color: #f6f5f0;
+    border: none;
+  }
+  .logo{
+    position: absolute;    
+    font-family: 'Bree Serif', serif;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    margin-left: -1100px;
+    }
+
+.coffee{
+    position: absolute;
+    margin-left: 600px;
+    color:#d4d3ce;
+}   
+
+
+.menu{
+    position: absolute;
+    margin-left: 750px;
+    color:#d4d3ce;
+}
+ 
+.store{
+    position: absolute;
+    margin-left: 900px;
+    color:#d4d3ce;
+}
+
+.what{
+  position:absolute;
+  margin-left: 1100px;
+  color:#d4d3ce;  
+}

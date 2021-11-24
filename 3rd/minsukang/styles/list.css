@@ -13,6 +13,7 @@
     width: 86.5%;
     height: 75px;
     background-color: #f6f5f0;
+    border: none;
   }
 
 .logo{
@@ -26,23 +27,26 @@
 .coffee{
     position: absolute;
     margin-left: 600px;
+    color:#d4d3ce;
 }   
 
 
 .menu{
     position: absolute;
     margin-left: 750px;
+    color:#d4d3ce;
 }
  
 .store{
     position: absolute;
     margin-left: 900px;
+    color:#d4d3ce;
 }
 
 .what{
   position:absolute;
   margin-left: 1100px;
-  
+  color:#d4d3ce;  
 }
 
 .wrapper2{
@@ -56,6 +60,7 @@
     background-color: #f6f5f0;
     margin-top: 20px;   
     position: relative; 
+    border:none;
   }
 
 .cold{
@@ -101,6 +106,7 @@
     width: 86.5%;
     height: 75px;
     background-color: #f6f5f0;
+    border:none;
   }
 
 
