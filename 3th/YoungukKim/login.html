@@ -3,30 +3,38 @@
   <head>
     <meta charset="utf-8">
     <title>webucks</title>
-    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="styles/login.css" rel="stylesheet" type="text/css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
   </head>
+
   <body>
     <section>
+      
       <h1>WeBucks</h1>
         <div class="input">
         <input type="text" placeholder="전화번호, 사용자 이름 또는 이메일"
          class="userid">
         </div>
+
         <div class="input">
         <input type="password"
         placeholder="비밀번호"  class="pw">
         </div>
+
         <div class="btn">
           <button class="but" disabled>로그인</button>
         </div>
+
         <div class="forget">
           <a href="">비밀번호를 잊으셨나요?</a>
         </div>
+
     </section>
+
     <script>
+
     const emailForm = document.querySelector('.userid');
     const passwordForm = document.querySelector('.pw');
     const loginButton = document.querySelector('button');
@@ -45,10 +53,7 @@
         loginButton.disabled=false;
       }
       else {loginButton.disabled=true; }
-      
     });
-
-
 
     </script>
   </body>

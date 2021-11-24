@@ -1,6 +1,7 @@
 *{
   box-sizing: border-box;
 }
+
 h1{
   display:flex;
   justify-content:center;
@@ -32,6 +33,7 @@ input{
   justify-content: center;
   margin-top:20px;
 }
+
 .but{
   height:45px;
   width:450px;
@@ -41,6 +43,7 @@ input{
   background-color:#ADD3EB;
   font-size :17px;
 }
+
 .but:enabled{
   background-color: blue;
   cursor : pointer;

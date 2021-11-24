@@ -2,14 +2,16 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+}
 
 ul{
     display:flex;
     list-style:none;
-    
 }
 
-.menu {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,9 +32,7 @@ ul{
     
     margin: 3% 5% 3% 5%;
 }
-a{
-    text-decoration: none;
-}
+
 .logo{
     font-family: 'Dancing Script', cursive;
     font-size : 35px;
@@ -53,16 +53,17 @@ li .li{
     margin-left:2%;
     font-weight: bold;
 }
+
 .menu2 img{
     margin-left :2%;
     width : 30px;
 }
+
 .menu2 .dcf {
     margin-left : 2%;
     font-size:12px;
     font-weight: bold;
 }
-
 
 .menu3 a{
     color:black;
@@ -72,9 +73,8 @@ li .li{
 .linetemplate ul{
     display :flex;
     padding :  0;
-    
-    
 }
+
 .linetemplate li{
     width :25%;
     margin:0;
@@ -82,10 +82,9 @@ li .li{
     text-align:center;
 }
 
-
 .linetemplate img{
     width : 80%;
-    
+    height :80%;
     padding:0;
     margin:0;
     transition: all 0.3s linear;
