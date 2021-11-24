@@ -1,0 +1,14 @@
+.html, body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: black;
+}
+.header {
+    background-color: 	#f1f1ef;
+    
+
+}
+.main_logo {
+    font-family: 'Dancing Script', cursive;
+}
