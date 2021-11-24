@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gainsboro;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.background {
+  background-color: white;
+  border: 1px gray solid;
+  border-radius: 5px;
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+p {
+  /* border: 1px solid; */
+  font-family: "Dancing Script", cursive;
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  /* align-items: center; */
+}
+
+form {
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 80px;
+}
+
+input {
+  margin-bottom: 20px;
+  background-color: gainsboro;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#checkButton {
+  background-color: #509be8;
+  opacity: 0.5;
+  padding: 10px 0;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  /* cursor: not-allowed; */
+}
+
+/* 
+button:hover {
+  cursor: pointer;
+} */
+
+.findPw {
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  text-decoration: none;
+}

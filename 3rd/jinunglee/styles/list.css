@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 90%;
+  margin-left: 5%;
+}
+
+nav {
+  background-color: #f4f3ec;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.category {
+  background-color: #f1f1ee;
+  padding: 15px 0;
+  margin: 1% 0;
+  display: flex;
+}
+
+.webucks {
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+  margin-left: 1%;
+}
+
+.link {
+  border: 1px solid;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: small;
+  width: 30%;
+  margin-right: 2%;
+  /* white-space: nowrap; */
+}
+
+.menu {
+  color: #9a9a95;
+  list-style: none;
+}
+
+.itemList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* margin: 0 5%; */
+  /* position: relative; */
+}
+
+.item {
+  border: 1px solid;
+  width: 250px;
+  /* height: 250px; */
+  /* margin-top: 10%; */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  /* position: absolute; */
+}
+
+.itemName {
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 15px;
+  font-family: sans-serif;
+  /* position: absolute; */
+  /* width: 150px; */
+  /* margin-left: 50px; */
+  /* margin-top: 250px; */
+}
+
+#title1 {
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-left: 1%;
+  margin-right: 10px;
+}
+
+#title2 {
+  margin-right: 10px;
+}
+
+#title3 {
+  font-family: sans-serif;
+  font-size: small;
+}
+
+img:hover {
+  transform: scale(1.1);
+  transition: transform.7s;
+  /* position: absolute; */
+}
