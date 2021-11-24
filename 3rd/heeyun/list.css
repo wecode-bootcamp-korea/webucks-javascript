@@ -58,7 +58,8 @@ a{
     width: 100%;
 }
 .small-description{
-    font-size: 12px;
+    margin-left: 5px;
+    font-size: 14px;
 }
 .photo{
     position: relative;
