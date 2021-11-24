@@ -1,0 +1,92 @@
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mainHeader,
+.coldBrew,
+.brewed {
+  margin: 0 10%;
+  border: 2px solid black;
+}
+
+.coldBrew,
+.brewed {
+  margin-top: 15px;
+}
+
+.mainHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row; 
+  height: 60px;
+}
+
+.coldBrew {
+  height: 480px;
+  
+}
+
+.brewed {
+  height: 180px;
+}
+
+.logoWrapper {
+  width: 10%;
+}
+
+.categoryWrapper {
+
+}
+
+.coldBrewHeader,
+.brewedHeader {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin-bottom: 15px;
+  border: 2px solid black; 
+}
+
+.coldBrewHeader {
+
+}
+
+.coldBrewList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; 
+
+}
+
+.brewedHeader {
+
+}
+
+.brewedList {
+
+}
+
+.smallLogo {
+  width: 100%;
+}
+
+
+
+mainHeader[logoWrapper, categoryWrapper]
+
+coldBrew[coldBrewHeader, coldBrewList]
+
+brewed[brewedHeader, brewedList]
+
+
+dl: Definition List, 정의할 목록
+dt: Definition Term, 정의할 용어 
+dd: Definition Description, 정의할 용어 설명 
+
+dl[ dt[header], dd[ul[li][li][li]] ]
