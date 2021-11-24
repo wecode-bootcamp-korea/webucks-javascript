@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+}
+header {
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  width: 60%;
+  margin-left: 20%;
+  height: 60px;
+  background-color: #f4f4f2;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(0, 0, 0, 0.05);
+}
+.nav {
+  display: flex;
+  margin-left: 1%;
+  margin-right: 1%;
+  justify-content: space-between;
+}
+
+header:hover .nav li {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+header:not(:hover) .nav li {
+  opacity: 0.3;
+  transition: all 0.5s;
+}
+
+.nav li {
+  display: inline-block;
+  margin-left: 50px;
+  color: black;
+  opacity: 0.3;
+}
+
+.container {
+  width: 60%;
+  margin-left: 20%;
+}
+
+.detail-img {
+  margin-top: 50px;
+  background-image: url("/images/coffee11.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 48%;
+  height: 750px;
+  background-position: center top;
+  float: left;
+}
+
+.detail-info {
+  float: right;
+  margin-top: 50px;
+  width: 48%;
+  height: 750px;
+}
+
+.title {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 30px;
+}
+
+.detail-info span {
+  float: right;
+}
+
+.smallP {
+  font-size: 15px;
+  margin-top: 0;
+  padding-bottom: 20px;
+  border-bottom: 3px solid black;
+}
+
+.info {
+  margin-bottom: 50px;
+}
+
+.item-info {
+  display: inline-block;
+  font-size: 30px;
+}
+
+.item-span {
+  margin-top: 40px;
+  float: right;
+}
+.item {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+.detail-kcal {
+  margin-bottom: 40px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.division {
+  width: 50%;
+}
+.kcal {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+  border-right: 1px dotted grey;
+}
+.kcal2 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+
+.알러지 {
+  background-color: rgb(226, 223, 223);
+  padding: 20px;
+  font-weight: bold;
+  border: none;
+}
+
+.review {
+}
+
+.review h2 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid grey;
+}
+
+.like {
+  cursor: pointer;
+}
+
+.bottom-bar {
+  position: fixed;
+  bottom: 20px;
+  display: flex;
+  background-color: slategray;
+  color: whitesmoke;
+  width: 60%;
+  margin-left: 20%;
+  justify-content: space-evenly;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.bottom-bar-section ul {
+  list-style-type: none;
+  margin: 0;
+  padding-bottom: 20px;
+  padding-left: 0;
+}
+
+.bottom-bar-section li {
+  padding-bottom: 5px;
+}
+
+.bottom-bar-section p {
+  margin-top: 40px;
+}
+
+.commentBox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+#commentInput {
+  margin-top: 10px;
+  padding: 5px;
+  background-color: rgb(226, 223, 223);
+  border: none;
+  border-radius: 1px;
+}
+
+.deleteBtn {
+  font-size: 4px;
+  width: 60px;
+  cursor: pointer;
+  background-color: thistle;
+  border: none;
+  border-radius: 5px;
+}
+
+.likeBtn {
+  cursor: pointer;
+}
