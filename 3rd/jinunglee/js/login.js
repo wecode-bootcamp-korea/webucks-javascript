@@ -1,16 +1,3 @@
-// function checkStandard () {
-//   const checkId = document.getElementById("account").value;
-//   const checkPw = document.getElementById("password").value;
-
-//   if (checkId.includes("@") && checkPw.length >= 8) {
-//     document.getElementById('checkButton').style.opacity = 1.0;
-//     document.getElementById('checkButton').disabled = false;
-//   } else {
-//     document.getElementById('checkButton').style.opacity = 0.5;
-//   }
-// }
-
-
 const checkId = document.getElementById("account")
 const checkPw = document.getElementById("password")
 const checkButton = document.getElementById("checkButton");
