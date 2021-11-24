@@ -82,11 +82,19 @@ span {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  column-gap: 2rem;
+  column-gap: 2.1rem;
   text-align: center;
 }
 
 img {
   width: 15.5rem;
   height: 20rem;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.image {
+  overflow: hidden;
 }

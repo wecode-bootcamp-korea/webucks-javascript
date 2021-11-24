@@ -1,22 +1,22 @@
 /* Basic Settings */
 body {
-  --color-nav: #f6f5ef;
-  --color-section: #f4f4f2;
-  --color-contents: #aaaaa5;
+  --color-nav: #f6f5f0;
+  --color-nav-text: #a6a7a6;
+  --color-block: #efefef;
+  --color-footer: #333333;
+  --color-line: #d7d7d7;
 
   margin: 0;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   font-size: 10px;
   font-family: "Nanum Gothic", sans-serif;
   background: #ffffff;
 }
 
-/* Basick container Setting */
-
-.container {
-  width: 1100px;
+/* Main Box Modification */
+main {
   padding: 0 3rem;
   background: #ffffff;
 }
@@ -54,7 +54,7 @@ ul {
 .contents {
   display: flex;
   justify-content: space-between;
-  color: var(--color-contents);
+  color: var(--color-nav-text);
   margin: 0;
   padding: 0;
 }
@@ -63,4 +63,147 @@ ul {
   padding-right: 0;
 }
 
-/* Coffee Menu */
+/* Category Title */
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+
+/* Location */
+.location {
+  display: flex;
+  justify-content: flex-end;
+  color: var(--color-nav-text);
+}
+
+/* Image and Information Box Modification */
+.wrapping-img-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Image */
+img {
+  width: 30rem;
+  height: 30rem;
+  object-fit: cover;
+}
+
+.wrapping-info-review {
+  margin-left: 2rem;
+}
+
+/* Information - Sub-title */
+.sub-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.eng-name {
+  font-size: 0.5rem;
+  font-weight: bold;
+  margin: 0.3rem;
+  padding-bottom: 1.4rem;
+  border-bottom: 2px solid #000000;
+}
+
+/* Icon Color */
+i {
+  color: var(--color-nav-text);
+  font-size: 1rem;
+  padding-top: 0.8rem;
+}
+
+/* Infomation - Description */
+.description {
+  font-size: 0.7rem;
+  font-weight: bold;
+  margin: 1.5rem 0;
+}
+
+/* Information - Nutrition */
+.nut-title {
+  margin: 0;
+  padding: 1rem;
+  border-top: 1px solid var(--color-line);
+  border-bottom: 1px solid var(--color-line);
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.wrap-nutrition-container {
+  display: flex;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.nutrition-container {
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.nutrition-name {
+  padding-left: 1rem;
+  margin-right: 15rem;
+}
+
+.nutrition-volume {
+  text-align: right;
+  padding-right: 1rem;
+}
+
+#dot-line {
+  border-right: 1px dashed var(--color-line);
+}
+
+/* Information - Allergy */
+.allergy {
+  background-color: var(--color-block);
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 0.8rem;
+}
+
+/* Review */
+.review-title {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--color-line);
+}
+
+.review-comments {
+  font-size: 0.8rem;
+}
+
+.reviewer {
+  font-weight: bolder;
+}
+
+.review-input {
+  background-color: var(--color-block);
+  font-size: 0.6rem;
+  border-radius: 2px;
+  padding: 0.5rem;
+  width: 40rem;
+  border-style: none;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-around;
+  color: var(--color-line);
+  font-weight: bold;
+  background-color: var(--color-footer);
+  margin-top: 6rem;
+  padding: 1.5rem;
+}

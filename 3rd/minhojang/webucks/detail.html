@@ -24,7 +24,7 @@
     />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./styles/list.css" type="text/css" />
+    <link rel="stylesheet" href="./styles/detail.css" type="text/css" />
 
     <!-- Font Awesome -->
     <link
@@ -33,7 +33,8 @@
     />
   </head>
   <body>
-    <div class="container">
+    <main>
+      <!-- Navigation Bar -->
       <nav class="navigation">
         <h1 class="logo">WeBucks</h1>
         <ul class="contents">
@@ -44,7 +45,139 @@
         </ul>
       </nav>
 
+      <!-- Category Title -->
+      <div class="title">콜드 브루</div>
 
+      <!-- Location -->
+      <div class="location">
+        홈 > MENU > 음료 > 에스프레소 > 화이트 초콜릿 모카
+      </div>
+
+      <!-- Container of Image and Information section -->
+      <div class="wrapping-img-info">
+        <!-- Image -->
+        <section class="image">
+          <img src="./images/details.jpeg" alt="White Chocolate Mocha" />
+        </section>
+
+        <!-- Container of Information Section and Review Section -->
+        <div class="wrapping-info-review">
+          <!-- Information Section -->
+          <section class="information">
+            <h2 class="sub-title">
+              화이트 초콜릿 모카
+              <i class="far fa-heart"></i>
+            </h2>
+            <p class="eng-name">White Chocolate Mocha</p>
+            <p class="description">
+              달콤하고 부드러운 화이트 초콜릿 시럽과 에스프레소를 스팀 밀크와
+              섞어 휘핑크림으로 마무리한 음료로 달콤함과 강렬한 에스프레소가
+              부드럽게 어우러진 커피
+            </p>
+            <div class="nutrition-info">
+              <div class="nut-title">
+                제품 영양 정보
+                <span class="size">Tall(톨) / 355ml (12 fl oz)</span>
+              </div>
+
+              <!-- Wrapping Nutrition Container -->
+              <div class="wrap-nutrition-container">
+                <div class="nutrition-container">
+                  <div class="nutrition-name">
+                    <p>1회 제공량 (kcal)</p>
+                    <p>포화지방 (g)</p>
+                    <p>단백질 (g)</p>
+                  </div>
+                  <div class="nutrition-volume" id="dot-line">
+                    <p>345</p>
+                    <p>11</p>
+                    <p>11</p>
+                  </div>
+                </div>
+                <div class="nutrition-container">
+                  <div class="nutrition-name">
+                    <p>나트륨 (mg)</p>
+                    <p>당류 (g)</p>
+                    <p>카페인 (mg)</p>
+                  </div>
+                  <div class="nutrition-volume">
+                    <p>150</p>
+                    <p>35</p>
+                    <p>75</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="allergy">알레르기 유발요인 : 우유</div>
+          </section>
+
+          <!-- Review Section -->
+          <section class="review">
+            <h2 class="review-title">리뷰</h2>
+            <p class="review-comments">
+              <span class="reviewer">coffee-lover</span>
+              너무 맛있어요!
+            </p>
+            <p class="review-comments">
+              <span class="reviewer">CHOCO7</span>
+              오늘도 화이트 초콜릿 모카를 마시러 갑니다.
+            </p>
+            <p class="review-comments">
+              <span class="reviewer">legend_dev</span>
+              진짜 화이트 초콜릿 모카는 전설이다ㅏ. 진짜 화이트 초콜릿 모카는
+              전설이다. 진짜 화이트 초...
+            </p>
+            <input
+              type="text"
+              class="review-input"
+              placeholder="리뷰를 입력해주세요."
+            />
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <h3 class="footer-title">COMPANY</h3>
+        <p class="footer-nav">한눈에 보기</p>
+        <p class="footer-nav">스타벅스 사명</p>
+        <p class="footer-nav">스타벅스 소개</p>
+        <p class="footer-nav">국내 뉴스룸</p>
+        <p class="footer-nav">세계의 스타벅스</p>
+        <p class="footer-nav">글로벌 뉴스룸</p>
+      </div>
+
+      <div class="footer-container">
+        <h3 class="footer-title">CORPORATE SALES</h3>
+        <p class="footer-nav">단체 및 기업 구매 안내</p>
+      </div>
+
+      <div class="footer-container">
+        <h3 class="footer-title">PARTNERSHIP</h3>
+        <p class="footer-nav">신규 입점 제의</p>
+        <p class="footer-nav">협력 고객사 등록 신청</p>
+      </div>
+
+      <div class="footer-container">
+        <h3 class="footer-title">ONLINE COMMUNITY</h3>
+        <p class="footer-nav">페이스북</p>
+        <p class="footer-nav">트위터</p>
+        <p class="footer-nav">유튜브</p>
+        <p class="footer-nav">블로그</p>
+        <p class="footer-nav">인스타그램</p>
+      </div>
+
+      <div class="footer-container">
+        <h3 class="footer-title">RECRUIT</h3>
+        <p class="footer-nav">채용 소개</p>
+        <p class="footer-nav">채용 지원하기</p>
+      </div>
+
+      <div class="footer-container">
+        <h3 class="footer-title">WEEBUCKS</h3>
+      </div>
+    </footer>
 
     <script src="./js/list.js"></script>
   </body>
