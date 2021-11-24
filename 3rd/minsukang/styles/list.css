@@ -1,0 +1,502 @@
+* {
+    box-sizing:border-box;
+    margin: auto;
+    @media all and (min-width:768px) and (max-width:1080px) {}
+} 
+
+.wrapper{
+    display: flex;
+    justify-content: space-evenly; 
+    align-items:center;
+    flex-direction: row;
+    border: 1px solid black;
+    width: 88%;
+    height: 75px;
+    background-color: #f6f5f0;
+  }
+
+.logo{
+    position: absolute;    
+    font-family: 'Bree Serif', serif;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    margin-left: -950px;
+    }
+
+.coffee{
+    position: absolute;
+    margin-left: 570px;
+}   
+
+
+.menu{
+    position: absolute;
+    margin-left: 700px;
+}
+ 
+.store{
+    position: absolute;
+    margin-left: 825px;
+}
+
+.what{
+  position:absolute;
+  margin-left: 1000px;
+  
+}
+
+.wrapper2{
+    display: flex;
+    justify-content: space-around; 
+    align-items:center;
+    flex-direction: row;
+    border: 1px solid black;
+    width: 88%;
+    height: 75px;
+    background-color: #f6f5f0;
+    margin-top: 20px;   
+    position: relative; 
+  }
+
+.cold{
+   position: absolute;
+   margin-left: -950px;
+
+  }
+.coffee_icon{
+    position:absolute;
+    height: 70%;
+    width: 5%;
+    margin-top: -30px;
+    margin-left: -423px;
+
+}
+
+.decaf1{
+    position: absolute;
+    margin-left: -400px;
+}
+
+.coffee1{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.coffee1_name{
+    display:flex;
+    flex-direction: row;
+    margin-top: 15px;
+    position: relative;
+}
+.wrapper3{
+    display: flex;
+    justify-content: space-evenly; 
+    align-items:center;
+    flex-direction: row;
+    border: 1px solid black;
+    width: 88%;
+    height: 75px;
+    background-color: #f6f5f0;
+  }
+
+
+  .brewd{
+    position: absolute;
+    margin-left: -950px;
+   }
+   .coffee_icon2{
+    position:absolute;
+    height: 7.5%;
+    width: 5%;
+    margin-top: -30px;
+    margin-left: -423px;} 
+
+ .decaf2{
+    position: absolute;
+    margin-left: -400px;}
+    
+.coffee2{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    position: relative;
+}
+
+.coffee2_name{
+    display:flex;
+    flex-direction: row;
+    margin-top: 15px;
+    position: relative;
+}
+
+
+
+
+.coffee3{
+    display:flex;
+    flex-direction: row;
+    margin-top: 20px;
+    position: relative;
+    align-items:center;
+}
+
+.coffee3_name{
+    display:flex;
+    flex-direction: row;
+    margin-top: 15px;
+    align-items: flex-start;
+     
+}
+
+.mint1{
+
+    position: relative;
+    margin-left: 80px;
+    margin-right: -75px;    
+}
+
+.mint2{
+    position: relative;
+    margin-left: 230px;
+    margin-right: 250px;    
+}
+
+.mint1_name{
+
+    position: relative;
+    margin-left: 120px;
+    margin-right: -85px;    
+}
+
+.mint2_name{
+    position: relative;
+    margin-left: 330px;
+    margin-right: 50px;    
+}
+
+.coffee4{
+    display:flex;
+    flex-direction: row;
+    margin-top: 20px;
+    position: relative;
+    align-items: flex-start;
+}
+
+.coffee4_name{
+    display:flex;
+    flex-direction: row;
+    margin-top: 15px;
+    align-items: flex-start;
+     
+}
+
+.america1{
+
+    position: relative;
+    margin-left: 80px;
+    margin-right: -75px;    
+}
+
+.america2{
+    position: relative;
+    margin-left: 230px;
+    margin-right: 250px;    
+}
+
+.america1_name{
+
+    position: relative;
+    margin-left: 120px;
+    margin-right: -85px;    
+}
+
+.america2_name{
+    position: relative;
+    margin-left: 330px;
+    margin-right: 50px;    
+}
+
+.banila {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
+  }
+.banila:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+.banila img{
+    width:165px; 
+    height:200px;
+    overflow: hidden;
+}
+
+.moca {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
+  }
+.moca:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+.moca img{
+    width:165px; 
+    height:200px;
+    overflow: hidden;
+}
+.classic {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
+  }
+.classic:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+.classic img{
+    width:165px; 
+    height:200px;
+    overflow: hidden;
+}
+.classic {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
+  }
+.classic:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+.classic img{
+    width:165px; 
+    height:200px;
+    overflow: hidden;
+}
+
+.yeonyu {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
+  }
+.yeonyu:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+.yeonyu img{
+    width:165px; 
+    height:200px;
+    overflow: hidden;
+}
+
+.character{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
+  }
+.character:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+.character img{
+    width:165px; 
+    height:200px;
+    overflow: hidden;
+}
+
+.nokcha{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
+  }
+.nokcha:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+.nokcha img{
+    width:165px; 
+    height:200px;
+    overflow: hidden;
+}
+
+.soy{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
+  }
+.soy:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+.soy img{
+    width:165px; 
+    height:200px;
+    overflow: hidden;
+}
+
+.cinamon{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
+  }
+.cinamon:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+.cinamon img{
+    width:165px; 
+    height:200px;
+    overflow: hidden;
+}
+
+
+.espreso{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
+  }
+.espreso:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+.espreso img{
+    width: 165px; 
+    height:200px;
+    overflow: hidden;
+    position: relative;
+    margin-left: -245px;
+}
+
+.choco{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
+  }
+.choco:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+.choco img{
+    width: 165px; 
+    height:200px;
+    overflow: hidden;
+    position: relative;
+    margin-left: -565px;
+}
+
+.special{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
+  }
+.special:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+.special img{
+    width: 165px; 
+    height:200px;
+    overflow: hidden;
+    position: relative;
+    margin-left: -250px;
+}
+
+.cream{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
+  }
+.cream:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+.cream img{
+    width: 165px; 
+    height:200px;
+    overflow: hidden;
+    position: relative;
+    margin-left: -565px;
+}
