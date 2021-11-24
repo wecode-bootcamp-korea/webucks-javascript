@@ -1,4 +1,56 @@
-# webucks-javascript
+# beerbucks-javascript
+
+# Mission 진행 상황 
+
+- [x] #1 완료
+- [x] #2 완료
+- [x] #3 완료
+- [ ] #4 완료
+- [ ] #5 완료
+- [ ] #6 완료
+
+# Self-Refactoring 체크리스트
+> [Pre-Course 리팩토링 체크리스트](https://www.notion.so/wecode/Pre-Course-Refactoring-869f50bf6a934db98573229c600043ee#2fc08d22932f4f81870d14820a7cb5a3)를 참고하여 리팩토링을 진행한 항목에 대해 체크를 해주세요.
+
+### 1차 Refactoring 체크리스트
+Mission 3까지 완료한 후 리팩토링을 진행하시고 아래 체크리스트를 작성해주세요.
+- [x] [Basic] console.log 삭제
+- [x] [Basic] id ・ class명, 변수명, 함수명
+- [x] [Basic] 들여 쓰기
+- [x] [HTML] Semantic Tag의 사용
+- [x] [HTML] img tag alt 속성
+- [x] [HTML] Self Closing Tag
+- [x] [CSS] CSS 속성 순서
+- [x] [CSS] 다른 CSS 선택자들 사이 한 줄 띄우기
+- [x] [CSS] 불필요한 style 속성 작성 지양
+- [x] [CSS] 레이아웃은 bottom-up 방식으로 구성
+
+### 2차 Refactoring 체크리스트
+Mission 5까지 완료한 후 리팩토링을 진행하시고 아래 체크리스트를 작성해주세요.
+- [ ] [Basic] console.log 삭제
+- [ ] [Basic] id ・ class명, 변수명, 함수명
+- [ ] [Basic] 들여 쓰기
+- [ ] [HTML] Semantic Tag의 사용
+- [ ] [HTML] img tag alt 속성
+- [ ] [HTML] Self Closing Tag
+- [ ] [CSS] CSS 속성 순서
+- [ ] [CSS] 다른 CSS 선택자들 사이 한 줄 띄우기
+- [ ] [CSS] 불필요한 style 속성 작성 지양
+- [ ] [CSS] 레이아웃은 bottom-up 방식으로 구성
+
+### 3차 Refactoring 체크리스트
+Mission 6까지 완료한 후 리팩토링을 진행하시고 아래 체크리스트를 작성해주세요.
+- [ ] [Basic] console.log 삭제
+- [ ] [Basic] id ・ class명, 변수명, 함수명
+- [ ] [Basic] 들여 쓰기
+- [ ] [HTML] Semantic Tag의 사용
+- [ ] [HTML] img tag alt 속성
+- [ ] [HTML] Self Closing Tag
+- [ ] [CSS] CSS 속성 순서
+- [ ] [CSS] 다른 CSS 선택자들 사이 한 줄 띄우기
+- [ ] [CSS] 불필요한 style 속성 작성 지양
+- [ ] [CSS] 레이아웃은 bottom-up 방식으로 구성
+
 
 ## 초기 세팅 및 진행 방법
 
