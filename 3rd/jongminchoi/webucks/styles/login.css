@@ -1,0 +1,70 @@
+body {
+  all: unset;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  background-color: #edefef;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+  margin: 50px;
+  background-color: #ffffff;
+  border: 2px solid #e4e4e4;
+  border-radius: 5px;
+}
+
+#logo {
+  margin-bottom: 30px;
+  font-family: "Dancing Script", cursive;
+  font-size: 70px;
+  font-weight: 700;
+}
+
+#login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 180px;
+  margin-bottom: 120px;
+}
+
+#emailInput {
+  all: unset;
+  width: 300px;
+  height: 40px;
+  padding: 0 8px;
+  border: 1px solid #e4e4e4;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+}
+
+#passwordInput {
+  all: unset;
+  width: 300px;
+  height: 40px;
+  padding: 0 8px;
+  border: 1px solid #e4e4e4;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+}
+
+#login-button {
+  all: unset;
+  width: 300px;
+  height: 40px;
+  padding: 0 8px;
+  border: 1px solid #e4e4e4;
+  border-radius: 4px;
+  background-color: #add3eb;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+
+#forgot-password {
+  color: #92afc5;
+}
