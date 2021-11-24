@@ -216,3 +216,21 @@ nav {
   background-color: #efefef;
   border-radius: 5px;
 }
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 250px;
+  padding-top: 80px;
+  padding-bottom: 56px;
+  background-color: #333333;
+  color: white;
+}
+
+.footerTitle {
+  margin-bottom: 15px;
+}
+
+.footerElements {
+  margin-bottom: 5px;
+}
