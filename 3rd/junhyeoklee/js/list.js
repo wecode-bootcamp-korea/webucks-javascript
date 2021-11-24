@@ -111,6 +111,7 @@ function showItems(item, num, what) {
     like.setAttribute("class", "like");
     add.setAttribute("class", "add");
     img.setAttribute("src", `./images/${what}${i}.png`);
+    img.setAttribute("alt", `${item[i].name}`);
     name.setAttribute("class", "name");
     h4.innerHTML = item[i].name;
     like.innerHTML = `&nbsp;&nbsp;&nbsp;&nbsp;🤍`;
