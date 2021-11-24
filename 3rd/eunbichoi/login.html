@@ -1,0 +1,34 @@
+ <!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BeerBucks | Starbucks Cloning</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="/styles/login.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+  <script src="js/login.js" defer></script>
+</head>
+<body>
+  <section class="login-wrapper">
+    <h1>BeerBucks</h1>
+    <form class="login-form">
+      <div class="input-control">
+        <!-- <label for="username"></label> -->
+        <input class="form-items" type="text" name="username" id="username" placeholder="전화번호, 사용자 이름 또는 이메일">
+      </div>
+      <div class="input-control">
+        <!-- <label for="password"></label> -->
+        <input class="form-items" type="password" name="password" id="password" placeholder="비밀번호">
+      </div>
+      <button tabindex="0" formaction="ist.html" id="login-button" type="submit" disabled="true">로그인</button>
+    </form>
+    <a tabindex="1" class="lost-pw" href="#">비밀번호를 잊으셨나요?</a>
+  </section>
+</body>
+</html>
