@@ -1,4 +1,4 @@
-// 콜드브루 아이템들
+// 콜드브루 아이템들 ㄴㄴ
 const 콜드브루 = [
   {
     img: "./images/coffee5.png",
