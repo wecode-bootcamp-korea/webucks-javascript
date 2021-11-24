@@ -10,13 +10,7 @@ body {
   justify-content: center;
 }
 
-h1 {
-  font-family: "Dancing Script", cursive;
-  font-size: 70px;
-  font-weight: bold;
-}
-
-div {
+section {
   position: absolute;
   top: 50px;
   width: 470px;
@@ -28,6 +22,12 @@ div {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 70px;
+  font-weight: bold;
 }
 
 form {
