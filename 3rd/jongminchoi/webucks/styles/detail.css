@@ -1,9 +1,9 @@
 body {
   all: unset;
   box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* flex-direction: column; */
   background-color: white;
 }
 
@@ -38,6 +38,7 @@ nav {
   flex-wrap: wrap;
   padding: 0 20px;
   width: 30%;
+  color: #bfbfbf;
 }
 
 #logoGoHome {
@@ -47,4 +48,143 @@ nav {
 .menuClass {
   font-family: "Baloo Thambi 2", cursive;
   cursor: pointer;
+}
+
+#mainHeader {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  margin: 5px 40px 0 40px;
+}
+
+#mainTitle {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  padding: 20px 0;
+  font-size: 35px;
+}
+
+#map {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 50%;
+  height: 70px;
+  padding-right: 20px;
+  color: #bfbfbf;
+}
+
+.menuClass {
+  padding: 0 5px;
+  font-size: 13px;
+}
+
+#Information {
+  border: 1px soild black;
+  display: flex;
+  margin: 0 40px;
+}
+
+#detailInformation {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 30px;
+}
+
+#detailTitle {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 20px;
+  border-bottom: 2px solid black;
+}
+
+#detailText {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#textKor {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+#textEng {
+  font-size: 15px;
+}
+
+#heart {
+  display: flex;
+  align-items: center;
+}
+
+#descripttion {
+  margin-top: 20px;
+}
+
+#ingredients {
+  display: flex;
+  flex-direction: column;
+}
+
+#ingredientsTitle {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 20px 15px;
+  border-top: 1px solid #bfbfbf;
+  border-bottom: 1px solid #bfbfbf;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#ingredientsTable {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#ingredientsTableDivide1 {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  padding: 0 20px;
+}
+
+#ingredientsTableDivide2 {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  padding: 0 20px;
+}
+
+.ingredientsTablePart1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.ingredientsTablePart2 {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.ingredientText {
+  margin: 3px 0;
+}
+
+#ingredientsAllergie {
+  padding: 10px 15px;
+  background-color: #efefef;
+  border-radius: 5px;
+}
+
+#review {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
 }
