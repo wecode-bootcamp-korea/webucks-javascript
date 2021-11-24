@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  font-family: 'montserrat', 'arial', 'georgia';
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+body{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 12px;
+}
+
+.inner-wrapper {
+  margin: 0 auto;
+  width: 1200px;
+  min-width: 500px;
+}
+
+header.inner-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  background-color: #f4f4f2;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list-links {
+  margin: 0 10px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #333333;
+}
+
+.beer-category-wrapper {
+  position: relative;
+  display: flex;
+}
+
+h2 {
+  margin: 15px 0;
+  padding: 20px;
+  background-color: #f4f4f2;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.beer-list.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+
+}
+
+.beer-list-item dt{
+  overflow: hidden;
+  width: 280px;
+  height: 270px;
+}
+
+.beer-list-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 2s ease-in-out;
+}
+
+.beer-list-item img:hover{
+  transform: scale(1.2)
+}
+
+dd {
+  padding: 10px;
+  font-size: 1rem;
+  text-align: center;
+}
