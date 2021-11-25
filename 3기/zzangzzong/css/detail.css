@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+/* 상단 네비바 */
+.header{
+
+}
+
+.nav_wrap{
+    display: flex;
+    justify-content: space-around;
+    background-color: #F6F5EF;
+}
+
+.nav_wrap>h1{
+    font-size: 60px;
+    font-family: 'Dancing Script', cursive;
+    float: left;
+}
+
+.global_nav{
+    display: flex;
+    float: right;
+    align-items: center;
+}
+ /* 상단 네비바 끝 */
+
+ /* 서브타이틀 */
+ .sub_title{
+    width: 90%;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub_title>h3{
+    margin-left: 70px;
+}
+
+.sub_title>p{
+    font-size: 15px;
+    padding-top: 50px;
+}
+/* 서브타이틀 끝 */
+
+ /* 컨테이너 시작 */
+ .container{
+     width: 90%;
+     height: 900px;
+     margin-left: 5%;
+     display: flex;
+     justify-content: space-between;
+     border: 1px solid red;
+ }
+
+ /* 디테일 사진 */
+ .detail_pic{
+    width: 40%;
+ }
+
+/* 디테일 정보 */
+ .detail_info{
+    width: 60%;
+    height: 800px;
+    display: block;
+    justify-content: space-between;
+    border: 1px solid green;
+ }
+/* 디테일 이름 */
+.detail_info_name{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid black;
+    margin-bottom: 20px;
+}
+
+.like_box{
+    padding-top: 30%;
+    padding-right: 30%;
+}
+/* 디테일 이름 끝 */
+
+/* 디테일 설명 */
+.detail_info_expain{
+    font-size: 15px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+/* 영양정보 */
+.detail_info_nutrition{
+    height: 60px;
+    padding: 5px 0 5px 0;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin-bottom: 30px;
+}
+
+#nutrition1{
+    float: left;
+}
+
+#nutrition2{
+    float: right;
+}
+/* 영양정보  끝 */
+
+/* 칼로리 */
+.detail_info_kcal{
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 40px;
+}
+
+.kcal{
+    font-size: 12px;
+    /* display: flex; */
+    /* text-align: justify; */
+}
+
+.kcal:nth-child(1), 
+.kcal:nth-child(3),
+.kcal:nth-child(5){
+    border-right: 1px dotted black;
+}
+
+.kcal:nth-child(1), 
+.kcal:nth-child(3),
+.kcal:nth-child(5)>span{
+    padding-right: 10px;
+}
+
+.kcal:nth-child(2), 
+.kcal:nth-child(4),
+.kcal:nth-child(6)>span{
+    padding-right: 10px;
+}
+
+/* 알러지 */
+.allergy{
+    height: 60px;
+    padding-top: 20px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    background-color: gray;
+}
+ 
+.kcal>p{
+    float: left;
+}
+
+.kcal>span{
+    padding-top: 12px;
+    float: right;
+}
+/* 알러지 끝 */
+
+/* 리뷰 */
+.reivew{
+    height: 50px;
+    font-size: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid gray;
+}
