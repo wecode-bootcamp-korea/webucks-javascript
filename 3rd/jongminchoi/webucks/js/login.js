@@ -12,6 +12,7 @@ id.addEventListener("input", function () {
     thisIsButton.style.backgroundColor = "#add3eb";
     thisIsButton.style.cursor = "default";
   }
+  sessionStorage.setItem("ID", id.value);
 });
 
 pw.addEventListener("input", function () {
