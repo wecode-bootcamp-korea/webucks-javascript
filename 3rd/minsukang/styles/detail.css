@@ -1,86 +1,109 @@
-* {
-    box-sizing:border-box;
-    margin: auto;
-    @media all and (min-width:768px) and (max-width:1080px) {}
-} 
-
-.wrapper{
-    display: flex;
-    justify-content: space-evenly; 
-    align-items:center;
-    flex-direction: row;
-    border: 1px solid black;
-    width: 86.5%;
-    height: 75px;
-    background-color: #f6f5f0;
-    border: none;
-  }
-  .logo{
-    position: absolute;    
-    font-family: 'Bree Serif', serif;
-    font-family: 'Dancing Script', cursive;
-    font-size: 40px;
-    margin-left: -1100px;
-    }
-
-.coffee{
-    position: absolute;
-    margin-left: 600px;
-    color:#d4d3ce;
-}   
-
-
-.menu{
-    position: absolute;
-    margin-left: 750px;
-    color:#d4d3ce;
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
 }
- 
-.store{
-    position: absolute;
-    margin-left: 900px;
-    color:#d4d3ce;
+.container {
+  width: 1100px;
+  padding: 0 3rem;
+  background: #ffffff;
 }
 
-.what{
-  position:absolute;
-  margin-left: 1100px;
-  color:#d4d3ce;  
+.wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  border: 1px solid black;
+  width: 99.8%;
+  height: 75px;
+  background-color: #f6f5f0;
+  border: none;
 }
 
-.coldbrew_name{
-    font-size: 25px;
-    padding-top: 25px;
-    margin-left: 100px;
+.logo {
+  position: absolute;
+  font-family: "Bree Serif", serif;
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  margin-left: -900px;
 }
 
-.top_menu{
-    display: flex;
-    margin-left: 970px;
+.coffee {
+  position: absolute;
+  margin-left: 400px;
+  color: #d4d3ce;
 }
 
-.menu_name{
-    margin-left: 750px;
-    margin-top: 30px;
-    
+.menu {
+  position: absolute;
+  margin-left: 550px;
+  color: #d4d3ce;
 }
 
-#character{
-    font-size: 50px;    
+.store {
+  position: absolute;
+  margin-left: 700px;
+  color: #d4d3ce;
 }
 
-#eng-name{
-    font-size: 20px;
-    margin-left: 50px;
+.what {
+  position: absolute;
+  margin-left: 900px;
+  color: #d4d3ce;
 }
 
-.line{
-    border: 3px solid black;
-    margin-left: 750px;
-    width: 580px;
-    margin-top: 50px;
+.top_menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
-.description{
+.coffee-menu {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
+}
 
+.menu_name {
+  display: flex;
+  align-self: center;
+}
+
+.menu_name2 {
+  display: flex;
+  align-self: center;
+  margin-top: -20px;
+}
+
+.line {
+  border: 3px solid black;
+  width: 38em;
+}
+
+p.nutrition1 {
+  position: relative;
+  margin-left: 500px;
+}
+
+.coffee-menu2 {
+  display: flex;
+}
+
+.nutrition1 {
+  display: flex;
+  margin-top: 20px;
+}
+.s {
+  flex-direction: row;
+  align-items: flex-end;
+  margin-right: 270px;
+  font-size: 1.5em;
+}
+.p {
+  flex-direction: row;
+  margin-left: -30px;
+  font-size: 1.5em;
 }
