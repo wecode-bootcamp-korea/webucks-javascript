@@ -4,7 +4,7 @@ const userPwBtn = document.getElementById('user-pw__btn');
 const loginButton = document.getElementsByClassName('login-button')[0];
 
 const regexId =
-  /^([\w\.\_\-])*[a-zA-Z0-9]+([\w\.\_\-])*([a-zA-Z0-9])+([\w\.\_\-])+@([a-zA-Z0-9]+\.)+[a-zA-Z0-9]{2,8}$/i;
+  /^[a-zA-Z0-9]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i;
 const regexPw = /(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#?!@$%^&*-]).{8}/;
 
 userId.addEventListener('keyup', (e) => {
