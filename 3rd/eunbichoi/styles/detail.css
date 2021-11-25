@@ -222,6 +222,7 @@ li > strong {
   background-color: #f4f4f2;
   font-size: 1rem;
 }
+
 .review-form > input:focus {
   outline: none;
 }

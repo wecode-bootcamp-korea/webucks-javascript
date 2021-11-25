@@ -28,10 +28,10 @@ window.addEventListener('DOMContentLoaded', () => {
 function validateLogin() {
   if (isValidLogin[0] && isValidLogin[1]){
     $loginButton.classList.add('login-validated')
-    $loginButton.removeAttribute('disabled')
+    $loginButton.toggleAttribute('disabled', false)
   } 
   else {
     $loginButton.classList.remove('login-validated')
-    $loginButton.setAttribute('disabled', true)
+    $loginButton.toggleAttribute('disabled', true)
   }
 }
