@@ -112,3 +112,31 @@ p {
 .fa-heart {
   margin-left: 10px;
 }
+
+@media screen and (max-width: 1100px) {
+  .container {
+    width: 700px;
+  }
+
+  .coffee-list {
+    font-size: 15px;
+  }
+
+  .coffee-list li {
+    width: 33%;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .container {
+    width: 500px;
+  }
+
+  .coffee-list {
+    font-size: 15px;
+  }
+
+  .coffee-list li {
+    width: 50%;
+  }
+}
