@@ -108,3 +108,7 @@ p {
   transform: rotate(360deg);
   opacity: 0;
 }
+
+.fa-heart {
+  margin-left: 10px;
+}

@@ -15,7 +15,7 @@ heart.addEventListener('click', () => {
   }
 });
 
-inputReview.addEventListener('keyup', (e) => {
+inputReview.addEventListener('keypress', (e) => {
   if (e.keyCode === 13) {
     const div = document.createElement('div');
     div.className = 'nutrition-info__review-comment__inner';
