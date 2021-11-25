@@ -1,10 +1,10 @@
-const toffeeNut = document.getElementById("toffeeDetail")
+const toffeePic = document.getElementById("toffeePic")
+const toffeeName = document.getElementById("toffeeName")
 
-toffeeNut.addEventListener('click', function() {
-  console.log(1);
-  location.href="detail.html";
+toffeePic.addEventListener('click', function() {
+  window.location.href="/detail.html";
 })
 
-// document.getElementById('toffeeDetail').addEventListener('click', function() {
-//   alert("안뇽")
-// })
+toffeeName.addEventListener("click", function() {
+  window.location.href="/detail.html"
+})

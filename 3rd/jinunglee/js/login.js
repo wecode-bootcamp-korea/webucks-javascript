@@ -21,6 +21,5 @@ checkPw.addEventListener("input", function() {
 });
 
 checkButton.addEventListener("click", function() {
-  console.log(1)
   window.location.href="/list.html"
 });

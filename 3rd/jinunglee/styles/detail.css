@@ -1,19 +1,17 @@
 footer {
-  background-color: #262626;
   display: flex;
   justify-content: space-evenly;
+  background-color: #262626;
 }
 
 li {
+  margin-bottom: 1vh;
   list-style: none;
   color: white;
-  font-family: sans-serif;
   font-size: 10px;
-  margin-bottom: 1vh;
 }
 
 ul {
-  /* border: 1px solid; */
   padding-left: 0;
 }
 
@@ -58,12 +56,10 @@ a {
   align-items: center;
   width: 30%;
   margin-right: 2%;
-  font-family: sans-serif;
   font-size: small;
 }
 
 header {
-  /* border: 1px solid; */
   display: flex;
   justify-content: space-between;
   padding: 0 1%;
@@ -72,16 +68,14 @@ header {
 .categoryTitle {
   font-weight: bolder;
   margin: 0;
-  /* margin-left: 10px; */
   padding: 0;
   font-size: 30px;
 }
 
 .categoryTrace {
   margin-top: 3%;
-  /* margin-right: 10px; */
-  font-size: 15px;
   padding: 0;
+  font-size: 15px;
 }
 
 main {
@@ -90,11 +84,11 @@ main {
 }
 
 aside {
-  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 1%;
+  flex: 1;
+  padding: 1% 1%;
 }
 
 img {
@@ -103,8 +97,6 @@ img {
 
 .titleWrapper {
   border-bottom: 2px solid;
-  /* display: flex; */
-  /* justify-content: space-between; */
 }
 
 .nameWrapper {
@@ -125,7 +117,6 @@ img {
 }
 
 .coffeeDetail {
-  /* margin: 2% 0; */
   border-bottom: 1px solid;
 }
 
@@ -137,14 +128,10 @@ img {
 }
 
 .nutritionDetail {
-  /* display: flex; */
   padding: 2% 0;
-  /* margin: 0 1%; */
 }
 
 .nutritionWrapper {
-  /* display: flex; */
-  /* border: 1px solid; */
   padding: 0 1%;
 }
 
@@ -160,7 +147,6 @@ img {
 .nutritionNum {
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-end; */
   align-items: flex-end;
 }
 
@@ -168,17 +154,19 @@ img {
   box-sizing: border-box;
 }
 
+li,
 main,
 header,
-footer {
+footer,
+.link {
   font-family: sans-serif;
 }
 
 .allregic {
-  background-color: gainsboro;
   width: 100%;
   padding: 2% 1%;
   border-radius: 5px;
+  background-color: gainsboro;
 }
 
 .review {
@@ -210,9 +198,7 @@ footer {
 }
 
 #heartIcon {
-  /* border: 1px solid; */
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  /* padding-top: ; */
 }

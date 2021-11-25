@@ -59,7 +59,6 @@ a {
   display: flex;
   flex-direction: column;
   width: 250px;
-  border: 1px solid;
   overflow: hidden;
 }
 
@@ -67,7 +66,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  border: 1px solid;
   font-size: 15px;
   font-family: sans-serif;
 }
