@@ -1,482 +1,128 @@
-* {
-    box-sizing:border-box;
-    margin: auto;
-    @media all and (min-width:768px) and (max-width:1080px) {}
-} 
-
-.wrapper{
-    display: flex;
-    justify-content: space-evenly; 
-    align-items:center;
-    flex-direction: row;
-    border: 1px solid black;
-    width: 86.5%;
-    height: 75px;
-    background-color: #f6f5f0;
-    border: none;
-  }
-
-.logo{
-    position: absolute;    
-    font-family: 'Bree Serif', serif;
-    font-family: 'Dancing Script', cursive;
-    font-size: 40px;
-    margin-left: -1100px;
-    }
-
-.coffee{
-    position: absolute;
-    margin-left: 600px;
-    color:#d4d3ce;
-}   
-
-
-.menu{
-    position: absolute;
-    margin-left: 750px;
-    color:#d4d3ce;
-}
- 
-.store{
-    position: absolute;
-    margin-left: 900px;
-    color:#d4d3ce;
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
-.what{
-  position:absolute;
-  margin-left: 1100px;
-  color:#d4d3ce;  
+.wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  border: 1px solid black;
+  width: 99.4%;
+  height: 75px;
+  background-color: #f6f5f0;
+  border: none;
 }
 
-.wrapper2{
-    display: flex;
-    justify-content: space-around; 
-    align-items:center;
-    flex-direction: row;
-    border: 1px solid black;
-    width: 86.5%;
-    height: 75px;
-    background-color: #f6f5f0;
-    margin-top: 20px;   
-    position: relative; 
-    border:none;
-  }
-
-.cold{
-   position: absolute;
-   margin-left: -1150px;
-
-  }
-.coffee_icon{
-    position:absolute;
-    height: 70%;
-    width: 5%;
-    margin-top: -30px;
-    margin-left: -500px;
-
+.logo {
+  position: absolute;
+  font-family: "Bree Serif", serif;
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  margin-left: -900px;
 }
 
-.decaf1{
-    position: absolute;
-    margin-left: -500px;
+.coffee {
+  position: absolute;
+  margin-left: 400px;
+  color: #d4d3ce;
 }
 
-.coffee1{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 20px;
-    position: relative;
-    overflow: hidden;
+.menu {
+  position: absolute;
+  margin-left: 550px;
+  color: #d4d3ce;
 }
 
-.coffee1_name{
-    display:flex;
-    flex-direction: row;
-    margin-top: 15px;
-    position: relative;
-}
-.wrapper3{
-    display: flex;
-    justify-content: space-evenly; 
-    align-items:center;
-    flex-direction: row;
-    border: 1px solid black;
-    width: 86.5%;
-    height: 75px;
-    background-color: #f6f5f0;
-    border:none;
-  }
-
-
-  .brewd{
-    position: absolute;
-    margin-left: -1150px;}
-
-  .coffee_icon2{
-    position:absolute;
-    height: 7.5%;
-    width: 5%;
-    margin-top: -30px;
-    margin-left: -500px;} 
-
- .decaf2{
-    position: absolute;
-    margin-left: -500px;}
-    
-.coffee2{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 20px;
-    position: relative;
+.store {
+  position: absolute;
+  margin-left: 700px;
+  color: #d4d3ce;
 }
 
-.coffee2_name{
-    display:flex;
-    flex-direction: row;
-    margin-top: 15px;
-    position: relative;
+.what {
+  position: absolute;
+  margin-left: 900px;
+  color: #d4d3ce;
 }
 
-
-.coffee3{
-    display:flex;
-    flex-direction: row;
-    margin-top: 20px;
-    position: relative;
-    align-items:center;
+.wrapper2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  border: 1px solid black;
+  width: 99.4%;
+  height: 75px;
+  background-color: #f6f5f0;
+  margin-top: 20px;
+  position: relative;
+  border: none;
 }
 
-.coffee3_name{
-    display:flex;
-    flex-direction: row;
-    margin-top: 15px;
-    align-items: flex-start;
-     
+.cold {
+  position: absolute;
+  margin-left: -955px;
+}
+.coffee_icon {
+  position: absolute;
+  height: 70%;
+  width: 5%;
+  margin-top: -30px;
+  margin-left: -26em;
 }
 
-.espreso_name{
-
-    position: relative;
-    margin-left: 150px;
-    margin-right: -50px;    
+.decaf1 {
+  position: absolute;
+  margin-left: -25em;
 }
 
-.choco_name{
-    position: relative;
-    margin-left: 330px;
-    margin-right: 50px;    
+.wrapper3 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  border: 1px solid black;
+  width: 99.4%;
+  height: 75px;
+  background-color: #f6f5f0;
+  border: none;
 }
 
-.coffee4{
-    display:flex;
-    flex-direction: row;
-    margin-top: 20px;
-    position: relative;
-    align-items: flex-start;
+.coffee_icon2 {
+  position: absolute;
+  height: 7.5%;
+  width: 5%;
+  margin-top: -35px;
+  margin-left: -27em;
 }
 
-.coffee4_name{
-    display:flex;
-    flex-direction: row;
-    margin-top: 15px;
-    align-items: flex-start;
-     
+.coffee-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  column-gap: 2.1rem;
+  text-align: center;
+  margin-top: 30px;
 }
 
-
-.special_name{
-
-    position: relative;
-    margin-left: 140px;
-    margin-right: -30px;    
+img {
+  width: 15.5rem;
+  height: 20rem;
 }
 
-.cream_name{
-    position: relative;
-    margin-left: 330px;
-    margin-right: 50px;    
+img:hover {
+  transform: scale(1.1);
 }
 
-/* 아래 코드는 마우스 후버에 관한 코드 작성*/
-.banila {
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
-  }
-.banila:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
-  }
-.banila img{
-    width:165px; 
-    height:200px;
-    overflow: hidden;
+.image {
+  overflow: hidden;
 }
-
-.moca {
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
-  }
-.moca:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
-  }
-.moca img{
-    width:165px; 
-    height:200px;
-    overflow: hidden;
-}
-.classic {
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
-  }
-.classic:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
-  }
-.classic img{
-    width:165px; 
-    height:200px;
-    overflow: hidden;
-}
-.classic {
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
-  }
-.classic:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
-  }
-.classic img{
-    width:165px; 
-    height:200px;
-    overflow: hidden;
-}
-
-.yeonyu {
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
-  }
-.yeonyu:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
-  }
-.yeonyu img{
-    width:165px; 
-    height:200px;
-    overflow: hidden;
-}
-
-.character{
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
-  }
-.character:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
-  }
-.character img{
-    width:165px; 
-    height:200px;
-    overflow: hidden;
-}
-
-.nokcha{
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
-  }
-.nokcha:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
-  }
-.nokcha img{
-    width:165px; 
-    height:200px;
-    overflow: hidden;
-}
-
-.soy{
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
-  }
-.soy:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
-  }
-.soy img{
-    width:165px; 
-    height:200px;
-    overflow: hidden;
-}
-
-.cinamon{
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
-  }
-.cinamon:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
-  }
-.cinamon img{
-    width:165px; 
-    height:200px;
-    overflow: hidden;
-}
-
-
-.espreso{
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
-  }
-.espreso:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
-  }
-.espreso img{
-    width: 165px; 
-    height:200px;
-    overflow: hidden;
-    position: relative;
-    margin-left: -260px;
-}
-
-.choco{
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
-  }
-.choco:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
-  }
-.choco img{
-    width: 165px; 
-    height:200px;
-    overflow: hidden;
-    position: relative;
-    margin-left: -625px;
-}
-
-.special{
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
-  }
-.special:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
-  }
-.special img{
-    width: 165px; 
-    height:200px;
-    overflow: hidden;
-    position: relative;
-    margin-left: -265px;
-}
-
-.cream{
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
-  }
-.cream:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
-  }
-.cream img{
-    width: 165px; 
-    height:200px;
-    overflow: hidden;
-    position: relative;
-    margin-left: -625px;
+.container {
+  width: 1100px;
+  padding: 0 3rem;
+  background: #ffffff;
 }

@@ -47,3 +47,40 @@
   margin-left: 1100px;
   color:#d4d3ce;  
 }
+
+.coldbrew_name{
+    font-size: 25px;
+    padding-top: 25px;
+    margin-left: 100px;
+}
+
+.top_menu{
+    display: flex;
+    margin-left: 970px;
+}
+
+.menu_name{
+    margin-left: 750px;
+    margin-top: 30px;
+    
+}
+
+#character{
+    font-size: 50px;    
+}
+
+#eng-name{
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.line{
+    border: 3px solid black;
+    margin-left: 750px;
+    width: 580px;
+    margin-top: 50px;
+}
+
+.description{
+
+}
