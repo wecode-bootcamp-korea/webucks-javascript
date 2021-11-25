@@ -8,6 +8,16 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden{
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 body{
   font-family: 'Nanum Gothic', sans-serif;
   font-size: 12px;
@@ -15,7 +25,7 @@ body{
 
 .inner-wrapper {
   margin: 0 auto;
-  width: 1200px;
+  width: 1200px;                                           
   min-width: 500px;
 }
 
@@ -52,7 +62,7 @@ h1 {
 
 h2 {
   margin: 15px 0;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: bolder;
 }
 
@@ -77,37 +87,37 @@ h2 {
   display: block;
 }
 
-
-.beer-info-wrapper {
+.beer-detail-wrapper.grid-container {
   display: grid;
   grid-template-columns: 4fr 5fr;
-  grid-template-rows: min(450px) auto;
+  grid-template-rows: minmax(450px, max-content) max-content;
   grid-column-gap: 20px;
   margin-top: 10px;
 }
 
-.beer-info-leftsection {
+.detail-leftsection {
   width: 100%;
   height: auto;
   overflow: hidden;
 }
 
-.beer-info-image {
+.detail-beer-image {
   width: 100%;
-  height: 100%;
+  height: 450px;
   object-fit: cover;
 }
 
-.beer-info-detail {
+.detail-beer-info-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
   padding-bottom: 15px;
   border-bottom: 3px solid #000;
 }
 
-.detail-header h3 {
-  font-size: 1.2rem;
+.detail-beer-header-wrapper h3 {
+  font-size: 1.3rem;
   font-weight: bolder;
   margin-bottom: 5px;
 }
@@ -118,17 +128,128 @@ h2 {
   cursor: pointer;
 }
 
-.nutrition-info {
-  margin-top: 15px;
+/* NUTRITION SECTION */
+.detail-beer-description > div {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
 }
 
-.beer-review {
+.detail-beer-nutrition-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 15px;
+  border-top: 2px solid gainsboro;
+  border-bottom: 2px solid gainsboro;
+  font-size: 1.2rem;
+}
+
+.detail-beer-nutrition-info.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "info1 info2"
+  "allergy allergy"
+}
+
+.detail-beer-nutrition ul+ul {
+  border-left: 1px dotted #000;
+}
+
+.detail-beer-nutrition ul li+li {
+  margin-top: 10px;
+}
+
+.detail-beer-nutrition ul li {
+  display: flex;
+  justify-content:space-between;
+}
+
+.nutrition-details-left {
+  grid-area: info1;
+  padding: 15px;
+  font-size: 1rem;
+}
+
+.nutrition-details-right {
+  grid-area: info2;
+  padding: 15px;
+  font-size: 1rem;
+}
+
+.detail-beer-nutrition-info > mark {
+  grid-area: allergy;
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #f4f4f2;
+  font-size: 1.1rem;
+}
+
+/* REVIEW SECTION */
+.detail-beer-review {
   margin-top: 20px;
 }
 
-.beer-review h4 {
+.detail-beer-review h4 {
   padding-bottom: 5px;
   border-bottom: 2px solid gainsboro;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: bolder;
+}
+
+.reviews-list {
+  margin: 20px 0;
+  font-size: 1rem;
+}
+
+.reviews-list li {
+  margin: 10px 0;
+}
+
+li > strong {
+  font-weight: bolder;
+}
+
+.review-form > input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #f4f4f2;
+  font-size: 1rem;
+}
+.review-form > input:focus {
+  outline: none;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  margin-top: 40px;
+  width: 100%;
+  height: auto;
+  background-color: #000;
+}
+
+.footer-nav-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 40px;
+  min-width: 800px;
+  max-width: 1300px;
+}
+
+.footer-nav-list li {
+  margin: 10px 0;
+}
+
+.footer-nav-heading > a {
+  margin: 20px 0;
+  font-weight: 900;
+}
+
+.footer-nav-list a{
+  padding: 10px;
+  color: #ffffff;
 }

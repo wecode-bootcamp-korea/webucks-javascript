@@ -43,25 +43,129 @@
       </ul>
     </nav>
   </section>
-  <section class="inner-wrapper beer-info-wrapper">
-    <section class="beer-info-leftsection">
-      <img class="beer-info-image" src="./styles/images/alexander-dinamarca-hplJX8Uy9Uo-unsplash.jpg" alt="beer image">
-    </section>
-    <section class="beer-info-rightsection">
-      <article class="beer-info-detail">
-        <div class="detail-header">
-          <h3>아이피에이</h3>
-          <span>Indian Pale Ale</span>
+  <main class="inner-wrapper beer-detail-wrapper grid-container">
+    <article class="detail-leftsection">
+      <img class="detail-beer-image" src="./styles/images/alexander-dinamarca-hplJX8Uy9Uo-unsplash.jpg" alt="beer image">
+    </article>
+    <article class ="detail-rightsection">
+      <section class="detail-beer-info">
+        <div class="detail-beer-info-header">
+          <div class="detail-beer-header-wrapper">
+            <h3>아이피에이</h3>
+            <span>Indian Pale Ale</span>
+          </div>
+          <i class="far fa-heart fa-lg is-favorite"></i>
         </div>
-        <i class="far fa-heart fa-lg is-favorite"></i>
-      </article>
-      <article class="nutrition-info">
-
-      </article>
-      <arcticle class="beer-review">
-
-      </arcticle>
-    </section>
-  </section>
+        <section class="detail-beer-description">
+          <h4 class="visually-hidden">맛</h4>
+          <div>달콤하고 부드러운 화이트 초콜릿 시럽과 에스프레소를 스팀 밀크와 섞어 휘핑크림으로 마무리한 음료로 달콤함과 강렬한 에스프레소가 부드럽게 어우러진 커피</div>
+        </section>
+        <section class="detail-beer-nutrition">
+          <div class="detail-beer-nutrition-header">
+            <h4>제품 영양 정보</h4>
+            <div>Tall(톨) / 355ml (12 fl oz)</div>
+          </div>
+          <div class="detail-beer-nutrition-info grid-container">
+            <ul class="nutrition-details-left">
+              <dl>
+                <li>
+                  <dt>1회 제공량 (kcal)</dt>
+                  <dd>345</dd>
+                </li>
+                <li>
+                  <dt>포화지방 (g)</dt>
+                  <dd>11</dd>
+                </li>
+                <li>
+                  <dt>단백질 (g)</dt>
+                  <dd>11</dd>
+                </li>
+              </dl>
+            </ul>
+            <ul class="nutrition-details-right">
+              <dl>
+                <li>
+                  <dt>나트륨 (mg)</dt>
+                  <dd>350</dd>
+                </li>
+                <li>
+                  <dt>당류 (g)</dt>
+                  <dd>35</dd>
+                </li>
+                <li>
+                  <dt>카페인 (mg)</dt>
+                  <dd>75</dd>
+                </li>
+              </dl>
+            </ul>
+            <mark>알레르기 유발 요인: 우유</mark>
+          </div>
+        </section>
+      </section>
+      <section class="detail-beer-review">
+        <h4>리뷰</h4>
+        <ul class="reviews-list">
+          <li><strong>beer_lover</strong> 너무 맛있어요!</li>
+          <li><strong>IPA777</strong> 오늘도 아이피에이를 마시러 갑니다.</li>
+          <li><strong>devdoper</strong> 진짜 아이피에이는 전설이다.</li>
+          <li><strong>beer_lover</strong> 너무 맛있어요!</li>
+          <li><strong>IPA777</strong> 오늘도 아이피에이를 마시러 갑니다.</li>
+          <li><strong>devdoper</strong> 진짜 아이피에이는 전설이다.</li>          <li><strong>beer_lover</strong> 너무 맛있어요!</li>
+          <li><strong>IPA777</strong> 오늘도 아이피에이를 마시러 갑니다.</li>
+          <li><strong>devdoper</strong> 진짜 아이피에이는 전설이다.</li>          <li><strong>beer_lover</strong> 너무 맛있어요!</li>
+          <li><strong>IPA777</strong> 오늘도 아이피에이를 마시러 갑니다.</li>
+          <li><strong>devdoper</strong> 진짜 아이피에이는 전설이다.</li>
+        </ul>
+        <form action="#" class="review-form">
+          <label for="review"></label>
+          <input name="review" id="review" type="text" placeholder="리뷰를 입력해주세요.">
+          <button class="visually-hidden">리뷰제출</button>
+        </form>
+      </section>
+    </article>
+  </main>
+  <footer>
+    <nav>
+      <ul class="footer-nav-list">
+        <li class="footer-nav-heading"><a href="#">COMPANY</a>
+          <ul>
+            <li><a href="#">한눈에 보기</a></li>
+            <li><a href="#">스타벅스 사명</a></li>
+            <li><a href="#">스타벅스 소개</a></li>
+            <li><a href="#">국내 뉴스룸</a></li>
+            <li><a href="#">세계의 스타벅스</a></li>
+            <li><a href="#">글로벌 뉴스룸</a></li>
+          </ul>
+        </li>
+        <li class="footer-nav-heading"><a href="#">CORPORATE SALES</a>
+          <ul>
+            <li><a href="#">단체 및 기업 구매 안내</a></li>
+          </ul>
+        </li>
+        <li class="footer-nav-heading"><a href="#">PARTNERSHIP</a>
+          <ul>
+            <li><a href="#">신규 입점 제의</a></li>
+            <li><a href="#">협력 고객사 등록 신청</a></li>
+          </ul>
+        </li>
+        <li class="footer-nav-heading"><a href="#">ONLINE COMMUNITY</a>
+          <ul>
+            <li><a href="#">페이스북</a></li>
+            <li><a href="#">트위터</a></li>
+            <li><a href="#">유튜브</a></li>
+            <li><a href="#">블로그</a></li>
+            <li><a href="#">인스타그램</a></li>
+          </ul>
+        </li>
+        <li class="footer-nav-heading"><a href="#">RECRUIT</a>
+          <ul>
+            <li><a href="#">채용 소개</a></li>
+            <li><a href="#">채용 지원하기</a></li>
+          </ul>
+        </li>
+        <li class="footer-nav-heading"><a href="#">WEBUCKS</a></li>
+      </ul>
+    </nav>
+  </footer>
 </body>
 </html>
