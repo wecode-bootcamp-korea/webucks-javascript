@@ -74,12 +74,17 @@ img:hover{
 }
 
 p{
-    line-height: 60px;
+    line-height: 20px;
     font-size: 20px;
     text-align: center;
+    justify-content: last baseline;
+    margin-bottom: 0px;
 }
 
 .photoBox{
     overflow: hidden;
-    height: 80%;
+    /* height: 80%; */
+    /* display: flex;
+    align-items: center;
+    flex-direction: column; */
 }
