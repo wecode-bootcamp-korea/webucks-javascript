@@ -128,6 +128,10 @@ h2 {
   cursor: pointer;
 }
 
+.fa-heart.is-favorite {
+  color: red;
+}
+
 /* NUTRITION SECTION */
 .detail-beer-description > div {
   font-size: 1.1rem;
