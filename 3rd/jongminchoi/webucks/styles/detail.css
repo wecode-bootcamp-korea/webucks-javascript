@@ -119,6 +119,11 @@ nav {
 #heart {
   display: flex;
   align-items: center;
+  margin-right: 10px;
+}
+
+#heart:hover {
+  cursor: pointer;
 }
 
 #descripttion {
