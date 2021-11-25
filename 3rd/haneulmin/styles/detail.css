@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+.hide {
+  display: none;
+}
 
 * {
   box-sizing: border-box;
@@ -110,17 +113,27 @@ img {
 }
 
 .en {
-  margin: 3px 0 20px 40px;
+  margin: -8px 0 20px 40px;
 }
 
-.heart {
+.regular {
   float: right;
-  margin: 20px 10px 0 0;
+  margin: 15px 5px 0 0;
   color: #929292;
 }
 
+.solid {
+  float: right;
+  margin: 15px 5px 0 0;
+  color: #c73d3d;
+}
+
+.heart:hover {
+  cursor: pointer;
+}
+
 .detail1 hr {
-  margin: 20px 0 0 40px;
+  margin: 15px 0 0 40px;
   width: 590px;
   border: 0;
   height: 2px;
@@ -159,11 +172,11 @@ p {
 }
 
 .fat {
-  margin: 5px 0 0 60px;
+  margin: 5px -10px 0 60px;
 }
 
 .protein {
-  margin: 5px 0 30px 60px;
+  margin: 5px -10px 30px 60px;
 }
 
 .amount1 {
@@ -230,27 +243,33 @@ p {
   margin-bottom: 20px;
 }
 
-.review .id {
-  margin-left: 40px;
-  padding: 2px;
+.review .commentText {
   font-size: 14px;
 }
 
-.id span {
+.review .id {
+  margin-left: 40px;
+  padding: 2px;
   font-weight: bold;
 }
 
 .review .comment {
   background-color: #efefef;
+  border: 0;
+  width: 590px;
   height: 30px;
-  margin-left: 40px;
+  margin: 10px 0 50px 40px;
+  padding-left: 10px;
+  font-size: 13px;
 }
 
-.comment p {
-  padding-top: 7px;
-  margin-left: 10px;
-  color: #929292;
-  font-size: 13px;
+.writeComment {
+  font-size: 14px;
+  margin-left: 21px;
+}
+
+.userId {
+  font-weight: bold;
 }
 /* main end */
 
