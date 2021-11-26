@@ -6,6 +6,7 @@ body {
   display: flex;
   justify-content: center;
   background-color: gainsboro;
+  font-family: sans-serif;
 }
 
 p {

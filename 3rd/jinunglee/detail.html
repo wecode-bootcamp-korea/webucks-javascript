@@ -9,11 +9,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/4c39164d19.js" crossorigin="anonymous"></script>
-  <title>Document</title>
+  <script defer src="/js/detail.js"></script>
+  <title>Details</title>
 </head>
 <body>
   <div class="wrapper">
-    <nav>
+    <nav> <!--네비 메뉴-->
       <section class="webucks">
         <a href="asdf">Webucks</a>
       </section>
@@ -24,17 +25,14 @@
         <a class="menu" href="asdf">WHAT'S NEW</a>
       </div>
     </nav>
-
-    <header>
+    <header> <!--카테고리 리스트-->
       <div class="categoryTitle">콜드 브루</div>
       <div class="categoryTrace">홈 > MENU > 음료 > 콜드브루 > 토피 넛 라떼</div>
     </header>
-
     <section> 
       <aside>
         <img alt="토피 넛 라떼" src="coffee1.jpg">
       </aside>
-
       <main> <!--본문내용 시작-->
         <section class="titleWrapper">
           <section class="nameWrapper">
@@ -42,7 +40,8 @@
             <p id="engName">Toffee Nut Cold Brew</p>
           </section>
           <section id="heartIcon">
-            <i class="far fa-heart"></i>
+              <span class="far fa-heart" id="unliked" style="opacity: 1;"></span>
+              <span class="fas fa-heart" id="liked"></span>
           </section>
         </section>
         <section class="coffeeDetail">
@@ -89,12 +88,12 @@
         </section>
         <section class="review">
           <p class="reviewTitle">리뷰</p>
-          <div class="reviewLog">reply system</div>
+          <div class="reviewLog">
+          </div>
           <input type="input" class="reviewInput" placeholder="리뷰를 입력해주세요">
         </section>
       </main>
     </section>
-
     <footer>
       <ul>
         <li class="footerListTitle">COMPANY</li>

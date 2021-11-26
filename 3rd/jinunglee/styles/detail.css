@@ -185,6 +185,8 @@ footer,
 
 .reviewLog {
   margin-top: 1%;
+  overflow: auto;
+  height: 110px;
 }
 
 .reviewInput {
@@ -198,7 +200,27 @@ footer,
 }
 
 #heartIcon {
+  position: relative;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+
+.fa-heart {
+  position: absolute;
+  cursor: pointer;
+}
+
+#unliked {
+  z-index: 100;
+  background-color: white;
+}
+
+#liked {
+  z-index: 80;
+  color: red;
+}
+
+.wrapComment {
+  padding: 0.5%;
 }
