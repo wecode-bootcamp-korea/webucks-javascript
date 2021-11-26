@@ -12,11 +12,13 @@ elPassword.addEventListener('keyup',function(){
         btn.disabled = false;
         btn.style.backgroundColor='#60ADED';
     }
+    else{
+        btn.disabled = true;
+        btn.style.backgroundColor='#ADD3EA';
+    }
 });
+
+
 btn.onclick = function(){
     window.location.href = 'list.html';
 }
-// function makeBlue(){
-// document.querySelector("button").style.backgroundColor='#60ADED';
-
-// }

@@ -171,6 +171,11 @@ a{
 .review-list > ul{
     display: block;
 }
+#reviewList{
+    list-style: none;
+    padding-left:0px;
+    line-height: 1.5;
+}
 input{
     width: 100%;
     background-color: #F4F4F2;
@@ -195,3 +200,4 @@ footer{
     padding-left:0px;
     line-height: 2;
 }
+

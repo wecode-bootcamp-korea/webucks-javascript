@@ -1,41 +1,5 @@
-// const elID = document.getElementById('ID');
-// const elPassword = document.getElementById('password');
-// const valID = elID.value;
-// const valPassword = elPassword.value;
-
-// function checkConditions(){
-
-// }
-
-// elPassword.addEventListener('keyup',function(){
-//     console.log(valID);
-//     console.log(valPassword);
-//     if(valID.includes('@') && valPassword.length>7){
-        
-//         assignment('yes');
-//     }
-// });
-
-// function assignment(word){
-//     console.log(word);
-//     if(word==='yes'){
-//         document.querySelector("button").style.backgroundColor='#60ADED';
-//     }
-// }
-
 const btn = document.getElementById('heart');
-// function changeHeartColor(){
-//     if(btn.color === 'black'){
-//         btn.addEventListener('click',function(){
-//     btn.style.color='red';  
-//         })
-//     }else{
-//         btn.addEventListener('click',function(){
-//             btn.style.color='black';  
-//         })
-//     }
-// }
-// changeHeartColor();
+
 count = 0;
 btn.style.color = 'black';
 function countChange(){
@@ -50,3 +14,25 @@ function countChange(){
     })
 }
 countChange();
+
+let inputBox = document.getElementsByTagName('input')[0];
+let reviewList = document.getElementById('reviewList');
+
+
+inputBox.addEventListener('click',function(){
+    console.log('yes');
+    let idSpace = document.createElement('span');
+    inputBox.appendChild(idSpace);
+    idSpace.innerHTML = 'fdsa';
+});
+
+inputBox.addEventListener('keyup',function(event){
+    
+    if(event.keyCode === 13){
+        let list = document.createElement('li');
+        list.innerHTML = inputBox.value;
+        reviewList.appendChild(list);
+    }
+})
+
+
