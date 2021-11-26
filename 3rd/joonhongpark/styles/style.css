@@ -1,0 +1,67 @@
+body {
+    background-color: lightgray;
+}
+
+.contentsWrap{
+    margin: 90px auto;
+    width: 360px;
+    border: none;
+    padding: 20px;
+    text-align: center;
+}
+
+.loginWindow {
+    background-color: white;
+    border: 1px solid white;
+    padding : 10px;
+}
+
+.logoTitle{
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+}
+
+.loginWindow input{
+    margin-bottom: 15px;
+    background-color: #F6F4F4;
+    height: 35px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border: 1px solid #F6F4F4;
+    border-radius: 5px;
+}
+
+.loginWindow * {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.loginButton {
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.unactivated {
+    background-color: #86CAE7;
+}
+
+.activated {
+    background-color: #286FEC;
+}
+
+.lastButton{
+    margin-top: 100px;
+    margin-bottom: 60px;
+    color: #86CAE7;
+    background-color: white;
+    border: none;
+}
+
+.noneunderline {
+    text-decoration:none;
+}
