@@ -105,6 +105,9 @@ section{
     font-weight: 500;
     color: #666;
 }
+#heart{
+    cursor:pointer;
+}
 .coffee-description{
     border-bottom: 1px solid #DFDFDF;
     line-height: 1.6;

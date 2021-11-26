@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="detail.css" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <script defer src='detail.js'></script>
 </head>
 <body>
     <header>
@@ -25,13 +26,17 @@
         <div class='title'>콜드 브루</div>
         <div class='ul-box'>
             <ul class = 'small-linkList'>
+                <li>홈</li>
+                <i class="material-icons">
+                    keyboard_arrow_right
+                </i>
                 <li>MENU</li>
                 <i class="material-icons">
                     keyboard_arrow_right
                 </i>
                 <li>음료</li>
                 <i class="material-icons">
-                    coffee
+                    keyboard_arrow_right
                 </i>
                 <li>에스프레소</li>
                 <i class="material-icons">
@@ -53,7 +58,7 @@
                     <span class='small-title-English'>
                         Coffee 1</span>
                 </h4>
-                <span class="material-icons">
+                <span class="material-icons" id='heart'>
                     favorite_border
                 </span>
             </div>
@@ -84,16 +89,16 @@
                 <div class='coffee-nutrition-detail-in'>
                     <ul>
                         <li>
-                            <span>1회 제공량 (kcal)</span>
-                            <span>16000</span>
+                            <span>나트륨 (mg)</span>
+                            <span>2000</span>
                         </li>
                         <li>
-                            <span>포화지방 (g)</span>
-                            <span>600</span>
+                            <span>당류 (g)</span>
+                            <span>540</span>
                         </li>
                         <li>
-                            <span>단백질 (g)</span>
-                            <span>6</span>
+                            <span>카페인 (mg)</span>
+                            <span>570</span>
                         </li>
                     </ul>
                 </div>
