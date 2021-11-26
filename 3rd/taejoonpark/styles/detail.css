@@ -1,14 +1,10 @@
 .html, body {
+    margin: 0%;
     width: 100%;
     height: 100%;
     position: relative;
-    /* background-color: purple; */
 }
 .logo {
-    /* background-color: red; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* position: relative; */
     margin-top: 12%;
     text-align: center;
 }
@@ -16,16 +12,10 @@
 .we_logo {
     font-family: 'Dancing Script', cursive;
     font-size: 7rem;
-    /* margin: auto; */
     color: black;
     text-decoration: none;
-    /* background-color: yellow; */
 }
 
-/* .login {
-    margin-top: 10%;
-    background-color: orange;
-} */
 
 .login_input {
     width: 75%;
@@ -46,18 +36,12 @@
 }
 
 p {
-    /* background-color: royalblue; */
     height: 10px;
     width: 80%;
     margin: auto;
     padding: 0.5% 0 1.5% 5%;
     color: red;
 }
-
-/* .loginBtn {
-    background-color: green;
-    
-} */
 
 .login_btn {
     background-color: #aed4ea;
@@ -72,7 +56,6 @@ p {
 }
 
 .lostPw {
-    /* background-color: pink; */
     text-align: center;
     margin-top: 20%;
 }

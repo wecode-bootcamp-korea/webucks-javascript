@@ -1,0 +1,100 @@
+.html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.header {
+    margin-left: 5%;
+    background-color: 	#f4f3ec;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.main_logo {
+    /* position: absolute; */
+    /* background-color: lawngreen; */
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+    padding: 1% 2% 1% 2%;
+
+}
+
+.category {
+    /* background-color: hotpink; */
+    list-style: none;
+    width: 30%;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0.2rem;
+}
+
+.category_li {
+    /* background-color: indigo; */
+    text-decoration: none;
+    color: grey;
+    margin: auto;
+    letter-spacing: 0.1rem;
+}
+
+.coffeeType {
+    background-color: #f1f1ef;
+    margin: 1.5% auto;
+    width: 90%;
+}
+
+.coffeeTypeSpan {
+    margin-left: 2%;
+    font-size: 1rem;
+}
+
+
+#coffee_icon {
+    margin-left: 0.5%;
+    font-size: 1.2rem;
+    margin-right: 0.2%;
+    padding: 1% 1% 1% 1%;
+}
+
+.summary {
+    font-size: 0.75rem;
+    /* margin: auto; */
+    padding: 1% 1% 1% 0%;
+}
+
+.coffeeImgDiv  {
+    width: 90%;
+    background-color: lightblue;
+    margin-left: 5%;
+    
+}
+
+.coffeeImgUl {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0;
+    background-color: blue;
+}
+
+.coffeeImgLi {
+    
+    background-color: burlywood;
+    list-style: none;
+    
+}
+
+.pngImg {
+    margin: 0 5% 5% 0;
+    width: 18em;
+    height: 18em;
+}
