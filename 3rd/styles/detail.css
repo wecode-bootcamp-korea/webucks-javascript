@@ -67,16 +67,17 @@ img {
     display: flex;
 }
 
+
+
 .info {
     display: flex;
     flex-direction: column;
     width: 55%;
-    padding-left: 20px
+    padding-left: 20px;
 }
 
 .info h2 {
     line-height: 20px;
-    margin-bottom: 15px;
     padding-bottom: 10px;
     border-bottom: 2px solid black;
 }
@@ -200,3 +201,19 @@ a {
     text-decoration: none;
     color: #fefefe;
 }
+
+@media (max-width: 700px) {
+    .content {
+        flex-direction: column;
+    }  
+
+    .photo {
+        width: 100%;
+    }
+
+    .info {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 10px;
+    }
+} 
