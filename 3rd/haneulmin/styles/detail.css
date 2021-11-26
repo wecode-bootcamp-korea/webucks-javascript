@@ -244,18 +244,56 @@ p {
   margin-bottom: 20px;
 }
 
-.review .commentText {
-  font-size: 14px;
-}
-
 .review .id {
+  font-size: 14px;
   margin-left: 40px;
   padding: 2px;
   font-weight: bold;
 }
 
+.review .text {
+  font-size: 13px;
+}
+
+.trash1,
+.trash2,
+.trash3 {
+  float: right;
+  cursor: pointer;
+  border: none;
+  background-color: #ffffff;
+  color: #929292;
+}
+
+.like {
+  float: right;
+  border: none;
+  background-color: #ffffff;
+  color: #929292;
+  padding: 2px 2px;
+  cursor: pointer;
+}
+
+.like1,
+.like2,
+.like3 {
+  float: right;
+  color: #c73d3d;
+  cursor: pointer;
+  border: none;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.writeComment i {
+  float: right;
+  font-size: 13px;
+  padding: 2px 1px 0 0;
+  color: #929292;
+}
+
 .writeComment {
-  font-size: 14px;
+  font-size: 15px;
   margin-left: 21px;
 }
 
