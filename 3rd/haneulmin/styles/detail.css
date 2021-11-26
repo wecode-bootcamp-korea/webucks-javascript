@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+
 .hide {
   display: none;
 }
@@ -93,7 +94,7 @@ h1 {
 
 img {
   width: 600px;
-  height: 600px;
+  height: 550px;
   margin: 30px 20px 150px 0;
 }
 
@@ -116,20 +117,20 @@ img {
   margin: -8px 0 20px 40px;
 }
 
-.regular {
+.heart:hover {
+  cursor: pointer;
+}
+
+.white {
   float: right;
   margin: 15px 5px 0 0;
   color: #929292;
 }
 
-.solid {
+.red {
   float: right;
   margin: 15px 5px 0 0;
   color: #c73d3d;
-}
-
-.heart:hover {
-  cursor: pointer;
 }
 
 .detail1 hr {
@@ -145,15 +146,15 @@ p {
   padding-bottom: 10px;
 }
 
+.infoTitle hr {
+  background-color: #dfdfdf;
+  height: 1px;
+}
+
 .infoTitle p {
   font-size: 23px;
   margin-left: 60px;
   padding: 5px 0;
-}
-
-.infoTitle hr {
-  background-color: #dfdfdf;
-  height: 1px;
 }
 
 .tall p {
@@ -203,10 +204,6 @@ p {
   margin: 5px 45px 0 60px;
 }
 
-.sweet2 {
-  margin: 5px 0 0 60px;
-}
-
 .caffeine {
   margin: 5px 0 30px 40px;
 }
@@ -214,6 +211,10 @@ p {
 .amount2 {
   text-align: right;
   margin: -130px 20px 0 0;
+}
+
+.sweet2 {
+  margin: 5px 0 0 60px;
 }
 
 .alergy {
@@ -253,6 +254,11 @@ p {
   font-weight: bold;
 }
 
+.writeComment {
+  font-size: 14px;
+  margin-left: 21px;
+}
+
 .review .comment {
   background-color: #efefef;
   border: 0;
@@ -261,11 +267,6 @@ p {
   margin: 10px 0 50px 40px;
   padding-left: 10px;
   font-size: 13px;
-}
-
-.writeComment {
-  font-size: 14px;
-  margin-left: 21px;
 }
 
 .userId {
@@ -309,46 +310,11 @@ footer li {
   margin-bottom: 10px;
 }
 
-.firstMenu {
-  font-size: 15px;
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  color: #ffffff;
-}
-
-.secondMenu {
-  font-size: 15px;
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  color: #ffffff;
-}
-
-.thirdMenu {
-  font-size: 15px;
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  color: #ffffff;
-}
-
-.fourthMenu {
-  font-size: 15px;
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  color: #ffffff;
-}
-
-.fifthMenu {
-  font-size: 15px;
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  color: #ffffff;
-}
-
+.firstMenu,
+.secondMenu,
+.thirdMenu,
+.fourthMenu,
+.fifthMenu,
 .sixthMenu {
   font-size: 15px;
   display: flex;
