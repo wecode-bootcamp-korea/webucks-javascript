@@ -1,129 +1,130 @@
 body {
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .wrapper {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: row;
-  border: 1px solid black;
-  width: 99.4%;
-  height: 75px;
-  background-color: #f6f5f0;
-  border: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    border: 1px solid black;
+    width: 99.4%;
+    height: 75px;
+    background-color: #f6f5f0;
+    border: none;
 }
 
 .logo {
-  position: absolute;
-  font-family: "Bree Serif", serif;
-  font-family: "Dancing Script", cursive;
-  font-size: 40px;
-  margin-left: -900px;
+    position: absolute;
+    font-family: 'Bree Serif', serif;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    margin-left: -900px;
 }
 
 .coffee {
-  position: absolute;
-  margin-left: 400px;
-  color: #d4d3ce;
+    position: absolute;
+    margin-left: 400px;
+    color: #d4d3ce;
 }
 
 .menu {
-  position: absolute;
-  margin-left: 550px;
-  color: #d4d3ce;
+    position: absolute;
+    margin-left: 550px;
+    color: #d4d3ce;
 }
 
 .store {
-  position: absolute;
-  margin-left: 700px;
-  color: #d4d3ce;
+    position: absolute;
+    margin-left: 700px;
+    color: #d4d3ce;
 }
 
 .what {
-  position: absolute;
-  margin-left: 900px;
-  color: #d4d3ce;
+    position: absolute;
+    margin-left: 900px;
+    color: #d4d3ce;
 }
 
 .wrapper2 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-  border: 1px solid black;
-  width: 99.4%;
-  height: 75px;
-  background-color: #f6f5f0;
-  margin-top: 20px;
-  position: relative;
-  border: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    border: 1px solid black;
+    width: 99.4%;
+    height: 75px;
+    background-color: #f6f5f0;
+    margin-top: 20px;
+    position: relative;
+    border: none;
 }
 
 .cold {
-  position: absolute;
-  margin-left: -955px;
+    position: absolute;
+    margin-left: -955px;
 }
 .coffee_icon {
-  position: absolute;
-  height: 70%;
-  width: 5%;
-  margin-top: -30px;
-  margin-left: -26em;
+    position: absolute;
+    height: 70%;
+    width: 5%;
+    margin-top: -30px;
+    margin-left: -26em;
 }
 
 .decaf1 {
-  position: absolute;
-  margin-left: -25em;
+    position: absolute;
+    margin-left: -25em;
 }
 
 .wrapper3 {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: row;
-  border: 1px solid black;
-  width: 99.4%;
-  height: 75px;
-  background-color: #f6f5f0;
-  border: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    border: 1px solid black;
+    width: 99.4%;
+    height: 75px;
+    background-color: #f6f5f0;
+    border: none;
 }
 
 .coffee_icon2 {
-  position: absolute;
-  height: 7.5%;
-  width: 5%;
-  margin-top: -35px;
-  margin-left: -27em;
+    position: absolute;
+    height: 7.5%;
+    width: 5%;
+    margin-top: -35px;
+    margin-left: -27em;
 }
 
 .coffee-menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  column-gap: 2.1rem;
-  text-align: center;
-  margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: 2.1rem;
+    text-align: center;
+    margin-top: 30px;
 }
 
 img {
-  width: 15.5rem;
-  height: 20rem;
+    width: 15.5rem;
+    height: 20rem;
+    transition: transform 0.3s;
 }
 
 img:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .image {
-  overflow: hidden;
+    overflow: hidden;
 }
 .container {
-  width: 1100px;
-  padding: 0 3rem;
-  background: #ffffff;
+    width: 1100px;
+    padding: 0 3rem;
+    background: #ffffff;
 }

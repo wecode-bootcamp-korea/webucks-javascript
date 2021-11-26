@@ -17,7 +17,7 @@ ID.addEventListener("input", function () {
 });
 
 PW.addEventListener("input", function () {
-    let ID = document.getElementById("id");
+ let ID = document.getElementById("id");
     let PW = document.getElementById("pw");
     let login = document.getElementById("loginbt");
         
@@ -27,9 +27,8 @@ PW.addEventListener("input", function () {
             login.style.cursor = "pointer";
         } 
     else if(ID.value.includes("@") === false || PW.value.length<8){
-        login.setAttribute("disabled", "");
+            login.setAttribute("disabled", "");
         login.style.backgroundColor = "#add3eb";
         login.style.cursor = "default";
-    }
-  });
-
+        }
+});
