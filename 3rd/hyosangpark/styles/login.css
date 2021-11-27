@@ -1,55 +1,61 @@
 * {
   box-sizing: border-box;
+  font-weight: bold;
+
+  --mainBoxColor: white;
+  --backgroundColor: #eeefef;
+  --borderColor: lightgrey;
+  --inputBoxColor: #aaaaaa;
+  --buttonColor: #aed3ea;
+  --warningColor: #4c8bb6;
 }
 
 body {
-  background-color: #eeefef;
+  background-color: var(--backgroundColor);
 }
 
-.mainBox {
+.mainBox,
+.wrapper,
+.form-div {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
 
+.logo,
+.form-div,
+.inputBox,
+.buttonBox {
+  width: 100%;
+}
+
+.mainBox {
   width: 50%;
   height: 600px;
   margin: 5% 25%;
-  border: 3px solid lightgrey;
-  background-color: white;
+  background-color: var(--mainBoxColor);
+  border: 3px solid var(--borderColor);
+  border-radius: 5px;
 }
 
 .wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
   width: 70%;
+  height: 200px;
 }
 
 .logo {
   margin-top: 50px;
-  width: 100%;
-}
-
-.form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
 }
 
 .inputBox,
 .buttonBox {
-  position: relative;
-  width: 100%;
   height: 45px;
   margin: 13px 10%;
   padding: 0 10px;
+  background-color: var(--backgroundColor);
+  border: 2px solid var(--borderColor);
   border-radius: 8px;
-  border: 3px solid #dfdddd;
-  background-color: #eeefef;
 }
 
 #inputId,
@@ -59,24 +65,21 @@ body {
 
 #inputId::placeholder,
 #inputPw::placeholder {
-  color: #aaaaaa;
-  font-weight: bold;
+  color: var(--inputBoxColor);
 }
 
 .forgotPw {
   padding-top: 60px;
-  color: #4c8bb6;
-  font-weight: bold;
+  color: var(--warningColor);
   font-size: 15px;
   text-decoration: none;
 }
 
 .buttonBox {
-  color: white;
-  font-size: 16px;
-  padding: 0 15px;
+  color: var(--mainBoxColor);
+  background-color: var(--buttonColor);
   border: none;
-  background-color: #aed3ea;
+  font-size: 15px;
 }
 
 .buttonBoxloginButton:hover {

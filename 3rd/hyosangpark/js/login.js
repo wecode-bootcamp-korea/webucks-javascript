@@ -23,9 +23,11 @@ document.querySelectorAll('.inputBox').forEach(item => {
         const pw = thisIsPw.value; 
         if (isValid(id,pw)){
             loginBtn.style.backgroundColor = "#68b8db"; 
+            loginBtn.disabled = false;
         } 
         else {
             loginBtn.style.backgroundColor = "#aed3ea";
+            loginBtn.disabled = true;
         }
     });
 }); 
