@@ -169,6 +169,7 @@ li .li {
     overflow: hidden;
   }
 }
+
 @media (max-width: 600px) {
   .linetemplate li {
     width: 100%;
@@ -178,7 +179,6 @@ li .li {
     text-align: center;
     overflow: hidden;
   }
-
   .linetemplate img {
     width: 90%;
     height: 90%;
