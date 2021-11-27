@@ -1,96 +1,190 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-ul{
-    display:flex;
-    list-style:none;
+ul {
+  display: flex;
+  list-style: none;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height :50px;
-    margin: 3% 5% 3% 5%;
-    background-color: #F4F4F2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  margin: 3% 5% 3% 5%;
+  background-color: #f4f4f2;
 }
 
 .menu2 {
-    display: flex;
-    align-items: center;
-    height :50px;
-    margin: 2% 5% 2% 5%;
-    background-color: #F4F4F2;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin: 2% 5% 2% 5%;
+  background-color: #f4f4f2;
 }
 
 .menu3 {
-    
-    margin: 3% 5% 3% 5%;
+  margin: 3% 5% 3% 5%;
 }
 
-.logo{
-    font-family: 'Dancing Script', cursive;
-    font-size : 35px;
-    text-decoration: none;
-    color :black;
-    margin-left:3%;
-    font-weight: bold;
+.logo {
+  font-family: "Dancing Script", cursive;
+  font-size: 35px;
+  text-decoration: none;
+  color: black;
+  margin-left: 3%;
+  font-weight: bold;
 }
 
-li .li{
-    padding:10px;
-    color: black;
-    text-decoration:none;
-    color : gray;
+li .li {
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  color: gray;
 }
 
-.cold{
-    margin-left:2%;
-    font-weight: bold;
+.cold {
+  margin-left: 2%;
+  font-weight: bold;
 }
 
-.menu2 img{
-    margin-left :2%;
-    width : 30px;
+.menu2 img {
+  margin-left: 2%;
+  width: 30px;
 }
 
 .menu2 .dcf {
-    margin-left : 2%;
-    font-size:12px;
-    font-weight: bold;
+  margin-left: 2%;
+  font-size: 12px;
+  font-weight: bold;
 }
 
-.menu3 a{
-    color:black;
-    font-weight:bold;
+.menu3 a {
+  color: black;
+  font-weight: bold;
 }
 
-.linetemplate ul{
-    display :flex;
-    padding :  0;
+.linetemplate ul {
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap;
 }
 
-.linetemplate li{
-    width :25%;
-    margin:0;
-    padding:0; 
-    text-align:center;
+.linetemplate li {
+  width: 25%;
+  height: 25%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
 }
 
-.linetemplate img{
-    width : 80%;
-    height :80%;
-    padding:0;
-    margin:0;
+.linetemplate img {
+  width: 300px;
+  height: 300px;
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s linear;
+  overflow: hidden;
+}
+
+.linetemplate img:hover {
+  transform: scale(1.12);
+}
+
+.comment {
+  display: flex;
+}
+
+.nameandheat {
+  text-align: center;
+}
+
+.far {
+  color: red;
+}
+
+.fas {
+  color: red;
+}
+
+@media (max-width: 1300px) {
+  .linetemplate li {
+    width: 33%;
+    height: 33%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+  }
+  .linetemplate img {
+    width: 320px;
+    height: 320px;
+    padding: 0;
+    margin: 0;
     transition: all 0.3s linear;
     overflow: hidden;
- }
+  }
+}
 
-.linetemplate img:hover{
-    transform: scale( 1.12 );
+@media (max-width: 1100px) {
+  .linetemplate li {
+    width: 50%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+  }
+  .linetemplate img {
+    width: 400px;
+    height: 400px;
+    padding: 0;
+    margin: 0;
+    transition: all 0.3s linear;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 900px) {
+  .linetemplate li {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+  }
+  .linetemplate img {
+    width: 600px;
+    height: 600px;
+    padding: 0;
+    margin: 0;
+    transition: all 0.3s linear;
+    overflow: hidden;
+  }
+}
+@media (max-width: 600px) {
+  .linetemplate li {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .linetemplate img {
+    width: 90%;
+    height: 90%;
+    padding: 0;
+    margin: 0;
+    transition: all 0.3s linear;
+    overflow: hidden;
+  }
 }

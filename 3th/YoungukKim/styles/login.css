@@ -16,6 +16,7 @@ h1{
 .input{
   display :flex;
   justify-content: center;
+  position : relative;
 }
 
 input{
@@ -23,7 +24,7 @@ input{
   padding: 12px 10px;
   border-radius :5px ;
   border : 1px solid lightgray;
-  width:450px;
+  width:32%;
   background-color:#F7F7F7;
   color:gray;
 }
@@ -36,7 +37,7 @@ input{
 
 .but{
   height:45px;
-  width:450px;
+  width:32%;
   border-radius:10px;
   border:none;
   color:white;
@@ -61,4 +62,28 @@ input{
 a{
   color: blue;
   text-decoration: none;
+}
+
+
+
+input:focus{
+  outline : none;
+} /* 포커스 시 아웃라인 없애줌 */
+
+.show{
+  position : absolute;
+  right : 37%;
+  top : 25px;
+  font-size : 11px;
+  margin-right : 1px;
+  padding : 1;
+}
+
+.hide {
+  position : absolute;
+  right : 34%;
+  top : 25px;
+  font-size : 11px;
+  padding : 1;
+  margin-right : 5px;
 }

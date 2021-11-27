@@ -1,60 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>webucks</title>
-    <link href="styles/login.css" rel="stylesheet" type="text/css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-  </head>
 
-  <body>
-    <section>
-      
-      <h1>WeBucks</h1>
-        <div class="input">
-        <input type="text" placeholder="전화번호, 사용자 이름 또는 이메일"
-         class="userid">
-        </div>
+<head>
+  <meta charset="utf-8">
+  <title>webucks</title>
+  <link href="styles/login.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
 
-        <div class="input">
-        <input type="password"
-        placeholder="비밀번호"  class="pw">
-        </div>
+<body>
+  <section>
 
-        <div class="btn">
-          <button class="but" disabled>로그인</button>
-        </div>
+    <h1>WeBucks</h1>
+    <div class="input">
+      <input type="text" placeholder="전화번호, 사용자 이름 또는 이메일" class="userid">
+    </div>
 
-        <div class="forget">
-          <a href="">비밀번호를 잊으셨나요?</a>
-        </div>
+    <div class="input">
+      <input type="password" placeholder="비밀번호" class="pw">
+      <button class="show">show</button>
+      <button class="hide">show&hide</button>
+    </div>
 
-    </section>
+    <div class="btn">
+      <button class="but" disabled>로그인</button>
+    </div>
 
-    <script>
+    <div class="forget">
+      <a href="">비밀번호를 잊으셨나요?</a>
+    </div>
 
-    const emailForm = document.querySelector('.userid');
-    const passwordForm = document.querySelector('.pw');
-    const loginButton = document.querySelector('button');
+  </section>
+</body>
 
-    emailForm.addEventListener('keyup', ()=> {
-      if (emailForm.value.includes("@")&&passwordForm.value.length>=8){
+<script src="js/login.js">
+</script>
 
-        loginButton.disabled=false;
-
-      }
-      else {loginButton.disabled=true; }
-
-    });
-    passwordForm.addEventListener('keyup', ()=> {
-      if (emailForm.value.includes("@")&&passwordForm.value.length>=8){
-        loginButton.disabled=false;
-      }
-      else {loginButton.disabled=true; }
-    });
-
-    </script>
-  </body>
 </html>
