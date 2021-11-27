@@ -74,12 +74,13 @@ body {
 
 .menu_name {
     display: flex;
+    margin-top: -10px;
 }
 
 .menu_name2 {
     display: flex;
     border-bottom: 3px solid black;
-    margin-top: -35px;
+    margin-top: -34px;
 }
 
 .discription {
@@ -248,4 +249,11 @@ h3 {
 }
 .l75 {
     margin-bottom: 32px;
+}
+
+.heart {
+    position: absolute;
+    margin-left: 640px;
+    margin-top: 20px;
+    font-size: 25px;
 }
