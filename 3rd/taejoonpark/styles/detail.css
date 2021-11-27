@@ -1,69 +1,93 @@
-.html, body {
-    margin: 0%;
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-.logo {
-    margin-top: 12%;
-    text-align: center;
+body {
+    margin: 0;
 }
 
-.we_logo {
+.header {
+    margin-left: 5%;
+    background-color: 	#f4f3ec;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.main_logo {
+    
     font-family: 'Dancing Script', cursive;
-    font-size: 7rem;
-    color: black;
-    text-decoration: none;
-}
-
-
-.login_input {
-    width: 75%;
-    display: block;
-    background-color: #f7f7f7;
-    border: 3px solid #dfdfdf;
-    margin: auto;
-    padding: 2% 2% 2% 2%;
-    border-radius: 5px;
     font-size: 1.5rem;
-    
-}
-
-.login_input:nth-child(2) {
-
-    margin: 4% auto 4% auto;
-    
-}
-
-p {
-    height: 10px;
-    width: 80%;
-    margin: auto;
-    padding: 0.5% 0 1.5% 5%;
-    color: red;
-}
-
-.login_btn {
-    background-color: #aed4ea;
-    color: white;
-    display: block;
-    font-size: 1.8rem;
-    padding: 2% 2% 2% 2%;
-    margin: auto;
-    width: 80%;
-    border: 0;
-    border-radius: 10px;
-}
-
-.lostPw {
-    text-align: center;
-    margin-top: 20%;
-}
-
-.lost_pw {
-    font-size: 1.3rem;
-    text-align: center;
-    color: 	#92afc2;
     text-decoration: none;
+    color: black;
+    padding: 1% 2% 1% 2%;
+
+}
+
+.category {
     
+    list-style: none;
+    width: 30%;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0.2rem;
+}
+
+.category_li {
+    
+    text-decoration: none;
+    color: grey;
+    margin: auto;
+    letter-spacing: 0.1rem;
+}
+
+.coffee_category {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: blue; */
+}
+
+.coldBrew {
+    /* background-color: firebrick; */
+    font-size: 30px;
+    font-weight: bold;
+    padding: 25px 0 30px 0;
+    margin-left: 5%;
+}
+
+.route {
+    /* background-color: greenyellow; */
+    margin-right: 6%;
+    padding-top: 4rem;
+    color: grey;
+}
+
+.imgAndInfo {
+    background-color: darkcyan;
+    display: flex;
+    flex-direction: row;
+}
+
+.coffee_img {
+    background-color: darkgoldenrod;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+.nameAndLike {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.coffee_info {
+    background-color: darkorange;
+}
+
+.coffee_name {
+    margin: 0 30px 20px 20px;
+    padding: 20px 20px 20px 20px 20px;
+    background-color: lightpink;
+}
+
+.footer {
+    background-color: deepskyblue;
 }
