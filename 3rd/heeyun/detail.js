@@ -15,22 +15,15 @@ function countChange(){
 }
 countChange();
 
-let inputBox = document.getElementsByTagName('input')[0];
+let reviewInput = document.getElementsByTagName('input')[0];
+let inputBox = document.getElementsByClassName('review-input')[0];
 let reviewList = document.getElementById('reviewList');
 
 
-inputBox.addEventListener('click',function(){
-    console.log('yes');
-    let idSpace = document.createElement('span');
-    inputBox.appendChild(idSpace);
-    idSpace.innerHTML = 'fdsa';
-});
-
 inputBox.addEventListener('keyup',function(event){
-    
     if(event.keyCode === 13){
         let list = document.createElement('li');
-        list.innerHTML = inputBox.value;
+        list.innerHTML = reviewInput.value;
         reviewList.appendChild(list);
     }
 })

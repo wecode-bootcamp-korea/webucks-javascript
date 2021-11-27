@@ -12,6 +12,7 @@ section{
     justify-content: center;
     flex-direction: column;
 }
+
 .boxes{
     display: flex;
     margin: 20px;
@@ -83,8 +84,4 @@ p{
 
 .photoBox{
     overflow: hidden;
-    /* height: 80%; */
-    /* display: flex;
-    align-items: center;
-    flex-direction: column; */
 }
