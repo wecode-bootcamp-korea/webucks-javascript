@@ -2,7 +2,8 @@ const checkId = document.getElementById("account")
 const checkPw = document.getElementById("password")
 const checkButton = document.getElementById("checkButton");
 
-checkId.addEventListener("input", function() {
+//input, keyup, keydown, blur,
+checkId.addEventListener("keyup", function() {
   if (checkId.value.includes("@") && checkPw.value.length >= 8) {
     checkButton.removeAttribute("disabled")
     checkButton.style.opacity = 1.0;

@@ -25,9 +25,7 @@ replyInput.addEventListener('keyup', function(event) {
     contentComment.className = "contentComment"
 
     contentComment.innerHTML = replyInput.value // 위에서 생성한 빈 span태그 속에 replyInput값을 넣기
-    // nameComment.innerHTML = customerId
-
-    // wrapComment.appendChild(nameComment)
+    
     wrapComment.appendChild(contentComment) // 우선 생성한 div태그에 input값을 넣는다
     replyLog.appendChild(wrapComment) // 내용물을 넣은 div태그를 HTML 문서에 만들어 놓은 댓글 목록에 출력
   }
