@@ -109,3 +109,35 @@ img {
   transform: scale(1.1);
   transition: all 0.5s ease-in-out;
 }
+
+.img i:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 850px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+    height: 90px;
+  }
+
+  .headerMenu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .headerMenu li {
+    width: 50%;
+  }
+
+  .header h2 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin: -5px 0 0 10px;
+  }
+}

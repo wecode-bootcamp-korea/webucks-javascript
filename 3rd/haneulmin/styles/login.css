@@ -45,6 +45,20 @@ input {
   background-color: #f7f7f7;
 }
 
+input:focus {
+  outline: none;
+}
+
+.pwbox {
+  position: relative;
+}
+
+.eye {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+}
+
 button {
   margin-bottom: 130px;
   height: 45px;

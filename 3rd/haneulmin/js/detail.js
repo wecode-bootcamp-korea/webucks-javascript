@@ -58,7 +58,6 @@ function uploadComment() {
         }
     }
 
-
     trashBtn.onclick = function (e) {
         box.removeChild(comments);
     };

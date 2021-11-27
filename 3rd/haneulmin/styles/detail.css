@@ -285,18 +285,19 @@ p {
   background-color: #ffffff;
 }
 
-.writeComment i {
-  float: right;
-  font-size: 13px;
-  padding: 2px 1px 0 0;
-  color: #929292;
-}
-
 .writeComment {
   font-size: 15px;
   margin-left: 21px;
 }
 
+.writeComment i {
+  float: right;
+  font-size: 13px;
+  padding-top: 2px;
+  margin-left: 2px;
+  color: #929292;
+  cursor: pointer;
+}
 .review .comment {
   background-color: #efefef;
   border: 0;

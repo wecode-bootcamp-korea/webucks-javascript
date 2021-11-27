@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/login.js" defer></script>
+    <script src="https://kit.fontawesome.com/20635ad1aa.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/login.css" />
     <title>WeBucks</title>
 </head>
@@ -12,8 +13,11 @@
     <section>
         <h1>WeBucks</h1>
         <form class="loginBox">
-            <input class="id" type="text" placeholder="전화번호, 사용자 이름 또는 이메일" />
-            <input class="pw" type="password" placeholder="비밀번호" />
+            <input id="loginId" class="id" type="text" placeholder="전화번호, 사용자 이름 또는 이메일" />
+            <div class="pwbox">
+                <input id="loginPw" class="pw" type="password" placeholder="비밀번호" />
+                <i class="fa fa-eye eye"></i>
+            </div>
             <button class="loginBtn">로그인</button>
         </form>
         <a href="#">비밀번호를 잊으셨나요?</a>
