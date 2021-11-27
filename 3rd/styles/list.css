@@ -60,13 +60,24 @@ nav ul li {
 .menuList .coffee {
     display: flex;
     flex-direction: column;
-    float: left;
-    width: 23%;
-    margin: 1%;
+    /* float: left; */
+    width: 96%;
+    margin: 2%;
 }
 
 .menuList {
-    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* display: flex;
+    flex-wrap: wrap; */
+    width: 99%;
+}
+
+@media (max-width:700px) {
+    .menuList {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .coffee p {
