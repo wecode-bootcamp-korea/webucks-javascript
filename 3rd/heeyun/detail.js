@@ -25,6 +25,7 @@ inputBox.addEventListener('keyup',function(event){
         let list = document.createElement('li');
         list.innerHTML = reviewInput.value;
         reviewList.appendChild(list);
+        reviewInput.value = null;
     }
 })
 
