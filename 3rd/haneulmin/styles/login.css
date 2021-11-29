@@ -59,6 +59,10 @@ input:focus {
   right: 10px;
 }
 
+.eye:hover {
+  cursor: pointer;
+}
+
 button {
   margin-bottom: 130px;
   height: 45px;

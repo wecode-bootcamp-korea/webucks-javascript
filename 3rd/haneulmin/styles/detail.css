@@ -301,6 +301,7 @@ p {
 .review .comment {
   background-color: #efefef;
   border: 0;
+  outline: none;
   width: 590px;
   height: 30px;
   margin: 10px 0 50px 40px;

@@ -68,6 +68,7 @@ commentInput.addEventListener("keypress",(e) => {
     if(e.keyCode === 13 && commentInput.value.length !== 0){    // 엔터키를 누르고, input에 들어온 값의 길이가 0이 아닐 때 업로드 가능하게 함
         uploadComment();
         commentInput.value = "";   // 업로드 후 input 칸 공백으로 만듦
+        commentInput.focus;
     }
 });
 

@@ -15,7 +15,7 @@ function moveList(e) {
 }
 
 
-//
+// 아이디와 패스워드 조건에 맞을 시 border-color 초록색으로 변경
 const idBox = document.getElementById('loginId');
 const pwBox = document.getElementById('loginPw');
 
@@ -45,7 +45,6 @@ pwBox.onkeyup = function () {
 // 비밀번호 hide, show
 const show = document.querySelector('.eye');
 const pwInput = document.querySelector('.pw');
-
 
 show.addEventListener('click', e => {
     if (e.target.className == "fa fa-eye eye") {
