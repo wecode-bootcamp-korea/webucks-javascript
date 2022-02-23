@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -108,8 +109,8 @@ body {
 }
 
 .mainPageRight .product_info_head {
-  border-bottom: 2px solid #efefef;
   padding: 0 10px 10px 10px;
+  border-bottom: 2px solid #efefef;
 }
 
 .mainPageRight .product_info_content .content {
@@ -119,15 +120,15 @@ body {
 }
 
 .product_info_content .content_left {
+  width: 50%;
   padding-left: 0;
   padding-right: 8px;
-  width: 50%;
   border-right: 2px dotted #efefef;
 }
 
 .product_info_content .content_right {
-  padding: 0;
   width: 49%;
+  padding: 0;
 }
 
 .product_info_content li {
@@ -205,8 +206,8 @@ footer {
 footer table {
   width: 80%;
   height: 300px;
-  text-align: left;
   margin: auto;
   padding-top: 50px;
   color: #d7d7d7;
+  text-align: left;
 }

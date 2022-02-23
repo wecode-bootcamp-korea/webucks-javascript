@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   display: flex;
   justify-content: center;
@@ -41,9 +42,9 @@ header {
   height: 50px;
   padding-left: 5px;
   margin: 20px;
-  background-color: #f7f7f7;
   border: 2px solid #e3e3e3;
   border-radius: 5px;
+  background-color: #f7f7f7;
   outline: none;
 }
 
@@ -59,18 +60,21 @@ header {
   height: 50px;
   border-radius: 5px;
   margin-left: 20px;
-  background-color: #61aded;
   color: white;
+  background-color: #61aded;
   border: 0px solid black;
 }
+
 .inputArea .loginBtn:disabled {
   opacity: 0.5;
 }
+
 .inputArea .loginBtn a {
   display: block;
   text-decoration: none;
   color: white;
 }
+
 footer a {
   text-decoration: none;
   color: #7a9db7;

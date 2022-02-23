@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -70,8 +71,8 @@ body {
 }
 
 .product li {
-  list-style: none;
   padding-left: 25px;
+  list-style: none;
 }
 
 .product img {
@@ -80,13 +81,14 @@ body {
 }
 
 .product li .coffeeName {
-  text-align: center;
   padding: 10px;
+  text-align: center;
 }
 
 .product li .fa-solid.fa-heart {
   color: red;
 }
+
 .product img:hover {
   transform: scale(1.1);
   transition: all 1s ease;
