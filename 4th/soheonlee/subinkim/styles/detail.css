@@ -83,8 +83,6 @@ main section:nth-child(2) {
 }
 
 /* main image */
-.coffeeImg {
-}
 
 .coffeeImg img {
     height: 450px;
@@ -110,7 +108,17 @@ main section:nth-child(2) {
     position: absolute;
     right: 10px;
     bottom: 20px;
+    cursor: pointer;
+}
+
+.btnOff {
+    color: black;
     opacity: .2;
+}
+
+.btnOn {
+    color: red;
+    opacity: 1;
 }
 
 .coffeeName p {
@@ -210,4 +218,8 @@ footer div p {
 footer div li {
     font-size: 11px;
     margin-bottom: 8px;
+}
+
+.btnOn {
+    color: red;
 }
