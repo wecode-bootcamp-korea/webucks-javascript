@@ -9,6 +9,4 @@ password.addEventListener('keyup', function(){
     if((idValue.includes('@') === true) && (passValue.length >= 8)){
         button.style.backgroundColor = 'rgba(97, 173, 237, 1)';
     }
-
-    
 })
