@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@500&display=swap');
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* head */
+
+.head{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #f4f4f2;
+}
+
+#logo{
+    margin-left: 15px;
+    font-family: 'Dancing Script', cursive;
+}
+
+ul{
+    list-style: none;
+}
+
+.list{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 65%; /*margin-left로 했을 때 list가 반응형이 안됨*/
+    padding-right: 0;
+}
+
+.list li{
+    margin-right: 10px;
+    color:#afafa9;
+}
+
+/*product-list*/
+
+.product-list{
+    margin-top: 20px;
+}
+
+
+.type{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #f4f4f2;
+}
+
+.name{
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.detail{
+    margin-left: 10px;
+}
+
+.menu-list .img-div{
+    overflow: hidden;
+    height: 252px;
+}
+
+.menu-list li img{
+    width: 250px;
+    height: 252px;
+    transition: all 0.5s linear;
+}
+
+.menu-list li img:hover{
+    transform: scale(1.2);
+}
+
+.menu-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0;
+    padding: 0;
+}
+
+.menu-list ul li{
+    margin-right: 31px;
+    
+}
+
+.menu-list li p{
+    text-align: center; 
+}

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Noto+Sans+KR:wght@500&display=swap');
+
+body{
+    background-color: #eeefef;
+}
+
+.card{
+    background-color: white;
+    width: 400px;
+    height: 500px;
+    margin: 30px auto;
+    border: 3px solid #e8e8e8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title{
+    font-family: 'Dancing Script', cursive;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-elements{
+    margin-top: 15px;
+}
+
+.input-elements{
+    width: 300px;
+    height: 35px;
+    background-color: #f7f7f7;
+    border: 1px solid #dfdfdf;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+::placeholder{
+    color:#8d8d8d;
+}
+
+.disabledBtn{
+    width: 77%;
+    height: 35px;
+    background-color: #a3d4ee;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.activatedBtn{
+    width: 77%;
+    height: 35px;
+    background-color: #a3d4ee;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #62adee;
+}
+
+.activatedBtn:hover{
+    cursor: pointer;
+}
+
+.findPW{
+    margin-top:120px;
+    font-size:13px;
+    color:#6e9fba;
+    display: flex;
+    align-items: flex-start;
+}

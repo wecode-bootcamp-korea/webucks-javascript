@@ -1,0 +1,110 @@
+/* container */
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* head */
+.head{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #f4f4f2;
+}
+
+#logo{
+    margin-left: 15px;
+    font-family: 'Dancing Script', cursive;
+}
+
+ul{
+    list-style: none;
+}
+
+.list{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 65%; /*margin-left로 했을 때 list가 반응형이 안됨*/
+    padding-right: 0;
+}
+
+.list li{
+    margin-right: 10px;
+    color:#afafa9;
+}
+
+/* content */
+
+.bread-crumb{
+    margin-left: 790px;
+    color: #afafa9;
+}
+
+.info-box{
+    display: flex;
+    justify-content: space-around;
+}
+
+.detail-img{
+    width: 65%;
+}
+/* 커피 사진 */
+.info-box .detail-img img{
+    width:90%;
+    height: 400px;
+}
+
+/* 제품 정보 */
+
+.name{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+
+.name h3{
+    margin: 0;
+}
+
+.name p{
+    margin: 0;
+}
+
+.heart {
+    color: #afafa9;
+    margin-left: 460px;
+}
+
+.description p{
+    margin-bottom: 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #afafa9;
+}
+
+.nutrition-head{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    border-bottom: 1px solid #afafa9;
+}
+
+
+.nutritions h2{
+    font-weight: 500;
+}
+
+.nutritions #size{
+    margin-left: 240px;
+}
+
+.nutrition-detail{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nutrition-detail dl{
+    display: flex;
+    flex-wrap: wrap;
+}
