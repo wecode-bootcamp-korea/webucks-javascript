@@ -5,7 +5,7 @@
 body {
   margin: 0;
   width: 500px;
-  height: 600px;
+  height: 800px;
   margin: 20px 30px;
 }
 
@@ -21,18 +21,18 @@ a {
   background-color: #f6f5ee;
 }
 
-.title {
+.navbar__title {
   padding-top: 5px;
 }
 
-.nav_menu {
+.navbar__menu {
   display: flex;
   padding-right: 5px;
   list-style: none;
   font-family: "Gowun Dodum", sans-serif;
 }
 
-.nav_menu li {
+.navbar__menu li {
   padding: 5px 5px;
   font-size: 5px;
 }
@@ -57,32 +57,43 @@ a {
   font-size: 2px;
 }
 
-.line {
+.lastList {
+  display: flex;
+}
+
+.lastList__items {
+  padding-right: 20px;
+}
+
+.list {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
   padding-right: 0;
 }
 
-.listLine {
-  display: flex;
-  flex-direction: row;
-}
-
-.img {
+.imgs {
   width: 110px;
   height: 110px;
+  overflow: hidden;
 }
 
-.item {
-  display: flex;
-  flex-direction: column;
-  margin-top: 15px;
+.imgs img {
+  width: 110px;
+  height: 110px;
+  transition: all 0.2s linear;
+}
+
+.imgs img:hover {
+  transform: scale(1.5);
+}
+
+.list__items {
+  margin-bottom: 15px;
 }
 
 .info {
   display: flex;
   justify-content: center;
-  padding-top: 5px;
+  margin-top: 5px;
   font-size: 5px;
 }
