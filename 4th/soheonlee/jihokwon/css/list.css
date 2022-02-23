@@ -13,11 +13,16 @@ a {
   text-decoration: none;
   color: lightgray;
 }
+
+h1 {
+  font-weight: normal;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 30px;
+  height: 40px;
   background-color: #f6f5ee;
 }
 
@@ -40,19 +45,17 @@ a {
 .menuInfo {
   display: flex;
   list-style: none;
-  height: 30px;
   padding-left: 5px;
   background-color: #f4f4f2;
 }
 
 .menuInfo li:first-child {
-  padding-top: 5px;
   padding-left: 5px;
-  font-size: 5px;
+  font-size: 12px;
 }
 
 .menuInfo li:last-child {
-  padding-top: 9px;
+  padding-top: 12px;
   padding-left: 5px;
   font-size: 2px;
 }
@@ -80,11 +83,11 @@ a {
 .imgs img {
   width: 110px;
   height: 110px;
-  transition: all 0.2s linear;
+  transition: all 0.7s linear;
 }
 
 .imgs img:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 
 .list__items {
