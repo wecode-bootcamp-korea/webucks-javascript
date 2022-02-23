@@ -17,4 +17,5 @@ let validCheck = () =>  {
 
 id.addEventListener('keyup', validCheck);
 password.addEventListener('keyup', validCheck);
+;
 
