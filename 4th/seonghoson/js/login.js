@@ -38,12 +38,10 @@ loginPw.addEventListener("input", (e) => {
 });
 
 loginBtn.addEventListener("mouseover", (e) => {
-  console.log(e);
   loginBtn.style.background = "rgb(138 192 237)";
 });
 
 loginBtn.addEventListener("mouseleave", (e) => {
-  console.log(e);
   loginBtn.style.background = "#61ADED";
 });
 
