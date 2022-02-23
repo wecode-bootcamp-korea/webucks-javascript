@@ -7,20 +7,21 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-indent: 12px;
-    background-color: bisque;
     padding: 7px;
+    background-color: bisque;
+    text-indent: 20px;
 }
 
 .header__title {
     font-family: 'Dancing Script', cursive;
     font-weight: bold;
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 .header__btn {
     display: flex;
     align-items: center;
+    padding-right: 20px;
     list-style: none;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -28,7 +29,6 @@ header {
 
 .header__btn li {
     padding-left: 20px;
-    padding-right: 10px;
 }
 
 article {
@@ -37,14 +37,18 @@ article {
 }
 
 .article__title {
-    font-weight: bold;
+    display: flex;
+    align-items: center;
     padding: 10px;
     background-color: bisque;
+    font-weight: bold;
+    text-indent: 4px;
 }
 
 .article__title__icon {
     width: 2rem;
     height: 2rem;
+    margin-left: 6px;
 }
 
 .article__smalltitle {
@@ -59,14 +63,14 @@ section {
 }
 
 .img__frame {
+    height: 200px;
     overflow: hidden;
-    height: 300px;
 }
 
 img {
-    transition: transform 5s, filter 3s ease-in-out;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
+    transition: transform 3s ease-in-out;
 }
 
 img:hover {
