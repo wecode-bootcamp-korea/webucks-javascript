@@ -17,7 +17,7 @@ body{
   display: inline-block;
   margin-bottom: 20px;
   font-size: 70px;
-  font-family: 'Dancing Script';
+  font-family: 'Dancing Script', cursive;
 }
 
 .container input{
@@ -29,7 +29,6 @@ body{
   border: 2px solid lightgray;
   border-radius: 5px;
   font-size: 13px;
-  font-weight: bold;
 }
 
 .loginBtn{
