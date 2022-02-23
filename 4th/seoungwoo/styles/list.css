@@ -1,0 +1,73 @@
+.container{
+    display: inline-block;
+    position: relative;
+    width: 820px;
+    border: 1px solid white;
+    background-color: rgb(230, 227, 223);
+}
+.logo{
+    display: inline-block;
+    font-family: 'Dancing Script', cursive;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.coffee{
+    width: 800px;
+    border: 1px solid  white;
+    margin: 10px 0px;
+    padding: 0px 10px;
+    background-color: rgb(230, 227, 223);
+}
+.menu{
+    display: inline-block;
+    position:absolute;
+    right: 10px;
+    top: 10px;
+    color:gray;
+    font-size: 12px;
+
+}
+i{
+    width:30px;
+    margin-left:10px;
+}
+p{
+    display: inline-block;
+    
+}
+img{
+    display: inline;
+    
+}
+img:hover{
+    transform: scale(1.2);
+    
+}
+.name{
+    display: inline-block;
+    width: 201px;
+    padding: 5px 0px;
+    
+    text-align: center;
+}
+.block{
+    display: inline-block;
+    padding: 5px 0px;
+    width: 201px;
+    background-color: white;
+    
+    
+}
+.wrapper{
+    
+    width: 825px;
+}
+
+.overflow{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    
+    overflow: hidden;
+}
