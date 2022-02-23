@@ -46,6 +46,19 @@ input {
   border-radius: 3px;
   padding: 7px;
   margin-bottom: 10px;
+
+}
+
+input:focus {
+  outline: none;
+}
+
+.green:focus {
+  outline: 1.5px solid green;
+}
+
+.none:focus {
+  outline: none;
 }
 
 .logInBtn {
@@ -86,4 +99,24 @@ input {
   color: #80a6bf;
   font-weight: 700;
   margin-bottom: 50px;
+}
+
+.fa-eye {
+  color: #add3ea;
+  cursor: pointer;
+}
+
+.fa-eye-slash {
+  color: gray;
+  cursor: pointer;
+}
+
+#logInBox {
+  position: relative;
+}
+
+.buttonBox {
+  position: absolute;
+  top: 47px;
+  right: 8px;
 }
