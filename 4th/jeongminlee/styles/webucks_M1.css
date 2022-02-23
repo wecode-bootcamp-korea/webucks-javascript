@@ -1,0 +1,61 @@
+body{
+    background-color: #eeefef;
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size : 90px;
+    margin-bottom: 30px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    justify-content:space-between;
+}
+
+input{
+    border-radius: 6px;
+    background-color: #eeefef;
+    width : 40vh;
+    padding-top : 9px;
+    padding-bottom : 9px;
+    border : 2px rgba(168, 181, 189, 0.4) solid;
+}
+
+button{
+    width : 41vh;
+    background-color: rgba(97, 173, 237, 0.3);
+    color : white;
+    padding-top : 10px;
+    padding-bottom : 10px;
+    border-radius: 10px;
+    border: 0px solid;
+}
+.back{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vh;
+    height: 70vh;
+    flex-direction: column;
+    border : 1px solid black;
+}
+
+.back > * {
+    margin-top : 15px;
+    /* margin-bottom : 10px; */
+}
+
+.find_password{
+    margin-top: 15vh;
+    color : #6e9dba;
+    font-weight: bold;
+    font-size: 14px;
+    /* align-self: flex-end; */
+}
