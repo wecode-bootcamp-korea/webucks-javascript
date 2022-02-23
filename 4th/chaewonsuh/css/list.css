@@ -1,0 +1,82 @@
+html {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    width: 90%
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0;
+    border: 1px solid red;
+}
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 10px;
+    border: 1px solid black;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.categories {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 390px;
+}
+
+.coffeeLists {
+    height: 350px;
+    width: 300px;
+    border: 1px solid orange;
+}
+
+dt {
+    /* object-fit: contain; */
+    border: 1px solid blue;
+    position: relative;
+    top: 0;
+    width: 300px;
+    height: 270px;
+    overflow: hidden;
+}
+img {
+    /* max-width: 100%;
+    max-height: 100%; */
+    top: 0px;
+    object-fit: contain;
+    position: absolute;
+    width: 100%;
+}
+
+.cortadoImg {
+    top: -10px;
+}
+
+.espMacchiatoImg {
+
+}
+
+.americanoImg {
+
+}
+
+i {
+    font-size: 30px;
+    color: green;
+}
+
+p {
+    font-weight: bold;
+    font-size: 20px;
+}
