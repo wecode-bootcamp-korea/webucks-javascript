@@ -12,6 +12,11 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="assets/image/coffee-cup.png"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
     <title>We Bucks</title>
   </head>
   <body>
@@ -22,10 +27,20 @@
       <form action="list.html">
         <input
           id="loginId"
+          class="unactive"
           type="text"
+          maxlength="20"
           placeholder="전화번호, 사용자 이름 또는 이메일"
         />
-        <input id="loginPw" type="password" placeholder="비밀번호" />
+        <div class="loginPwWrap">
+          <input
+            id="loginPw"
+            type="password"
+            maxlength="20"
+            placeholder="비밀번호"
+          />
+          <span id="showBtn">show</span>
+        </div>
         <button id="loginBtn" disabled>로그인</button>
       </form>
       <footer>

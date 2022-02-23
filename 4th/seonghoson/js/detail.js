@@ -1,8 +1,8 @@
 const id = location.search.slice(4);
 const type = id.slice(0, 2);
 const main = document.getElementsByClassName("main")[0];
+const xMark = document.getElementsByClassName("fa-xmark");
 const input = document.getElementsByTagName("input");
-const likeData = JSON.parse(localStorage.getItem("like"));
 
 // detail coffee filter
 let jsonType = "";
@@ -15,14 +15,34 @@ switch (type) {
     break;
 }
 
+function clickReviewLike(node) {
+  console.log("node >> ", node.id);
+  if (node.id === "isLike") {
+    node.className = "fa-regular fa-heart heartIcon isUnLike";
+    node.id = "isUnLike";
+  } else {
+    node.className = "fa-solid fa-heart heartIcon isLike";
+    node.id = "isLike";
+  }
+}
+
+function removeReview(text, node) {
+  node.parentNode.parentNode.remove();
+  let reviewData = JSON.parse(localStorage.getItem(id));
+  const result = reviewData.filter((item) => {
+    return !item.includes(text);
+  });
+  localStorage.setItem(id, JSON.stringify(result));
+}
+
 function clickLike() {
+  let likeData = JSON.parse(localStorage.getItem("like"));
   let heartIcon = document.getElementsByClassName("heartIcon")[0];
+
   if (heartIcon.id === "isUnLike") {
     heartIcon.className = "fa-solid fa-heart heartIcon isLike";
     heartIcon.id = "isLike";
-    if (!likeData.includes(id)) {
-      likeData.push(id);
-    }
+    likeData.push(id);
     localStorage.setItem("like", JSON.stringify(likeData));
   } else {
     heartIcon.className = "fa-regular fa-heart heartIcon isUnLike";
@@ -41,7 +61,15 @@ function writeReview(e) {
   if (e.keyCode === 13 && e.target.value.trim() !== "") {
     let ul = document.getElementsByTagName("ul")[0];
     let newNode = document.createElement("li");
-    newNode.innerHTML = `<span>unknown</span>${e.target.value}`;
+    newNode.innerHTML = `
+      <span>
+        <i class="fa-regular fa-heart heartIcon isUnLike" id="isUnLike" onclick="clickReviewLike(this)"></i>
+        <span>unknown</span>${e.target.value}
+      </span>
+      <span>
+        <i class="fa-solid fa-xmark" onclick="removeReview('${e.target.value}',this)"></i>
+      </span>
+    `;
     ul.appendChild(newNode);
     if (!!reviewData) {
       reviewData.push(e.target.value);
@@ -56,6 +84,7 @@ function writeReview(e) {
 // fetch data
 fetch(`data/${jsonType}.json`).then((response) => {
   let reviewData = JSON.parse(localStorage.getItem(id));
+  let likeData = JSON.parse(localStorage.getItem("like"));
 
   response.json().then((res) => {
     // get coffee data
@@ -79,7 +108,17 @@ fetch(`data/${jsonType}.json`).then((response) => {
     let reviewNode = "";
     if (!!reviewData) {
       reviewData.forEach((item) => {
-        reviewNode = reviewNode + `<li><span>unknown</span>${item}</li>`;
+        reviewNode =
+          reviewNode +
+          `<li>
+            <span>
+              <i class="fa-regular fa-heart heartIcon isUnLike" id="isUnLike" onclick="clickReviewLike(this)"></i>
+              <span>unknown</span>${item}
+              </span>
+            <span>
+              <i class="fa-solid fa-xmark" onclick="removeReview('${item}',this)"></i>
+            </span>
+          </li>`;
       });
     }
     // draw detail dom
@@ -151,7 +190,7 @@ fetch(`data/${jsonType}.json`).then((response) => {
               ${reviewNode}
               </ul>
             </div>
-            <input class="reviewInput" type="text" placeholder="리뷰를 입력해주세요." onKeypress="writeReview(event)" />
+            <input class="reviewInput" type="text" placeholder="리뷰를 입력해주세요." onKeypress="writeReview(event)" maxlength="15" />
           </div>
         </div>
       </article>`;

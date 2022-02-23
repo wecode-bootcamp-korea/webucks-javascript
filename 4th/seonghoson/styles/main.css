@@ -28,6 +28,9 @@
   color: #211814e0;
   cursor: pointer;
 }
+.header div span:hover {
+  font-weight: 600;
+}
 .headerIcon {
   width: 42px;
 }

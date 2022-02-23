@@ -150,10 +150,19 @@
   flex-direction: column-reverse;
 }
 .reviewList ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   margin-bottom: 8px;
+}
+.reviewList ul li:hover .fa-xmark {
+  display: block !important;
 }
 .reviewList ul li span {
   margin-right: 6px;
+  font-weight: 400;
+}
+.reviewList ul li span span {
   font-weight: bold;
 }
 .contentsReview input {
@@ -172,4 +181,8 @@ picture img {
 }
 .isLike {
   color: #ff0000;
+}
+.fa-xmark {
+  display: none !important;
+  margin-right: 8px;
 }

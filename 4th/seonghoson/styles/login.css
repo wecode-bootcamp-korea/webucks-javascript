@@ -33,7 +33,7 @@ img {
   width: 200px;
   margin-top: 70px;
 }
-input,
+#loginId,
 button {
   margin: 8px 50px;
   padding: 8px;
@@ -51,4 +51,26 @@ button {
 a {
   text-decoration-line: none;
   font-size: 14px;
+}
+.active:focus {
+  outline-color: green;
+}
+.loginPwWrap {
+  position: relative;
+  margin: 8px 50px;
+  border-radius: 3px;
+}
+.loginPwWrap input {
+  width: -webkit-fill-available;
+  padding: 8px;
+}
+#showBtn {
+  position: absolute;
+  top: 9px;
+  right: 8px;
+  color: #add4ea;
+  cursor: pointer;
+}
+#showBtn:hover {
+  color: #0da8ff;
 }
