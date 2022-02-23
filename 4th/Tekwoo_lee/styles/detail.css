@@ -1,0 +1,196 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.wholePage {
+  margin-top: 0;
+  min-width: 800px;
+  width: 80vw;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  align-items: center;
+  background-color: #f4f4f2;
+}
+
+header > p {
+  font-family: "Dancing Script";
+  font-size: x-large;
+  font-weight: 700;
+  margin: 0;
+}
+
+.headerMenu {
+  display: flex;
+  margin: 0;
+}
+
+.headerMenu a {
+  text-decoration: none;
+  font-size: small;
+  color: #b87835;
+  padding-right: 1rem;
+}
+
+.headerMenu a:last-child {
+  padding-right: 2rem;
+}
+body h1 {
+  margin: 1% 0;
+}
+
+.nav {
+  display: block;
+  margin-bottom: 1%;
+  text-align: end;
+  text-decoration: none;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: small;
+  color: #383838;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.detailInfo {
+  margin: 0;
+}
+
+.detailInfo .infoTitle {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.detailInfo .infoTitle .infoTitles,
+.detailInfo .infoTitle i {
+  margin: 0;
+}
+
+.detailInfo .infoTitle i {
+  align-self: center;
+  cursor: pointer;
+}
+
+.detailInfo:first-child img {
+  width: 30vw;
+}
+
+.detailInfo:last-child {
+  padding-top: 0;
+  width: 45vw;
+}
+
+.detailInfo:last-child > p {
+  font-size: smaller;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
+  padding: 0.5rem;
+}
+
+.detailInfo:last-child .nutritionInfo {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.detailInfo:last-child .nutritionInfo h4 {
+  margin: 0;
+  color: #383838;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.detailInfo:last-child .nutritionInfo p {
+  margin: 0;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: small;
+}
+
+.detailInfo:last-child .nutritionOuterwrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+}
+
+.detailInfo .centerLine {
+  margin: 0;
+  border-right: 1px dotted #383838;
+}
+
+.detailInfo:last-child .nutritionWrapper:nth-child(even) {
+  margin: 0 0.5rem;
+  text-align: end;
+}
+
+.detailInfo:last-child .nutritionWrapper:nth-child(odd) {
+  margin: 0 0.5rem;
+  text-align: start;
+}
+
+.allergicInfo {
+  background-color: #efefef;
+  padding: 1rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 4rem;
+}
+
+.review {
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.review h4,
+.review hr {
+  margin-bottom: 1%;
+}
+
+.review span {
+  padding-bottom: 1%;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: small;
+}
+
+.review .reviewLog {
+  all: unset;
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  background-color: #efefef;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: small;
+}
+
+.commentArea i {
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  height: 20%;
+  padding: 2%;
+  background-color: #383838;
+  color: #ffffff;
+}
+
+footer .footerTitle {
+  margin-bottom: 1rem;
+}
+
+footer p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: small;
+  font-weight: 500;
+}

@@ -1,0 +1,80 @@
+* {
+  background-color: #eeefef;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 28rem;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin-top: 5rem;
+}
+
+.container img {
+  margin: 3rem 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.Input {
+  all: unset;
+  width: 20rem;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  background: #eeefef;
+}
+
+.containLogin i {
+  position: relative;
+  margin: 0;
+  bottom: 2.2rem;
+  left: 92%;
+  cursor: pointer;
+  background: none;
+}
+
+.Input:focus {
+  background-color: #ffffff;
+}
+
+.loginButton {
+  all: unset;
+  width: 20rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  background-color: #378bcc;
+  color: #ffffff;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+
+.searchPw {
+  text-decoration: none;
+  text-align: center;
+  background-color: #ffffff;
+  color: #a8bfd0;
+  margin: 4rem 0;
+}
+
+.searchPw:hover {
+  color: #378bcc;
+}
