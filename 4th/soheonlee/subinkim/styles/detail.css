@@ -178,14 +178,19 @@ main section:nth-child(2) {
 .review .reviewContents {
     margin: 15px 0 25px 0;
 }
-
-.reviewContents p {
+.aReview {
     margin-bottom: 8px;
 }
 
-.reviewContents p span {
+.aReview span {
     font-weight: bold;
 }
+
+.aReivewText {
+    margin-left: 5px;
+    display: inline-block;
+}
+
 
 .review input {
     padding: 10px 10px;
