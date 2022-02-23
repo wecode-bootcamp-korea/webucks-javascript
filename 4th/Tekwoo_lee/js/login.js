@@ -51,12 +51,15 @@ inputCheck[1].addEventListener("keyup", pwChecker);
 
 function pwVisible(e) {
   if (e.target.className === "fa-regular fa-eye") {
-    pwIcon.className = "fa-regular fa-eye-slash";
-    inputCheck[1].type = "text";
+    pwVisibleChange("fa-regular fa-eye-slash", "text");
   } else {
-    pwIcon.className = "fa-regular fa-eye";
-    inputCheck[1].type = "password";
+    pwVisibleChange("fa-regular fa-eye", "password");
   }
+}
+
+function pwVisibleChange(classname, type) {
+  pwIcon.className = classname;
+  inputCheck[1].type = type;
 }
 
 pwIcon.addEventListener("click", pwVisible);
