@@ -16,8 +16,8 @@ function setLoginBtn(isAble, btnColor) {
     loginButton.style.background = btnColor;
 }
 
-// 화면 넘어가는 함수
-function nextPage() {
+// list로 넘어가는 함수
+function toList() {
     window.location.href = "list.html";
 }
 

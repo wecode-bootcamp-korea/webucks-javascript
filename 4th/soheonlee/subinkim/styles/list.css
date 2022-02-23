@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-*{
+
+* {
     box-sizing: border-box;
     text-decoration: none;
     color: inherit;
 }
+
 body {
     max-width: 1024px;
     margin: 0 auto;
@@ -21,7 +23,7 @@ header {
 
 .title {
     font-family: 'Dancing Script',
-    cursive;
+        cursive;
     font-weight: bold;
     font-size: 20px;
 }
@@ -32,7 +34,7 @@ nav {
 
 ul {
     display: flex;
-    
+
 }
 
 li {
@@ -61,8 +63,12 @@ li:hover {
     font-weight: bold;
 }
 
+i {
+    margin-left: 5px;
+}
+
 .decaffeine {
-    margin-left: 10px;
+    margin-left: 5px;
     font-size: 13px;
     font-weight: bold;
 }
@@ -70,18 +76,25 @@ li:hover {
 article {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 20px;
+    grid-gap: 10px;
     width: 100%;
+}
+
+.overflow {
+    margin: 0 auto;
+    width: 320px;
+    height: 320px;
+    overflow: hidden;
 }
 
 .coffeeImg {
-    padding: 3px;
-    width: 100%;
+    width: 320px;
+    height: 320px;
 }
 
 .coffeeImg:hover {
-    padding: 0;
-    margin: 1px auto;
+    transform: scale(1.1);
+    transition: all 1s ease;
     cursor: pointer;
 }
 
@@ -92,16 +105,38 @@ article {
     text-align: center;
 }
 
-/* for medium devices */
-@media (min-width : 480px) {
+
+@media (min-width : 500px) {
     article.coffeeGrid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .coffeeWrap .overflow {
+        width: 240px;
+        height: 240px;
+    }
+
+    .overflow .coffeeImg {
+        width: 240px;
+        height: 240px;
+
+    }
 }
 
-@media (min-width : 768px) {
+@media (min-width : 780px) {
     article.coffeeGrid {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .coffeeWrap .overflow {
+        width: 250px;
+        height: 250px;
+    }
+
+    .overflow .coffeeImg {
+        width: 250px;
+        height: 250px;
+
     }
 }
 
@@ -110,10 +145,19 @@ article {
     article.coffeeGrid {
         grid-template-columns: repeat(4, 1fr);
     }
+
+    .coffeeWrap .overflow {
+        width: 225px;
+        height: 225px;
+    }
+
+    .overflow .coffeeImg {
+        width: 225px;
+        height: 225px;
+    }
 }
 
 /* 추가적으로 구현 해볼거 */
 /* nav bar fixed */
 /* max-width: 768px nav bar toggle */
 /* image hover fix */
-
