@@ -43,11 +43,6 @@ nav {
   margin-left: 15px;
   color: black;
 }
-/* 
-figure {
-  display: flex;
-  margin: auto;
-} */
 
 .coffee-menu {
   display: flex;
@@ -55,29 +50,23 @@ figure {
   text-align: center;
 }
 
-/* .coffee-menu li {
-  margin-left: 30px;
-  max-width: 25vw;
-  height: 50vh;
-} */
-
 .coffee-menu a {
-  overflow: hidden;
   margin-left: 30px;
+  overflow: hidden;
 }
 
 .coffee-menu img {
-  object-fit: cover;
   width: 20vw;
   height: 40vh;
+  object-fit: cover;
 }
 
 .coffee-menu img:hover {
+  transition-duration: 0.4s;
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
-  transition-duration: 0.4s;
 }
 
 img {
