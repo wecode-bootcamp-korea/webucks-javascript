@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: ceneter;
+  align-items: center;
+}
+
+.container {
+  width: 70%;
+}
+
+.header .title {
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f4f4f2;
+}
+
+.header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 500px;
+  color: #b9b9b4;
+  list-style: none;
+}
+
+.subTitle {
+  display: flex;
+  justify-content: ceneter;
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #f4f4f2;
+}
+
+.subTitle .subtitle {
+  padding-right: 20px;
+}
+
+.subTitle .fa-mug-saucer {
+  width: 40px;
+  padding-right: 10px;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+}
+
+.product a {
+  text-decoration: none;
+  color: black;
+}
+
+.product .hidden {
+  width: 300px;
+  height: 313px;
+  overflow: hidden;
+}
+
+.product li {
+  list-style: none;
+  padding-left: 25px;
+}
+
+.product img {
+  width: 300px;
+  height: 313px;
+}
+
+.product li .coffeeName {
+  text-align: center;
+  padding: 10px;
+}
+
+.product li .fa-solid.fa-heart {
+  color: red;
+}
+.product img:hover {
+  transform: scale(1.1);
+  transition: all 1s ease;
+}
