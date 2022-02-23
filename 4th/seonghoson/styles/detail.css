@@ -1,0 +1,155 @@
+@media (max-width: 640px) {
+  .main {
+    width: 318px;
+  }
+  .headerIcon {
+    display: none;
+  }
+  .container {
+    flex-wrap: wrap;
+  }
+  .contents {
+    margin-left: 0px !important;
+  }
+}
+@media (min-width: 641px) and (max-width: 750px) {
+  .main {
+    width: 632px;
+  }
+  .container {
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 751px) and (max-width: 840px) {
+  .main {
+    width: 740px;
+  }
+}
+
+@media (min-width: 841px) and (max-width: 991px) {
+  .main {
+    width: 825px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main {
+    width: 825px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main {
+    width: 1100px;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.containerHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.containerHeader h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+.containerHeader span {
+  align-self: flex-end;
+  font-size: 14px;
+  color: #919191;
+}
+.contents {
+  flex: 1;
+  margin-left: 30px;
+}
+.heartIcon {
+  width: 20px;
+  cursor: pointer;
+}
+.contentsTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 2px solid;
+}
+.contentsTitle h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.contentsSummary {
+  padding: 20px 0px;
+  font-weight: 500;
+  color: #3e3e3e;
+}
+.contentsInfomation {
+  margin-bottom: 20px;
+}
+.infomationHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 6px;
+}
+.infomationHeader span {
+  font-size: 14px;
+}
+.infomationDetail {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20px;
+}
+.detailBox {
+  flex: 1;
+  padding: 20px 8px;
+}
+.detailBox:nth-child(1) {
+  border-right: 1px solid #ddd;
+}
+.detailBox div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+.infomationAllergy {
+  padding: 12px;
+  background-color: #efefef;
+  font-size: 14px;
+}
+.reviewHeader {
+  padding-bottom: 8px;
+  font-weight: 600;
+}
+.reviewList {
+  padding: 10px 0px;
+  font-size: 14px;
+}
+.reviewList ul li span {
+  margin-right: 6px;
+  font-weight: bold;
+}
+.contentsReview input {
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+  border: 0;
+  background-color: #efefef;
+}
+picture img {
+  width: 320px;
+}
+.reviewHeader,
+.infomationHeader,
+.contentsSummary {
+  border-bottom: 1px solid #ddd;
+}

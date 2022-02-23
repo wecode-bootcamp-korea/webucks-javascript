@@ -1,0 +1,96 @@
+[
+  {
+    "id": "CB0001",
+    "image": "https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[9200000002487]_20210426091745467.jpg",
+    "name": "나이트로 바닐라 크림",
+    "summary": "부드러운 목넘김의 나이트로 커피와 바닐라 크림의 매력을 한번에 느껴보세요!",
+    "type": "coldBrew",
+    "nourishment": {
+      "kal": 80,
+      "saturatedFat": 2,
+      "protein": 1,
+      "sodium": 40,
+      "sugar": 10,
+      "caffeine": 232,
+      "allergy": ["우유"]
+    },
+    "review": [
+      {
+        "id": "FJDN202FS",
+        "username": "seongho",
+        "comment": "이거 맛있어요!"
+      },
+      {
+        "id": "DWHN6022S",
+        "username": "jhon_24",
+        "comment": "부드러운 넘김이 좋아요 :)"
+      }
+    ]
+  },
+  {
+    "id": "CB0002",
+    "image": "https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[9200000000479]_20210426091843897.jpg",
+    "name": "나이트로 콜드 브루",
+    "type": "coldBrew"
+  },
+  {
+    "id": "CB0003",
+    "image": "https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[9200000002081]_20210415133656839.jpg",
+    "name": "돌체 콜드 브루",
+    "type": "coldBrew"
+  },
+  {
+    "id": "CB0004",
+    "image": "https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[9200000000487]_20210430112319040.jpg",
+    "name": "바닐라 크림 콜드 브루",
+    "type": "coldBrew"
+  },
+  {
+    "id": "CB0005",
+    "image": "https://image.istarbucks.co.kr/upload/store/skuimg/2021/03/[9200000003509]_20210322093452399.jpg",
+    "name": "벨벳 다크 모카 나이트로",
+    "type": "coldBrew"
+  },
+  {
+    "id": "CB0006",
+    "image": "https://image.istarbucks.co.kr/upload/store/skuimg/2021/08/[9200000003661]_20210819094346176.jpg",
+    "name": "시그니처 더 블랙 콜드 브루",
+    "type": "coldBrew"
+  },
+  {
+    "id": "CB0007",
+    "image": "https://image.istarbucks.co.kr/upload/store/skuimg/2020/09/[9200000002672]_20200921171223898.jpg",
+    "name": "제주 비자림 콜드 브루",
+    "type": "coldBrew"
+  },
+  {
+    "id": "CB0008",
+    "image": "https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[9200000000038]_20210430113202458.jpg",
+    "name": "콜드 브루",
+    "type": "coldBrew"
+  },
+  {
+    "id": "CB0009",
+    "image": "https://image.istarbucks.co.kr/upload/store/skuimg/2021/02/[9200000001636]_20210225093600536.jpg",
+    "name": "콜드 브루 몰트",
+    "type": "coldBrew"
+  },
+  {
+    "id": "CB0010",
+    "image": "https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[9200000003285]_20210416154437069.jpg",
+    "name": "콜드 브루 오트 라떼",
+    "type": "coldBrew"
+  },
+  {
+    "id": "CB0011",
+    "image": "https://image.istarbucks.co.kr/upload/store/skuimg/2021/02/[9200000001635]_20210225092236748.jpg",
+    "name": "콜드 브루 플로트",
+    "type": "coldBrew"
+  },
+  {
+    "id": "CB0012",
+    "image": "https://image.istarbucks.co.kr/upload/store/skuimg/2021/03/[9200000003507]_20210322093414289.jpg",
+    "name": "프렌치 애플 타르트 나이트로",
+    "type": "coldBrew"
+  }
+]

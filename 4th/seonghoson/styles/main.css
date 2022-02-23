@@ -1,0 +1,36 @@
+.header {
+  width: -webkit-fill-available;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  align-items: center;
+  top: 0;
+  padding: 0px 20px;
+  background-color: #f4f4f2;
+}
+.header div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  font-size: 34px;
+  font-weight: bold;
+  font-family: "Dancing Script", cursive;
+  cursor: pointer;
+}
+.header div:nth-child(2) {
+  font-size: 14px;
+  font-family: system-ui;
+  color: #a1a1a1;
+}
+.header div span {
+  margin: 0px 10px;
+  color: #211814e0;
+  cursor: pointer;
+}
+.headerIcon {
+  width: 42px;
+}
+.main {
+  margin: 120px auto;
+}
