@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 60px;
+    background-color: bisque;
+    text-indent: 20px;
+}
+
+.header__title {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.header__btn {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    list-style: none;
+    color: rgb(170, 170, 170);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.header__btn li {
+    padding-left: 20px;
+}
+
+
+main {
+    margin: 40px 70px;
+}
+
+.detail__title {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.detail__path {
+    color: rgb(170, 170, 170);
+    text-align: right;
+}
+
+article img {
+    width: 400px;
+    margin-right: 40px;
+}
+
+article  {
+    display: flex;
+    align-items: flex-start;
+}
+
+.coffeeDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coffeeDetails__titleBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.coffeeDetails__title {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.coffeeDetails__description {
+    margin: 26px 0;
+}
+
+.coffeeDetails__line {
+    border: 2px solid darkgray;
+}
+
+
+
+.coffeeDetails__container__nutrition {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: larger;
+}
+
+.container__nutrition__info {
+    display: flex;
+    justify-content:space-between;
+    padding: 10px;
+    line-height: 180%;
+}
+
+.nutrition__info__line {
+    position: absolute;
+    top: 410px;
+    right: 530px;
+    width: 1.5px;
+    background-color: lightgray;
+    height: 13%;
+}
+
+.txtRight {
+    text-align: right;
+}
+
+
+.coffeeDetails__allergy {
+    padding: 14px 16px;
+    margin: 20px 0;
+    border-radius: 2px;
+    background-color: lightgray;
+}
+
+
+.review__title {
+    margin-top: 40px;
+    font-size:larger;
+    font-weight: bold;
+}
+
+.review__id {
+    font-weight: bold;
+    font-size: small;
+}
+
+.review__text {
+    font-size: small;
+}
+
+.review__input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 2px;
+    background-color: lightgray;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-color: gray;
+    color: whitesmoke;;
+}
+
+footer li {
+    padding: 4px;
+    list-style: none;
+}
