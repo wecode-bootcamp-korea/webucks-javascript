@@ -1,0 +1,41 @@
+body{
+    
+    background-color: gainsboro;
+    
+}
+
+
+
+form{
+    background-color: white;
+    border-radius: 3px;
+    width: 300px;
+    height: 400px;
+    border: 1px solid rgb(139, 130, 130);
+    position:absolute;
+    left: 30%;
+    top: 20%;
+}
+p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+input{
+    border-radius: 5px;
+    background-color: #d3d3d3;
+    padding-bottom:5px;
+}
+
+button{
+    border-radius: 5px;
+    border:1px solid #86c5e5;
+    background-color: #86c5e5;
+    width: 55%;
+    
+}
+.box{
+    
+  
+}

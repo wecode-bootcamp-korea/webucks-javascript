@@ -1,0 +1,43 @@
+.container{
+    width: 400px;
+    height: 450px;
+    margin: auto;
+    margin-top: 30px;
+    border: 1px solid gainsboro;
+    border-radius: 5px; 
+    text-align: center;
+
+}
+
+.box{
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    font-weight: bold;
+}
+.id,.pw{
+    display: inline-block;
+    width:300px;
+    margin: 5px 30px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 5px solid gainsboro;
+    font-weight: bold;
+    background-color: gainsboro;
+}
+
+.btn{
+  display:inline-block;
+  width: 300px;
+  height: 30px;
+  margin: 5px 30px;
+  border-radius: 5px;
+  border: white;
+  background-color: skyblue;
+  color: white;
+  opacity: 0.5;
+  
+}
+.forgotpw{
+    display: block;
+    margin-top: 60px;
+}
