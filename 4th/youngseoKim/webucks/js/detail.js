@@ -46,35 +46,22 @@ input_review.addEventListener("keyup", (e) => {
     review_text.value = "";
   }
 });
-// const review_content = document.getElementsByClassName("review_content")[0];
-// //댓글 하트, 삭제
-// review_list.addEventListener("click", (e) => {
-//   //하트 색 바꾸기
-//   if (
-//     e.target.className === "fa-regular fa-heart" ||
-//     e.target.className === "fa-solid fa-heart"
-//   ) {
-//     if (e.target.className === "fa-regular fa-heart") {
-//       e.target.className = "fa-solid fa-heart";
-//     } else {
-//       e.target.className = "fa-regular fa-heart";
-//     }
-//   }
-//   //삭제 하기
-//   if (e.target.className === "fa-solid fa-trash-can") {
-//     review_content.removeChild(e.path[1]);
-//   }
-// });
-
-//댓글 하트 삭제 for
-
-const trash_items = document.getElementsByClassName("fa-solid fa-trash-can");
 const review_content = document.getElementsByClassName("review_content")[0];
-
-for (let i = 0; i < trash_items.length; i++) {
-  const trash_item = trash_items[i];
-  console.log(trash_item);
-  trash_item.addEventListener("click", (e) => {
+// //댓글 하트, 삭제
+review_list.addEventListener("click", (e) => {
+  //하트 색 바꾸기
+  if (
+    e.target.className === "fa-regular fa-heart" ||
+    e.target.className === "fa-solid fa-heart"
+  ) {
+    if (e.target.className === "fa-regular fa-heart") {
+      e.target.className = "fa-solid fa-heart";
+    } else {
+      e.target.className = "fa-regular fa-heart";
+    }
+  }
+  //삭제 하기
+  if (e.target.className === "fa-solid fa-trash-can") {
     review_content.removeChild(e.path[1]);
-  });
-}
+  }
+});

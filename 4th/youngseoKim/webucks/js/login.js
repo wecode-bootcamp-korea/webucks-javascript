@@ -1,6 +1,5 @@
 const idInput = document.getElementById("idInput");
 const pwInput = document.getElementById("pwInput");
-
 const loginBtn = document.getElementsByClassName("loginBtn")[0];
 
 const buttonActivate = (e) => {
