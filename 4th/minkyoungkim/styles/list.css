@@ -1,0 +1,97 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{ 
+    display: flex;
+    flex-direction: column;
+    max-width: 1067px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    background-color:#F6F5F0
+}
+
+.logo{
+    font-family: 'Dancing Script', cursive;
+    font-size: 16px;
+}
+
+.menu{
+     display: flex;
+     list-style: none;
+}
+.menu li{
+    display: block;
+    padding-right: 30px;
+    font-size: 13px;
+    color: #797975;
+    cursor: pointer;
+}
+.menu li:last-child{
+    padding-right: 0;
+}
+
+.title-box{
+    display: flex;
+    justify-content: flex-start;
+    height: 60px;
+    margin-bottom: 20px;
+    line-height: 60px;
+    padding: 0 20px;
+    background-color:#F4F4F2;
+}
+
+.title-box h2{
+    font-size: 18px;
+}
+.title-box span{
+    padding: 0 20px 12px;
+}
+.title-box p{
+    font-size: 13px;
+}
+
+.coffee-contents{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 29px;
+    margin-bottom: 40px;
+
+}
+
+
+
+.coffee-imgBox{
+    margin-bottom: 15px;
+    height: 260px;
+    width: 245px;  
+    overflow: hidden;
+}
+
+.coffee-imgBox > img{
+    object-fit: cover;
+    width: 100%;
+    transition: transform 1s;
+    cursor: pointer;
+}
+
+
+
+.coffee-contents p {
+    text-align: center;
+}
+
+.coffee-imgBox img:hover{
+    transform: scale(1.1, 1.1);
+  }
