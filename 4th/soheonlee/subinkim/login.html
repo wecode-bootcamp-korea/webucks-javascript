@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favi.png">
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <title>WeBuks Login</title>
+</head>
+<body>
+    <section id="loginSection">
+        <h2 id="title">WeBukcs</h2>
+        
+        <form class="loginForm" action="">
+            <div>
+                <input class="loginInput email"type="text" placeholder="전화번호,사용자 이름 또는 이메일" />
+            </div>
+            <div>
+                <input class="loginInput pw" type="password" placeholder="비밀번호" />
+            </div>
+            <button 
+                class="loginButton" 
+                type="button" 
+                onclick = nextPage()
+                disabled>
+                로그인
+            </button>
+        </form>
+       
+        <a class="forgetPW" href="#">비밀번호를 잊으셨나요?</a>      
+    </section>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
