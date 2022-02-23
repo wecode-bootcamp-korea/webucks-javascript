@@ -20,5 +20,6 @@ thisIsReview.addEventListener('keyup', function post(e){
     const reply = document.createElement('p');
     reply.innerHTML = thisIsReview.value;
     reviewList.appendChild(reply);
+    thisIsReview.value = "";
   }
 })
