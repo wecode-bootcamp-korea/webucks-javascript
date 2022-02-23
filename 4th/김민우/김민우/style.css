@@ -1,0 +1,16 @@
+.container{
+  width: 400px;
+  height: 450px;
+  margin: 50px auto;
+  padding: 60px 30px;
+  border: 2px solid #e4e4e4;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.logo{
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 70px;
+  font-family: 'Dancing Script', cursive;
+}
