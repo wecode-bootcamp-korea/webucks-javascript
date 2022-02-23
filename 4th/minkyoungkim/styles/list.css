@@ -64,8 +64,6 @@ header{
 
 }
 
-
-
 .coffee-imgBox{
     margin-bottom: 15px;
     height: 260px;
@@ -79,8 +77,6 @@ header{
     transition: transform 1s;
     cursor: pointer;
 }
-
-
 
 .coffee-contents p {
     text-align: center;
