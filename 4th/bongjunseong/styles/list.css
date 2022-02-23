@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 1080px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 60px;
+  background-color: #f6f5f0;
+  border: 0px;
+  border-radius: 3px;
+  padding: 0px 25px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 24px;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  list-style: none;
+}
+
+.nav ul li {
+  font-size: 14px;
+  color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+}
+
+section {
+  width: 100%;
+}
+
+.cateBar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  height: 60px;
+  width: 100%;
+  background-color: #f6f5f0;
+  border: 0px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  padding: 0px 25px;
+}
+
+.cateName {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 25px;
+}
+
+.cateExplain {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.deCaf {
+  width: 50px;
+  margin-right: 5px;
+}
+
+article ul {
+  width: 100%;
+  padding: 0px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.img {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.imgEmpty {
+  width: 250px;
+  height: 0px;
+}
+
+.scale img {
+  width: 250px;
+  margin-bottom: 10px;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transition: all 1s;
+  transition-timing-function: ease;
+}
+.scale :hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transition: all 1s;
+  transition-timing-function: ease;
+}
+
+p {
+  margin: 5px 5px 25px 5px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
