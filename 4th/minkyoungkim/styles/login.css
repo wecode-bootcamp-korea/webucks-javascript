@@ -1,10 +1,3 @@
-*{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
-}
-
-
 main {
     display: flex;
     align-items: center;
@@ -20,7 +13,7 @@ main {
     width: 100%; 
     margin: 0 auto;
     padding: 0 70px;
-    /* border: 1px solid #ddd;  */
+    border: 1px solid #ddd; 
     box-sizing: border-box;
     border-radius: 3px;
 }
@@ -38,9 +31,8 @@ main {
 }
 
 input{
-    height: 50px;
     margin-bottom: 28px;
-    padding: 0 10px;
+    padding: 15px 10px;
     border: 1px solid #ddd;
     box-sizing: border-box;
     border-radius: 5px;
@@ -49,11 +41,12 @@ input{
 }
 
 button{
-    height: 50px;
+    padding: 15px 0;
     color:#fff;
-    background-color: #ADD3EB;
+    background-color: #61ADED;
     border: none;
     border-radius: 10px;
+    opacity: 0.5;
     font-size: 20px;
     cursor: pointer;
     

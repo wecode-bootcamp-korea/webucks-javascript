@@ -10,17 +10,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">    
     <!-- css -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/login.css">
 </head>
 <body>
     <main>
         <div class="container">
             <h1 class="logo">WeBucks</h1>
-            <form id="login-form">
+            <form id="login-form" action="./list.html">
                 <input  name="email" id="email" type="text" placeholder="전화번호, 사용자 이름 또는 이메일">
                 <input  id="password" type="password" value="" placeholder="비밀번호">
             </form>
-            <button id="loginBtn" type="submit">로그인</button>
+            <button id="loginBtn" type="submit" disabled="false">로그인</button>
             <a class="forgetPW" href="#">비밀번호를 잊으셨나요?</a>
         </div>
     </main>
