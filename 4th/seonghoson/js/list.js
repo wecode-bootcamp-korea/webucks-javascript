@@ -1,9 +1,4 @@
-const logoutBtn = document.getElementById("logoutBtn");
 const contentsForm = document.getElementsByClassName("contents");
-
-logoutBtn.addEventListener("click", (e) => {
-  window.location = "http://localhost:5500/login.html?";
-});
 
 fetch("data/coldbrew.json").then((response) => {
   response.json().then((res) => {
@@ -14,6 +9,7 @@ fetch("data/coldbrew.json").then((response) => {
       node.id = item.id;
       node.innerHTML = `<picture class="imageWrap" onclick="goDetail(${node.id})">
               <img
+                alt="coffee"
                 class="coffeeImage"
                 src="${item.image}"
               />
@@ -33,6 +29,7 @@ fetch("data/brood.json").then((response) => {
       node.id = item.id;
       node.innerHTML = `<picture class="imageWrap" onclick="goDetail(${node.id})">
               <img
+                alt="coffee-cup"
                 class="coffeeImage"
                 src="${item.image}"
               />

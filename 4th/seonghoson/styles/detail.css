@@ -11,6 +11,12 @@
   .contents {
     margin-left: 0px !important;
   }
+  .containerHeader h1 {
+    flex: 1;
+  }
+  .containerHeader span {
+    flex: 1;
+  }
 }
 @media (min-width: 641px) and (max-width: 750px) {
   .main {
@@ -87,11 +93,14 @@
 
 .contentsSummary {
   padding: 20px 0px;
-  font-weight: 500;
+  font: caption;
+  font-family: serif;
+  font-size: 14px;
+  font-weight: bold;
   color: #3e3e3e;
 }
 .contentsInfomation {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .infomationHeader {
   display: flex;
@@ -105,11 +114,11 @@
 .infomationDetail {
   display: flex;
   flex-direction: row;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
 }
 .detailBox {
   flex: 1;
-  padding: 20px 8px;
+  padding: 18px 10px 0px;
 }
 .detailBox:nth-child(1) {
   border-right: 1px solid #ddd;
@@ -118,7 +127,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 12px;
+  margin-bottom: 26px;
   font-size: 14px;
 }
 .infomationAllergy {
@@ -131,8 +140,17 @@
   font-weight: 600;
 }
 .reviewList {
-  padding: 10px 0px;
+  overflow: scroll;
+  max-height: 65px;
+  margin-top: 10px;
   font-size: 14px;
+}
+.reviewList ul {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.reviewList ul li {
+  margin-bottom: 8px;
 }
 .reviewList ul li span {
   margin-right: 6px;
@@ -140,7 +158,6 @@
 }
 .contentsReview input {
   width: 100%;
-  margin-top: 5px;
   padding: 10px;
   border: 0;
   background-color: #efefef;
@@ -152,4 +169,7 @@ picture img {
 .infomationHeader,
 .contentsSummary {
   border-bottom: 1px solid #ddd;
+}
+.isLike {
+  color: #ff0000;
 }

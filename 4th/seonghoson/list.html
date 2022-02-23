@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="styles/reset.css" />
-    <link rel="stylesheet" type="text/css" href="styles/main.css" />
-    <link rel="stylesheet" type="text/css" href="styles/list.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" type="text/css" href="styles/reset.css" />
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="styles/list.css" />
     <link
       href="assets/image/coffee-cup.png"
       rel="shortcut icon"
@@ -22,9 +22,13 @@
   </head>
   <body>
     <header class="header">
-      <div>
-        <img src="assets/image/coffee-cup.png" class="headerIcon icon" />
-        <h1>We bucks</h1>
+      <div class="headerLogo">
+        <img
+          alt="coffee-cup"
+          class="headerIcon icon"
+          src="assets/image/coffee-cup.png"
+        />
+        <span>We bucks</span>
       </div>
       <div>
         <span>COFFEE</span>
@@ -37,7 +41,11 @@
       <article class="containerWrapper">
         <header class="containerHeader">
           <span class="headerTitle">콜드 브루 커피</span>
-          <img class="headerTitle icon" src="assets/image/grinder.png" />
+          <img
+            alt="grinder"
+            class="headerTitle icon"
+            src="assets/image/grinder.png"
+          />
           <span class="headerTitle"
             >디카페인 에스프레소 샷 추가 가능 (일부 음료 제외)</span
           >
@@ -47,7 +55,11 @@
       <article class="containerWrapper">
         <header class="containerHeader">
           <span class="headerTitle">브루드 커피</span>
-          <img class="headerTitle icon" src="assets/image/grinder.png" />
+          <img
+            alt="grinder"
+            class="headerTitle icon"
+            src="assets/image/grinder.png"
+          />
           <span class="headerTitle"
             >디카페인 에스프레소 샷 추가 가능 (일부 음료 제외)</span
           >
@@ -55,6 +67,7 @@
         <div class="container brood" />
       </article>
     </section>
+    <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/list.js"></script>
   </body>
 </html>

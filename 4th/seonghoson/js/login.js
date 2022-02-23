@@ -2,6 +2,10 @@ const loginId = document.getElementById("loginId");
 const loginPw = document.getElementById("loginPw");
 const loginBtn = document.getElementById("loginBtn");
 
+if (!localStorage.getItem("like")) {
+  localStorage.setItem("like", JSON.stringify([]));
+}
+
 let isGoodId = false;
 let isGoodPw = false;
 

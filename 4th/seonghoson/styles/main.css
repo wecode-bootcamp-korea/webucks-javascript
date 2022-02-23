@@ -34,3 +34,9 @@
 .main {
   margin: 120px auto;
 }
+i {
+  cursor: pointer;
+}
+input:focus {
+  outline: none;
+}
