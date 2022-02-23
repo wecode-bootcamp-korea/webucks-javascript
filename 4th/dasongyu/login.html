@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webucks</title>
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login-box">
+        <h1>WeBucks</h1>
+        <div class="login-input">
+            <input type="text" id="input-id" placeholder="전화번호,사용자 이름 또는 이메일"></input>
+            <input type="password" id="input-pw" placeholder="비밀번호" minlength = "8" ></input>
+        </div>
+        <div class="login-button">
+            <button id="button" disabled="disabled" onclick="location.href='list.html' ">로그인</button>
+        </div>
+        <p class="isfind-pw">비밀번호를 잊으셨나요?</p>
+    </div>
+
+
+    <script src="js/login.js"></script>
+</body>
+</html>
