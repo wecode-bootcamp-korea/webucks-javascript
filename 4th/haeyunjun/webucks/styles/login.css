@@ -1,0 +1,49 @@
+.container {           /*<form>*/
+    width:   300px;
+    height:  400px;
+    margin:  50px auto; /*브라우저 화면에서 양옆 margin 똑같이*/
+    padding: 20px 30px 30px 30px;
+    border:  1px solid black;
+    border-radius: 4px;
+    text-align: center;/*<form>내부 모든요소의 텍스트를 중앙으로*/
+}
+
+.logo {
+    margin-bottom: 25px;
+    font-size:     50px;
+    font-family:   'Dancing script',cursive;
+    font-weight:   900;
+}
+
+.container input {
+    display:  inline-block;
+    width:    260px;
+    padding:  8px;
+    margin-bottom: 17px;
+    border:   1px solid #acacac;
+    border-radius: 3px;
+    background-color: #f7f7f7;
+}
+
+
+.loginButton {
+    display: block;
+    width :  280px;
+    margin:  auto;
+    padding: 8px;
+    font-weight: 900;
+    border:  1px solid #add3ea;
+    border-radius: 5px;
+    color:   white;
+    background-color: #add3ea;
+
+    
+}
+
+.forgotPassword {
+    display:    block;
+    margin-top: 100px;
+    font-size:  13px;
+    font-weight: bold;
+    color:    #92b3c7;
+}
