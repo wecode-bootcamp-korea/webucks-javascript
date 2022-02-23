@@ -1,0 +1,79 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  margin-bottom: 30px;
+  background-color: #f6f5f0;
+}
+
+.nav-logo {
+  margin: 0;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.nav-links a {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links a:hover {
+  padding: 5px 10px;
+  border-radius: 10px;
+  opacity: 0.5;
+  background-color: #fdcb6e;
+}
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+}
+.product-coffee {
+  display: flex;
+  align-items: center;
+  padding: 25px 0 25px 40px;
+  margin-bottom: 30px;
+  background-color: #f6f5f0;
+}
+
+.product-coffee h5 {
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.product-coffee i {
+  margin: 0px 20px;
+  font-size: 24px;
+}
+
+.coffee-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  margin-bottom: 30px;
+  padding: 0 40px;
+}
+.coffee-list .coffee {
+  text-align: center;
+}
+
+.coffee img {
+  max-width: 100%;
+  transition: all 0.3s ease 0s;
+}
+
+.coffee img:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.coffee .name {
+  padding: 1em;
+}
