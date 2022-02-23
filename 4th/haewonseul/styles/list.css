@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+nav{
+    background-color: #F6F5F0;
+    display:flex;
+    justify-content:space-between;
+}
+h1{
+    font-size:40px;
+    font-family: 'Dancing Script', cursive;
+    margin:5px;
+}
+p {
+    font-size:15px;
+    font-weight: bold;
+}
+nav ul li{
+    list-style: none;
+    float:left;
+    margin-right:30px;
+    font-size:20px;
+    font-weight:bolder;
+    color:#B6B6B1;
+}
+section{
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+}
+.coldbrew{
+    width:100%;
+    background-color: #F6F5F0;
+    margin-top:20px;
+    display:flex;
+    align-items: center;
+}
+.brud{
+    width:100%;
+    background-color: #F6F5F0;
+    margin-top:20px;
+    display:flex;
+    padding:0px;
+    align-items: center;
+}
+#logo{
+    width:30px;
+    height:30px;
+}
+.wrap{
+    width:70vw;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.coffee{
+    width:300px;
+    padding:10px;
+    display:inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width:100%;
+}
+.imgBlock{
+    height:310px;
+    width:300px;
+    overflow:hidden;
+}
+.image {
+    transition: all 0.8s linear;
+  }
+.image:hover{
+    transform: scale(1.2);
+}

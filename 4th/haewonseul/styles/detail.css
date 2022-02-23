@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+}
+nav{
+    background-color: #F6F5F0;
+    display:flex;
+    justify-content:space-between;
+}
+h1{
+    font-size:40px;
+    font-family: 'Dancing Script', cursive;
+    margin:5px;
+}
+nav ul li{
+    list-style: none;
+    float:left;
+    margin-right:30px;
+    font-size:20px;
+    font-weight:bolder;
+    color:#B6B6B1;
+}
+table{
+    border-collapse: collapse;
+}
+th{
+    border-top:1px solid gray;
+    border-bottom:1px solid gray;
+    border-left:0px;
+    border-right:0px;
+    padding:10px;
+}
+td, tr{
+    padding:10px;
+}
+.first_th{
+    text-align: left;
+}
+.second_th{
+    text-align: right;
+}
+.borderline{
+    border-right:2px dotted gray;
+}
+.imgBox img{
+    width:330px;
+}
+section{
+    height:58vh;
+    padding:10px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    border: 5px solid pink;
+    overflow: auto;
+    position:relative;
+}
+p{
+    padding:0px;
+    margin:0px;
+}
+.container{
+    width:50vw;
+    display: inline-flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    border:1px solid yellow;
+    position:absolute;
+    top:0;
+}
+.path{
+    width:95%;
+    display:flex;
+    justify-content: flex-end;
+    margin-bottom:10px;
+}
+.wrap{
+    margin-left:20px;
+    display:flex;
+    flex-direction: column;
+}
+.title{
+    font-size:30px;
+    font-weight: bold;
+    position:relative;
+}
+.heart{
+    color:#CFCFCF;
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    font-size:27px;
+}
+.allergy{
+    margin-top:20px;
+    padding:15px;
+    background-color: #EFEFEF;
+}
+.review{
+    padding:10px;
+    background-color: #EFEFEF;
+    border: 0px;
+    margin-bottom:10px;
+}
+.space{
+    height:2000px;
+}
+footer{
+    width:100%;
+    position:absolute;
+    bottom:0;
+    left:0;
+    background-color: #333333;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    color:white;
+    padding:3px;
+}
+.list{
+    width:1000px;
+    display:flex;
+    font-weight: bold;
+    font-size:13px;
+    margin:30px;
+}
+h4{
+    padding:0px;
+    margin:0px;
+}
+.reviewContainer{
+    border: 1px solid black;
+    padding:0px;
+    margin-bottom:10px;
+}
+.reviewBox{
+    display:flex;
+    justify-content: space-between;
+}
+.iconBox{
+    display:flex;
+}
+.intro{
+    margin-top:5px;
+    margin-bottom:25px;
+}
+.eng_name{
+    border-bottom:2px solid black;
+    margin-bottom: 10px;
+    padding-bottom:10px;
+}

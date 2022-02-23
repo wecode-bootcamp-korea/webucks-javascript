@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+body{
+    width:100%;
+    background-color:#EEEFEF;
+}
+.container{
+    width:100%;
+    justify-content:center;
+    display: flex;
+    align-items: center;
+    background-color: #EEEFEF;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+input:focus{
+    outline: none !important;
+    border-color: red;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+#login_box{
+    width:400px;
+    border:2px solid #E0E0E0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:white;
+}
+
+form{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+input{
+    width:300px;
+    padding:10px;
+    margin-bottom:20px;
+    border-radius: 5px;
+    border:2px solid #E0E0E0;
+}
+#loginBtn{
+    width:330px;
+    padding:10px;
+    border-radius: 10px;
+    color:white;
+    background-color: #add3eb;
+    border:2px solid #C9E2F1;
+    margin-bottom:160px;
+}
+h1{
+    font-size:60px;
+    font-family: 'Dancing Script', cursive;
+}
+.container a{
+    margin-bottom:70px;
+}
+.pwdBox{
+    position:relative;
+}
+.fa-eye-slash{
+    position:absolute;
+    right:10px;
+    bottom:50%;
+}
+.fa-eye{
+    position:absolute;
+    right:10px;
+    bottom:50%;
+    visibility: hidden;
+}
