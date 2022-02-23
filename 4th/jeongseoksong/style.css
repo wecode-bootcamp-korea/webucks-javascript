@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #edf0ef;
+  display: flex;
+  justify-content: center;
+}
+
+.login {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 500px;
+  margin-top: 50px;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+}
+
+.loginLogo {
+  width: 200px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.inputForm {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.loginId {
+  margin: 10px 10px 10px 10px;
+  height: 30px;
+  background-color: #f7f7f7;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+  outline: none;
+}
+
+.loginPasswd {
+  margin: 10px 10px 10px 10px;
+  height: 30px;
+  background-color: #f7f7f7;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+  outline: none;
+}
+
+.loginButton {
+  margin: 10px 10px 10px 10px;
+  height: 35px;
+  width: 280px;
+  background-color: #5eafe9;
+  border: 1px solid #aed2eb;
+  border-radius: 5px;
+  color: white;
+  outline: none;
+  opacity: 0.5;
+}
+
+.lostPasswd {
+  margin-top: 150px;
+  color: #98b1c3;
+  font-size: 12px;
+  font-weight: bold;
+}
