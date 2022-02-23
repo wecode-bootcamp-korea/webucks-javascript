@@ -3,3 +3,41 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    background-color:#F6F5F0
+}
+
+.logo{
+    font-family: 'Dancing Script', cursive;
+    font-size: 16px;
+}
+
+.menu{
+     display: flex;
+     list-style: none;
+}
+.menu li{
+    display: block;
+    padding-right: 30px;
+    font-size: 13px;
+    color: #797975;
+    cursor: pointer;
+}
+.menu li:last-child{
+    padding-right: 0;
+}
+
+.container{ 
+    display: flex;
+    flex-direction: column;
+    max-width: 1067px;
+    width: 100%;
+    margin: 0 auto;
+}
