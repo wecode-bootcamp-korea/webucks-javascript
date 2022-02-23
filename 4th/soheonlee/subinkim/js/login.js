@@ -24,7 +24,7 @@ function toList() {
 // ENTER키 누르면 화면 넘어가는 이벤트
 window.addEventListener('keyup', function(e) {
     if(e.key === 'Enter' && !loginButton.disabled) {
-        nextPage();        
+        toList();        
     }
 });
 
