@@ -2,11 +2,11 @@
     box-sizing: border-box;
 }
 
-/* body{
+body{
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-} */
+}
 
 main{
     display: flex;
@@ -16,7 +16,6 @@ main{
     width: 400px;
     padding: 60px 0;
     border: 2px solid #e0e0e0;
-    text-align: center;
 }
 
 form{
