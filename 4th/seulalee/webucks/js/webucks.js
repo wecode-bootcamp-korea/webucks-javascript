@@ -16,7 +16,8 @@ inputBox.forEach((item, index) => {
 
     inputText.addEventListener('keyup', e => {
         const changeInputBgColor = () => {
-            let inputBgColor = e.target.parentNode.style; //backgroundColor까지 변수로 지정할경우 백그라운드 컬러를 잡아내지 못함
+            let inputBgColor = e.target.parentNode.style; 
+            //backgroundColor까지 변수로 지정할경우 백그라운드 컬러를 잡아내지 못함
             if (!!e.target.value > 0) {
                 //20번째줄 !!이 없으면 작동하지 않음.
                 inputBgColor.backgroundColor = "#fff";
