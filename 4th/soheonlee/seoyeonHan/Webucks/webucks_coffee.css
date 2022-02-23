@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*header부분*/
+header{
+    width: 100%; height: 60px;
+    padding: 10px 20px;
+    background-color: #F6F5EF;
+}
+.webucksLogo{ 
+    float: left;
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
+}
+header> nav{
+    margin-top: 8px;
+    float: right;
+    color: gray;
+}
+header> nav> span{
+    padding: 0px 10px;
+}
+
+/*webucksBrew*/
+#coldBrew, #brewed{
+    width: 100%; height: 55px;
+    margin-top: 25px;
+    padding: 10px 20px;
+    background-color: #F6F5EF;
+}
+#brewed{
+    margin-top: 30px;
+    overflow: hidden;
+}
+h1{
+    padding-top: 4px;
+    float: left;
+    font-size: 18px;
+}
+.decafImg{
+    width: 45px;
+    margin: 0px 5px 0px 10px;
+    float: left;
+}
+.decafInfo{
+
+}
+
+/*main*/
+main{
+    width: 100%; height: 70%;
+}
+dl{
+    margin-bottom: 40px;
+}
+dt{
+    height: 313px;
+}
+dd{
+    height: 54px;
+    line-height: 54px;
+    text-align: center;
+}
+
+#productColdbrew{
+    width: 100%; height: auto;
+}
+
+.menuData{
+    list-style: none;
+    float: left;
+    padding: 20px 10px;
+    transform: scale(1.0);
+    transition: transform .4s;
+}
+
+.menuData:hover {
+    transform: scale(1.4);
+    transition: transform .4s;
+    overflow: hidden;
+}

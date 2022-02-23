@@ -1,0 +1,53 @@
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#webucksLoginPage{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    margin: 50px;
+    width: 380px; height: 480px;
+    border: 2px solid #aeaeae;
+    align-items: center;
+}
+
+img{
+    width: 200px; height: 64px;
+}
+
+#main{
+    position: relative;
+    width: 82%;
+    margin-top: 30px;
+}
+
+#main> form> input, #btn{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+#idValue, #pwdValue{
+    border: 1px solid rgb(189, 189, 189);
+    background-color:#efefef;
+}
+
+#btn{
+    color: white;
+    background-color: rgb(77, 139, 211);
+    border: 1px solid #cbe3f2;
+    opacity: 0.5;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+a{
+    position: absolute;
+    top: 55%;
+    font-size: 13px;
+    text-decoration: none;
+}
