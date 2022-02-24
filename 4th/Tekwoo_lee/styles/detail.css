@@ -149,6 +149,8 @@ body h1 {
 .review {
   overflow: hidden;
   margin-bottom: 2rem;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: small;
 }
 
 .review h4,
@@ -162,18 +164,29 @@ body h1 {
   font-size: small;
 }
 
+.review .reviewID {
+  all: unset;
+  padding: 0.5rem;
+  width: 10%;
+  background-color: #efefef;
+}
+
 .review .reviewLog {
   all: unset;
-  width: 100%;
+  width: 80%;
   padding: 0.5rem;
   margin-top: 1rem;
   background-color: #efefef;
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: small;
+}
+
+.commentUnit {
+  margin: 0;
 }
 
 .commentArea i {
   cursor: pointer;
+  padding: 0 1%;
+  font-size: small;
 }
 
 footer {
