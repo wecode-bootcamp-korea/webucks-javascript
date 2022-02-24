@@ -39,11 +39,12 @@
     transition: transform 1s;
     cursor: pointer;
 }
+.coffee-imgbox img:hover{
+    transform: scale(1.1, 1.1);
+  }
+
 
 .coffee-contents p {
     text-align: center;
 }
 
-.coffee-imgbox img:hover{
-    transform: scale(1.1, 1.1);
-  }
