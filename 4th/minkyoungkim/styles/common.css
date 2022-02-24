@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans+KR&display=swap');
+
 *{
     margin: 0 ;
     padding: 0;
@@ -9,9 +11,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 60px;
+    padding: 20px;
     margin-bottom: 20px;
-    padding: 0 20px;
     background-color:#F6F5F0
 }
 
@@ -22,7 +23,6 @@ header{
 
 .menu{
      display: flex;
-     list-style: none;
 }
 .menu li{
     display: block;

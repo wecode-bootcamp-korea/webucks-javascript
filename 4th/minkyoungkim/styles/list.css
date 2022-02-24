@@ -1,10 +1,8 @@
 .title-box{
     display: flex;
-    justify-content: flex-start;
-
-    /* margin-bottom: 20px; */
-    line-height: 60px;
-    padding: 0 20px;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
     background-color:#F4F4F2;
 }
 
@@ -12,7 +10,7 @@
     font-size: 18px;
 }
 .title-box span{
-    padding: 0 20px 12px;
+    padding:0 20px;
 }
 .title-box p{
     font-size: 13px;
@@ -40,7 +38,7 @@
     cursor: pointer;
 }
 .coffee-imgbox img:hover{
-    transform: scale(1.1, 1.1);
+    transform: scale(1.1);
   }
 
 
