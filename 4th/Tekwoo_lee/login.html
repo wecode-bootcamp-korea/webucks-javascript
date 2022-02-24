@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles/login.css" rel="stylesheet" />
+    <script defer src="js/login.js"></script>
+    <script defer src="https://kit.fontawesome.com/37073b019c.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section class="container">
+      <img src="webucksLogo.jpg" alt="logo" />
+      <form class="containLogin" action="./list.html">
+        <input
+          type="text"
+          class="Input id"
+          placeholder="전화번호, 사용자 이름 또는 이메일"
+          maxlength="50"
+        />
+        <input
+          type="password"
+          class="Input pw"
+          placeholder="비밀번호"
+          maxlength="24"
+        />
+        <i class="fa-regular fa-eye"></i>
+       <button class="loginButton" disabled = true/>
+          로그인
+      </button>
+      <a class="searchPw" href="#">비밀번호를 잊으셨나요?</a>
+    </form>
+    </section>
+  </body>
+</html>
