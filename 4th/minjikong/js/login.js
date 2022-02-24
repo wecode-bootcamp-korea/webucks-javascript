@@ -21,7 +21,7 @@ function loginBtnActive() {
 }
 
 function clickLoginBtn() {
-  location.href = '../list.html'
+  location.href = 'list.html'
 }
 
 function onEnterLogin(event) {
