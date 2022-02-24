@@ -4,23 +4,27 @@ const loginButton = document.getElementsByClassName('loginButton')[0];
 
 
 function activateButton() {
-    if(inputId.value.includes('@') && inputPw.value.length > 7){
+    if (inputId.value.includes('@') && inputPw.value.length > 7) {
         loginButton.style.backgroundColor = '#61aded';
-        //loginButton.disabled = false; //페이지 이동이 안됨...
+        //loginButton.disabled = false;
     } else {
-        loginButton.style.backgroundColor = 'yellow';
-        loginButton.disabled = true;
+        console.log('로그인버튼 비활성화');
+        loginButton.style.backgroundColor = '#add3ea';
+        //loginButton.disabled = true;
     };
 }
-inputPw.addEventListener('keyup',activateButton());
+
+function moveToListPage() {
+    if (inputId.value.includes('@') && inputPw.value.length > 7) {
+        location.href = "./list.html";
+
+    } else
+        return;
+}
+
+inputId.addEventListener('keyup',activateButton);
+inputPw.addEventListener('keyup',activateButton);
+loginButton.addEventListener('click',moveToListPage);
 
 
-//thisIsButton.addEventListener('click',moveToListPage);
-
-/* function moveToListPage(){
-    if(username.value.indexOf("@")>0 && password.value.length > 7){
-        location.href = "../list.html";
-    } else return
-} 
-*/
 
