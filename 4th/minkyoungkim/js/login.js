@@ -8,7 +8,7 @@ function activeBtn(e){
 
     e.preventDefault();
 
-    if( email.value.includes('@') && pw.value >= 7){
+    if( email.value.includes('@') && pw.value.length >= 7){
         btn.style.opacity = 1;
         btn.disabled = false;
         
