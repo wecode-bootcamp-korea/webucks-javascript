@@ -9,6 +9,7 @@ body {
     background: #EEEFEF;
 }
 
+/* login section */
 #loginSection {
     width: 400px;
     padding: 60px 50px;
@@ -17,6 +18,7 @@ body {
     border-radius: 5px;
 }
 
+/* webuks title */
 #title {
     margin-bottom: 40px;
     font-family: 'Dancing Script',
@@ -25,6 +27,7 @@ body {
     font-weight: bold;
 }
 
+/* login input */
 .loginInput {
     margin-bottom: 25px;
     padding: 15px 0 15px 10px;
@@ -34,7 +37,8 @@ body {
     border-radius: 4px;
 }
 
-.loginButton {
+/* login button */
+.loginBtn {
     margin-bottom: 120px;
     width: 93%;
     padding: 15px 0;
@@ -46,7 +50,8 @@ body {
     cursor: pointer;
 }
 
-.forgetPW {
+/* forget passwords */
+.forgetPw {
     text-decoration: none;
     font-weight: bold;
     color: #779DB6;
