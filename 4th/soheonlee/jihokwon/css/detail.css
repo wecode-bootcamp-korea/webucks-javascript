@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 600px;
+  height: 800px;
+  margin: 20px 30px;
+}
+
+a {
+  text-decoration: none;
+  color: lightgray;
+}
+
+section {
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  background-color: #f6f5ee;
+}
+
+.navbar__title {
+  padding-top: 5px;
+}
+
+.navbar__menu {
+  display: flex;
+  padding-right: 5px;
+  list-style: none;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+.navbar__menu li {
+  padding: 5px 5px;
+  font-size: 8px;
+}
+
+.coffeeTitle {
+  font-size: 17px;
+}
+
+.menuRoute {
+  color: lightgray;
+  text-align: right;
+  font-size: 7px;
+}
+
+.Container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.Container img {
+  width: 260px;
+  height: 300px;
+}
+
+.imgContainer .details {
+  margin-left: 10px;
+}
+
+.details__info {
+  border-bottom: 2px solid black;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.details__info :first-child {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.details__info :last-child {
+  font-size: 8px;
+  padding-bottom: 10px;
+}
+
+.description {
+  border-bottom: 1px solid lightgray;
+  padding: 15px 0;
+  font-size: 8px;
+}
+
+.nutritionTitle {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px lightgray;
+  font-size: 13px;
+  padding: 15px 10px;
+}
+
+.nutritionTitle li {
+  list-style: none;
+}
+
+.kcal__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container__nutritions ul {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+}
+
+.container__nutritions ul li {
+  display: flex;
+  list-style: none;
+  font-size: 8px;
+}

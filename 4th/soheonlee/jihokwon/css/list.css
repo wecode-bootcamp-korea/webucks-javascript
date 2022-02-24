@@ -14,6 +14,10 @@ a {
   color: lightgray;
 }
 
+section {
+  font-family: "Courier New", Courier, monospace;
+}
+
 h1 {
   font-weight: normal;
 }
@@ -39,7 +43,7 @@ h1 {
 
 .navbar__menu li {
   padding: 5px 5px;
-  font-size: 5px;
+  font-size: 8px;
 }
 
 .menuInfo {
@@ -57,7 +61,7 @@ h1 {
 .menuInfo li:last-child {
   padding-top: 12px;
   padding-left: 5px;
-  font-size: 2px;
+  font-size: 7px;
 }
 
 .lastList {
@@ -98,5 +102,5 @@ h1 {
   display: flex;
   justify-content: center;
   margin-top: 5px;
-  font-size: 5px;
+  font-size: 8px;
 }
