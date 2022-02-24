@@ -14,3 +14,38 @@
   font-size: 70px;
   font-family: 'Dancing Script', cursive;
 }
+
+.container input{
+  display: inline-block;
+  width: 350px;
+  margin-top: 20px;
+  padding: 5px 10px;
+  color: black;
+  background-color: yellow;
+  border:  2px solid yellow;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.loginBtn{
+  width: 374px;
+  margin-top: 20px;
+  padding: 10px 10px;
+  border: 1px solid yellow;
+  border-radius: 10px;
+  opacity: 0.5;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.active{
+  opacity: 1.0;
+}
+
+#forgotpassword{
+  display: inline-block;
+  margin-top: 130px;
+  color: gray;
+  font-weight: bold;
+}
