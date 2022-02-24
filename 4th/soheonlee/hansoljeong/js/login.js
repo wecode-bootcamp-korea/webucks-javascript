@@ -1,31 +1,16 @@
-const loginBtn = document.getElementsByClassName('login-btn')[0];
+const loginBtn = document.querySelector('.login-btn');
+const inputId = document.querySelector('.id');
+const inputPw = document.querySelector('.pw');
 
-const idInput = document.getElementsByClassName('id')[0];
-const pwInput = document.getElementsByClassName('pw')[0];
-
-
-
-idInput.addEventListener('keydown', () => {
-  const id = document.getElementsByClassName('id')[0].value;
-  const pw = document.getElementsByClassName('pw')[0].value;
-
-  if (id.includes('@') && pw.length > 7) {
-      console.log('You can login');
+function activeBtn() {
+  if (inputId.value.includes('@') && inputPw.value.length > 7) {
+    loginBtn.style.opacity = '1.0';
+    loginBtn.disabled = false;
+  } else {
+    loginBtn.style.opacity = '0.5';
+    loginBtn.disabled = true;
   }
+}
 
-  console.log('function occured!');
-  console.log(id);
-});
-
-pwInput.addEventListener('keydown', () => {
-    const id = document.getElementsByClassName('id')[0].value;
-    const pw = document.getElementsByClassName('pw')[0].value;
-  
-    if (id.includes('@') && pw.length > 7) {
-        loginBtn.style.backgroundColor = '#61aded';
-    }
-  
-    console.log('function occured!');
-    console.log(pw);
-  });
-
+inputId.addEventListener('keyup', activeBtn);
+inputPw.addEventListener('keyup', activeBtn);

@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
 body {
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
     background-color: #eeefef;
 }
 
@@ -13,17 +13,17 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 2px solid #dedede;
     width: 400px;
-    background-color: white;
     padding-bottom: 50px;
+    border: 2px solid #dedede;
     border-radius: 3px;
+    background-color: white;
 }
 
 .logo {
+    margin: 30px 0 30px 0;
     font-family: 'Dancing Script', cursive;
     font-size: 60px;
-    margin: 30px 0 30px 0;
 }
 
 .loginForm {
@@ -37,17 +37,18 @@ body {
 .loginForm input {
     margin-bottom: 20px;
     padding: 8px;
+    border: 1px solid #dedede;
     border-radius: 5px;
     background-color: #fafafa;
-    border: 1px solid #dedede;
 }
 
 .loginForm .login-btn {
     margin-bottom: 70px;
     padding: 9px;
-    border-radius: 5px;
-    background-color: #add3eb;
     border: none;
+    border-radius: 5px;
+    background-color: #61adec;
+    opacity: 0.5;
     color: white;
 }
 
