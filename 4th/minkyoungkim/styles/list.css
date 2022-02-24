@@ -1,8 +1,8 @@
 .title-box{
     display: flex;
     justify-content: flex-start;
-    height: 60px;
-    margin-bottom: 20px;
+
+    /* margin-bottom: 20px; */
     line-height: 60px;
     padding: 0 20px;
     background-color:#F4F4F2;
@@ -26,14 +26,14 @@
 
 }
 
-.coffee-imgBox{
+.coffee-imgbox{
     margin-bottom: 15px;
     height: 260px;
     width: 245px;  
     overflow: hidden;
 }
 
-.coffee-imgBox > img{
+.coffee-imgbox > img{
     object-fit: cover;
     width: 100%;
     transition: transform 1s;
@@ -44,6 +44,6 @@
     text-align: center;
 }
 
-.coffee-imgBox img:hover{
+.coffee-imgbox img:hover{
     transform: scale(1.1, 1.1);
   }
