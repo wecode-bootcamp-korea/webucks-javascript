@@ -1,14 +1,14 @@
 let form = document.getElementById('login-form');
 let btn = document.getElementById('loginBtn');
+let email = document.getElementById('email');
+let pw = document.getElementById('password');
+
 
 function activeBtn(e){
 
     e.preventDefault();
-    let email = document.getElementById('email').value;
-    let pw = document.getElementById('password').value;
 
-
-    if( email.includes('@') && pw >= 7){
+    if( email.value.includes('@') && pw.value >= 7){
         btn.style.opacity = 1;
         btn.disabled = false;
         
