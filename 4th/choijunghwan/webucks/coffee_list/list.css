@@ -42,8 +42,8 @@ body {
   flex-wrap: wrap;
 }
 
-.brewedSection div,
-.coldbrewSection div {
+.brewedSection div:not(.box),
+.coldbrewSection div:not(.box) {
   display: flex;
   flex-direction: column;
   font-size: 15px;
@@ -52,7 +52,7 @@ body {
 
 .coldbrewSection div img,
 .brewedSection div img {
-  width: 150px;
+  width: 170px;
   height: 140px;
 }
 
@@ -60,4 +60,19 @@ body {
 .brewedSection div img:hover {
   width: 200px;
   height: 200px;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+button {
+  background-color: inherit;
+  width: 30%;
+}
+
+.coldbrewSection button {
+  width: 40px;
 }

@@ -24,18 +24,19 @@ const checkValue = (e) =>{
 }
 
 const lightId = (value) =>{
+    loginId.style.border = ""
+
     if(value.includes("@")){
         loginId.style.border = "2px solid green"
-    }else {
-        loginId.style.border = ""
     }
 }
+
 const lightPassword = (value) =>{
+    loginPassword.style.border = ""
+    
     if(value.length > 7){
         loginPassword.style.border = "2px solid green"
-    }else {
-        loginId.style.border = ""
-    }
+    }    
 }
 
 const hide = () =>{
