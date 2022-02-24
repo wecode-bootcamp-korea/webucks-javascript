@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 3px 2px 3px;
+  background-color: #f4f4f2;
+}
+
+.logo {
+  margin-right: 60vw;
+}
+
+nav {
+  align-self: center;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font-size: 12px;
+}
+
+.nav-menu li {
+  margin: 0 1.5rem;
+  min-width: fit-content;
+}
+
+.coldbrew-explan,
+.brewed-explan {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 5px;
+  background-color: #f4f4f2;
+}
+
+.coldbrew-explan > *,
+.brewed-explan > * {
+  margin-left: 15px;
+  color: black;
+}
+
+.coffee-menu {
+  display: flex;
+  flex-flow: wrap row;
+  text-align: center;
+}
+
+.coffee-menu a {
+  margin-left: 30px;
+  overflow: hidden;
+}
+
+.coffee-menu img {
+  width: 20vw;
+  height: 40vh;
+  object-fit: cover;
+}
+
+.coffee-menu img:hover {
+  transition-duration: 0.4s;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  display: block;
+  color: gray;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
