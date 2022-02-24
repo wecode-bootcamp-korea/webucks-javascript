@@ -45,36 +45,46 @@ body {
 }
 
 .menu img {
-
     justify-content: center;
     align-items: center;
-    height: 230px;
-    width: 190px;
+    position: relative;
+    height: 100%;
+    width: 100%;
     margin: 0px auto;
+    max-height: 100%;
     max-width: 100%;
     transition: all 0.5s linear;
     overflow: hidden;
-
 }
 
-
 .menu-img:hover {
-   transform: scale(1.2);
-  }
-
+    transform: scale(1.2);
+}
 
 .menu {
-    position: relative;
-    display: inline;
-    justify-content: center;
-    overflow: hidden;
+    box-sizing: border-box;
+    flex-direction: column;
 }
 
 .menu-box {
-    display: inline-block;
-    justify-content: space-between;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: none;
+    height: 230px;
+    width: 190px;
     margin-top: 20px;
-    height: 220px;
-    width: 200px;
-    margin : none;
+    padding: 0 5px;
+    
+}
+.menu-box span {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.menu-box p {
+    display: flex;
+    justify-content: center;
 }
