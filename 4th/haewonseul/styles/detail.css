@@ -63,13 +63,10 @@ td, tr{
 }
 
 section{
-    height:65vh;
-    padding:10px;
     display:flex;
     justify-content:center;
     align-items: center;
     overflow: auto;
-    position:relative;
 }
 
 p{
@@ -78,11 +75,12 @@ p{
 }
 
 .container{
+    min-height:60vh;
+    padding:10px;
     width:50vw;
     display: inline-flex;
     flex-wrap:wrap;
     justify-content:center;
-    position:absolute;   /*이걸 안하면 댓글쓸때마다 위에가 올라감..*/
     top:0;
 }
 
@@ -127,10 +125,9 @@ p{
 }
 
 footer{
+    margin-top:100px;
+    min-height:20vh;
     width:100%;
-    position:absolute;
-    bottom:0;
-    left:0;
     background-color: #333333;
     display:flex;
     justify-content: center;
@@ -185,9 +182,5 @@ h4{
     footer{
         display : none; 
         visibility : hidden; 
-    }
-    section{
-        height:100vh;
-        overflow:visible;
     }
 }
