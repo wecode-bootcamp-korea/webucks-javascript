@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 500px;
+  height: 800px;
+  margin: 20px 30px;
+}
+
+a {
+  text-decoration: none;
+  color: lightgray;
+}
+
+section {
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  background-color: #f6f5ee;
+}
+
+.navbar__title {
+  padding-top: 5px;
+}
+
+.navbar__menu {
+  display: flex;
+  padding-right: 5px;
+  list-style: none;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+.navbar__menu li {
+  padding: 5px 5px;
+  font-size: 8px;
+}
+
+.menuInfo {
+  display: flex;
+  list-style: none;
+  padding-left: 5px;
+  background-color: #f4f4f2;
+}
+
+.menuInfo li:first-child {
+  padding-left: 5px;
+  font-size: 12px;
+}
+
+.menuInfo li:last-child {
+  padding-top: 12px;
+  padding-left: 5px;
+  font-size: 7px;
+}
+
+.lastList {
+  display: flex;
+}
+
+.lastList__items {
+  padding-right: 20px;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 0;
+}
+
+.imgs {
+  width: 110px;
+  height: 110px;
+  overflow: hidden;
+}
+
+.imgs img {
+  width: 110px;
+  height: 110px;
+  transition: all 0.7s linear;
+}
+
+.imgs img:hover {
+  transform: scale(1.1);
+}
+
+.list__items {
+  margin-bottom: 15px;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  font-size: 8px;
+}
