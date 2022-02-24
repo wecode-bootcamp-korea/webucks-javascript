@@ -1,0 +1,60 @@
+* {
+  box-sizing: content-box;
+}
+
+body {
+  width: 400px;
+  margin: 200px auto;
+  background-color: silver;
+}
+
+span {
+  font-family: "Dancing Script", cursive;
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+.login_body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 500px;
+  width: 400px;
+  background-color: white;
+  position: relative;
+}
+
+.loginBtn {
+  justify-content: center;
+  background-color: blue;
+  opacity: 0.3;
+  color: white;
+  width: 280px;
+  height: 30px;
+  border-radius: 8px;
+}
+
+.login_form input {
+  display: flex;
+  width: 250px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.hide {
+  position: absolute;
+  bottom: 190px;
+  right: 70px;
+  border: none;
+  background-color: inherit;
+  opacity: 0.7;
+}
+.view {
+  position: absolute;
+  bottom: 190px;
+  right: 120px;
+  border: none;
+  background-color: inherit;
+  opacity: 0.7;
+}

@@ -1,0 +1,85 @@
+* {
+  box-sizing: content-box;
+}
+
+body {
+  width: 90vw;
+  margin: auto;
+}
+
+.navigator {
+  background-color: silver;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navigator span {
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+  padding-left: 10px;
+}
+
+.navLists {
+  display: flex;
+  padding-right: 10px;
+}
+
+.navLists li {
+  list-style-type: none;
+  margin-right: 25px;
+  color: rgb(102, 102, 102);
+}
+
+.coldbrew,
+.brewedCoffee {
+  margin-top: 15px;
+  background-color: silver;
+  padding-left: 15px;
+}
+
+.brewedSection,
+.coldbrewSection {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.brewedSection div:not(.box),
+.coldbrewSection div:not(.box) {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  padding-right: 20px;
+}
+
+.coldbrewSection div img,
+.brewedSection div img {
+  width: 170px;
+  height: 140px;
+}
+
+.coldbrewSection div img:hover,
+.brewedSection div img:hover {
+  transform: scale(1.5);
+  transition: ease-in-out 2s 100ms;
+}
+.imgBox:hover {
+  overflow: hidden;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+button {
+  background-color: inherit;
+  width: 30%;
+}
+
+.coldbrewSection button {
+  width: 40px;
+}
