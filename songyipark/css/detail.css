@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    width: 70%;
+    transform: translate(-50%, 0);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin : 20px 0;
+    padding: 15px 20px;
+    background-color: #efebe9;
+}
+
+.logo{
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+}
+
+.nav-bar{
+    display: flex;
+    color: gray;
+}
+
+.nav-bar div {
+    padding-left : 20px;
+}
+
+.coffee-category {
+    margin-bottom: 20px;
+    color: gray;
+    font-size: 12px;
+    text-align: right;
+}
+
+section{
+    display: flex;
+}
+
+.description{
+    position: relative;
+    width: 100%;
+}
+
+img {
+    width: 400px;
+    height: 350px;
+    margin-right: 40px;
+}
+
+.menu-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 15px;
+    padding-right: 10px;
+}
+
+.under-title{
+    height: 2px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: black;
+}
+
+.menu-intro{
+    font-size: 14px;
+}
+
+.hr-repeat{
+    margin: 20px 0;
+    background-color: #eeeeee;
+}
+
+.nutri-info-left {
+    padding-left: 20px;
+}
+
+.nutri-info-right {
+    right: 20px;
+    position: absolute;
+}
+
+.kcal-table-grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 10px;
+}
+
+.kcal-align-right{
+    padding-right: 10px;
+    text-align: right;
+}
+
+.line-dashed{
+    border-right: 2px dashed #eeeeee;
+}
+
+.allergy{
+    margin: 40px 0;
+    padding: 15px;
+    background-color: #eeeeee;
+}
+
+.review-id{
+    width: 500px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.review-comment{
+    margin-left : 5px;
+    font-weight: 400;
+}
+
+input{
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background-color: #eeeeee;
+
+}
+
+footer{
+    position: absolute;
+    transform: translate(-15%, 0);
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    margin-top: 100px;
+    padding : 100px 0;
+    color: white;
+    background-color: black;
+}
+
+.footer-menu-title div{
+    margin-bottom: 15px;
+}
