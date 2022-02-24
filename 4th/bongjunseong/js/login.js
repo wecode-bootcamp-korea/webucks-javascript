@@ -73,18 +73,15 @@ thisIsPw.addEventListener('keyup', function() {
 })
 
 
+//Show, Hide 버튼 생성
+const eyeBtn = document.getElementById('eyeButton');
 
-const visibleButton = document.getElementsByClassName('fa-solid fa-eye fa-sm')[0];
-const invisibleButton = document.getElementsByClassName('fa-solid fa-eye-slash fa-sm')[0];
-
-visibleButton.addEventListener('click', function() {
-  if(thisIsPw.value.length >= 1) {
+eyeBtn.addEventListener('click', function() {
+  if(thisIsPw.value.length >= 1 && eyeBtn.className == 'fa-solid fa-eye-slash fa-sm') {
     thisIsPw.type = 'text';
-  }
-})
-
-invisibleButton.addEventListener('click', function() {
-  if(thisIsPw.value.length >= 1) {
+    eyeBtn.className = 'fa-solid fa-eye fa-sm';
+  } else if (thisIsPw.value.length >= 1 && eyeBtn.className == 'fa-solid fa-eye fa-sm') {
     thisIsPw.type = 'password';
+    eyeBtn.className = 'fa-solid fa-eye-slash fa-sm';
   }
 })
