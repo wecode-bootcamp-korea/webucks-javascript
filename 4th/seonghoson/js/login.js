@@ -4,13 +4,16 @@ const loginBtn = document.getElementById("loginBtn");
 const showBtn = document.getElementById("showBtn");
 
 if (!localStorage.getItem("like")) {
+  // 첫 접속 시 로컬에 좋아요 저장소가 없을 경우 새로 생성
   localStorage.setItem("like", JSON.stringify([]));
 }
 
+// 아이디 패스워드가 활성 변수
 let isGoodId = false;
 let isGoodPw = false;
 
 loginId.addEventListener("input", (e) => {
+  // 로그인 조건 함수
   if (e.target.value.includes("@")) {
     loginId.style.border = "1px solid green";
     loginId.className = "active";
@@ -24,6 +27,7 @@ loginId.addEventListener("input", (e) => {
 });
 
 loginPw.addEventListener("input", (e) => {
+  // 패스워드 조건 함수
   var reg = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
   if (reg.test(e.target.value)) {
     loginPw.style.border = "1px solid green";
@@ -46,6 +50,7 @@ loginBtn.addEventListener("mouseleave", (e) => {
 });
 
 showBtn.addEventListener("click", (e) => {
+  // 패스워드 보여주기 함수
   if (loginPw.type === "password") {
     loginPw.type = "text";
     showBtn.innerText = "hide";
@@ -56,6 +61,7 @@ showBtn.addEventListener("click", (e) => {
 });
 
 function canUseBtn() {
+  // 아이디 패스워드 최종 조건함수
   if (isGoodId && isGoodPw) {
     loginBtn.disabled = false;
     loginBtn.style.background = "#61ADED";
