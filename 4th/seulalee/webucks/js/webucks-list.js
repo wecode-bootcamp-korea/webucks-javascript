@@ -43,10 +43,11 @@ const brewedList = [{
 const coldBrewGall = document.querySelector('.cold-brew .coffee-gall'),
     brewedGall = document.querySelector('.brewed .coffee-gall');
 
+//객체 내 데이터 반환 함수
 function exportName(data) {
     let coffeeName = [];
     for (let key in data) {
-        coffeeName.push(data[key]['name']);
+        coffeeName.push(data[key]['name']);     
     }
     return coffeeName;
 }
@@ -59,7 +60,7 @@ function exportUrl(data) {
     return coffeeImg;
 }
 
-//함수 선언
+//갤러리 생성 함수 선언
 function addCoffeeList(obj, gallery) {
     let nameIndex = exportName(obj);
     let imgIndex = exportUrl(obj);
