@@ -6,26 +6,37 @@ html {
 body {
     width: 90%
 }
-ul {
+
+.espList {
     list-style-type: none;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     padding: 0;
-    border: 1px solid red;
 }
+
+.brewedList {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+}
+
 header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 0 10px;
-    border: 1px solid black;
+    height: 75px;
+    background-color: #e2e4e0;
 }
 
 .links {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
+    background-color: #e2e4e0;
 }
 
 .categories {
@@ -38,37 +49,58 @@ header {
 .coffeeLists {
     height: 350px;
     width: 300px;
-    border: 1px solid orange;
+    display: flex;
+    justify-content: center;
+}
+
+.list2 {    
+    margin-right: 48px;
+}
+
+dl {
+    text-align: center;
 }
 
 dt {
-    /* object-fit: contain; */
-    border: 1px solid blue;
+    object-fit: contain;
     position: relative;
-    top: 0;
+    top: -16px;
     width: 300px;
     height: 270px;
     overflow: hidden;
 }
 img {
-    /* max-width: 100%;
-    max-height: 100%; */
-    top: 0px;
     object-fit: contain;
     position: absolute;
     width: 100%;
 }
 
+img:hover {
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
+
 .cortadoImg {
-    top: -10px;
+    top: -120px;
+    left: 0;
 }
 
 .espMacchiatoImg {
-
+    top: -80px;
+    left: -26px;
+    width: 120%
 }
 
 .americanoImg {
+    bottom: -87px;
+    left: 0px;
+}
 
+dd{
+    margin: 0;
+}
+
+nav {
 }
 
 i {
@@ -79,4 +111,9 @@ i {
 p {
     font-weight: bold;
     font-size: 20px;
+}
+
+a {
+    color: rgb(195, 192, 192);
+    text-decoration: none;
 }
