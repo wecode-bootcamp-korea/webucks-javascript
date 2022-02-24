@@ -8,20 +8,20 @@ function activeBtn(e){
     let pw = document.getElementById('password').value;
 
 
-    if(email.includes('@') && pw.length >= 8){
-       btn.style.opacity = 1;
-       btn.removeAttribute('disabled')
+    if( email.includes('@') && pw >= 7){
+        btn.style.opacity = 1;
+        btn.disabled = false;
+        
     }else{
-        btn.style.opacity = 0.5;
+        btn.style.opacity = 0.5
+        btn.disabled = true;
     }
-
-    btn.addEventListener('click', goList);
-
 }
 
 
-function goList(){
-    window.location.href = './list.html'
+function checkLogin(opacity, disabled){
+    btn.style.opacity = opacity;
+    btn.disabled = disabled;
 
 }
-form.addEventListener('keyup', activeBtn);
+form.addEventListener('keyup', (activeBtn));
