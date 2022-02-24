@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WeBucks - Log in</title>
+  <link rel="stylesheet" href="styles/login.css" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/7b8b2b6c2f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <section>
+    <div class="webucks">WeBucks</div>
+    <form id="logInBox" action = "#" accept-charset="utf-8" name = "personInfo" method = "get">
+        <input id="id" class="none" type="text" placeholder="전화번호, 사용자 이름 또는 이메일">
+        <input id="password" class="none" type="password" placeholder="비밀번호">
+      <div class="buttonBox">
+        <i id="eyeButton" class="fa-solid fa-eye-slash fa-sm"></i>
+      </div>
+    </form>
+    <a href="#" class="logInBtn"><button class="disable">로그인</button></a>
+    <a class="lostPw" href="#">비밀번호를 잊으셨나요?</a>
+  </section>
+  <script src="js/login.js"></script>
+</body>
+</html>
