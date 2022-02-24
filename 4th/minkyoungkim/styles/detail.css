@@ -168,7 +168,7 @@
 footer{
     display: flex;
     justify-content: space-between;
-    gap: 100px;
+    gap: 50px;
     padding: 66px 114px 33px;
     background-color: #333;
     color: #fff;
@@ -178,7 +178,8 @@ footer ul {
     display: flex;
     flex-direction: column;
     gap: 18px;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 footer ul li{
-    font-size: 15px;
+    font-size: 13px;
 }
