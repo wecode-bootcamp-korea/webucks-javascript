@@ -2,8 +2,8 @@
 const id = document.getElementById('id');
 const pwd = document.getElementById('pwd');
 const loginButton = document.getElementById('loginBtn');
-const hide = document.getElementsByClassName('fa-solid fa-eye-slash')[0];
-const show = document.getElementsByClassName('fa-solid fa-eye')[0];
+const hideButton = document.getElementsByClassName('fa-solid fa-eye-slash')[0];
+const showButton = document.getElementsByClassName('fa-solid fa-eye')[0];
 
 function ActiveBtn(key){
     const idReg = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
@@ -26,13 +26,13 @@ function inputBorderActive(reg, inputId){
 }
 
 function pwdVisible(showV,hideV,pwdType){
-    show.style.visibility = showV;
-    hide.style.visibility = hideV;
+    showButton.style.visibility = showV;
+    hideButton.style.visibility = hideV;
     pwd.type = pwdType;
 }
 
 id.addEventListener('keyup',ActiveBtn);
 pwd.addEventListener('keyup',ActiveBtn);
-show.addEventListener('click',function(){pwdVisible("hidden","visible","password")});
-hide.addEventListener('click',function(){pwdVisible("visible","hidden","text")});
+showButton.addEventListener('click',function(){pwdVisible("hidden","visible","password")});
+hideButton.addEventListener('click',function(){pwdVisible("visible","hidden","text")});
 

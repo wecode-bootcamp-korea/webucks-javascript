@@ -1,21 +1,21 @@
-
+const ENTERKEYCODE = 13;
 let input = document.getElementsByClassName("review")[0];
 let commentBox = document.getElementsByClassName('reviewContainer')[0];
 let heart = document.getElementsByClassName("fa-regular fa-heart")[0];
 
 function inputReview(key){
-    if(key.keyCode === 13){
-        let box = document.getElementsByClassName('reviewContainer')[0];
+    if(key.keyCode === ENTERKEYCODE){ //enter code
+        let wrapbox = document.getElementsByClassName('reviewContainer')[0];
         let reviewBox = document.createElement('div');
         let iconBox = document.createElement('div');
         iconBox.className = 'iconBox';
         reviewBox.className = 'reviewBox';
+
         reviewBox.appendChild(inputTxt());
         iconBox.appendChild(inputHeart());
         iconBox.appendChild(inputDelete());
-        
         reviewBox.appendChild(iconBox);
-        box.appendChild(reviewBox);
+        wrapbox.appendChild(reviewBox);
     }  
 }
 function inputTxt(){

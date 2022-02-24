@@ -1,10 +1,11 @@
-heart = document.getElementsByClassName('fa-heart');
+wrapBox = document.getElementsByClassName('wrap');
 
-function changeHeartColor(i){
-    heart[i].className = "fa-solid fa-heart";
-    heart[i].style.color="red";
+function changeHeartColor(event){
+    if(event.target.className === "fa-regular fa-heart"){
+        event.target.className = "fa-solid fa-heart";
+        event.target.style.color="red";
+    }
 }
 
-for(let i=0; i<heart.length; i++){
-    heart[i].addEventListener('click',function(){changeHeartColor(i)});
-}
+wrapBox[0].addEventListener('click', changeHeartColor);
+wrapBox[1].addEventListener('click', changeHeartColor);

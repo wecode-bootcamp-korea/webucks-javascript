@@ -3,6 +3,7 @@ body{
     width:100%;
     background-color:#EEEFEF;
 }
+
 .container{
     width:100%;
     justify-content:center;
@@ -12,6 +13,7 @@ body{
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
 input:focus{
     outline: none !important;
     border-color: red;
@@ -35,6 +37,7 @@ form{
     align-items: center;
     flex-direction: column;
 }
+
 input{
     width:300px;
     padding:10px;
@@ -42,6 +45,7 @@ input{
     border-radius: 5px;
     border:2px solid #E0E0E0;
 }
+
 #loginBtn{
     width:330px;
     padding:10px;
@@ -51,21 +55,26 @@ input{
     border:2px solid #C9E2F1;
     margin-bottom:160px;
 }
+
 h1{
     font-size:60px;
     font-family: 'Dancing Script', cursive;
 }
+
 .container a{
     margin-bottom:70px;
 }
+
 .pwdBox{
     position:relative;
 }
+
 .fa-eye-slash{
     position:absolute;
     right:10px;
     bottom:50%;
 }
+
 .fa-eye{
     position:absolute;
     right:10px;
