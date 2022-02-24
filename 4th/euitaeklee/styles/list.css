@@ -1,8 +1,7 @@
 #container {
     max-width: 860px;
     height: 100vh;
-    margin: 0 auto;    
-    display: flex;
+    margin: 0 auto; 
     align-items: center;   
 }
 
@@ -24,7 +23,7 @@ section ul li {
     flex-grow: 0;
 }
 
-section ul li dd {
+section ul li dt {
     overflow: hidden;
 }
 
@@ -41,6 +40,6 @@ section ul li a img {
 }
 
 section ul li a img:hover {    
-    transform: scale(1.1, 1.1);
+    transform: scale(1.2, 1.2);
     transition-duration: 1.2s;
 }
