@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*header부분*/
+header{
+    width: 100%; height: 60px;
+    padding: 10px 20px;
+    background-color: #F6F5EF;
+}
+.webucksLogo{ 
+    float: left;
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
+    color: black;
+}
+header> nav{
+    float: right;
+    margin-top: 8px;
+    color: gray;
+}
+header> nav> span{
+    padding: 0px 10px;
+}
+
+/*topMain부분*/
+#topMain{
+    width: 100%; height: 60px;
+}
+h1{
+    padding: 5px 0px 0px 5px;
+    font-size: 25px;
+}
+span{
+    float: right;
+    color: gray;
+    font-size: 13px;
+}
+
+/*mainImg*/
+main> img{
+    width: 275;
+    float: left;
+    padding-right: 25px;
+}
+/*mainContentBox*/
+#mainContentBox{
+    overflow: hidden;
+}
+
+/*dolceColdBrew*/
+#dolceColdBrew{
+    height: 60px;
+    position: relative;
+    border-bottom: 2px solid black;
+}
+h2{
+    position: absolute;
+    display: inline-block;
+}
+#dolceColdBrew> span{
+    position: absolute;
+    top:30px; left:2px;
+}
+i{
+    position: absolute;
+    top:10px; right: 10px;
+}
+
+p{
+    padding: 14px 0px;
+    border-bottom: 1px solid #ababab;
+    font-size: 14px;
+}
+
+/*영양정보와 리뷰*/
+#dolceHeader{
+    height: 45px;
+    border-bottom: 1px solid #ababab;
+}
+#dolceHeader >span{
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+}
+#dolceHeader :nth-child(1){
+    float: left;
+    padding: 13px;
+}
+#dolceHeader :nth-child(2){
+    padding: 13px;
+}
+
+#dolceContent{
+    display: flex;
+    width: 100%;
+}
+#dolceContent>ul>li>dt,dd{
+    padding: 5px;
+}
+#dolceContent>ul>li>dt{
+    float: left;
+}
+#dolceContent>ul>li>dd{
+    float: right;
+    display: inline-block;
+    padding-left: 60px;
+}
+#firstContentBox, #secondContentBox{
+    flex-direction: row;
+    width: 100%;
+    margin: 14px 0px;
+    padding: 0px 10px;
+    list-style: none;
+    font-size: 14px;
+}
+#firstContentBox{
+    border-right: 1px dotted #ababab;
+}
+#secondContentBox>li>dt{
+    margin-right: 20px;
+}
+
+/*알레르기 유발 정보*/
+#dolceFooter{
+    width: 100%; height: 40px;
+    background-color: #F4F4F2;
+}
+#dolceFooter> span{
+    float: left;
+    padding: 10px;
+    font-weight: 600;
+    color: black;
+}
+
+/*리뷰부분*/
+#dolceColdBrewReview{
+    padding-top: 25px;
+}
+h3{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ababab;
+    font-size: 17px;
+}
+#dolceColdBrewReview>ul{
+    padding: 15px 0px;
+}
+#dolceColdBrewReview>ul>li{
+    padding: 1px;
+    font-size: 13px;
+}
+#dolceColdBrewReview>ul>li>b{
+    padding-right: 3px;
+}
+#reviewInput{
+    width: 100%; height: 25px;
+    background-color: #F4F4F2;
+}
+#reviewInput>span{
+    float: left;
+    padding: 5px;
+}

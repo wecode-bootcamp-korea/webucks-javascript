@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="webucks.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <title>Webucks Login</title>
+</head>
+
+<body>
+    <div id="webucksLoginPage">
+        <img src="images/webucksLogo.PNG" alt="위벅스 로고">
+        <div id="main">
+            <form>
+                <input id="idValue" type="text" placeholder="전화번호, 사용자 이름 또는 이메일">
+                <input id="pwdValue" type="password" placeholder="비밀번호">
+            </form>
+            <button onclick="location.href = 'webucks_coffee.html'" id="btn" disabled="disabled">로그인</button>
+            <!-- <input id="btn" onclick="btnHandler(this.form)" type="submit" value="로그인"> -->
+        </div>
+        <a href="#">비밀번호를 잊으셨나요?</a>
+    </div>
+
+    <!-- <script>
+        const idInput = document.getElementById("idValue");
+        const pwdInput = document.getElementById("pwdValue");
+        const loginBtn = document.getElementById("btn");
+
+        function btnHandler(form){
+            if(idInput.value.includes("@") && pwdInput.value.length >= 8){
+                loginBtn.disabled = false;
+                loginBtn.style.opacity = "100%"
+            }else{
+                loginBtn.disabled = true;
+                loginBtn.style.opacity = "40%"
+            }
+            return;
+        }
+
+        btnHandler(form);
+    </script> -->
+    <script src="./js/login.js"></script>
+</body>
+
+</html>
