@@ -76,4 +76,23 @@ i{
 p{
     padding: 14px 0px;
     border-bottom: 1px solid gray;
+    font-size: 14px;
+}
+
+/*영양정보와 리뷰*/
+#dolceHeader{
+    height: 45px;
+    border-bottom: 1px solid gray;
+}
+#dolceHeader >span{
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+}
+#dolceHeader :nth-child(1){
+    float: left;
+    padding: 13px;
+}
+#dolceHeader :nth-child(2){
+    padding: 13px;
 }
