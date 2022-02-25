@@ -25,9 +25,10 @@
 }
 
 .coffee-imgbox{
-    margin-bottom: 15px;
     height: 260px;
     width: 245px;  
+    margin-bottom: 15px;
+
     overflow: hidden;
 }
 
