@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans+KR&display=swap');
+
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color:#F6F5F0
+}
+
+.logo{
+    font-family: 'Dancing Script', cursive;
+    font-size: 16px;
+}
+
+.menu{
+     display: flex;
+}
+.menu li{
+    display: block;
+    padding-right: 30px;
+    font-size: 13px;
+    color: #797975;
+    cursor: pointer;
+}
+.menu li:last-child{
+    padding-right: 0;
+}
+
+.container{ 
+    display: flex;
+    flex-direction: column;
+    max-width: 1067px;
+    width: 100%;
+    margin: 0 auto;
+}

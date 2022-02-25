@@ -1,0 +1,48 @@
+.title-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color:#F4F4F2;
+}
+
+.title-box h2{
+    font-size: 18px;
+}
+.title-box span{
+    padding:0 20px;
+}
+.title-box p{
+    font-size: 13px;
+}
+
+.coffee-contents{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 29px;
+    margin-bottom: 40px;
+
+}
+
+.coffee-imgbox{
+    height: 260px;
+    width: 245px;  
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.coffee-imgbox > img{
+    width: 100%;
+    object-fit: cover;
+    transition: transform 1s;
+    cursor: pointer;
+}
+.coffee-imgbox img:hover{
+    transform: scale(1.1);
+  }
+
+
+.coffee-contents p {
+    text-align: center;
+}
+

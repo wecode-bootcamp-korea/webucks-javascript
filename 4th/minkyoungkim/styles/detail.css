@@ -1,0 +1,185 @@
+.sub-title{
+    width: 100%;
+    position: relative;
+}
+
+.sub-title h2{
+    padding-bottom: 30px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.sub-title ul{
+    display: flex;
+    position: absolute;
+    right:0;
+    bottom: 10px;
+}
+
+.sub-title ul li{
+    padding-right: 10px;
+    color: #bebebe;
+    font-size: 15px; 
+}
+
+.sub-title ul li:iilast-child{
+    padding-right: 0;
+}
+
+.contents{
+    display: flex;
+    gap: 50px;
+  
+}
+
+
+.imageBox {
+    width: 450px;
+    height: 470px;
+    overflow: hidden;
+}
+
+.imageBox img {
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+.details{
+    width: 610px;
+}
+
+.coffee-title{
+    position: relative;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.coffee-title h2{
+    padding-bottom: 5px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.coffee-title p {
+    font-size: 14px
+}
+
+.coffee-title button{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-size: 25px;
+    border: none;
+    background-color: transparent;
+}
+.description{
+    padding: 30px 0;
+    border-top: 2px solid black;
+    line-height: 1.5;
+}   
+
+
+.product-head {
+    display: flex;
+    justify-content: space-between;
+    padding:15px;
+    border-top: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.product-head h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.product-content{
+    display: flex;
+    padding: 15px;
+}
+
+
+.product-content ul{
+    width: 50%;
+}
+
+.product-content ul li dl{
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px 15px;   
+} 
+
+.product-content ul:first-child li dl{
+    padding-right: 10px;
+    border-right: 1px dashed #c4c4c4;
+}
+
+.allergy{
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #efefef;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+
+.review{
+    padding-bottom: 100px;   
+}
+
+.review-title{
+    display: block;
+    padding-bottom: 10px;
+    border-bottom: 1.5px solid #c4c4c4;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+
+.review-box{
+    width: 100%;
+    padding: 30px 0;
+}
+.review-box p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1.3;
+}
+.review-box .userId{
+   
+    padding-right: 10px;
+    font-weight:bold;
+}
+
+.reviewInput{
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border:none;
+   background-color: #efefef;
+    color:#ACACAC;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 66px 114px 33px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+footer ul li{
+    font-size: 13px;
+}
