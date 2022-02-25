@@ -22,7 +22,7 @@
     <section>
       <header>WeBucks</header>
       <div class="inputArea">
-        <form action="./list.html">
+        <div>
           <input
             class="inputBox"
             type="id"
@@ -36,8 +36,14 @@
             placeholder="비밀번호"
           />
           <i class="fa-solid fa-eye-slash"></i>
-          <button class="loginBtn" disabled>로그인</button>
-        </form>
+          <button
+            class="loginBtn"
+            disabled
+            onClick="location.href='./list.html'"
+          >
+            로그인
+          </button>
+        </div>
       </div>
       <footer>
         <a href="#">비밀번호를 잊으셨나요?</a>

@@ -5,7 +5,7 @@
 body {
   display: flex;
   flex-direction: column;
-  justify-content: ceneter;
+  justify-content: center;
   align-items: center;
 }
 
@@ -35,7 +35,7 @@ body {
   list-style: none;
 }
 
-.subTitle {
+.subTitleSection {
   display: flex;
   justify-content: ceneter;
   align-items: center;
@@ -44,11 +44,11 @@ body {
   background-color: #f4f4f2;
 }
 
-.subTitle .subtitle {
+.subTitleSection .subTitle {
   padding-right: 20px;
 }
 
-.subTitle .fa-mug-saucer {
+.subTitleSection .fa-mug-saucer {
   width: 40px;
   padding-right: 10px;
 }
@@ -56,6 +56,8 @@ body {
 .product {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
   padding: 0px;
 }
 
@@ -71,13 +73,14 @@ body {
 }
 
 .product li {
-  padding-left: 25px;
   list-style: none;
+  padding-left: 20px;
 }
 
 .product img {
   width: 300px;
   height: 313px;
+  transition: all 0.7s ease;
 }
 
 .product li .coffeeName {
@@ -91,5 +94,4 @@ body {
 
 .product img:hover {
   transform: scale(1.1);
-  transition: all 1s ease;
 }
