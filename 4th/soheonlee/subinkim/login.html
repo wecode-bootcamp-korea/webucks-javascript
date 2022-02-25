@@ -7,6 +7,7 @@
     <link rel="icon" href="img/favi.png">
     <link rel="stylesheet" href="styles/login.css">
     <link rel="stylesheet" href="styles/reset.css">
+    <script src="https://kit.fontawesome.com/6a31f345d7.js" crossorigin="anonymous"></script>
     <title>WeBuks Login</title>
 </head>
 <body>
@@ -15,12 +16,14 @@
     <h2 id="title">WeBukcs</h2>
     
     <form class="loginForm" action="">
-        <div>
+        <div class="idWrapper">
             <input class="loginInput email"type="text" placeholder="전화번호,사용자 이름 또는 이메일" />
         </div>
-        <div>
+        <div class="pwWrapper">
             <input class="loginInput pw" type="password" placeholder="비밀번호" />
+            <i class="fa-solid fa-eye-slash eye"></i>
         </div>
+        
         <button 
             class="loginBtn" 
             type="button" 

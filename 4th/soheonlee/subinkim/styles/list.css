@@ -77,6 +77,28 @@ li:hover {
     width: 100%;
 }
 
+.gridWrap {
+    position: relative;
+}
+
+/* heart btn toggle */
+.fa-heart {
+    position: absolute;
+    right: 16px;
+    bottom: 9px;
+    cursor: pointer;
+}
+
+.btnOff {
+    color: black;
+    opacity: .2;
+}
+
+.btnOn {
+    color: red;
+    opacity: 1;
+}
+
     /* coffee img */
 .overflow {
     margin: 0 auto;

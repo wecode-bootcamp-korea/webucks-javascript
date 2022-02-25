@@ -37,6 +37,10 @@ body {
     border-radius: 4px;
 }
 
+.pwWrapper {
+    position: relative;
+}
+
 /* login button */
 .loginBtn {
     margin-bottom: 120px;
@@ -55,4 +59,28 @@ body {
     text-decoration: none;
     font-weight: bold;
     color: #779DB6;
+}
+
+/* id,pw active toggle */
+.active {
+    border: 2px solid green;
+}
+.active:focus {
+    outline: 2px solid green;
+}
+
+.inActive:focus {
+    outline: 2px solid red;
+}
+
+/* password hide / show toggle */
+.eye {
+    position: absolute;
+    top: 15px;
+    right: 26px;
+    cursor: pointer;
+}
+
+.fa-eye {
+    right: 27px;
 }
