@@ -1,7 +1,11 @@
-body {
-    margin: 0;
+* {
     box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+}
+
 
 header {
     display: flex;
@@ -47,14 +51,20 @@ main {
     text-align: right;
 }
 
+
 article img {
-    width: 400px;
+    width: 30vw;
     margin-right: 40px;
 }
 
 article  {
     display: flex;
     align-items: flex-start;
+}
+
+/* 리뷰 white-space속성때문에 width를 지정하게 됨 */
+.article__content {
+    width: 56vw;
 }
 
 .coffeeDetails {
@@ -73,6 +83,17 @@ article  {
     font-weight: bold;
 }
 
+.fas {
+    color: lightgray;
+    font-size: larger;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.liked {
+    color: red;
+}
+
 .coffeeDetails__description {
     margin: 26px 0;
 }
@@ -82,6 +103,10 @@ article  {
 }
 
 
+
+hr {
+    border: 1px solid gray;
+}
 
 .coffeeDetails__container__nutrition {
     display: flex;
@@ -93,17 +118,23 @@ article  {
 .container__nutrition__info {
     display: flex;
     justify-content:space-between;
-    padding: 10px;
+    padding: 6px;
     line-height: 180%;
 }
 
-.nutrition__info__line {
-    position: absolute;
-    top: 410px;
-    right: 530px;
-    width: 1.5px;
-    background-color: lightgray;
-    height: 13%;
+.nutrition__info__left {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px;
+    border-right: 1.5px dotted lightgray;
+}
+
+.nutrition__info__right {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px;
 }
 
 .txtRight {
@@ -113,28 +144,46 @@ article  {
 
 .coffeeDetails__allergy {
     padding: 14px 16px;
-    margin: 20px 0;
+    margin: 6px 0;
     border-radius: 2px;
     background-color: lightgray;
 }
 
 
+.review {
+    background-color: blanchedalmond;
+}
+
 .review__title {
-    margin-top: 40px;
+    margin-top: 60px;
     font-size:larger;
     font-weight: bold;
 }
 
+.review__oneline {
+    width: 100%;
+    display: flex;
+}
+
 .review__id {
+    flex: 1;
     font-weight: bold;
     font-size: small;
 }
 
 .review__text {
+    flex: 9;
+    display: inline-block;
+    width: 88%;
     font-size: small;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .review__input {
+    /* body 태그에 있어도 input창은 content-box로 사이즈가 바뀌기 때문에 다시 border-box로 지정해줘야 합니다. ( *로 box-sizing을 할 수도 있음!) */
+    /* box-sizing: border-box; */
     width: 100%;
     padding: 12px 14px;
     margin-top: 20px;
