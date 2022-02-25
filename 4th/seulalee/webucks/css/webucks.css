@@ -1,0 +1,206 @@
+/*css는 페이지별로 분리하렴.*/
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/*default class*/
+.hidden {
+    display: none !important;
+}
+
+/*default custom*/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: 'Noto Sans KR', Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body.gray-body {
+    background: #eeefef;
+}
+
+.wrap-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.wrap-default {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.webucks-logo {
+    color: #000;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Dancing Script', Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+
+.webucks-logo.big-logo {
+    font-size: 5rem;
+}
+
+/*login page*/
+.login-section {
+    width: 350px;
+    padding: 3rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.login-form {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 2rem auto 0;
+
+}
+
+.form-end {
+    align-self: center;
+    margin-top: 5rem;
+}
+
+/*input style*/
+.input-box {
+    padding: 10px 10px;
+    border: 1px solid #ddd;
+    margin: 0 0 1rem 0;
+    background-color: #efefef;
+    border-radius: 3px;
+}
+
+
+.input-default {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    background: transparent; 
+    border: none;
+    outline: none;
+}
+
+.input-default::placeholder {
+    color: #989898;
+}
+
+.btn {
+    padding: 0.625rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.primary {
+    background: #2a9af0;
+    color: #fff;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+}
+
+.inline-link {
+    text-align: cetner;
+    color: #48a2e8;
+    text-decoration: none;
+}
+
+/*coffee-listpage*/
+.webucks-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #f4f4f2;
+}
+
+.menu-bar li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.menu-bar li a {
+    color: #777;
+    text-transform: uppercase;
+    text-decoration: none;
+    word-break: break-all;
+    word-spacing: 2px;
+}
+
+.coffee-section {
+    margin: 1rem 0;
+}
+
+.coffee-section-title {
+    padding: 20px;
+    background: #f4f4f2;
+    color: #444;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.coffee-section-title::after {
+    content: ' 디카페인 에스프레소 샷 추가 가능 (일부 음료 제외)';
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.coffee-gall {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1rem 1.5rem;
+    width: 100%;
+    margin: 2rem 0;
+    overflow: hidden;
+}
+
+.coffee-thumbnail {
+    display: block;
+}
+
+.coffee-thumbnail:hover .coffee-img img {
+    transform: scale(1.1);
+}
+
+.coffee-img {
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.coffee-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 2s;
+}
+
+.coffee-name {
+    text-align: center;
+    padding: 1rem 0;
+}
