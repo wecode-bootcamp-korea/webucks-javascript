@@ -28,13 +28,12 @@
     height: 260px;
     width: 245px;  
     margin-bottom: 15px;
-
     overflow: hidden;
 }
 
 .coffee-imgbox > img{
-    object-fit: cover;
     width: 100%;
+    object-fit: cover;
     transition: transform 1s;
     cursor: pointer;
 }
