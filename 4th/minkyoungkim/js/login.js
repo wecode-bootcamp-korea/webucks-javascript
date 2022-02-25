@@ -1,9 +1,9 @@
-let form = document.getElementById('login-form');
+let inputContainer = document.getElementById('loginInput-container');
 let btn = document.getElementById('loginBtn');
 let email = document.getElementById('email');
 let pw = document.getElementById('password');
 
-
+console.log(inputContainer)
 function activeBtn(e){
 
     e.preventDefault();
@@ -24,4 +24,4 @@ function checkLogin(opacity, disabled){
     btn.disabled = disabled;
 
 }
-form.addEventListener('keyup', (activeBtn));
+inputContainer.addEventListener('keyup', (activeBtn));

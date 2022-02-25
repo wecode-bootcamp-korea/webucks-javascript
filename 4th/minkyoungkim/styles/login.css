@@ -24,7 +24,7 @@ main {
     font-size: 90px;
     text-align: center;
 }
-#login-form{
+#loginInput-container{
     display: flex;
     flex-direction: column;
     width: 100%;        
