@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background: #EEEFEF;
+}
+
+/* login section */
+#loginSection {
+    width: 400px;
+    padding: 60px 50px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+}
+
+/* webuks title */
+#title {
+    margin-bottom: 40px;
+    font-family: 'Dancing Script',
+        cursive;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+/* login input */
+.loginInput {
+    margin-bottom: 25px;
+    padding: 15px 0 15px 10px;
+    width: 90%;
+    background: #F7F7F7;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+}
+
+.pwWrapper {
+    position: relative;
+}
+
+/* login button */
+.loginBtn {
+    margin-bottom: 120px;
+    width: 93%;
+    padding: 15px 0;
+    border: none;
+    border-radius: 6px;
+    background: #D5E7F8;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* forget passwords */
+.forgetPw {
+    text-decoration: none;
+    font-weight: bold;
+    color: #779DB6;
+}
+
+/* id,pw active toggle */
+.active {
+    border: 2px solid green;
+}
+.active:focus {
+    outline: 2px solid green;
+}
+
+.inActive:focus {
+    outline: 2px solid red;
+}
+
+/* password hide / show toggle */
+.eye {
+    position: absolute;
+    top: 15px;
+    right: 26px;
+    cursor: pointer;
+}
+
+.fa-eye {
+    right: 27px;
+}

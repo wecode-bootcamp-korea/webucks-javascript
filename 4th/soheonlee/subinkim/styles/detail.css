@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/* head */
+header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 15px 15px;
+    width: 100%;
+    background: #F6F5F0;
+}
+
+    /* title */
+.title {
+    font-family: 'Dancing Script',
+        cursive;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+    /* nav */
+nav {
+    margin: auto 0;
+}
+
+nav ul {
+    display: flex;
+
+}
+
+nav li {
+    margin: 0 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #cccccc;
+}
+
+li:hover {
+    color: #aaaaaa;
+}
+
+/* subtitle - coffee type */
+.coffeeType {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 15px 0 30px 0;
+}
+
+.coffeeType h3 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.coffeeType p {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #bbbbbb;
+}
+
+/* main */
+main {
+    display: flex;
+    margin: 15px auto 60px auto;
+    max-width: 1024px;
+}
+
+main > div:nth-child(1) {
+    flex-basis: 408px;
+}
+
+main > div:nth-child(2) {
+    flex-basis: 616px;
+}
+
+/* main image */
+.coffeeImg img {
+    height: 450px;
+    width: 400px;
+}
+
+/* main description */
+.description {
+    padding-left: 20px;
+}
+    /* coffee name section */
+.coffeeName {
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+    font-weight: bold;
+}
+
+.coffeeName h4 {
+    font-size: 20px;
+}
+
+.coffeeName .fa-heart {
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+}
+
+.coffeeName .engName {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.explain {
+    padding: 20px 0;
+    border-bottom: 1px solid #dddddd;
+    font-size: 14px;
+}
+
+    /* heart btn toggle */
+.fa-heart {
+    cursor: pointer;
+}
+
+.btnOff {
+    color: black;
+    opacity: .2;
+}
+
+.btnOn {
+    color: red;
+    opacity: 1;
+}
+
+    /* nutrition section */
+.nutriPreview {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 10px;
+    border-bottom: 1px solid #dddddd;
+    font-weight: bold;
+}
+
+.nutriDetails {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.nutriDetails .nutriWrapper {
+    padding: 10px 10px;
+    width: 308px;
+}
+
+.nutriDetails .nutriWrapper:nth-child(2) {
+    border-left: 1px dashed #cccccc;
+}
+
+.nutirContent {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+    /* allergic section */
+.allergic {
+    margin-bottom: 30px;
+    padding: 15px 10px;
+    border-radius: 4px;
+    background: #eeeeee;
+}
+
+    /* review section */
+.rvWrapper .rvTitle {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dddddd;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.rvWrapper .rvContents {
+    margin: 15px 0 25px 0;
+}
+
+.aRv {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.aRv .rvId {
+    display: inline-block;
+    font-weight: bold;
+    width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space :nowrap;
+}
+
+.aRv .rvText {
+    display: inline-block;
+    width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space :nowrap;  
+}
+
+.bugFix {
+    margin-left: 6px;
+}
+
+    /* trash btn */
+.fa-trash-can {
+    position: absolute;
+    right: 0;
+    opacity: .2;
+    cursor: pointer;
+
+}
+
+
+.rvWrapper input {
+    padding: 10px 10px;
+    width: 616px;
+    border: none;
+    border-radius: 4px;
+    background: #eeeeee;
+}
+
+
+/* footer */
+footer {
+    background: #333333;
+}
+
+footer .footerWrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 40px 15px 30px 15px;
+    max-width: 1024px;
+    color: #CCCCCC;
+}
+
+footer .info p {
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+footer .info li {
+    margin-bottom: 8px;
+    font-size: 11px;
+}

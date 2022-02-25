@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favi.png">
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <script src="https://kit.fontawesome.com/6a31f345d7.js" crossorigin="anonymous"></script>
+    <title>WeBuks Login</title>
+</head>
+<body>
+
+<section id="loginSection">
+    <h2 id="title">WeBukcs</h2>
+    
+    <form class="loginForm" action="">
+        <div class="idWrapper">
+            <input class="loginInput email"type="text" placeholder="전화번호,사용자 이름 또는 이메일" />
+        </div>
+        <div class="pwWrapper">
+            <input class="loginInput pw" type="password" placeholder="비밀번호" />
+            <i class="fa-solid fa-eye-slash eye"></i>
+        </div>
+        
+        <button 
+            class="loginBtn" 
+            type="button" 
+            onclick = toList()
+            disabled>
+            로그인
+        </button>
+    </form>
+    
+    <a class="forgetPw" href="#">비밀번호를 잊으셨나요?</a>      
+</section>
+
+<script src="js/login.js"></script>
+</body>
+</html>
