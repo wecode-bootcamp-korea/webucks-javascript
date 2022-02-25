@@ -15,9 +15,9 @@ inputBox.forEach((item, index) => {
 
     inputText.addEventListener('keyup', e => {
         const changeInputBgColor = () => {
-            let inputBgColor = e.target.parentNode.style; 
-            
-            if (!!e.target.value > 0) {
+            let inputBgColor = e.target.parentNode.style;
+
+            if (e.target.value.length > 0) {
                 inputBgColor.backgroundColor = "#fff";
                 if (inputId.value.includes('@') && inputPw.value.length >= 8) {
                     loginBtn.disabled = false;
