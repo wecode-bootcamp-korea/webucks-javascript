@@ -1,36 +1,35 @@
-body{
+body {
   width: max-content;
 }
 .title {
   display: flex;
-  margin : 0 20px;
-  justify-content:space-between;
+  margin: 0 20px;
+  justify-content: space-between;
   background-color: rgb(241, 234, 226);
 }
 
-.logo{
+.logo {
   margin: auto;
   margin-left: 20px;
-  font-family: 'Dancing Script', cursive;;
+  font-family: "Dancing Script", cursive;
   font-size: 30px;
 }
 
-.sidemenu{
+.sidemenu {
   display: flex;
-  margin:20px;
+  margin: 20px;
   align-items: center;
   gap: 30px;
-  font-weight:500;
-  
+  font-weight: 500;
 }
 
-.sidemenu a{
+.sidemenu a {
   color: rgb(80, 51, 51);
   text-decoration: none;
 }
 
-.menu_title{
-  margin : 0 20px;
+.menu_title {
+  margin: 0 20px;
   padding-left: 20px;
   margin-top: 20px;
   display: flex;
@@ -39,36 +38,49 @@ body{
   gap: 20px;
 }
 
-.menu_title h2{
+.menu_title h2 {
   font-size: 20px;
   font-weight: 550;
 }
 
-i{
+i {
   color: rgb(80, 51, 51);
   font-size: 30px;
   padding-bottom: 5px;
 }
 
-.menual{
+.menual {
   padding-top: 5px;
   font-size: 15px;
 }
 
-.menu_ColdBrew{
+.menu_ColdBrew {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin : 20px 20px 20px 20px;
-  gap : 20px;
+  margin: 20px 20px 20px 20px;
+  gap: 20px;
   text-align: center;
   font-weight: bold;
- }
-
-.menu_ColdBrew span div{
-  padding-bottom: 30px;
 }
 
-.menu_ColdBrew span img{
-  width :300px;
-  height:300px;
+.overflow {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.coffee_img {
+  width: 300px;
+  height: 300px;
+  transform: scale(1);
+}
+
+.coffee_img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+
+.coffee_name {
+  margin-top: 15px;
+  font-weight: lighter;
 }
