@@ -1,0 +1,60 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #eeefef;    
+}
+
+.logo{
+    margin-bottom: 30px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size : 90px;    
+}
+
+form{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    height: 20vh;
+}
+
+input{
+    width : 40vh;
+    border-radius: 6px;
+    padding-top : 9px;
+    padding-bottom : 9px;
+    background-color: #eeefef;
+    border : 2px rgba(168, 181, 189, 0.4) solid;
+}
+
+button{
+    width : 41vh;
+    padding-top : 10px;
+    padding-bottom : 10px;
+    border-radius: 10px;
+    border: 0px solid;
+    background-color: rgba(97, 173, 237, 0.3);
+    color : white;
+}
+
+.basis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60vh;
+    height: 70vh;    
+    background-color: white;
+    border : 1px solid black;
+}
+
+.basis > * {
+    margin-top : 15px;
+}
+
+.Find_Password{
+    margin-top: 15vh;
+    color : #6e9dba;
+    font-weight: bold;
+    font-size: 14px;
+}

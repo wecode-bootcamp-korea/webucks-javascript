@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+}
+
+.list{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width : 150vh;
+    margin : auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(244, 244, 242);
+    padding: 15px 0px 15px 0px;
+    width : 100%;
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-family: 'Dancing Script', cursive;
+    padding-left : 19px;
+    font-size : 40px;
+    color : black;
+    font-weight: bolder;
+}
+
+.kind{
+    background-color: rgb(244, 244, 242);
+    padding : 19px 25px;
+    margin-bottom: 20px;
+}
+
+.kind1{
+    font-weight: bold;
+}
+
+.kind > span {
+    color : black;
+}
+
+div.list{
+    display: flex;
+    justify-content: center;
+}
+
+span{
+    margin-right: 25px;
+    color : gray;
+}
+img:hover{
+    transform: scale(1.2);
+    transition: 0.5s ease-in;
+}
+div.explain > img {
+    width : 240px;
+    height: 200px;
+}
+div.explain:not(:last-child){
+/* div.explain{ */
+    display: flex;
+    /* justify-content: space-evenly */
+    flex-direction: column;
+    align-items: center;
+    flex-wrap : wrap;
+    font-size : 15px;
+    margin-bottom: 25px;
+    /* border : 1px solid black; */
+}
+
+div.explain:last-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(-233%);
+    /* border : 1px solid black; */
+    /* 이게 아닌 것 같은데....*/
+}
+
+div.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+th{
+    border-left : 1px solid black;
+}

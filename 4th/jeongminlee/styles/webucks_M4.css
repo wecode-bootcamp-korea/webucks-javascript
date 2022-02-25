@@ -1,0 +1,209 @@
+.logo{
+    font-family: 'Dancing Script', cursive;
+    padding-left : 19px;
+    font-size : 40px;
+    font-weight: bold;
+}
+
+.list{
+    width : 150vh;
+    /* border : 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    margin : auto;
+    justify-content: space-between;
+    /* margin : 0 100px; */
+}
+
+.nav_span{
+    margin-right: 25px;
+    color : gray;
+    
+}
+body{
+    /* width : 150vh; */
+    /* margin : auto; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nav_text{
+    display: inline;
+    /* margin-right: ; */
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(244, 244, 242);
+    padding: 15px 0px 15px 0px;
+    width : 100%;
+    margin-bottom: 20px;
+    margin-top : 7px;
+}
+
+.second_nav{
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.big_name{
+    font-size:25px;
+    font-weight: bold;
+}
+
+.Kategorie{
+    display: flex;
+    justify-content: flex-end;
+    color : rgba(175, 175, 175);
+}
+
+.picture_explain{
+    margin-top : 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+img{
+    width : 500px;
+    height: 450px;;
+}
+
+.hangul_name{
+    font-weight: bold;
+    font-size : 26px;
+}
+
+i{
+    color : rgba(175, 175, 175, 0.8);
+    font-weight: bold;
+}
+
+.explain1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.explain{
+    width: 540px;
+}
+
+.hr_first{
+    height: 3px;
+    background-color: black;
+}
+
+.explain2{
+    padding : 14px 0;
+}
+
+.explain2_explain{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.explain3{
+    display: flex;
+    justify-content: space-between;
+}
+
+.explain3_explain1, .explain3_explain2{
+    padding : 15px 0;
+    font-size : 18px;
+    font-weight: bold;
+}
+
+table{
+    width : 100%;
+}
+
+th{
+    text-align: left;
+    padding-bottom : 10px;
+}
+
+td{
+    text-align: right;
+    padding-right : 6px;
+    padding-bottom : 10px;
+}
+
+td:nth-of-type(odd){
+    border-right: 1.2px dashed rgba(175, 175, 175);
+}
+
+.th1{
+    padding-left: 5px;
+}
+
+.explain5{
+    margin : 30px 0;
+}
+
+.explain5_explain{
+    background-color: rgba(175, 175, 175, 0.3);
+    padding : 13px 10px;
+    font-weight: bold;
+}
+
+.review_title{
+    font-weight: bold;
+    font-size : 20px;
+}
+
+.review_id{
+    font-weight: bolder;
+    font-size : 13px;
+}
+.review_content{
+    font-size : 1px;
+    font-weight: bold;
+}
+
+.explain7{
+    margin : 18px 0;
+}
+
+.explain7_explain{
+    font-size : 11px;
+    font-weight: bolder;
+    background-color: rgba(175, 175, 175, 0.3);
+    color : gray;
+    padding : 8px;
+    border : none;
+    width : 98%;
+}
+
+.bottom{
+    width: 1450px;
+    background-color: rgba(10, 10, 10, 0.75);
+    margin : 40px auto 0px auto;
+    display : flex;
+    justify-content: space-around;
+    padding : 40px 10px;
+}
+
+.bottom > * {
+    color : white;
+    font-size : 13px;
+}
+
+.highest{
+    margin-bottom: 10px;
+}
+
+.far{
+    /* color : red; */
+    display: block;
+}
+
+.fas{
+    display: none;
+    color : red;
+    
+}
+
+
