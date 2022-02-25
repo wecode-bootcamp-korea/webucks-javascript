@@ -75,14 +75,14 @@ i{
 
 p{
     padding: 14px 0px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #ababab;
     font-size: 14px;
 }
 
 /*영양정보와 리뷰*/
 #dolceHeader{
     height: 45px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #ababab;
 }
 #dolceHeader >span{
     font-size: 15px;
@@ -95,4 +95,33 @@ p{
 }
 #dolceHeader :nth-child(2){
     padding: 13px;
+}
+
+#dolceContent{
+    display: flex;
+    width: 100%;
+}
+#firstContentBox{
+    border-right: 1px solid #ababab;
+}
+#dolceContent>ul>li>dt,dd{
+    padding: 2px;
+}
+#dolceContent>ul>li>dt{
+    float: left;
+}
+#dolceContent>ul>li>dd{
+    float: right;
+    display: inline-block;
+    padding-left: 60px;
+}
+#firstContentBox, #secondContentBox{
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+    list-style: none;
+    font-size: 14px;
+}
+#secondContentBox>li>dt{
+    margin-right: 20px;
 }
