@@ -104,7 +104,6 @@ main > div:nth-child(2) {
     position: absolute;
     right: 10px;
     bottom: 20px;
-    cursor: pointer;
 }
 
 .coffeeName .engName {
@@ -119,6 +118,10 @@ main > div:nth-child(2) {
 }
 
     /* heart btn toggle */
+.fa-heart {
+    cursor: pointer;
+}
+
 .btnOff {
     color: black;
     opacity: .2;
@@ -181,15 +184,37 @@ main > div:nth-child(2) {
 
 .aRv {
     margin-bottom: 8px;
+    position: relative;
 }
 
 .aRv .rvId {
+    display: inline-block;
     font-weight: bold;
+    width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space :nowrap;
 }
 
 .aRv .rvText {
     display: inline-block;
-    margin-left: 5px;
+    width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space :nowrap;  
+}
+
+.bugFix {
+    margin-left: 6px;
+}
+
+    /* trash btn */
+.fa-trash-can {
+    position: absolute;
+    right: 0;
+    opacity: .2;
+    cursor: pointer;
+
 }
 
 

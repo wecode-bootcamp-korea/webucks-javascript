@@ -88,18 +88,20 @@ li:hover {
 .coffeeImg {
     width: 320px;
     height: 320px;
+    transition: all .5s ease-in-out;
 }
 
 .coffeeImg:hover {
     transform: scale(1.1);
-    transition: all .5s ease-out;
     cursor: pointer;
+    /* transition을 hover에서가 아니라 img에 자체에 주면은
+       마우스를 뗄 때도 자연스럽게 이미지가 돌아간다. */
 }
 
     /* coffee name */
 .coffeeName {
-    font-size: 90%;
     padding: 10px;
+    font-size: 90%;
     text-align: center;
 }
 
@@ -156,5 +158,5 @@ li:hover {
 }
 
 /* 추가적으로 구현 해볼거 */
-/* nav bar fixed */
-/* max-width: 768px nav bar toggle */
+/* nav bar -> fixed */
+/* max-width: 768px (or 780px) nav bar toggle */
