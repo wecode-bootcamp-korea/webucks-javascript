@@ -1,18 +1,48 @@
-body {
-  margin: 0;
+* {
+  box-sizing: border-box;
+  vertical-align: top;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  color: gray;
+}
+
+span {
+  font-size: 12px;
+}
+
+td {
+  font-size: 13px;
+  padding: 5px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* 전체스타일 끝 */
 
 header,
 section > *,
 article {
+  display: flex;
   max-width: 1100px;
   margin: auto;
   padding-top: 10px;
 }
 
 header {
-  display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 20px;
   background-color: #f4f4f2;
 }
@@ -21,78 +51,68 @@ header img {
   max-width: 110px;
 }
 
-nav ul li {
+.nav-bar-list li {
   margin: 5px 10px;
   width: max-content;
   font-size: 15px;
 }
 
-section ul {
+.link-path-list {
   justify-content: right;
   font-size: 12px;
 }
 
-section ul li {
+.link-path-list li {
   margin: 3px;
 }
 
-article {
+.menu-detail-section {
   clear: right;
-  display: flex;
-  justify-content: space-between;
 }
 
-article figure {
-  margin-left: 0;
+.menu-detail-section figure {
   max-width: 50%;
+  margin-right: 40px;
 }
 
 table {
   text-align: left;
+  vertical-align: top;
   border-collapse: collapse;
 }
 
-th {
-  margin: 0;
+.menu-name th {
   font-size: 20px;
-}
-
-th h3 {
-  margin: 0;
 }
 
 th span {
   display: block;
-  margin-top: 0;
   margin-bottom: 20px;
   font-size: 12px;
 }
 
-td span {
-  font-size: 20px;
-}
-
-th + td {
-  text-align: right;
-}
-
 .heart {
+  text-align: center;
+}
+
+.heart button {
   border: none;
   width: 3rem;
-  height: 3rem;
   background-color: transparent;
+  transition: all 0.3s;
   opacity: 0.5;
   font-size: 30px;
 }
 
-.heart :hover {
-  font-size: 35px;
-  transition-duration: 0.1s;
-}
-
-.tdtitle {
+.td-title {
   padding: 25px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.507);
+}
+
+.td-title div {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
 }
 
 .menu-de {
@@ -108,17 +128,17 @@ th + td {
   font-size: 20px;
 }
 
-.menu-detail {
+.detail-table-second {
   text-align: right;
   border-right: 1px solid black;
 }
 
-.menu-detail + td {
+.detail-table-second + td {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.menu-detail + td + td {
+.detail-table-second + td + td {
   text-align: right;
   padding-right: 10px;
 }
@@ -127,10 +147,6 @@ th + td {
   margin: 20px 0;
   padding: 10px 10px;
   background-color: #efefef;
-}
-
-td {
-  padding: 5px;
 }
 
 aside h4 {
@@ -148,6 +164,7 @@ aside input {
   margin-bottom: 60px;
   border: none;
   padding: 10px;
+  width: 95%;
   background-color: #f4f4f2;
 }
 
@@ -171,16 +188,4 @@ footer li:first-child {
 }
 footer li {
   padding: 5px 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
-ul {
-  display: flex;
-  flex-flow: row wrap;
-  list-style: none;
-  color: gray;
 }
