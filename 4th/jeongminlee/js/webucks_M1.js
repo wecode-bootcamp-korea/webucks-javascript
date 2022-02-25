@@ -1,12 +1,12 @@
-const id = document.querySelector('.id');
-const password = document.querySelector('.password');
-const button = document.querySelector('.button');
+const ID = document.querySelector('.ID');
+const Password = document.querySelector('.Password');
+const Button = document.querySelector('.Button');
 
-password.addEventListener('keyup', function(){
-    const idValue = document.querySelector('.id').value;
-    const passValue = document.querySelector('.password').value;
+Password.addEventListener('keyup', function(){
+    const IDValue = document.querySelector('.ID').value;
+    const PasswordValue = document.querySelector('.Password').value;
 
-    if((idValue.includes('@') === true) && (passValue.length >= 8)){
-        button.style.backgroundColor = 'rgba(97, 173, 237, 1)';
+    if((IDValue.includes('@') === true) && (PasswordValue.length >= 8)){
+        Button.style.backgroundColor = 'rgba(97, 173, 237, 1)';
     }
 })
