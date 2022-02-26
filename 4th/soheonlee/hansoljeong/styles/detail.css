@@ -42,37 +42,18 @@ header {
     background-color: #f6f5f0;
 }
 
-.coffee-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0;
+/* .site-map {
+
 }
 
-.coffee-item {
-    width: 250px;
-    height: 250px;
-    margin: 0px auto;
-    overflow: hidden;
+.prod-view {
+
+} */
+
+.prod-view-img {
+    float: left;
 }
 
-.coffee-item img {
-    width: 100%;
-    transition: all 0.5s ease;
-}
-
-.coffee-item:hover img {
-    transform: scale(1.2);
-}
-
-.coffee-list .coffee-name {
-    width: 250px;
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-.coffee-list .list-padding {
-    width: 250px;
-    text-align: center;
+.prod-view-detail {
+    float: right;
 }
