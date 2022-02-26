@@ -1,6 +1,6 @@
-const Btn = document.querySelector('.btn')
-const id = document.getElementById('.id'); 
-const password = document.getElementById('.password'); 
+const Btn = document.getElementsByClassName('btn')
+const id = document.getElementsByClassName('id'); 
+const password = document.getElementsByClassName('password'); 
 
 function btnOn() {
     if (id.value.includes('@') && password.value.length >= 8) {
@@ -15,11 +15,11 @@ id.addEventListener("keyup", btnOn);
 password.addEventListener("keyup", btnOn);
 
 function btnActive()  {
-    const target = document.getElementById('target_btn');
+    const target = document.getElementsByClassName('target_btn');
     target.disabled = false;
   }
   
   function btnDisabled()  {
-    const target = document.getElementById('target_btn');
+    const target = document.getElementsByClassName('target_btn');
     target.disabled = true;
   }
