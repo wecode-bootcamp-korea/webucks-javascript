@@ -1,14 +1,25 @@
-const inputid = document.getElementsByClassName('id');
-const inputpw = document.getElementsByClassName('pw');
-const loginBtn = document.getElementsByClassName('loginBtn');
+const Btn = document.querySelector('.btn')
+const id = document.getElementById('.id'); 
+const password = document.getElementById('.password'); 
 
-function activeLogin(){
-    inputid.addEventLiestener('keyup' ,() => {
-    if (inputid.value.includes('@') && inputpw > 7){
-            loginBtn.style.opacity = 0.5};
-    else
-    {loginBtn.style.opacity = 1.0};
-})
+function btnOn() {
+    if (id.value.includes('@') && password.value.length >= 8) {
+        Btn.style.opacity = "1"; 
+    } else {
+        Btn.style.opacity = "0.3"; 
+    }
+}
 
 
-activeLogin();
+id.addEventListener("keyup", btnOn);
+password.addEventListener("keyup", btnOn);
+
+function btnActive()  {
+    const target = document.getElementById('target_btn');
+    target.disabled = false;
+  }
+  
+  function btnDisabled()  {
+    const target = document.getElementById('target_btn');
+    target.disabled = true;
+  }
