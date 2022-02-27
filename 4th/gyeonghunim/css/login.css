@@ -1,0 +1,76 @@
+*{
+    box-sizing:border-box;
+  }
+
+html {
+    height: 100%;
+   background-color: white;
+ }
+ body{
+    margin: 0;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100%;
+   background-color: rgb(238, 238, 238);
+ }
+ .logo{
+     width: 200px;
+ }
+
+.login_case{
+    padding: 40px;
+    background-color: white;
+    border-radius: 5px;
+    border: rgb(200, 200, 200) solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_id{
+    font-weight: bold;
+    font-size: 11px;
+    color: rgb(180, 180, 180);
+    width: 280px;
+    height: 35px;
+    background-color: rgb(238, 238, 238);
+    border: rgb(200, 200, 200) solid 1px;
+    border-radius: 5px;
+    padding: 9px;
+}
+
+.login_password{
+    font-weight: bold;
+    font-size: 11px;
+    color: rgb(180, 180, 180);
+    width: 280px;
+    height: 35px;
+    background-color: rgb(238, 238, 238);
+    border: rgb(200, 200, 200) solid 1px;
+    border-radius: 5px;
+    padding: 9px;
+}
+
+.login_button{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    width: 280px;
+    height: 35px;
+    background-color: rgb(180, 210, 232);
+    border: rgb(200, 200, 200) solid 0px;
+    border-radius: 7px;
+}
+.margin_top{
+margin-top: 10px;
+}
+.question{
+    font-size: 13px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: rgb(138, 164, 186);
+    margin-top: 100px;
+    text-align: center;
+}
