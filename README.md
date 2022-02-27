@@ -2,7 +2,7 @@
 
 ## 초기 세팅 및 진행 방법
 
-### 초기 세팅
+### 초기 세팅111
 
 1. `Desktop/wecode`로 이동하여 `webucks-javascript` repository를 clone받아주세요.
     - **이 때 사용해야 하는 적절한 git 명령어를 입력해주세요.**

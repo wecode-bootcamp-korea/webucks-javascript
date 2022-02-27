@@ -1,0 +1,66 @@
+.container{
+  width: 400px;
+  height: 450px;
+  margin: 50px auto;
+  padding: 60px 30px;
+  border: 2px solid #e4e4e4;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.logo{
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 70px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.container input{
+  display: inline-block;
+  width: 350px;
+  margin-top: 20px;
+  padding: 5px 10px;
+  color: black;
+  background-color: yellow;
+  border:  2px solid yellow;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.loginBtn{
+  width: 374px;
+  margin-top: 20px;
+  padding: 10px 10px;
+  border: 1px solid yellow;
+  border-radius: 10px;
+  opacity: 0.5;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.active{
+  opacity: 1.0;
+}
+
+#forgotpassword{
+  display: inline-block;
+  margin-top: 130px;
+  color: gray;
+  font-weight: bold;
+}
+
+img{
+  width: 150px;
+  height: 150px;
+}
+
+nav{
+  text-align: end;
+}
+
+img:hover {
+  width:400px;  /* 사진크기 조절 */
+  transform:scale(2, 1.5);  /* 가로2배 새로 1.5배 로 커짐 */
+  transition: transform.5s;  /* 커지는 시간 */
+}
