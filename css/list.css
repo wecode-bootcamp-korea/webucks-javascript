@@ -1,0 +1,85 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding);
+  margin-bottom: var(--padding);
+  background-color: var(--bg-color);
+}
+
+.nav-logo {
+  margin: 0;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: calc(var(--padding) / 2);
+}
+
+.nav-links a {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links a:hover {
+  padding: calc(var(--padding) / 2);
+  border-radius: 10px;
+  opacity: 0.5;
+  background-color: #fdcb6e;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-coffee {
+  display: flex;
+  align-items: center;
+  padding: var(--padding);
+  margin-bottom: var(--padding);
+  background-color: var(--bg-color);
+}
+
+.product-coffee h5 {
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.product-coffee i {
+  margin: 0 var(--padding);
+  font-size: 20px;
+}
+
+.coffee-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: var(--padding);
+  grid-row-gap: var(--padding);
+  margin-bottom: var(--padding);
+  padding: 0 var(--padding);
+}
+
+.coffee-list .coffee {
+  text-align: center;
+}
+
+.coffee-list .coffee .img {
+  overflow: hidden;
+}
+
+.coffee-list .coffee .img img {
+  max-width: 100%;
+  transition: all 0.3s ease 0s;
+}
+
+.coffee-list .coffee img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.coffee-list .coffee .name {
+  padding: calc(var(--padding) / 2);
+}
