@@ -10,6 +10,7 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: #f6f5f0;
+    margin-top: 10px;
 }
 
 .nav-bar h1 {
