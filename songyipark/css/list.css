@@ -58,7 +58,8 @@ nav {
 section{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 30px;
+    column-gap: 30px;
+    row-gap: 40px;
     margin: 40px 0;
 }
 
