@@ -1,0 +1,67 @@
+body {
+  width: max-content;
+}
+.title {
+  display: flex;
+  margin: 0 20px;
+  justify-content: space-between;
+  background-color: rgb(241, 234, 226);
+}
+
+.logo {
+  margin: auto;
+  margin-left: 20px;
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+}
+
+.sidemenu {
+  display: flex;
+  margin: 20px;
+  align-items: center;
+  gap: 30px;
+  font-weight: 500;
+}
+
+.sidemenu a {
+  color: rgb(80, 51, 51);
+  text-decoration: none;
+}
+
+.menu_title {
+  margin: 0 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.menu_layout {
+  display: flex;
+}
+
+.coffee_main {
+  margin-left: 20px;
+}
+
+.coffee_img {
+  width: 400px;
+  height: 400px;
+}
+
+.coffee_text {
+  width: 600px;
+  height: 700px;
+  margin-left: 40px;
+}
+
+.menu_name {
+  margin-top: 0px;
+}
+
+.sidemenubar {
+  font-size: 15px;
+  font-weight: lighter;
+  margin-top: 30px;
+  color: rgb(80, 51, 51);
+}
