@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Nanum+Gothic:wght@700&display=swap");
+
+* {
+  box-sizing: border-size;
+}
+
+header {
+  background-color: #f6f5ef;
+  margin: 15px 10px;
+  padding: 10px 50px;
+}
+
+.logoName {
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+  padding-left: 1%;
+}
+
+.headBar {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 12px;
+  color: #c7c7c2;
+  padding-left: 50%;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 5%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.navName {
+  padding-left: 25px;
+  font-weight: bolder;
+}
+
+.menuName {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: x-large;
+  padding-left: 5%;
+}
+
+.menuTree {
+  font-size: small;
+  text-align: right;
+  margin-right: 170px;
+  padding-bottom: 10px;
+  color: #a0a0a0;
+}
+
+.productDesc {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 100px;
+}
+
+.productName {
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+img {
+  width: 500px;
+  height: 500px;
+}
+
+.productName {
+  display: inline;
+}
+.productEnglishName {
+  font-size: small;
+  margin-bottom: 20px;
+}
+.menuDesc {
+  font-size: small;
+  padding: 10px 0px;
+}
+
+#like {
+  color: lightgray;
+  position: absolute;
+  padding-left: 420px;
+  padding-top: 10px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+}
+
+.boldLine {
+  border: 0;
+  height: 2px;
+  background: black;
+}
+
+.size {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+p {
+  display: inline;
+}
+
+.nutriTable {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nutriValue {
+  text-align: right;
+}
+
+.nutriOneline {
+  font-size: small;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nutriBox1 {
+  padding: 5px;
+  width: 280px;
+}
+.nutriBox2 {
+  padding: 5px;
+  width: 280px;
+  border-left: 1px dashed lightgray;
+}
+.verticalLine {
+  border: 0;
+  height: 1px;
+  color: black;
+}
+
+.allergie {
+  background-color: #efefef;
+  padding: 10px 0px 10px 5px;
+  border-radius: 5px;
+  font-size: small;
+}
+
+.review {
+  margin-top: 50px;
+  font-size: large;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.reviewSection {
+  font-size: small;
+}
+.reviewId {
+  font-weight: 800;
+}
+.reviewLine {
+  padding-top: 5px;
+}
+
+.reviewBox {
+  margin-top: 15px;
+  background-color: #efefef;
+  border: 0;
+  padding: 10px;
+  width: 570px;
+}
+
+footer {
+  background-color: #333333;
+}
+.footerTree {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0px;
+  font-size: small;
+  padding: 10px 50px;
+}
+.footerTree div {
+  padding-top: 10px;
+}
+
+.footerMenu {
+  text-align: center;
+}
