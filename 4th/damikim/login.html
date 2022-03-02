@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <link rel="stylesheet" href="styles/login.css">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width">
+  <title>login</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+    
+    h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size : 80px;
+    }
+    
+  </style>
+ </head>
+   <body class = "area">
+      <div class = "loginArea">
+          <div class="weBucksSection">
+          <form action>
+          <h1 class="weBucksText"> weBucks </h1>
+          <div class="IdSection">
+          <input id = "userId" type = "text" class ="idInput" placeholder = "전화번호, 사용자 이름 또는 이메일"></div>
+          <div class = "passwordSection">
+          <input id = "password" type = "password" class="pwInput" placeholder="비밀번호"></div>
+          <button class = "loginBtn" type="button" onClick="location.href='./list.html'"> 로그인 </button>
+          <footer class="pwForget">
+          <a href=#> 비밀번호를 잊으셨나요?</a>
+          </footer>
+        </form>
+      </div>
+      <script src = "js/login.js"></script>
+   </body>
+</html>
