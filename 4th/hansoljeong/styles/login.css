@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #eeefef;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    padding-bottom: 50px;
+    border: 2px solid #dedede;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.logo {
+    margin: 30px 0 30px 0;
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+}
+
+.loginForm input {
+    margin-bottom: 20px;
+    padding: 8px;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+.loginForm .login-btn {
+    margin-bottom: 70px;
+    padding: 9px;
+    border: none;
+    border-radius: 5px;
+    background-color: #61adec;
+    opacity: 0.5;
+    color: white;
+}
+
+.forgot-pw {
+    font-size: 14px;
+    color: #7da0b9;
+}
